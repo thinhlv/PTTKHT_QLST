@@ -1,5 +1,1 @@
-## sba-se214-g22
-
-Sáng thứ 3
-
-# PTTKHT_QLST
+sql script cập nhật ở file script.sql ở thư mục chính nhóe!
