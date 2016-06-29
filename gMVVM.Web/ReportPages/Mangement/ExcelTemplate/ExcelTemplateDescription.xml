@@ -1,0 +1,6567 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Excel description 
+Create by GIAUHT
+Company: GSoft
+date: 14/01/2014
+modified date: 16/01/2014
+-->
+<!--<Template>
+  <TemlateName> // Tên template 
+	    <ParameterExcel> // Danh sách Tham số truyền vào Excel 
+		    <CellName> // Ô cần định dạng
+			    <FormatName > // Tên định dạng
+				    <FormatType> // Loại định dạng
+				    </FormatType >
+          </FormatName >
+		    </CellName>
+	    </ParameterExcel>
+	    <FieldExcel> // Danh sách các trường dữ liệu đổ vào Excel template
+		    <StartPoint> // vị trí cần đổ
+			    <Row></Row>  // vị trí cột
+			    <Column></Column>// vị trí dòng
+        </StartPoint>
+        <Fields> // danh sách các trường dữ liệu trích xuất từ store
+	        <FieldName> // tên trường dữ liệu
+		        <Prior> // Độ ưu tiên 
+		        </Prior>
+				    <FormatName> // Định dạng trường
+					    <FormatType> // Loại định dạng
+					    </FormatType >
+            </FormatName >
+	        </FieldName>
+       </Fields>
+      </FieldExcel>
+  </TemlateName>
+
+</Template>-->
+<Template>
+ 
+   <BDS_BC03>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:U3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+   
+      <T1>
+        <Merge >
+          <MergeRanges>T1:T1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </T1>
+      <T2>
+        <Merge >
+          <MergeRanges>T2:T2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </T2>
+     
+    </ParameterExcel>
+    
+    <FieldExcel> 
+		    <StartPoint> 
+			    <Row>9</Row>  
+			    <Column>1</Column>
+        </StartPoint>
+        <Fields>
+          <STT>
+            <Prior>0</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </STT>
+          <TEN_KHU_VUC>
+            <Prior>1</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </TEN_KHU_VUC>
+          <TEN_CHI_NHANH>
+            <Prior>2</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </TEN_CHI_NHANH>
+          <TINH>
+            <Prior>3</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </TINH>
+          <DIACHI>
+            <Prior>4</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </DIACHI>
+          <TEN_PGD>
+            <Prior>5</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </TEN_PGD>
+          <QUY_MO>
+            <Prior>6</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </QUY_MO>
+          <THUE_MUA>
+            <Prior>7</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </THUE_MUA>
+          <DIEN_TICH>
+            <Prior>8</Prior>
+            <WrapText>
+              <FLOAT>true</FLOAT >
+            </WrapText>
+          </DIEN_TICH>
+
+         <THOI_GIAN_SD>
+          <Prior>9</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </THOI_GIAN_SD>
+       
+         <HIEN_TRANG>
+          <Prior>10</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </HIEN_TRANG>
+          
+        <TS_TREN_DAT>
+            <Prior>11</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </TS_TREN_DAT>
+        <QSDD>
+            <Prior>12</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </QSDD>
+       
+        <KHAU_HAO>
+            <Prior>13</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </KHAU_HAO>
+        <GIA_THI_TRUONG>
+            <Prior>14</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+         </GIA_THI_TRUONG>
+        <XD>
+            <Prior>15</Prior>
+            <WrapText>
+              <Text>true</Text>
+            </WrapText>
+          </XD>
+        <SUA_CHUA>
+            <Prior>16</Prior>
+            <WrapText>
+              <Text>true</Text>
+            </WrapText>
+        </SUA_CHUA>
+        <DANG_XD_SC>
+            <Prior>17</Prior>
+            <WrapText>
+              <Text>true</Text>
+            </WrapText>
+        </DANG_XD_SC>
+         <THANGTL>
+            <Prior>18</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+        </THANGTL>
+           <THOI_HAN>
+            <Prior>19</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+        </THOI_HAN>
+
+      </Fields>
+      </FieldExcel>
+  </BDS_BC03>
+  
+  <BDS_BC02>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:T3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+   
+      <T1>
+        <Merge >
+          <MergeRanges>T1:T1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </T1>
+      <T2>
+        <Merge >
+          <MergeRanges>T2:T2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </T2>
+     
+    </ParameterExcel>
+    
+    <FieldExcel> 
+		    <StartPoint> 
+			    <Row>9</Row>  
+			    <Column>1</Column>
+        </StartPoint>
+        <Fields>
+          <STT>
+            <Prior>0</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </STT>
+          <TEN_KHU_VUC>
+            <Prior>1</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </TEN_KHU_VUC>
+          <TEN_CHI_NHANH>
+            <Prior>2</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </TEN_CHI_NHANH>
+          <TINH>
+            <Prior>3</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </TINH>
+          <DIACHI>
+            <Prior>4</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </DIACHI>
+          <TEN_PGD>
+            <Prior>5</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </TEN_PGD>
+          <QUY_MO>
+            <Prior>6</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </QUY_MO>
+          <THUE_MUA>
+            <Prior>7</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </THUE_MUA>
+          <DIEN_TICH>
+            <Prior>8</Prior>
+            <WrapText>
+              <FLOAT>true</FLOAT >
+            </WrapText>
+          </DIEN_TICH>
+          
+         <THOI_HAN>
+          <Prior>9</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </THOI_HAN>
+        
+         <THOI_GIAN_SD>
+          <Prior>10</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </THOI_GIAN_SD>
+       
+         <HIEN_TRANG>
+          <Prior>11</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </HIEN_TRANG>
+          
+        <TS_TREN_DAT>
+            <Prior>12</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </TS_TREN_DAT>
+        <QSDD>
+            <Prior>13</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </QSDD>
+        <TONG_GIA_TRI>
+            <Prior>14</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+        </TONG_GIA_TRI>
+        <KHAU_HAO>
+            <Prior>15</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </KHAU_HAO>
+        <CON_LAI>
+            <Prior>16</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+         </CON_LAI>
+        <XD>
+            <Prior>17</Prior>
+            <WrapText>
+              <Text>true</Text>
+            </WrapText>
+          </XD>
+        <SUA_CHUA>
+            <Prior>18</Prior>
+            <WrapText>
+              <Text>true</Text>
+            </WrapText>
+        </SUA_CHUA>
+        <DANG_XD_SC>
+            <Prior>19</Prior>
+            <WrapText>
+              <Text>true</Text>
+            </WrapText>
+        </DANG_XD_SC>
+
+      </Fields>
+      </FieldExcel>
+  </BDS_BC02>
+  
+  <BDS_BC01>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:I3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+   
+      <I1>
+        <Merge >
+          <MergeRanges>I1:I1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </I1>
+      <I2>
+        <Merge >
+          <MergeRanges>I2:I2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </I2>
+     
+    </ParameterExcel>
+  <FieldExcel> 
+		    <StartPoint> 
+			    <Row>10</Row>  
+			    <Column>1</Column>
+        </StartPoint>
+        <Fields>
+          <KHU_VUC>
+            <Prior>0</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </KHU_VUC>
+          <CHI_NHANH>
+            <Prior>1</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </CHI_NHANH>
+          <PGD>
+            <Prior>2</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </PGD>
+          <MUA_CHI_NHANH>
+            <Prior>3</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </MUA_CHI_NHANH>
+          <THUE_MUA_CN>
+            <Prior>4</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </THUE_MUA_CN>
+          <THUE_CHI_NHANH>
+            <Prior>5</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </THUE_CHI_NHANH>
+          <MUA_PHONG_GD>
+            <Prior>6</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </MUA_PHONG_GD>
+          <THUE_MUA_PGD>
+            <Prior>7</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </THUE_MUA_PGD>
+          <THUE_PHONG_GD>
+            <Prior>8</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </THUE_PHONG_GD>
+         
+      </Fields>
+      </FieldExcel>
+  </BDS_BC01>
+
+  <XDCB_BC01>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:G3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:G4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <G1>
+        <Merge >
+          <MergeRanges>G1:G1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </G1>
+      <G2>
+        <Merge >
+          <MergeRanges>G2:G2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </G2>
+
+    </ParameterExcel>
+
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <CHITIEU>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </CHITIEU>
+        <MUA_SAM_TSCD>
+          <Prior>2</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </MUA_SAM_TSCD>
+        <CP_CONG_TRINH>
+          <Prior>3</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </CP_CONG_TRINH>
+        <SUA_CHUA_TSCD>
+          <Prior>4</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </SUA_CHUA_TSCD>
+        <TONG_CONG>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </TONG_CONG>
+
+      </Fields>
+    </FieldExcel>
+  </XDCB_BC01>
+
+  <CCLD_BC08_1>
+    <ParameterExcel>
+      <A2>
+          <Merge>
+            <MergeRanges>A2:D2</MergeRanges >
+            <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+          </Merge >
+        </A2>
+        <A3>
+          <Merge>
+            <MergeRanges>A3:N3</MergeRanges >
+            <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+          </Merge >
+        </A3>
+        <A4>
+          <Merge>
+            <MergeRanges>A4:N4</MergeRanges >
+            <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+          </Merge >
+        </A4>
+		    
+        <A5>
+          <Merge >
+            <MergeRanges>A5:N5</MergeRanges >
+            <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+          </Merge >
+        </A5>
+        
+	    </ParameterExcel>
+  <FieldExcel> 
+		    <StartPoint> 
+			    <Row>8</Row>  
+			    <Column>1</Column>
+        </StartPoint>
+        <Fields>
+          <STT>
+            <Prior>0</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </STT>
+          <NHOM_CCLD_1>
+            <Prior>1</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </NHOM_CCLD_1>
+          <NHOM_CCLD_2>
+            <Prior>2</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </NHOM_CCLD_2>
+          <MA_CCLD>
+            <Prior>3</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </MA_CCLD>
+          <SERIAL_NO>
+            <Prior>4</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </SERIAL_NO>
+          <TEN_CCLD>
+            <Prior>5</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </TEN_CCLD>
+          <NGAYNHAP_KHO>
+            <Prior>6</Prior>
+            <WrapText>
+              <Date>true</Date >
+            </WrapText>
+          </NGAYNHAP_KHO>
+          <NGAYXUAT_KHO>
+            <Prior>7</Prior>
+            <WrapText>
+              <Date>true</Date >
+            </WrapText>
+          </NGAYXUAT_KHO>
+          <NGAY_HACH_TOAN>
+            <Prior>8</Prior>
+            <WrapText>
+              <Date>true</Date >
+            </WrapText>
+          </NGAY_HACH_TOAN>
+          <MA_CHI_NHANH>
+            <Prior>9</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </MA_CHI_NHANH>
+          <MA_DVSD>
+            <Prior>10</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </MA_DVSD>
+          <NGUYENGIA>
+            <Prior>11</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </NGUYENGIA>
+          <GIATRI>
+            <Prior>12</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </GIATRI>
+          <GIATRI_DAPHANBO>
+            <Prior>13</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </GIATRI_DAPHANBO>
+          <GTCL>
+            <Prior>14</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </GTCL>
+          <GHI_CHU>
+            <Prior>15</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </GHI_CHU>
+      </Fields>
+      </FieldExcel>
+  </CCLD_BC08_1>
+  
+  <CCLD_BC08_2>
+      <ParameterExcel>
+        <A2>
+            <Merge>
+              <MergeRanges>A2:D2</MergeRanges >
+              <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+            </Merge >
+          </A2>
+          <A3>
+            <Merge>
+              <MergeRanges>A3:K5</MergeRanges >
+              <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+            </Merge >
+          </A3>
+          <A4>
+            <Merge>
+              <MergeRanges>A4:K4</MergeRanges >
+              <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+            </Merge >
+          </A4>
+		    
+          <A5>
+            <Merge >
+              <MergeRanges>A5:K5</MergeRanges >
+              <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+            </Merge >
+          </A5>
+        
+	      </ParameterExcel>
+    <FieldExcel> 
+		      <StartPoint> 
+			      <Row>8</Row>  
+			      <Column>1</Column>
+          </StartPoint>
+          <Fields>
+            <STT>
+              <Prior>0</Prior>
+              <WrapText>
+                <Number>true</Number >
+              </WrapText>
+            </STT>
+            <MA_NHOM_CCLD_1>
+              <Prior>1</Prior>
+              <WrapText>
+                <Text>true</Text >
+              </WrapText>
+            </MA_NHOM_CCLD_1>
+            <MA_NHOM_CCLD_2>
+              <Prior>2</Prior>
+              <WrapText>
+                <Text>true</Text >
+              </WrapText>
+            </MA_NHOM_CCLD_2>
+            <MA_CCLD>
+              <Prior>3</Prior>
+              <WrapText>
+                <Text>true</Text >
+              </WrapText>
+            </MA_CCLD>
+            <TEN_CCLD>
+              <Prior>4</Prior>
+              <WrapText>
+                <Text>true</Text >
+              </WrapText>
+            </TEN_CCLD>
+             <GIATRI_TONDAUKY>
+              <Prior>5</Prior>
+              <WrapText>
+                <Number>true</Number >
+              </WrapText>
+            </GIATRI_TONDAUKY>
+            <GIATRI_NHAPTRONGKY>
+              <Prior>6</Prior>
+              <WrapText>
+                <Number>true</Number >
+              </WrapText>
+            </GIATRI_NHAPTRONGKY>
+            <GIATRI_XUATTRONGKY>
+              <Prior>7</Prior>
+              <WrapText>
+                <Number>true</Number >
+              </WrapText>
+            </GIATRI_XUATTRONGKY>
+            <GIATRI_TONCUOIKY>
+              <Prior>8</Prior>
+              <WrapText>
+                <Number>true</Number >
+              </WrapText>
+            </GIATRI_TONCUOIKY>
+            <MA_CHI_NHANH>
+              <Prior>9</Prior>
+              <WrapText>
+                <Text>true</Text >
+              </WrapText>
+            </MA_CHI_NHANH>
+            <GHI_CHU>
+              <Prior>10</Prior>
+              <WrapText>
+                <Text>true</Text >
+              </WrapText>
+            </GHI_CHU>
+        </Fields>
+        </FieldExcel>
+    </CCLD_BC08_2>
+  
+    
+  <CCLD_BC08_3>
+    <ParameterExcel>
+      <A2>
+        <Merge>
+          <MergeRanges>A2:D2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <A3>
+        <Merge>
+          <MergeRanges>A3:J3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A4>
+        <Merge>
+          <MergeRanges>A4:J3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+
+      <A5>
+        <Merge >
+          <MergeRanges>A5:J3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A5>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>8</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+            <Prior>0</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </STT>
+          <MA_NHOM_CCLD_1>
+            <Prior>1</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </MA_NHOM_CCLD_1>
+          <MA_NHOM_CCLD_2>
+            <Prior>2</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </MA_NHOM_CCLD_2>
+        <MA_CCLD>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </MA_CCLD>
+        <SERIAL_NO>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </SERIAL_NO>
+        <TEN_CCLD>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_CCLD>
+        <NGAY_NHAPKHO>
+          <Prior>6</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAY_NHAPKHO>
+        <NGAY_HACHTOAN>
+          <Prior>7</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAY_HACHTOAN>
+        <GIATRI>
+          <Prior>8</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </GIATRI>
+        <MA_CHINHANH>
+          <Prior>9</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </MA_CHINHANH>
+        <GHI_CHU>
+          <Prior>10</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GHI_CHU>
+      </Fields>
+    </FieldExcel>
+  </CCLD_BC08_3>
+  
+  <CCLD_BC08_4>
+      <ParameterExcel>
+        <A2>
+          <Merge>
+            <MergeRanges>A2:D2</MergeRanges >
+            <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+          </Merge >
+        </A2>
+        <A3>
+          <Merge>
+            <MergeRanges>A3:J6</MergeRanges >
+            <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+          </Merge >
+        </A3>
+        <A4>
+          <Merge>
+            <MergeRanges>A4:J6</MergeRanges >
+            <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+          </Merge >
+        </A4>
+
+        <A5>
+          <Merge >
+            <MergeRanges>A5:J6</MergeRanges >
+            <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+          </Merge >
+        </A5>
+
+      </ParameterExcel>
+      <FieldExcel>
+        <StartPoint>
+          <Row>8</Row>
+          <Column>1</Column>
+        </StartPoint>
+        <Fields>
+          <STT>
+              <Prior>0</Prior>
+              <WrapText>
+                <Number>true</Number >
+              </WrapText>
+            </STT>
+          <MA_NHOM_CCLD_1>
+              <Prior>1</Prior>
+              <WrapText>
+                <Text>true</Text >
+              </WrapText>
+            </MA_NHOM_CCLD_1>
+          <MA_NHOM_CCLD_2>
+              <Prior>2</Prior>
+              <WrapText>
+                <Text>true</Text >
+              </WrapText>
+            </MA_NHOM_CCLD_2>
+          <MA_CCLD>
+            <Prior>3</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </MA_CCLD>
+          <SERIAL_NO>
+            <Prior>4</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </SERIAL_NO>
+          <TEN_CCLD>
+            <Prior>5</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </TEN_CCLD>
+          <NGAY_NHAPKHO>
+            <Prior>6</Prior>
+            <WrapText>
+              <Date>true</Date >
+            </WrapText>
+          </NGAY_NHAPKHO>
+          <NGAY_HACHTOAN>
+            <Prior>7</Prior>
+            <WrapText>
+              <Date>true</Date >
+            </WrapText>
+          </NGAY_HACHTOAN>
+          <GIATRI>
+            <Prior>8</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </GIATRI>
+          <TEN_CHINHANH>
+            <Prior>9</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </TEN_CHINHANH>
+          <GHI_CHU>
+            <Prior>10</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </GHI_CHU>
+        </Fields>
+      </FieldExcel>
+    </CCLD_BC08_4>
+  <CCLD_BC08_5>
+    <ParameterExcel>
+      <A2>
+        <Merge>
+          <MergeRanges>A2:D2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <A3>
+        <Merge>
+          <MergeRanges>A3:J3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A4>
+        <Merge>
+          <MergeRanges>A4:J4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+
+      <A5>
+        <Merge >
+          <MergeRanges>A5:J5</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A5>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>8</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+            <Prior>0</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </STT>
+          <MA_NHOM_CCLD_1>
+            <Prior>1</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </MA_NHOM_CCLD_1>
+          <MA_NHOM_CCLD_2>
+            <Prior>2</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </MA_NHOM_CCLD_2>
+        <MA_CCLD>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </MA_CCLD>
+        <SERIAL_NO>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </SERIAL_NO>
+        <TEN_CCLD>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_CCLD>
+        <NGAYNHAP_KHO>
+          <Prior>6</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAYNHAP_KHO>
+        <NGAYXUAT_KHO>
+          <Prior>7</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAYXUAT_KHO>
+        <NGAY_HACH_TOAN>
+          <Prior>8</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAY_HACH_TOAN>
+       
+        
+        <GIATRI>
+          <Prior>9</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </GIATRI>
+        <MA_CHINHANH>
+          <Prior>10</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </MA_CHINHANH>
+        <MA_DVSD>
+          <Prior>11</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </MA_DVSD>
+        <GHI_CHU>
+          <Prior>12</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GHI_CHU>
+      </Fields>
+    </FieldExcel>
+  </CCLD_BC08_5>
+
+
+  <CCLD_BC01>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:J3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+
+      <A4>
+        <Merge >
+          <MergeRanges>A4:J4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <J1>
+        <Merge >
+          <MergeRanges>J1:J1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </J1>
+      <J2>
+        <Merge >
+          <MergeRanges>J2:J2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </J2>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+
+        <MA_SO_TAI_SAN>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </MA_SO_TAI_SAN>
+
+        <TEN_TAI_SAN>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_TAI_SAN>
+        <CHI_NHANH>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </CHI_NHANH>
+        <PGD_PHONG_BAN>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </PGD_PHONG_BAN>
+        <NGUYEN_GIA>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </NGUYEN_GIA>
+        <THANG_SU_DUNG>
+          <Prior>6</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </THANG_SU_DUNG>
+        <HIEN_TRANG>
+          <Prior>7</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </HIEN_TRANG>
+        <NGUOI_QUAN_LY>
+          <Prior>8</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NGUOI_QUAN_LY>
+
+        <GHI_CHU>
+          <Prior>9</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GHI_CHU>
+      </Fields>
+    </FieldExcel>
+  </CCLD_BC01>
+
+
+  <CCLD_BC02>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:L3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+
+      <A4>
+        <Merge >
+          <MergeRanges>A4:L4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <L1>
+        <Merge >
+          <MergeRanges>L1:L1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </L1>
+      <L2>
+        <Merge >
+          <MergeRanges>L2:L2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </L2>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+
+        <MA_SO_TAI_SAN>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </MA_SO_TAI_SAN>
+
+        <TEN_TAI_SAN>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_TAI_SAN>
+        <CHI_NHANH>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </CHI_NHANH>
+        <PGD_PHONG_BAN>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </PGD_PHONG_BAN>
+        <NGUYEN_GIA>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </NGUYEN_GIA>
+        <GT_THU_HOI_TL>
+          <Prior>6</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </GT_THU_HOI_TL>
+        <NGAY_SU_DUNG>
+          <Prior>7</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAY_SU_DUNG>
+        <HIEN_TRANG>
+          <Prior>8</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </HIEN_TRANG>
+
+        <NGUYEN_NHAN_TL>
+          <Prior>9</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NGUYEN_NHAN_TL>
+
+        <DOI_TUONG_TL>
+          <Prior>10</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DOI_TUONG_TL>
+
+        <GHI_CHU>
+          <Prior>11</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GHI_CHU>
+      </Fields>
+    </FieldExcel>
+  </CCLD_BC02>
+
+  
+   <TSCD_BC06_1>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:W3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:W4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <W1>
+        <Merge >
+          <MergeRanges>W1:W1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </W1>
+      <W2>
+        <Merge >
+          <MergeRanges>W2:W2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </W2>
+     
+    </ParameterExcel>
+   
+   <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <NHOM_TS>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_TS>
+        <NHOM_LV2>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_LV2>
+        <NHOM_LV3>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_LV3>
+        <NHOM_LV4>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_LV4>
+        <NGUYEN_GIA_DAU_KY>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </NGUYEN_GIA_DAU_KY>
+        <KH_LUY_KE_DAU_KY>
+          <Prior>6</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </KH_LUY_KE_DAU_KY>
+        <GT_CON_LAI_DAU_KY>
+          <Prior>7</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </GT_CON_LAI_DAU_KY>
+        <NGUYEN_GIA_PS_TANG_TRONG_KY>
+          <Prior>8</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </NGUYEN_GIA_PS_TANG_TRONG_KY>
+        
+          <TANG_TK_MUA_SAM_TSCD_TRONG_KY>
+          <Prior>9</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </TANG_TK_MUA_SAM_TSCD_TRONG_KY>
+        
+            <TANG_TK_CP_CONG_TRINH_TRONG_KY>
+          <Prior>10</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </TANG_TK_CP_CONG_TRINH_TRONG_KY>
+        <TANG_TK_SUA_CHUA_TSCD_TRONG_KY>
+          <Prior>11</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </TANG_TK_SUA_CHUA_TSCD_TRONG_KY>
+        <TANG_MUA_MOI_TRONG_KY_TRONG_KY>
+            <Prior>12</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </TANG_MUA_MOI_TRONG_KY_TRONG_KY>
+        <TANG_NANG_CAP_LD_TRONG_KY>
+            <Prior>13</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </TANG_NANG_CAP_LD_TRONG_KY>
+        <TANG_KHAC_TRONG_KY>
+            <Prior>14</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </TANG_KHAC_TRONG_KY>
+        <GT_HAO_MON_TRONG_KY>
+            <Prior>15</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </GT_HAO_MON_TRONG_KY>
+      <NGUYEN_GIA_PS_GIAM_TRONG_KY>
+            <Prior>16</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </NGUYEN_GIA_PS_GIAM_TRONG_KY>
+            <NGUYEN_GIA_PS_GIAM_TL>
+            <Prior>17</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </NGUYEN_GIA_PS_GIAM_TL>
+            <NGUYEN_GIA_PS_GIAM_DO_DIEU_CHINH>
+            <Prior>18</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </NGUYEN_GIA_PS_GIAM_DO_DIEU_CHINH>
+            <KH_LUY_KE_GIAM_TRONG_KY>
+            <Prior>19</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </KH_LUY_KE_GIAM_TRONG_KY>
+            <NGUYEN_GIA_CUOI_KY>
+            <Prior>20</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </NGUYEN_GIA_CUOI_KY>
+            <KH_LUY_KE_CUOI_KY>
+            <Prior>21</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </KH_LUY_KE_CUOI_KY>
+            <GT_CON_LAI_CUOI_KY>
+            <Prior>22</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </GT_CON_LAI_CUOI_KY>
+            
+      </Fields>
+    </FieldExcel>
+  </TSCD_BC06_1>
+    
+  <TSCD_BC06>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:O3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:O4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <M1>
+        <Merge >
+          <MergeRanges>M1:M1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </M1>
+      <M2>
+        <Merge >
+          <MergeRanges>M2:M2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </M2>
+     
+    </ParameterExcel>
+   
+   <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <NHOM_TS>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_TS>
+        <NHOM_LV2>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_LV2>        
+        <NGUYEN_GIA_DAU_KY>
+          <Prior>3</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </NGUYEN_GIA_DAU_KY>
+        <KH_LUY_KE_DAU_KY>
+          <Prior>4</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </KH_LUY_KE_DAU_KY>
+        <GT_CON_LAI_DAU_KY>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </GT_CON_LAI_DAU_KY>
+        <NGUYEN_GIA_PS_TANG_TRONG_KY>
+          <Prior>6</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </NGUYEN_GIA_PS_TANG_TRONG_KY>
+        <KH_LUY_KE_TANG_TRONG_KY>
+          <Prior>7</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </KH_LUY_KE_TANG_TRONG_KY>
+        <NGUYEN_GIA_PS_GIAM_TRONG_KY>
+          <Prior>8</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </NGUYEN_GIA_PS_GIAM_TRONG_KY>
+        <KH_LUY_KE_GIAM_TRONG_KY>
+            <Prior>9</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </KH_LUY_KE_GIAM_TRONG_KY>
+        <NGUYEN_GIA_CUOI_KY>
+            <Prior>10</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </NGUYEN_GIA_CUOI_KY>
+        <KH_LUY_KE_CUOI_KY>
+            <Prior>11</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </KH_LUY_KE_CUOI_KY>
+        <GT_CON_LAI_CUOI_KY>
+            <Prior>12</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </GT_CON_LAI_CUOI_KY>
+      </Fields>
+    </FieldExcel>
+  </TSCD_BC06>
+
+  <TSCD_BC09>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:F3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:F4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <F1>
+        <Merge >
+          <MergeRanges>F1:F1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </F1>
+      <F2>
+        <Merge >
+          <MergeRanges>F2:F2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </F2>
+
+    </ParameterExcel>
+
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <CHITIEU>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </CHITIEU>
+        <MUA_SAM_TSCD>
+          <Prior>2</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </MUA_SAM_TSCD>
+        <CP_CONG_TRINH>
+          <Prior>3</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </CP_CONG_TRINH>
+        <SUA_CHUA_TSCD>
+          <Prior>4</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </SUA_CHUA_TSCD>
+        <TONG_CONG>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+          </TONG_CONG>
+
+        </Fields>
+    </FieldExcel>
+  </TSCD_BC09>
+  
+  <TSCD_BC07>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:F3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:F4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <F1>
+        <Merge >
+          <MergeRanges>F1:F1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </F1>
+      <F2>
+        <Merge >
+          <MergeRanges>F2:F2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </F2>
+
+    </ParameterExcel>
+
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <NHOM_TS>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_TS>
+        <NHOM_TS2>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_TS2>
+      
+        <NGUYEN_GIA>
+          <Prior>3</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+         </NGUYEN_GIA>
+        <KH_LUY_KE>
+          <Prior>4</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+         </KH_LUY_KE>
+       <GIA_TRI_CL>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </GIA_TRI_CL>
+
+        </Fields>
+    </FieldExcel>
+  </TSCD_BC07>
+  
+  <TSCD_BC17>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:M3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:M4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <M1>
+        <Merge >
+          <MergeRanges>M1:M1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </M1>
+      <M2>
+        <Merge >
+          <MergeRanges>M2:M2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </M2>
+
+    </ParameterExcel>
+
+    <FieldExcel>
+      <StartPoint>
+        <Row>8</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <NHOMTS>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOMTS>
+        <NHOM_LV2>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_LV2>
+        <NHOM_LV3>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_LV3>
+        <NHOM_LV4>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_LV4>
+        <MATS>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+         </MATS>
+        <TENTS>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+         </TENTS>
+       <NGUYENGIA>
+          <Prior>7</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </NGUYENGIA>
+          <NGAY_TL>
+          <Prior>8</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAY_TL>
+       <KHLK_NGAY_TL>
+          <Prior>9</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </KHLK_NGAY_TL>
+        <GTCL_NGAY_TL>
+        <Prior>10</Prior>
+        <WrapText>
+          <Number>true</Number >
+        </WrapText>
+      </GTCL_NGAY_TL>
+        <GT_TL>
+          <Prior>11</Prior>
+        <WrapText>
+          <Number>true</Number >
+        </WrapText>
+        </GT_TL>
+          <LAI_LO>
+          <Prior>12</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </LAI_LO>
+         <BUY_COMPANY_ID>
+          <Prior>13</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </BUY_COMPANY_ID>
+
+        </Fields>
+    </FieldExcel>
+  </TSCD_BC17>
+  
+  
+  <TSCD_BC01>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:P3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:P4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <P1>
+        <Merge >
+          <MergeRanges>P1:P1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </P1>
+      <P2>
+        <Merge >
+          <MergeRanges>P2:P2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </P2>
+
+    </ParameterExcel>
+
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <NHOMTS>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOMTS>
+        <NHOMTSLV2>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOMTSLV2>
+        <NHOMTSLV3>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOMTSLV3>
+        <NHOMTSLV4>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOMTSLV4>
+        <MASO_TS>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+         </MASO_TS>
+        <TEN_TS>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+         </TEN_TS>
+       <NGAY_NHAP>
+          <Prior>7</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAY_NHAP>
+          <TEN_CN>
+          <Prior>8</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_CN>
+       <GT_KHAU_HAO>
+          <Prior>9</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </GT_KHAU_HAO>
+          <NGUYEN_GIA>
+          <Prior>10</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </NGUYEN_GIA>
+        <TL_KHAU_HAO>
+          <Prior>11</Prior>
+          <WrapText>
+            <FLOAT>true</FLOAT >
+          </WrapText>
+        </TL_KHAU_HAO>
+         <NGAY_MO>
+          <Prior>12</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAY_MO>
+        <NGAY_HET_HAN_SK>
+          <Prior>13</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAY_HET_HAN_SK>
+        
+       <KHAU_HAO_LUY_KE>
+          <Prior>14</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </KHAU_HAO_LUY_KE>
+        
+       <GHI_CHU>
+          <Prior>15</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GHI_CHU>
+
+        </Fields>
+    </FieldExcel>
+  </TSCD_BC01>
+    
+  <TSCD_BC01_1>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:N3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:N4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <N1>
+        <Merge >
+          <MergeRanges>N1:N1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </N1>
+      <N2>
+        <Merge >
+          <MergeRanges>N2:N2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </N2>
+
+    </ParameterExcel>
+
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <NHOMTS>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOMTS>
+        <NHOMTSLV2>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOMTSLV2>
+        <NHOMTSLV3>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOMTSLV3>
+        <NHOMTSLV4>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOMTSLV4>
+        <MA_TS>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+         </MA_TS>
+        <TEN_TS>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+         </TEN_TS>
+       <NGAY_NHAP>
+          <Prior>7</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAY_NHAP>
+          <NGUYEN_GIA>
+          <Prior>8</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </NGUYEN_GIA>
+       <TL_KHAU_HAO>
+          <Prior>9</Prior>
+          <WrapText>
+            <FLOAT>true</FLOAT >
+          </WrapText>
+        </TL_KHAU_HAO>
+          <KHLK>
+          <Prior>10</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </KHLK>
+        <GTCL>
+          <Prior>11</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </GTCL>
+         <DVSD>
+          <Prior>12</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DVSD>
+           <NSD>
+          <Prior>13</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NSD>
+
+        </Fields>
+    </FieldExcel>
+  </TSCD_BC01_1>
+    
+    <!--Ke hoach sua chua Nam-daong-20-03-15-->
+  <TSCD_BC08>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:T3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <S1>
+        <Merge >
+          <MergeRanges>S1:S1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </S1>
+      <S2>
+        <Merge >
+          <MergeRanges>S2:S2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </S2>
+      
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+
+        <NHOMTS_NAME>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOMTS_NAME>
+
+        <NHOMTS2_NAME>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOMTS2_NAME>
+        <NHOMTS3_NAME>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOMTS3_NAME>
+        <NHOMTS4_NAME>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOMTS4_NAME>
+        <MS_TS>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </MS_TS>
+        <NGAYNHAP>
+          <Prior>6</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAYNHAP>
+
+        <NGAY_DIEU_CHINH>
+          <Prior>7</Prior>
+          <WrapText>
+            <Date>true</Date>
+          </WrapText>
+        </NGAY_DIEU_CHINH>
+        <NGAYTLY>
+          <Prior>8</Prior>
+          <WrapText>
+            <Date>true</Date>
+          </WrapText>
+        </NGAYTLY>
+        <CN>
+          <Prior>9</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </CN>
+        <PGD>
+          <Prior>10</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </PGD>
+
+        <TEN_TS>
+            <Prior>11</Prior>
+            <WrapText>
+              <Text>true</Text>
+            </WrapText>
+          </TEN_TS>
+        
+        <NGUYEN_GIA>
+            <Prior>12</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </NGUYEN_GIA>
+        
+        <GT_TINH_KH>
+            <Prior>13</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </GT_TINH_KH>
+        
+        <TYLE_KH>
+            <Prior>14</Prior>
+            <WrapText>
+              <FLOAT>true</FLOAT>
+            </WrapText>
+          </TYLE_KH>
+        
+        <KH_LUY_KE>
+            <Prior>15</Prior>
+            <WrapText>
+              <Number>true</Number>
+            </WrapText>
+          </KH_LUY_KE>
+
+        <GTCL>
+            <Prior>16</Prior>
+           <WrapText>
+                <Number>true</Number>
+          </WrapText>
+       </GTCL>
+
+        <NGAY_BD_KH>
+          <Prior>17</Prior>
+          <WrapText>
+            <Date>true</Date>
+          </WrapText>
+        </NGAY_BD_KH>
+        
+        <NGAY_KT_KH>
+          <Prior>18</Prior>
+          <WrapText>
+            <Date>true</Date>
+          </WrapText>
+        </NGAY_KT_KH>
+        
+        <GHI_CHU>
+          <Prior>19</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </GHI_CHU>
+ 
+
+      </Fields>
+    </FieldExcel>
+  </TSCD_BC08>
+  
+  <TSCD_BC08_1>
+    <ParameterExcel>
+      <A2>
+        <Merge>
+          <MergeRanges>A2:C2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>      
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>      
+      <A4>
+        <Merge >
+          <MergeRanges>A4:L4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <V1>
+        <Merge >
+          <MergeRanges>V1:V1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </V1>
+      <V2>
+        <Merge >
+          <MergeRanges>V2:V2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </V2>
+      
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>8</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>false</Number >
+          </WrapText>
+        </STT>
+
+        <NHOMTS>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </NHOMTS>
+        
+        <NHOM_TS2>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </NHOM_TS2>
+        
+        <NHOM_TS3>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </NHOM_TS3>
+        
+        <NHOM_TS4>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </NHOM_TS4>
+        
+        <MS_TS>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </MS_TS>        
+        <TEN_TS>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </TEN_TS>        
+        <SERIAL_NO>
+          <Prior>7</Prior>
+          <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </SERIAL_NO>
+        <MA_CN>
+          <Prior>8</Prior>
+          <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </MA_CN>
+        <MA_PGD>
+          <Prior>9</Prior>
+          <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </MA_PGD>
+        <MANV>
+          <Prior>10</Prior>
+          <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </MANV>        
+        <NGAYNHAP>
+          <Prior>11</Prior>
+          <WrapText>
+            <Date>false</Date>
+          </WrapText>
+        </NGAYNHAP>
+        <NGAY_DIEU_CHINH>
+          <Prior>12</Prior>
+          <WrapText>
+            <Date>false</Date>
+          </WrapText>
+        </NGAY_DIEU_CHINH>
+        <NGAY_BD_KH>
+          <Prior>13</Prior>
+          <WrapText>
+            <Date>false</Date>
+          </WrapText>
+        </NGAY_BD_KH>
+        <NGAY_KT_KH>
+          <Prior>14</Prior>
+          <WrapText>
+            <Date>false</Date>
+          </WrapText>
+        </NGAY_KT_KH>
+        <BD_KH_CU>
+          <Prior>15</Prior>
+          <WrapText>
+            <Date>false</Date>
+          </WrapText>
+        </BD_KH_CU>
+        <KT_KH_CU>
+            <Prior>16</Prior>
+            <WrapText>
+              <Date>false</Date>
+            </WrapText>
+        </KT_KH_CU>
+        <GT_TINH_KH>
+            <Prior>17</Prior>
+            <WrapText>
+              <Number>false</Number>
+            </WrapText>
+        </GT_TINH_KH>
+        <TYLE_KH>
+            <Prior>18</Prior>
+            <WrapText>
+              <FLOAT>false</FLOAT>
+            </WrapText>
+        </TYLE_KH>
+        <NGUYEN_GIA>
+          <Prior>19</Prior>
+          <WrapText>
+            <Number>false</Number>
+          </WrapText>
+        </NGUYEN_GIA>        
+        <KH_LUY_KE>
+            <Prior>20</Prior>
+            <WrapText>
+              <Number>false</Number>
+            </WrapText>
+        </KH_LUY_KE>
+        <GTCL>
+            <Prior>21</Prior>
+           <WrapText>
+              <Number>false</Number>
+          </WrapText>
+       </GTCL>
+      <GHI_CHU>
+          <Prior>22</Prior>
+          <WrapText>
+            <Text>false</Text>
+          </WrapText>
+      </GHI_CHU>        
+      <GIA_TRI_KH_CU>
+        <Prior>23</Prior>
+        <WrapText>
+          <Number>false</Number>
+        </WrapText>
+       </GIA_TRI_KH_CU>      
+ 
+      </Fields>
+    </FieldExcel>
+  </TSCD_BC08_1>
+
+  <!--BAO CAO 6.3-->
+  <TSCD_BC08_2>
+    <ParameterExcel>
+      <A2>
+        <Merge>
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>    
+      <A4>
+        <Merge>
+          <MergeRanges>A4:R4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+
+      <A5>
+        <Merge >
+          <MergeRanges>A5:R5</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A5>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>8</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>  
+        </STT>
+        <NHOMTS>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>  
+        </NHOMTS>
+        <NHOM_TS2>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_TS2>
+        <NHOM_TS3>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_TS3>
+        <NHOM_TS4>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_TS4>
+        <MS_TS>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </MS_TS>
+        <TEN_TS>
+          <Prior>6</Prior>      
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </TEN_TS>
+        <MA_CN>
+          <Prior>7</Prior>          
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </MA_CN>
+        <MA_PGD>
+          <Prior>8</Prior>        
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </MA_PGD>
+        <MANV>
+          <Prior>9</Prior>          
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </MANV>
+        <NGAYNHAP>
+          <Prior>10</Prior>    
+         <WrapText>
+            <DATE>false</DATE>
+          </WrapText>
+        </NGAYNHAP>
+        <NGAY_DIEU_CHINH>
+            <Prior>11</Prior>    
+         <WrapText>
+            <DATE>false</DATE>
+          </WrapText>
+        </NGAY_DIEU_CHINH>
+        <NGAY_BD_KH>
+          <Prior>12</Prior>    
+         <WrapText>
+            <DATE>false</DATE>
+          </WrapText>
+        </NGAY_BD_KH>
+        <NGAY_KT_KH>
+          <Prior>13</Prior>    
+         <WrapText>
+            <DATE>false</DATE>
+          </WrapText>
+        </NGAY_KT_KH>
+        <BD_KH_CU>
+          <Prior>14</Prior>    
+         <WrapText>
+            <DATE>false</DATE>
+          </WrapText>
+        </BD_KH_CU>
+        <KT_KH_CU>
+          <Prior>15</Prior>    
+         <WrapText>
+            <DATE>false</DATE>
+          </WrapText>
+        </KT_KH_CU>   
+        <TY_LE_KHAU_HAO>
+          <Prior>16</Prior>    
+         <WrapText>
+            <FLOAT>true</FLOAT>
+          </WrapText>
+        </TY_LE_KHAU_HAO>
+        <NGUYEN_GIA_FROM>
+          <Prior>17</Prior>    
+         <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </NGUYEN_GIA_FROM>
+        <KHAU_HAO_LK_FROM>
+          <Prior>18</Prior>    
+         <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </KHAU_HAO_LK_FROM>
+        <GIA_TRI_CL_FROM>
+          <Prior>19</Prior>    
+         <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </GIA_TRI_CL_FROM>
+        <NGUYEN_GIA_PHAT_SINH_TANG>
+          <Prior>20</Prior>    
+         <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </NGUYEN_GIA_PHAT_SINH_TANG>
+        <KH_PHAT_SINH_TANG>
+          <Prior>21</Prior>    
+         <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </KH_PHAT_SINH_TANG>
+        <NGUYEN_GIA_PHAT_SINH_GIAM>
+          <Prior>22</Prior>    
+         <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </NGUYEN_GIA_PHAT_SINH_GIAM>
+        <KH_PHAT_SINH_GIAM>
+          <Prior>23</Prior>    
+         <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </KH_PHAT_SINH_GIAM>
+        <NGUYEN_GIA_TO>
+          <Prior>24</Prior>    
+         <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </NGUYEN_GIA_TO>
+        <KHAU_HAO_LK_TO>
+          <Prior>25</Prior>    
+         <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </KHAU_HAO_LK_TO>
+        <GIA_TRI_CL_TO>
+          <Prior>26</Prior>    
+         <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </GIA_TRI_CL_TO>        
+        <GHI_CHU>
+          <Prior>27</Prior>    
+         <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GHI_CHU>
+        <GIA_TRI_KH_CU>
+          <Prior>28</Prior>    
+         <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </GIA_TRI_KH_CU>
+        
+    </Fields>
+    </FieldExcel>
+  </TSCD_BC08_2>
+  
+  <TSCD_BC04>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:K3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:K4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <J1>
+        <Merge >
+          <MergeRanges>J1:J1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </J1>
+      <J2>
+        <Merge >
+          <MergeRanges>J2:J2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </J2>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+
+        <NHOM_TS>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_TS>
+
+        <MS_TS>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </MS_TS>
+        <SERIAL_NO>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </SERIAL_NO>
+        <TEN_TS>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_TS>
+        <NGUYEN_GIA>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </NGUYEN_GIA>
+        <THANG_SD>
+          <Prior>6</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </THANG_SD>
+        <HIEN_TRANG>
+          <Prior>7</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </HIEN_TRANG>
+
+        <CT_TS>
+          <Prior>8</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </CT_TS>
+        <DVSD>
+          <Prior>9</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </DVSD>
+        <GHI_CHU>
+          <Prior>10</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </GHI_CHU>
+       
+
+      </Fields>
+    </FieldExcel>
+  </TSCD_BC04>
+  
+   <TSCD_BC13>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:G3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+
+      <A4>
+        <Merge >
+          <MergeRanges>A4:G4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+     
+      <G1>
+        <Merge >
+          <MergeRanges>G1:G1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </G1>
+      <G2>
+        <Merge >
+          <MergeRanges>G2:G2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </G2>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+
+        <TEN_TS>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_TS>
+
+        <DVT>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DVT>
+        <DON_GIA>
+          <Prior>3</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </DON_GIA>
+        <SO_LUONG>
+          <Prior>4</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </SO_LUONG>
+        <THANH_TIEN>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </THANH_TIEN>
+        <GHI_CHU>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GHI_CHU>
+
+     
+      </Fields>
+    </FieldExcel>
+  </TSCD_BC13>
+
+  <TSCD_BC14>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:G3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+
+      <A4>
+        <Merge >
+          <MergeRanges>A4:G4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <G1>
+        <Merge >
+          <MergeRanges>G1:G1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </G1>
+      <G2>
+        <Merge >
+          <MergeRanges>G2:G2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </G2>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+
+        <TEN_TS>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_TS>
+
+        <DVT>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DVT>
+        <DON_GIA>
+          <Prior>3</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </DON_GIA>
+        <SO_LUONG>
+          <Prior>4</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </SO_LUONG>
+        <THANH_TIEN>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </THANH_TIEN>
+        <GHI_CHU>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GHI_CHU>
+
+
+      </Fields>
+    </FieldExcel>
+  </TSCD_BC14>
+
+  <TSCD_BC15>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:G3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+
+      <A4>
+        <Merge >
+          <MergeRanges>A4:G4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <G1>
+        <Merge >
+          <MergeRanges>G1:G1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </G1>
+      <G2>
+        <Merge >
+          <MergeRanges>G2:G2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </G2>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+
+        <TEN_TS>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_TS>
+
+        <DVT>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DVT>
+        <DON_GIA>
+          <Prior>3</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </DON_GIA>
+        <SO_LUONG>
+          <Prior>4</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </SO_LUONG>
+        <THANH_TIEN>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </THANH_TIEN>
+        <GHI_CHU>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GHI_CHU>
+
+
+      </Fields>
+    </FieldExcel>
+  </TSCD_BC15>
+
+  <!--Nhap kho-->
+  <TSCD_BC16A>
+    <ParameterExcel>
+      <A2>
+        <Merge>
+          <MergeRanges>A2:D2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <A3>
+        <Merge>
+          <MergeRanges>A3:J3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A4>
+        <Merge>
+          <MergeRanges>A4:I4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+
+      <A5>
+        <Merge >
+          <MergeRanges>A5:J5</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A5>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <CCDC>
+          <Prior>0</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </CCDC>
+        <SO_HOA_DON>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </SO_HOA_DON>
+        <NGAY_HOA_DON>
+          <Prior>2</Prior>
+          <WrapText>
+            <Date>true</Date>
+          </WrapText>
+        </NGAY_HOA_DON>
+        <DIEN_GIAI>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DIEN_GIAI>
+        
+        <SERIAL_NO>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </SERIAL_NO>
+        <DVT>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DVT>
+        <SL>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </SL>        
+        <DON_GIA>
+          <Prior>7</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DON_GIA>
+        <THANHTIEN>
+          <Prior>8</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </THANHTIEN>
+        <GHI_CHU>
+          <Prior>9</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GHI_CHU>
+
+    </Fields>
+    </FieldExcel>
+  </TSCD_BC16A>
+  
+  <!--Xuat kho-->
+  <TSCD_BC16B>
+    <ParameterExcel>
+      <A2>
+        <Merge>
+          <MergeRanges>A2:D2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>      
+      <A4>
+        <Merge>
+          <MergeRanges>A4:J4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <A5>
+        <Merge >
+          <MergeRanges>A5:J5</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A5>
+      <A6>
+        <Merge >
+          <MergeRanges>A6:J6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A6>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <CCDC>
+          <Prior>0</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </CCDC>
+       
+        <TEN_CCDC>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_CCDC>
+
+        <SERIAL_NO>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </SERIAL_NO>
+        <DVT>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DVT>
+        <SL>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </SL>
+        <DON_GIA>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DON_GIA>        
+        <THANH_TIEN>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </THANH_TIEN>        
+        <GHI_CHU>
+          <Prior>7</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GHI_CHU>
+    </Fields>
+    </FieldExcel>
+  </TSCD_BC16B>
+  
+  <!--BAO CAO 6.3-->
+   <TSCD_BC08_2>
+    <ParameterExcel>
+      <A2>
+        <Merge>
+          <MergeRanges>A2:D2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <A3>
+        <Merge>
+          <MergeRanges>A3:J3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A4>
+        <Merge>
+          <MergeRanges>A4:J4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+
+      <A5>
+        <Merge >
+          <MergeRanges>A5:J5</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A5>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>8</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>  
+        </STT>
+        <NHOMTS>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>  
+        </NHOMTS>
+        <NHOM_TS2>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_TS2>
+        <NHOM_TS3>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_TS3>
+        <NHOM_TS4>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_TS4>
+        <MS_TS>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </MS_TS>
+        <TEN_TS>
+          <Prior>6</Prior>      
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </TEN_TS>
+        <MA_CN>
+          <Prior>7</Prior>          
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </MA_CN>
+        <MA_PGD>
+          <Prior>8</Prior>        
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </MA_PGD>
+        <MANV>
+          <Prior>9</Prior>          
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </MANV>
+        <NGAYNHAP>
+          <Prior>10</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </NGAYNHAP>
+        <NGAY_DIEU_CHINH>
+            <Prior>11</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </NGAY_DIEU_CHINH>
+        <NGAY_BD_KH>
+          <Prior>12</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </NGAY_BD_KH>
+        <NGAY_KT_KH>
+          <Prior>13</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </NGAY_KT_KH>
+        <BD_KH_CU>
+          <Prior>14</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </BD_KH_CU>
+        <KT_KH_CU>
+          <Prior>15</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </KT_KH_CU>   
+        <TY_LE_KHAU_HAO>
+          <Prior>16</Prior>    
+         <WrapText>
+            <FLOAT>false</FLOAT >
+          </WrapText>
+        </TY_LE_KHAU_HAO>
+        <NGUYEN_GIA_FROM>
+          <Prior>17</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </NGUYEN_GIA_FROM>
+        <KHAU_HAO_LK_FROM>
+          <Prior>18</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </KHAU_HAO_LK_FROM>
+        <GIA_TRI_CL_FROM>
+          <Prior>19</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </GIA_TRI_CL_FROM>
+        <NGUYEN_GIA_PHAT_SINH_TANG>
+          <Prior>20</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </NGUYEN_GIA_PHAT_SINH_TANG>
+        <KH_PHAT_SINH_TANG>
+          <Prior>21</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </KH_PHAT_SINH_TANG>
+        <NGUYEN_GIA_PHAT_SINH_GIAM>
+          <Prior>22</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </NGUYEN_GIA_PHAT_SINH_GIAM>
+        <KH_PHAT_SINH_GIAM>
+          <Prior>23</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </KH_PHAT_SINH_GIAM>
+        <NGUYEN_GIA_TO>
+          <Prior>24</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </NGUYEN_GIA_TO>
+        <KHAU_HAO_LK_TO>
+          <Prior>25</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </KHAU_HAO_LK_TO>
+        <GIA_TRI_CL_TO>
+          <Prior>26</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </GIA_TRI_CL_TO>        
+        <GHI_CHU>
+          <Prior>27</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </GHI_CHU>
+        <GIA_TRI_KH_CU>
+          <Prior>28</Prior>    
+         <WrapText>
+            <Text>false</Text >
+          </WrapText>
+        </GIA_TRI_KH_CU>
+        
+    </Fields>
+    </FieldExcel>
+  </TSCD_BC08_2>
+
+  <!--KIEM KE-->
+  <INVENTORY_BYID>
+    <ParameterExcel>
+      <A2>
+          <Merge>
+            <MergeRanges>A2:D2</MergeRanges >
+            <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+          </Merge >
+        </A2>
+      <A3>
+          <Merge>
+            <MergeRanges>A3:J3</MergeRanges >
+            <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+          </Merge >
+        </A3>
+        <A4>
+          <Merge>
+            <MergeRanges>A4:O4</MergeRanges >
+            <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+          </Merge >
+        </A4>
+
+        <A5>
+          <Merge >
+            <MergeRanges>A5:J5</MergeRanges >
+            <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+          </Merge >
+        </A5>
+	    </ParameterExcel>
+  <FieldExcel> 
+		    <StartPoint> 
+			    <Row>9</Row>  
+			    <Column>1</Column>
+        </StartPoint>
+        <Fields>
+          <STT>
+            <Prior>0</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </STT>
+          <LEVEL_2>
+            <Prior>1</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </LEVEL_2>          
+          <ASSET_CODE>
+            <Prior>2</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </ASSET_CODE>
+          <ASSET_NAME>
+            <Prior>3</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </ASSET_NAME>
+          <CHI_NHANH>
+            <Prior>4</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </CHI_NHANH>
+          <PGD_PHONG_BAN>
+            <Prior>5</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </PGD_PHONG_BAN>
+          <NGUYEN_GIA>
+            <Prior>6</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </NGUYEN_GIA>
+          <GTCL>
+            <Prior>7</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </GTCL>
+          <NGAY_SU_DUNG>
+            <Prior>8</Prior>
+            <WrapText>
+              <Date>true</Date >
+            </WrapText>
+          </NGAY_SU_DUNG>
+          <ASSET_SERIAL_NO>
+            <Prior>9</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </ASSET_SERIAL_NO>
+          <ASSET_DESC>
+            <Prior>10</Prior>
+            <WrapText>
+              <Text>false</Text>
+            </WrapText>
+          </ASSET_DESC>
+          <TINHTRANGKIEMKE>
+            <Prior>11</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </TINHTRANGKIEMKE>          
+          <HIEN_TRANG>
+            <Prior>12</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </HIEN_TRANG>   
+          <NKSC>
+            <Prior>13</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </NKSC>
+        <NQL>
+            <Prior>14</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </NQL>
+          <GHI_CHU>
+            <Prior>15</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </GHI_CHU>
+      
+      </Fields>
+      </FieldExcel>
+  </INVENTORY_BYID>
+
+  <!--DE XUAT THANH LY-->
+  <LIQREQ_BYID>
+    <ParameterExcel>
+      <A2>
+          <Merge>
+            <MergeRanges>A2:E2</MergeRanges >
+            <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+          </Merge >
+        </A2>
+      <A3>
+          <Merge>
+            <MergeRanges>A3:E2</MergeRanges >
+            <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+          </Merge >
+        </A3>        
+        
+	    </ParameterExcel>
+    <FieldExcel> 
+		    <StartPoint> 
+			    <Row>9</Row>  
+			    <Column>1</Column>
+        </StartPoint>
+        <Fields>
+          <STT>
+            <Prior>0</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </STT>
+          <LEVEL_2>
+            <Prior>1</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </LEVEL_2>          
+          <ASSET_CODE>
+            <Prior>2</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </ASSET_CODE>
+          <ASSET_NAME>
+            <Prior>3</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </ASSET_NAME>
+          <CHI_NHANH>
+            <Prior>4</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </CHI_NHANH>
+          <PGD_PHONG_BAN>
+            <Prior>5</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </PGD_PHONG_BAN>
+          <NGUYEN_GIA>
+            <Prior>6</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </NGUYEN_GIA>
+          <GTCL>
+            <Prior>7</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </GTCL>
+          
+          <GTTH>
+            <Prior>8</Prior>
+            <WrapText>
+              <Number>true</Number >
+            </WrapText>
+          </GTTH>
+          
+          <NGAY_SU_DUNG>
+            <Prior>9</Prior>
+            <WrapText>
+              <Date>true</Date >
+            </WrapText>
+          </NGAY_SU_DUNG>
+          <ASSET_SERIAL_NO>
+            <Prior>10</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </ASSET_SERIAL_NO>  
+          
+          <HIEN_TRANG>
+            <Prior>11</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </HIEN_TRANG>  
+          <NNTL>
+            <Prior>12</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </NNTL>
+
+         <DTNTL>
+            <Prior>13</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </DTNTL>
+          
+          <GHI_CHU>
+            <Prior>14</Prior>
+            <WrapText>
+              <Text>true</Text >
+            </WrapText>
+          </GHI_CHU>
+      </Fields>
+      </FieldExcel>
+  </LIQREQ_BYID>
+
+  <!--KIEM KE-->
+  <TSCD_BC05>
+    <ParameterExcel>      
+      <A3>
+        <Merge>
+          <MergeRanges>A3:G3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A6>
+        <Merge >
+          <MergeRanges>A6:P6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A6>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        
+        <MS_TS>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </MS_TS>
+       
+        <LA_TSCD>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </LA_TSCD>
+        <LA_CCLD>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </LA_CCLD>
+        <TEN_TS>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_TS>
+        
+         <SERIAL_NO>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </SERIAL_NO>
+        
+         <GHI_CHU>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GHI_CHU>
+        
+        <NGUYEN_GIA>
+          <Prior>7</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NGUYEN_GIA>
+        <GT_CON_LAI>
+          <Prior>8</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GT_CON_LAI>
+        <TG_SU_DUNG>
+          <Prior>9</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </TG_SU_DUNG>
+        <THUA_SAO_KE>
+          <Prior>10</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </THUA_SAO_KE>
+        <THIEU_SAO_KE>
+          <Prior>11</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </THIEU_SAO_KE>
+        <DVSD>
+          <Prior>12</Prior>
+          <WrapText>
+            <Text>false</Text>
+          </WrapText>
+        </DVSD>
+        <DV_SD_THUC_TE>
+          <Prior>13</Prior>
+          <WrapText>
+            <Text>false</Text>
+          </WrapText>
+        </DV_SD_THUC_TE>
+
+        <NGUYEN_NHAN>
+          <Prior>14</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NGUYEN_NHAN>
+        <DE_XUAT>
+          <Prior>15</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DE_XUAT>
+       
+
+      </Fields>
+    </FieldExcel>
+  </TSCD_BC05>
+  <!--TSCD_18_3_LUC-->
+  <TSCD_BC02>
+    <ParameterExcel>
+      <A1>
+        <Merge>
+          <MergeRanges>A1:E1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A1>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:E2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:O4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <NHOM_LV2>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_LV2>
+        <MS_TS>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </MS_TS>
+        <SERIAL_NO>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </SERIAL_NO>
+        <TEN_TS>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_TS>
+        <TEN_CN>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_CN>
+        <TEN_PGD>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_PGD>
+        <TLKH>
+          <Prior>7</Prior>
+          <WrapText>
+            <Percent>true</Percent>
+          </WrapText>
+        </TLKH>
+        <NGUYEN_GIA>
+          <Prior>8</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </NGUYEN_GIA>
+        <THANG_NAM_SD>
+          <Prior>9</Prior>
+          <WrapText>
+            <Date>true</Date>
+          </WrapText>
+        </THANG_NAM_SD>
+        <CT_TS>
+          <Prior>10</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </CT_TS>
+        <NHAT_KY_SUA_CHUA>
+          <Prior>11</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHAT_KY_SUA_CHUA>
+        
+        <NGUOI_QUAN_LY>
+          <Prior>12</Prior>
+          <WrapText>
+            <Text>false</Text>
+          </WrapText>
+        </NGUOI_QUAN_LY>
+        <GHI_CHU>
+          <Prior>13</Prior>
+          <WrapText>
+            <Text>false</Text>
+          </WrapText>
+        </GHI_CHU>
+      </Fields>
+    </FieldExcel>
+  </TSCD_BC02>
+  <TSCD_BC02_1>
+    <ParameterExcel>
+      <A1>
+        <Merge>
+          <MergeRanges>A1:E1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A1>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:E2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:M4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <NHOM_LV1>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NHOM_LV1>
+        <MS_TS>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </MS_TS>
+        <SERIAL_NO>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </SERIAL_NO>
+        <TEN_TS>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_TS>
+        <TEN_CN>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_CN>
+        <TEN_PGD>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_PGD>
+      
+        <NGUYEN_GIA>
+          <Prior>7</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </NGUYEN_GIA>
+        <GIATRI_CONLAI>
+          <Prior>8</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </GIATRI_CONLAI>
+        <THANG_SD>
+          <Prior>9</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </THANG_SD>
+     
+        <HIEN_TRANG>
+          <Prior>10</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </HIEN_TRANG>
+
+        <NGUOI_QUAN_LY>
+          <Prior>11</Prior>
+          <WrapText>
+            <Text>false</Text>
+          </WrapText>
+        </NGUOI_QUAN_LY>
+        <GHI_CHU>
+          <Prior>12</Prior>
+          <WrapText>
+            <Text>false</Text>
+          </WrapText>
+        </GHI_CHU>
+      </Fields>
+    </FieldExcel>
+  </TSCD_BC02_1>
+  <!--Bao cao xe 01_04 -->
+  <XE_BC05>
+    <ParameterExcel>
+      <A1>
+        <Merge>
+          <MergeRanges>A1:E1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A1>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:D2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <E2>
+        <Merge >
+          <MergeRanges>E2:F2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </E2>
+      <E3>
+        <Merge >
+          <MergeRanges>E3:F3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </E3>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:F4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>6</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <TENXE>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TENXE>
+        <BIENSO>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </BIENSO>
+        <LOAIBAOHIEM>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </LOAIBAOHIEM>
+        <CTYBAOHIEM>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </CTYBAOHIEM>
+        <NGAYBAOHIEM>
+          <Prior>5</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAYBAOHIEM>
+      </Fields>
+    </FieldExcel>
+  </XE_BC05>
+  <XE_BC01>
+    <ParameterExcel>
+      <A1>
+        <Merge>
+          <MergeRanges>A1:E1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A1>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:D2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <H1>
+        <Merge >
+          <MergeRanges>H1:I1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </H1>
+      <H2>
+        <Merge >
+          <MergeRanges>H2:I2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </H2>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:J4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <A5>
+        <Merge >
+          <MergeRanges>A5:J5</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A5>
+      
+      <A7>
+        <Merge >
+          <MergeRanges>A7:J7</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A7>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>10</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <REGION_NAME>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </REGION_NAME>
+        <BRANCH_NAME>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </BRANCH_NAME>
+        <BRANCH_CODE>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </BRANCH_CODE>
+
+        <SL_5_CHO>
+          <Prior>4</Prior>
+          <WrapText>
+            <number>true</number >
+          </WrapText>
+        </SL_5_CHO>
+        <SL_7_CHO>
+          <Prior>5</Prior>
+          <WrapText>
+            <number>true</number >
+          </WrapText>
+        </SL_7_CHO>
+        <SL_CD>
+          <Prior>6</Prior>
+          <WrapText>
+            <number>true</number>
+          </WrapText>
+        </SL_CD>
+        <SL_16_CHO>
+          <Prior>7</Prior>
+          <WrapText>
+            <number>true</number >
+          </WrapText>
+        </SL_16_CHO >
+        <SL_KHAC>
+          <Prior>8</Prior>
+          <WrapText>
+            <number>true</number >
+          </WrapText>
+        </SL_KHAC>
+        <GHI_CHU>
+          <Prior>9</Prior>
+          <WrapText>
+            <text>true</text>
+          </WrapText>
+        </GHI_CHU>
+      </Fields>
+    </FieldExcel>
+  </XE_BC01>
+  <XE_BC02>
+    <ParameterExcel>
+      <A1>
+        <Merge>
+          <MergeRanges>A1:E1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A1>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:D2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <I1>
+        <Merge >
+          <MergeRanges>I1:J1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </I1>
+      <I2>
+        <Merge >
+          <MergeRanges>I2:J2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </I2>
+      <A5>
+        <Merge >
+          <MergeRanges>A5:K5</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A5>
+      <A7>
+        <Merge >
+          <MergeRanges>A7:K7</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A7>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>10</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </STT>
+        <TENKHUVUC>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TENKHUVUC>
+        <SGHCN>
+          <Prior>2</Prior>
+          <WrapText>
+            <number>true</number>
+          </WrapText>
+        </SGHCN>
+        <PGDTN>
+          <Prior>3</Prior>
+          <WrapText>
+            <number>true</number>
+          </WrapText>
+        </PGDTN>
+        <PGDTCN>
+          <Prior>4</Prior>
+          <WrapText>
+            <number>true</number>
+          </WrapText>
+        </PGDTCN>
+
+        <SL_5_CHO>
+          <Prior>5</Prior>
+          <WrapText>
+            <number>true</number >
+          </WrapText>
+        </SL_5_CHO>
+        <SL_7_CHO>
+          <Prior>6</Prior>
+          <WrapText>
+            <number>true</number >
+          </WrapText>
+        </SL_7_CHO>
+        <SL_CD>
+          <Prior>7</Prior>
+          <WrapText>
+            <number>true</number>
+          </WrapText>
+        </SL_CD>
+        <SL_16_CHO>
+          <Prior>8</Prior>
+          <WrapText>
+            <number>true</number>
+          </WrapText>
+        </SL_16_CHO >
+        <SL_KHAC>
+          <Prior>9</Prior>
+          <WrapText>
+            <number>true</number>
+          </WrapText>
+        </SL_KHAC>
+        <TONG_XE>
+          <Prior>10</Prior>
+          <WrapText>
+            <number>true</number>
+          </WrapText>
+        </TONG_XE>
+        <TILE>
+          <Prior>11</Prior>
+          <WrapText>
+            <number>FLOAT</number>
+          </WrapText>
+        </TILE>
+      </Fields>
+    </FieldExcel>
+  </XE_BC02>
+<XE_BC03>
+    <ParameterExcel>
+      <A1>
+        <Merge>
+          <MergeRanges>A1:E1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A1>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:D2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <N1>
+        <Merge >
+          <MergeRanges>N1:O1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </N1>
+      <N2>
+        <Merge >
+          <MergeRanges>N2:O2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </N2>
+      <A5>
+        <Merge >
+          <MergeRanges>A5:P5</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A5>
+     <A7>
+        <Merge >
+          <MergeRanges>A7:P7</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A7>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>10</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <REGION_NAME>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </REGION_NAME>
+        <SU_DUNG>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </SU_DUNG>
+        <BRANCH_CODE>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </BRANCH_CODE>
+        <PGD_TIEM_NANG>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </PGD_TIEM_NANG>
+        <MA_PGD>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </MA_PGD>
+        <ASSET_NAME>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </ASSET_NAME>
+        <N_PLATE>
+          <Prior>7</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </N_PLATE >
+        <SOCHO>
+          <Prior>8</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </SOCHO>
+        <ASSET_ID>
+          <Prior>9</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </ASSET_ID >
+        <GIA_TRI>
+          <Prior>10</Prior>
+          <WrapText>
+            <NUMBER>true</NUMBER >
+          </WrapText>
+        </GIA_TRI >
+        
+        <KH_THANG>
+          <Prior>11</Prior>
+          <WrapText>
+            <number>true</number>
+          </WrapText>
+        </KH_THANG >
+        <KH_LUY_KE>
+          <Prior>12</Prior>
+          <WrapText>
+            <number>true</number>
+          </WrapText>
+        </KH_LUY_KE >
+        <GIA_TRI_CL>
+          <Prior>13</Prior>
+          <WrapText>
+            <number>true</number>
+          </WrapText>
+        </GIA_TRI_CL>                
+        <THOI_GIAN>
+          <Prior>14</Prior>
+          <WrapText>
+            <DATE>true</DATE>
+          </WrapText>
+        </THOI_GIAN >
+        <GHI_CHU>
+          <Prior>15</Prior>
+          <WrapText>
+            <text>true</text>
+          </WrapText>
+        </GHI_CHU>
+      </Fields>
+    </FieldExcel>
+  </XE_BC03>
+ <XE_BC06>
+    <ParameterExcel>
+      <A1>
+        <Merge>
+          <MergeRanges>A1:E1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A1>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:D2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <E2>
+        <Merge >
+          <MergeRanges>E2:F2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </E2>
+      <E3>
+        <Merge >
+          <MergeRanges>E3:F3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </E3>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:F4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>6</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <TENXE>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TENXE>
+        <BIENSO>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </BIENSO>
+        <LOAIPHI>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </LOAIPHI>
+        <PHITHANHTOAN>
+          <Prior>4</Prior>
+          <WrapText>
+            <number>true</number>
+          </WrapText>
+        </PHITHANHTOAN>
+        <NGAYDENHAN>
+          <Prior>5</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAYDENHAN>
+      </Fields>
+    </FieldExcel>
+  </XE_BC06>
+ <XE_BC07>
+    <ParameterExcel>
+      <A1>
+        <Merge>
+          <MergeRanges>A1:E1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A1>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:D2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <E2>
+        <Merge >
+          <MergeRanges>E2:F2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </E2>
+      <E3>
+        <Merge >
+          <MergeRanges>E3:F3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </E3>
+      <A5>
+        <Merge >
+          <MergeRanges>A5:F5</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A5>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>7</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <TENXE>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TENXE>
+        <BIENSO>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </BIENSO>
+        <KV>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </KV>
+        <CN>
+          <Prior>4</Prior>
+          <WrapText>
+            <text>true</text>
+          </WrapText>
+        </CN>
+        <DENHANTHANHLY>
+          <Prior>5</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </DENHANTHANHLY>
+      </Fields>
+    </FieldExcel>
+  </XE_BC07>
+  <XE_BC08>
+    <ParameterExcel>
+      
+      <A2>
+        <Merge >
+          <MergeRanges>A2:D2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <I1>
+        <Merge >
+          <MergeRanges>I1:J1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </I1>
+      <I2>
+        <Merge >
+          <MergeRanges>I2:J2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </I2>
+      <A5>
+        <Merge >
+          <MergeRanges>A5:J5</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A5>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>8</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <NGAY_THANG_NAM>
+          <Prior>1</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAY_THANG_NAM>
+        <N_PLATE>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </N_PLATE>
+        <REGION_NAME>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </REGION_NAME>
+        <SOKM_CU>
+          <Prior>4</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </SOKM_CU>
+         <SOKM_MOi>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </SOKM_MOi>
+        <SOKM_SUDUNG>
+          <Prior>6</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </SOKM_SUDUNG>
+
+        <SOLIT_XANG>
+          <Prior>7</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </SOLIT_XANG >
+        <SOTIEN>
+          <Prior>8</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </SOTIEN>
+
+        <GHI_CHU>
+          <Prior>9</Prior>
+          <WrapText>
+            <text>true</text>
+          </WrapText>
+        </GHI_CHU>
+      </Fields>
+    </FieldExcel>
+  </XE_BC08>
+<XE_BC09>
+    <ParameterExcel>
+      <A1>
+        <Merge>
+          <MergeRanges>A1:E1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A1>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:D2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <E2>
+        <Merge >
+          <MergeRanges>E2:F2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </E2>
+      <E3>
+        <Merge >
+          <MergeRanges>E3:F3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </E3>
+      <A5>
+        <Merge >
+          <MergeRanges>A5:F5</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A5>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>7</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <TENXE>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TENXE>
+        <BIENSO>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </BIENSO>
+        <CTYDANGKIEM>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </CTYDANGKIEM>
+        <SOTHANGDK>
+          <Prior>4</Prior>
+          <WrapText>
+            <number>true</number>
+          </WrapText>
+        </SOTHANGDK>
+        <NGAYDANGKIEM>
+          <Prior>5</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAYDANGKIEM>
+        <NGAYDENHANDANGKIEM>
+          <Prior>6</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAYDENHANDANGKIEM>
+      </Fields>
+    </FieldExcel>
+  </XE_BC09>
+ <XE_BC04>
+    <ParameterExcel>
+      <A1>
+        <Merge>
+          <MergeRanges>A1:E1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A1>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:D2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <E2>
+        <Merge >
+          <MergeRanges>E2:F2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </E2>
+      <E3>
+        <Merge >
+          <MergeRanges>E3:F3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </E3>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:E4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>6</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <TENXE>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TENXE>
+        <BIENSO>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </BIENSO>
+        <LANBAOTRI>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </LANBAOTRI>       
+        <NGAYBAOTRI>
+          <Prior>4</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAYBAOTRI>
+      </Fields>
+    </FieldExcel>
+  </XE_BC04>
+
+  <TSCD_BC03>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:P3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <N1>
+        <Merge >
+          <MergeRanges>N1:N1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </N1>
+      <N2>
+        <Merge >
+          <MergeRanges>N2:N2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </N2>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <LEVEL_1_NAME>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </LEVEL_1_NAME>
+        <LEVEL_2_NAME>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </LEVEL_2_NAME>
+        <MS_TS>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </MS_TS>
+        <TEN_TS>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </TEN_TS>
+        <CN>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </CN>
+        <PGD>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </PGD>
+
+        <TLKH>
+          <Prior>7</Prior>
+          <WrapText>
+            <FLOAT>true</FLOAT>
+          </WrapText>
+        </TLKH>
+        <NGUYEN_GIA>
+          <Prior>8</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </NGUYEN_GIA>
+        <GT_CON_LAI>
+          <Prior>9</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </GT_CON_LAI>
+        
+         <GIA_TRI_THU_HOI_TL>
+          <Prior>10</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </GIA_TRI_THU_HOI_TL>
+        
+           <THANG_SD>
+          <Prior>11</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </THANG_SD>
+        
+        
+
+        <HIEN_TRANG>
+          <Prior>12</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </HIEN_TRANG>
+
+        <NGUYEN_NHAN_TL>
+          <Prior>13</Prior>
+          <WrapText>
+            <Text>false</Text>
+          </WrapText>
+        </NGUYEN_NHAN_TL>
+         <DV_NHAN_THANH_LY>
+          <Prior>14</Prior>
+          <WrapText>
+            <Text>false</Text>
+          </WrapText>
+        </DV_NHAN_THANH_LY>
+        <GHI_CHU>
+          <Prior>15</Prior>
+          <WrapText>
+            <Text>false</Text>
+          </WrapText>
+        </GHI_CHU>
+      </Fields>
+    </FieldExcel>
+  </TSCD_BC03>
+ <!--THeo doi ngan sach dau tu mua sam-daong-20-03-15-->
+<KH_BC01>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <H3>
+        <Merge >
+          <MergeRanges>H3:H3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </H3>
+     <K1>
+        <Merge >
+          <MergeRanges>K1:K1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </K1>
+    <K2>
+        <Merge >
+          <MergeRanges>K2:K2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </K2>
+    <E4>
+        <Merge >
+          <MergeRanges>E4:E4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </E4>
+    <G4>
+        <Merge >
+          <MergeRanges>G4:G4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </G4>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <NGAY_DUYET>
+          <Prior>0</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAY_DUYET>
+        <DON_VI>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DON_VI>
+        <DANH_MUC>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DANH_MUC>
+        <KH_NAM>
+          <Prior>3</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </KH_NAM>
+        <TRONG_KH>
+          <Prior>4</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </TRONG_KH>
+        <PHAN_TRAM_KH>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </PHAN_TRAM_KH>
+      
+        <NGOAI_KH>
+          <Prior>6</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </NGOAI_KH>
+        <THUC_CHI>
+          <Prior>7</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </THUC_CHI>
+        <PHAN_TRAM_THUC_CHI_NAM>
+          <Prior>8</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </PHAN_TRAM_THUC_CHI_NAM>
+     
+        <DU_THU_THANG>
+          <Prior>9</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DU_THU_THANG>
+
+      </Fields>
+    </FieldExcel>
+  </KH_BC01>
+ <!--Tong hop thuc hien ngan sach-daong-20-03-15-->
+<KH_BC02>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:I3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <I1>
+        <Merge >
+          <MergeRanges>I1:I1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </I1>
+     <I2>
+        <Merge >
+          <MergeRanges>I2:I2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </I2>
+    <E4>
+        <Merge >
+          <MergeRanges>E4:E4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </E4>
+    <E7>
+        <Merge >
+          <MergeRanges>E7:E7</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </E7>
+    <I7>
+        <Merge >
+          <MergeRanges>I7:I7</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </I7>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+         <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>  
+        </STT>
+        
+        <Unit>
+          <Prior>1</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </Unit>
+        
+        <Amort_Year>
+          <Prior>2</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </Amort_Year>
+        <In_Plan>
+          <Prior>3</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </In_Plan>
+        <Out_Plan>
+          <Prior>4</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </Out_Plan>
+        <Total_Approval>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </Total_Approval>
+        <Percent_Approval>
+          <Prior>6</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </Percent_Approval>
+      
+        <COST>
+          <Prior>7</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </COST>
+        <Percent_Cost>
+          <Prior>8</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </Percent_Cost>
+        
+      </Fields>
+    </FieldExcel>
+  </KH_BC02>
+
+<!--Tong hop thuc hien ngan sach-daong-20-03-15-->
+<KH_BC03>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:W3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <A4>
+        <Merge >
+          <MergeRanges>A4:D4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A4>
+      <U1>
+        <Merge >
+          <MergeRanges>U1:U1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </U1>
+     <U2>
+        <Merge >
+          <MergeRanges>U2:U2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </U2>
+    
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+         <NAM>
+          <Prior>0</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>  
+        </NAM>
+        
+        <QUY>
+          <Prior>1</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </QUY>
+        
+        <THANG>
+          <Prior>2</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </THANG>
+        
+        <DOC_DELIVERY_DT>
+          <Prior>3</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </DOC_DELIVERY_DT>
+        
+        <DOC_PAYAPP_DT>
+          <Prior>4</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </DOC_PAYAPP_DT>
+        
+        <INPUT_DT>
+          <Prior>5</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </INPUT_DT>
+        
+        <PO_CODE>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </PO_CODE>
+      
+        <BRANCH_NAME>
+          <Prior>7</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </BRANCH_NAME>
+        
+        <SUP_NAME>
+          <Prior>8</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </SUP_NAME>
+        
+         <GOODSTYPE_REAL_NAME>
+          <Prior>9</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </GOODSTYPE_REAL_NAME>
+        
+        <GD_NAME>
+          <Prior>10</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </GD_NAME>
+        
+       <QUANTITY>
+          <Prior>11</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+         </QUANTITY>
+        
+      <PRICE>
+          <Prior>12</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </PRICE>
+        
+        <TOTAL_AMT>
+          <Prior>13</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </TOTAL_AMT>
+        
+        <IS_DELIVERY>
+          <Prior>14</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </IS_DELIVERY>
+        
+        <DELIVERY_DT>
+          <Prior>15</Prior>
+          <WrapText>
+            <Date>true</Date>
+          </WrapText>
+        </DELIVERY_DT>
+        
+        <RECEIVE_INVOICE>
+          <Prior>16</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </RECEIVE_INVOICE>
+        
+      <INVOICENO>
+          <Prior>17</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </INVOICENO>
+        
+      <AMOUNT_PAID>
+          <Prior>18</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </AMOUNT_PAID>
+        
+      <PAID_DT>
+          <Prior>19</Prior>
+          <WrapText>
+            <Date>true</Date>
+          </WrapText>
+        </PAID_DT>
+        
+      <REMAIN_AMOUNT>
+          <Prior>20</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </REMAIN_AMOUNT>
+        
+        <CCLD>
+          <Prior>22</Prior>
+          <WrapText>
+            <Text>true</Text>
+          </WrapText>
+        </CCLD>
+
+      </Fields>
+    </FieldExcel>
+  </KH_BC03>
+
+  <!--Ke hoach sua chua Nam-daong-20-03-15-->
+  <KH_BC04>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:J3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <J1>
+        <Merge >
+          <MergeRanges>J1:J1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </J1>
+      <J2>
+        <Merge >
+          <MergeRanges>J2:J2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </J2>
+      <H9>
+        <Merge >
+          <MergeRanges>H9:H9</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </H9>
+      <I9>
+        <Merge >
+          <MergeRanges>I9:I9</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </I9>
+     
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>10</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+
+        <BRANCH_NAME>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </BRANCH_NAME>
+
+        <PLAN_NAME>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </PLAN_NAME>
+        <APPROVE_VALUE>
+          <Prior>3</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </APPROVE_VALUE>
+        <AMORT_TIME>
+          <Prior>4</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </AMORT_TIME>
+        <MONTH_OF_AMORT>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </MONTH_OF_AMORT>
+        <MONTH_AMORT_AMT>
+          <Prior>6</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </MONTH_AMORT_AMT>
+
+        <AMORT_AMT_YEAR>
+          <Prior>7</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </AMORT_AMT_YEAR>
+        <NOTES>
+          <Prior>9</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </NOTES>
+
+      </Fields>
+    </FieldExcel>
+  </KH_BC04>
+
+  <KH_BC05>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:U3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <U1>
+        <Merge >
+          <MergeRanges>U1:U1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </U1>
+      <U2>
+        <Merge >
+          <MergeRanges>U2:U2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </U2>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+
+        <BRANCH_NAME>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </BRANCH_NAME>
+
+        <GD_NAME>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GD_NAME>
+        <UNIT_NAME>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </UNIT_NAME>
+        <PRICE>
+          <Prior>4</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </PRICE>
+        <M1>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </M1>
+        <M2>
+          <Prior>6</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </M2>
+        <M3>
+          <Prior>7</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </M3>
+        <M4>
+          <Prior>8</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </M4>
+        <M5>
+          <Prior>9</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </M5>
+        <M6>
+          <Prior>10</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </M6>
+        <M7>
+          <Prior>11</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </M7>
+        <M8>
+          <Prior>12</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </M8>
+        <M9>
+          <Prior>13</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </M9>
+        <M10>
+          <Prior>14</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </M10>
+        <M11>
+          <Prior>15</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </M11>
+        <M12>
+          <Prior>16</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </M12>
+
+        <RATE_AMORT>
+          <Prior>19</Prior>
+          <WrapText>
+            <Percent>true</Percent >
+          </WrapText>
+        </RATE_AMORT>
+
+
+
+      </Fields>
+    </FieldExcel>
+  </KH_BC05>
+
+  <KH_BC08>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      <A3>
+        <Merge >
+          <MergeRanges>A3:G3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+      <G1>
+        <Merge >
+          <MergeRanges>G1:G1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </G1>
+      <G2>
+        <Merge >
+          <MergeRanges>G2:G2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </G2>
+      <D4>
+        <Merge >
+          <MergeRanges>D4:D4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </D4>
+      <F4>
+        <Merge >
+          <MergeRanges>F4:F4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </F4>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+
+        <NGAYNHAN_TT>
+          <Prior>1</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAYNHAN_TT>
+
+        <NGAYDUYET_TT>
+          <Prior>2</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </NGAYDUYET_TT>
+        <DONVI>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DONVI>
+        <NOIDUNG>
+          <Prior>4</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NOIDUNG>
+        <SOTIEN>
+          <Prior>5</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </SOTIEN>
+        <GHICHU>
+          <Prior>6</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GHICHU>
+  
+      </Fields>
+    </FieldExcel>
+  </KH_BC08>
+
+  <KH_BC09>
+    <ParameterExcel>
+      <B2>
+        <Merge>
+          <MergeRanges>B2:B2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B2>
+      <A2>
+        <Merge >
+          <MergeRanges>A2:A2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A2>
+      <B6>
+        <Merge >
+          <MergeRanges>B6:B6</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </B6>
+      
+      <L1>
+        <Merge >
+          <MergeRanges>L1:L1</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </L1>
+      <L2>
+        <Merge >
+          <MergeRanges>L2:L2</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </L2>
+      <D4>
+        <Merge >
+          <MergeRanges>D4:D4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </D4>
+      <F4>
+        <Merge >
+          <MergeRanges>F4:F4</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </F4>
+
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>9</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+
+        <DVCC>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </DVCC>
+
+        <NOIDUNGHD>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NOIDUNGHD>
+        <SOHD>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </SOHD>
+        <THOIGIANKY>
+          <Prior>4</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </THOIGIANKY>
+     
+        <SOLUONGTHIETBI>
+          <Prior>6</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </SOLUONGTHIETBI>
+        <SOLUONGDAMUA>
+          <Prior>7</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </SOLUONGDAMUA>
+        <DONGIA>
+          <Prior>8</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </DONGIA>
+        <THANHTIEN>
+          <Prior>9</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </THANHTIEN>
+        <THANHTIENVAT>
+          <Prior>10</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </THANHTIENVAT>
+        <GHICHU>
+          <Prior>11</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GHICHU>
+
+      </Fields>
+    </FieldExcel>
+  </KH_BC09>
+
+
+ <ASSET_LIST>
+    <ParameterExcel>      
+      <A3>
+        <Merge>
+          <MergeRanges>A3:G3</MergeRanges >
+          <HorizontalAlignment >CenterContinuous</HorizontalAlignment>
+        </Merge >
+      </A3>
+    </ParameterExcel>
+    <FieldExcel>
+      <StartPoint>
+        <Row>5</Row>
+        <Column>1</Column>
+      </StartPoint>
+      <Fields>
+        <STT>
+          <Prior>0</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </STT>
+        <ASSET_ID>
+          <Prior>1</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </ASSET_ID>
+        <ASSET_NAME>
+          <Prior>2</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </ASSET_NAME>
+        <GROUP_NAME>
+          <Prior>3</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </GROUP_NAME>
+        <BUY_DATE>
+          <Prior>4</Prior>
+          <WrapText>
+            <Date>true</Date >
+          </WrapText>
+        </BUY_DATE>
+        <NGHIEP_VU>
+          <Prior>5</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </NGHIEP_VU>
+        <BUY_PRICE>
+          <Prior>6</Prior>
+          <WrapText>
+            <number>true</number >
+          </WrapText>
+        </BUY_PRICE>
+        <AMORT_AMT>
+          <Prior>7</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </AMORT_AMT>
+        <AMORT_RATE>
+          <Prior>8</Prior>
+          <WrapText>
+            <Number>true</Number >
+          </WrapText>
+        </AMORT_RATE>
+        <AMORT_START_DATE>
+          <Prior>9</Prior>
+          <WrapText>
+            <Date>true</Date>
+          </WrapText>
+        </AMORT_START_DATE
+>
+        <AMORT_END_DATE>
+          <Prior>10</Prior>
+          <WrapText>
+            <Date>true</Date>
+          </WrapText>
+        </AMORT_END_DATE>
+        <CHI_NHANH>
+          <Prior>11</Prior>
+          <WrapText>
+            <Text>false</Text>
+          </WrapText>
+        </CHI_NHANH>
+        <PGD>
+          <Prior>12</Prior>
+          <WrapText>
+            <Text>false</Text>
+          </WrapText>
+        </PGD>
+        <EMP_NAME>
+          <Prior>13</Prior>
+          <WrapText>
+            <Text>true</Text >
+          </WrapText>
+        </EMP_NAME>
+        <AMORTIZED_MONTH>
+          <Prior>14</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </AMORTIZED_MONTH>
+        <FIRST_AMORT_AMT>
+          <Prior>15</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </FIRST_AMORT_AMT>
+        <AMORTIZED_AMT>
+          <Prior>16</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </AMORTIZED_AMT>
+        <GT_CON_LAI>
+          <Prior>17</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </GT_CON_LAI>
+        <REMAIN_AMORTIZED_AMT>
+          <Prior>18</Prior>
+          <WrapText>
+            <Number>true</Number>
+          </WrapText>
+        </REMAIN_AMORTIZED_AMT>
+      </Fields>
+    </FieldExcel>
+  </ASSET_LIST>
+</Template>

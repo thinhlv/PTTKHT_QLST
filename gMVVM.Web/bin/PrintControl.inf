@@ -1,0 +1,32 @@
+[version]
+    signature="$CHICAGO$"   
+    AdvancedINF=2.0   
+[Add.Code]
+    PrintControl.dll=PrintControl.dll
+    csprintdlg.dll=csprintdlg.dll
+    pvlocale-1-0.dll=pvlocale-1-0.dll	
+    xerces-c_2_7.dll=xerces-c_2_7.dll
+    msvcr80.dll=msvcr80.dll
+    Microsoft.VC80.CRT.manifest=Microsoft.VC80.CRT.manifest
+    LCIDTable.xml=LCIDTable.xml
+[PrintControl.dll]
+    file-win32-x86=thiscab   
+    CLSID={B7DA1CA9-1EF8-4831-868A-A767093EA685}
+    FileVersion=13,0,5,891
+    RegisterServer=yes 
+[pvlocale-1-0.dll]
+    file-win32-x86=thiscab  
+    FileVersion=13,0,5,891
+[csprintdlg.dll]
+    file-win32-x86=thiscab  
+    FileVersion=13,0,5,891
+[xerces-c_2_7.dll]
+    file-win32-x86=thiscab  
+    FileVersion=14,0,0,716
+[msvcr80.dll]
+    file-win32-x86=thiscab
+    FileVersion=8,0,50727,4053
+[Microsoft.VC80.CRT.manifest]
+    file-win32-x86=thiscab
+[LCIDTable.xml]
+    file-win32-x86=thiscab

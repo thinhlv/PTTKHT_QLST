@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="gMVVM.Views.Common.ToolHeader"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+    xmlns:local="clr-namespace:gMVVM.CommonClass"
+    xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+              xmlns:interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    mc:Ignorable="d" x:Name="RootItem">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid HorizontalAlignment="Right" FlowDirection="RightToLeft" Grid.RowSpan="2" Margin="0,0,20,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" MinWidth="160" ></ColumnDefinition>
+                <ColumnDefinition Width="Auto" MinWidth="54" ></ColumnDefinition>
+                <ColumnDefinition Width="Auto" MinWidth="54" ></ColumnDefinition>
+                <ColumnDefinition Width="Auto" MinWidth="54" ></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <!--local:imagebutton.Icon="/gMVVM;component/Data/Icons/88.png"-->
+            <toolkit:Expander x:Name="ToolLog" Header="{Binding Path=UserName, Mode=TwoWay}"  Foreground="White"  IsExpanded="False"  Style="{StaticResource ExpanderToolbarStyle1}" FlowDirection="LeftToRight" Grid.ColumnSpan="4"  d:LayoutOverrides="GridBox" VerticalAlignment="Top" Tag="{Binding Path=TimeLogin, Mode=TwoWay}" local:EyeCandy.Image="/gMVVM;component/Data/Icons/avatar2.jpg" >
+                <StackPanel Background="White" VerticalAlignment="Top" >
+                    <HyperlinkButton Content="{Binding Path=lblChangePass, Source={StaticResource currentCommonCulture}}" BorderThickness="0" HorizontalContentAlignment="Left" Style="{StaticResource HyperlinkButtonToolheaderStyle}" BorderBrush="#FFE9E9E9" Foreground="#FF4FB0D9" FontSize="12" Height="34" Margin="0" VerticalAlignment="Bottom"  Padding="15,0,0,0"/>
+                    <HyperlinkButton Content="{Binding Path=lblViewProfile, Source={StaticResource currentCommonCulture}}" BorderThickness="0" HorizontalContentAlignment="Left" Style="{StaticResource HyperlinkButtonToolheaderStyle}" BorderBrush="#FFE9E9E9" Foreground="#FF4FB0D9" FontSize="12" Height="34" Margin="0" VerticalAlignment="Bottom"  Padding="15,0,0,0">
+                        <interactivity:Interaction.Triggers>
+                            <interactivity:EventTrigger EventName="Click">
+                                <ei:CallMethodAction TargetObject="{Binding DataContext, ElementName=RootItem}"  MethodName="View_Profile"/>
+                            </interactivity:EventTrigger>
+                        </interactivity:Interaction.Triggers>
+                    </HyperlinkButton>
+
+                    <HyperlinkButton Content="{Binding Path=lblLogout, Source={StaticResource currentCommonCulture}}" BorderThickness="0" HorizontalContentAlignment="Center" Style="{StaticResource HyperlinkButtonToolheaderStyle}" BorderBrush="#FFE9E9E9" Foreground="#FF4FB0D9" FontSize="12" Height="34" Margin="0" VerticalAlignment="Bottom" Command="{Binding Path=CurrentCulture, Mode=TwoWay}" CommandParameter="LOGOUT" />
+                </StackPanel>
+            </toolkit:Expander>
+
+            <!--<toolkit:Expander  Margin="0,0,0,0"  FlowDirection="LeftToRight" Style="{StaticResource ExpanderToolbarStyle2}" Header="5" Foreground="White" Tag="5 Notifications" Grid.Column="1" Grid.ColumnSpan="4" VerticalAlignment="Top" local:EyeCandy.Image="/gMVVM;component/Data/Icons/22.png" local:imagebutton.Icon="/gMVVM;component/Data/Icons/88.png" BorderThickness="0" BorderBrush="#FF15B74E" >
+                <StackPanel Background="White" VerticalAlignment="Top">
+                              <TextBlock Text="Notifications 2" Foreground="Black"/>
+                    <TextBlock Text="Notifications 3" Foreground="Black" />
+                    <TextBlock Text="Notifications 4" Foreground="Black" />
+                    <TextBlock Text="Notifications 5" Foreground="Black" />
+                    <HyperlinkButton Content="See all" Grid.Row="1" BorderThickness="0" HorizontalContentAlignment="Center" Style="{StaticResource HyperlinkButtonToolheaderStyle}" BorderBrush="#FFE9E9E9" Foreground="#FF4FB0D9" FontSize="12" NavigateUri="/Views/Datagrid.xaml" TargetName="MainFrame" Height="34" Margin="0" VerticalAlignment="Bottom"  />
+
+                </StackPanel>
+            </toolkit:Expander>
+
+
+            <toolkit:Expander  Margin="0,0,0,0"  FlowDirection="LeftToRight" Style="{StaticResource ExpanderToolbarStyle2}" Header="3" Foreground="White" Tag="5 Notifications" Grid.Column="2" Grid.ColumnSpan="3" VerticalAlignment="Top" local:EyeCandy.Image="/gMVVM;component/Data/Icons/11.png" local:imagebutton.Icon="/gMVVM;component/Data/Icons/88.png" BorderBrush="#FFFE1010" BorderThickness="0">
+                <StackPanel Background="White" VerticalAlignment="Top">
+                    <TextBlock Text="aaaaaaaaa" Foreground="Black" />
+                    <TextBlock Text="aaaaaaaaa" Foreground="Black"/>
+                    <HyperlinkButton Content="See all" Grid.Row="1" BorderThickness="0" HorizontalContentAlignment="Center" Style="{StaticResource HyperlinkButtonToolheaderStyle}" BorderBrush="#FFE9E9E9" Foreground="#FF4FB0D9" FontSize="12" NavigateUri="/Views/Datagrid.xaml" TargetName="MainFrame" Height="34" Margin="0" VerticalAlignment="Bottom"  />
+
+                </StackPanel>
+            </toolkit:Expander>
+
+
+            <toolkit:Expander  Margin="0,0,0,0"  FlowDirection="LeftToRight" Style="{StaticResource ExpanderToolbarStyle2}" Header="4" Foreground="White" Tag="4 Message" Grid.Column="3" Grid.ColumnSpan="2" VerticalAlignment="Top" local:EyeCandy.Image="/gMVVM;component/Data/Icons/22.png" local:imagebutton.Icon="/Design;component/88.png" BorderThickness="0" BorderBrush="#FFFF702A">
+                <StackPanel Background="White" VerticalAlignment="Top">
+                    <TextBlock Text="Message 1" Foreground="Black" />
+                    <TextBlock Text="Message 2" Foreground="Black"/>
+                    <TextBlock Text="Message 3" Foreground="Black"/>
+                    <TextBlock Text="Message 4" Foreground="Black"/>
+                    <HyperlinkButton Content="See all" Grid.Row="1" BorderThickness="0" HorizontalContentAlignment="Center" Style="{StaticResource HyperlinkButtonToolheaderStyle}" BorderBrush="#FFE9E9E9" Foreground="#FF4FB0D9" FontSize="12" NavigateUri="/Views/Datagrid.xaml" TargetName="MainFrame" Height="34" Margin="0" VerticalAlignment="Bottom"  />
+                </StackPanel>
+            </toolkit:Expander>-->
+
+        </Grid>
+
+    </Grid>
+</UserControl>

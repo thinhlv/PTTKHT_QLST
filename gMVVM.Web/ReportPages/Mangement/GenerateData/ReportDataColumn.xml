@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ROOT is Report tag,
+  child is name of Report,
+    child has all datacolumn in store
+    value of datacolumn is the new name of datacolumn display report
+  -->
+<Report>
+ 
+  <TSCD_BC01>
+    <NHOMTS>Nhóm tài sản</NHOMTS>
+    <NHOMTSLV1>Nhóm tài sản LV1</NHOMTSLV1>
+    <NHOMTSLV2>Nhóm tài sản LV2</NHOMTSLV2>   
+    <NHOMTSLV3>Nhóm tài sản LV3</NHOMTSLV3>
+    <NHOMTSLV4>Nhóm tài sản LV4</NHOMTSLV4>
+    <GROUP_ID>Mã nhóm tài sản</GROUP_ID>
+    <GROUP_NAME>Nhóm tài sản Group</GROUP_NAME>
+    <NGAY_SAO_KE>Ngày sao kê</NGAY_SAO_KE>
+    <MASO_TS>Mã tài sản</MASO_TS>
+    <NGAY_NHAP>Ngày nhập</NGAY_NHAP>
+    <MA_CN>Mã chi nhánh</MA_CN>
+    <TEN_CN>Tên chi nhánh</TEN_CN>
+    <TEN_TS>Tên tài sản</TEN_TS>
+    <GT_KHAU_HAO>Giá trị khấu hao</GT_KHAU_HAO>
+    <NGUYEN_GIA>Nguyên giá</NGUYEN_GIA>
+    <TL_KHAU_HAO>Tỉ lệ khấu hao</TL_KHAU_HAO>
+    <NGAY_MO>Ngày mở</NGAY_MO>
+    <NGAY_HET_HAN_SK>Ngày hết hạn sao kê</NGAY_HET_HAN_SK>
+    <KHAU_HAO_LUY_KE>Khấu hao lũy kê</KHAU_HAO_LUY_KE>
+    <GIA_TRI_CON_LAI>Giá trị còn lại</GIA_TRI_CON_LAI>
+    <GHI_CHU>Ghi chú</GHI_CHU>
+  </TSCD_BC01>
+  
+  <TSCD_BC08_1>    
+    <NHOMTS>Mã nhóm LV1</NHOMTS>
+    <NHOM_TS2>Mã nhóm LV2</NHOM_TS2>
+    <NHOM_TS3>Mã nhóm LV3</NHOM_TS3>
+    <NHOM_TS4>Mã nhóm LV4</NHOM_TS4>
+    <MS_TS>Mã tài sản</MS_TS>
+    <TEN_TS>Tên tài sản</TEN_TS>
+    <MA_CN>Mã chi nhánh</MA_CN>
+    <MA_PGD>Mã PGD</MA_PGD>
+    <MANV>Mã NV</MANV>    
+    <NGAYNHAP>Ngày nhập TS</NGAYNHAP>
+    <NGAY_DIEU_CHINH>Ngày điều chỉnh</NGAY_DIEU_CHINH>
+    <NGAY_BD_KH>Ngày bắt đầu khấu hao</NGAY_BD_KH>
+    <NGAY_KT_KH>Ngày hết khấu hao</NGAY_KT_KH>
+    <KT_KH_CU>Ngày hết khấu hao cũ</KT_KH_CU>
+    <BD_KH_CU>Ngày bắt đầu khấu hao cũ</BD_KH_CU>
+    <GT_TINH_KH>Giá trị khấu hao</GT_TINH_KH>
+    <TYLE_KH>Tỉ lệ khấu hao</TYLE_KH> 
+    <NGUYEN_GIA>Nguyên giá</NGUYEN_GIA>
+    <KH_LUY_KE>Khấu hao lũy kế</KH_LUY_KE>
+    <GTCL>Giá trị còn lại</GTCL>
+    <GHI_CHU>Ghi chú</GHI_CHU>
+    <GIA_TRI_KH_CU>Giá trị khấu hao cũ</GIA_TRI_KH_CU>
+  </TSCD_BC08_1>
+
+  <TSCD_BC08_2>
+    <NHOMTS>Mã nhóm LV1</NHOMTS>
+    <NHOM_TS2>Mã nhóm LV2</NHOM_TS2>
+    <NHOM_TS3>Mã nhóm LV3</NHOM_TS3>
+    <NHOM_TS4>Mã nhóm LV4</NHOM_TS4>
+    <MS_TS>Mã tài sản</MS_TS>
+    <TEN_TS>Tên tài sản</TEN_TS>
+    <MA_CN>Mã chi nhánh</MA_CN>
+    <MA_PGD>Mã PGD</MA_PGD>
+    <MANV>Mã NV</MANV>
+    <NGAYNHAP>Ngày nhập TS</NGAYNHAP>
+    <NGAY_DIEU_CHINH>Ngày điều chỉnh</NGAY_DIEU_CHINH>
+    <NGAY_BD_KH>Ngày bắt đầu khấu hao</NGAY_BD_KH>
+    <NGAY_KT_KH>Ngày hết khấu hao</NGAY_KT_KH>
+    <KT_KH_CU>Ngày hết khấu hao cũ</KT_KH_CU>
+    <BD_KH_CU>Ngày bắt đầu khấu hao cũ</BD_KH_CU>
+    <GT_TINH_KH>Giá trị khấu hao</GT_TINH_KH>
+    <TYLE_KH>Tỉ lệ khấu hao</TYLE_KH>
+    <NGUYEN_GIA>Nguyên giá</NGUYEN_GIA>
+    <KH_LUY_KE>Khấu hao lũy kế</KH_LUY_KE>
+    <GTCL>Giá trị còn lại</GTCL>
+    <GHI_CHU>Ghi chú</GHI_CHU>
+    <NGUYEN_GIA_FROM>Nguyên giá đầu kỳ</NGUYEN_GIA_FROM>
+    <KHAU_HAO_LK_FROM>Khấu hao lũy kế đầu kỳ</KHAU_HAO_LK_FROM>
+    <GIA_TRI_CL_FROM>Giá trị còn lại đầu kỳ</GIA_TRI_CL_FROM>
+    <NGUYEN_GIA_PHAT_SINH_TANG>Nguyên giá phát sinh tăng</NGUYEN_GIA_PHAT_SINH_TANG>
+    <KH_PHAT_SINH_TANG>Khấu hao phát sinh tăng</KH_PHAT_SINH_TANG>
+    <NGUYEN_GIA_PHAT_SINH_GIAM>Nguyên giá phát sinh giảm</NGUYEN_GIA_PHAT_SINH_GIAM>
+    <KH_PHAT_SINH_GIAM>Khấu hao phát sinh giảm</KH_PHAT_SINH_GIAM>
+    <NGUYEN_GIA_TO>Nguyên giá cuối kỳ</NGUYEN_GIA_TO>
+    <KHAU_HAO_LK_TO>Khấu hao lũy kế cuối kỳ</KHAU_HAO_LK_TO>
+    <GIA_TRI_CL_TO>Giá trị còn lại cuối kỳ</GIA_TRI_CL_TO>
+    <GIA_TRI_KH_CU>Giá trị khấu hao cũ</GIA_TRI_KH_CU>
+    <TY_LE_KHAU_HAO>Tỷ lệ khấu hao</TY_LE_KHAU_HAO>
+  </TSCD_BC08_2>
+
+  <TSCD_BC06>
+    <NHOM_TS>Nhóm tài sản</NHOM_TS>
+    <NHOM_LV2>Nhóm TS cấp 2</NHOM_LV2>	
+    <NHOM_LV3>Nhóm TS cấp 3</NHOM_LV3>
+    <NHOM_LV4>Nhóm TS cấp 4</NHOM_LV4>
+    <MALOAITS>Loại tài sản</MALOAITS>
+    <NGUYEN_GIA_DAU_KY>Nguyên giá đầu kỳ</NGUYEN_GIA_DAU_KY>
+    <KH_LUY_KE_DAU_KY>Khấu hao lũy kế đầu kỳ</KH_LUY_KE_DAU_KY>
+    <GT_CON_LAI_DAU_KY>Giá trị còn lại đầu kỳ</GT_CON_LAI_DAU_KY>
+    <NGUYEN_GIA_PS_TANG_TRONG_KY>Nguyên giá tăng trong kỳ</NGUYEN_GIA_PS_TANG_TRONG_KY>
+    <TANG_TK_MUA_SAM_TSCD_TRONG_KY>Tăng TK mua sắm trong kỳ</TANG_TK_MUA_SAM_TSCD_TRONG_KY>
+    <TANG_TK_CP_CONG_TRINH_TRONG_KY>Tăng TK CTXD trong kỳ</TANG_TK_CP_CONG_TRINH_TRONG_KY>
+    <TANG_TK_SUA_CHUA_TSCD_TRONG_KY>Tăng Sửa chữa lớn trong kỳ</TANG_TK_SUA_CHUA_TSCD_TRONG_KY>
+    <TANG_MUA_MOI_TRONG_KY_TRONG_KY>Tăng mua mới trong kỳ</TANG_MUA_MOI_TRONG_KY_TRONG_KY>
+    <TANG_NANG_CAP_LD_TRONG_KY>Tăng nâng cấp LD trong kỳ</TANG_NANG_CAP_LD_TRONG_KY>
+    <TANG_KHAC_TRONG_KY>Tăng khác trong kỳ</TANG_KHAC_TRONG_KY>
+    <GT_HAO_MON_TRONG_KY>Giá trị hao mòn trong kỳ</GT_HAO_MON_TRONG_KY>
+    <KH_LUY_KE_TANG_TRONG_KY>Khấu hao lũy kế tăng trong kỳ</KH_LUY_KE_TANG_TRONG_KY>
+    <NGUYEN_GIA_PS_GIAM_TRONG_KY>Nguyên giá phát sinh giảm trong kỳ</NGUYEN_GIA_PS_GIAM_TRONG_KY>
+    <NGUYEN_GIA_PS_GIAM_TL>Nguyên giá PS giảm TL</NGUYEN_GIA_PS_GIAM_TL>
+    <NGUYEN_GIA_PS_GIAM_DO_DIEU_CHINH>Nguyên giá phát sinh giảm do điều chỉnh</NGUYEN_GIA_PS_GIAM_DO_DIEU_CHINH>
+    <KH_LUY_KE_GIAM_TRONG_KY>Khấu hao lũy kế giảm trong kỳ</KH_LUY_KE_GIAM_TRONG_KY>
+    <GIAM_DO_TL_TRONG_KY>Giảm do TL trong kỳ</GIAM_DO_TL_TRONG_KY>
+    <GIAM_DO_DIEU_CHINH_TRONG_KY>Giảm do điều chỉnh trong kỳ</GIAM_DO_DIEU_CHINH_TRONG_KY>
+    <NGUYEN_GIA_CUOI_KY>Nguyên giá cuối kỳ</NGUYEN_GIA_CUOI_KY>
+    <KH_LUY_KE_CUOI_KY>Khấu hao lũy kế cuối kỳ</KH_LUY_KE_CUOI_KY>
+    <GT_CON_LAI_CUOI_KY>Giá trị còn lại cuối kỳ</GT_CON_LAI_CUOI_KY>
+  </TSCD_BC06>
+  
+</Report>

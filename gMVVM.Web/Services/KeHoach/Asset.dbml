@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TAISANDAMBAO_PRO" Class="AssetDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=KIEPDATRANG\SQLEXPRESS;Initial Catalog=TAISANDAMBAO_PRO;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="gMVVMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CM_DOMAIN" Member="CM_DOMAINs">
+    <Type Name="CM_DOMAIN">
+      <Column Name="DOMAIN_ID" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DOMAIN_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOMAIN_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="END_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EDIT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.CM_DOMAIN_Ins" Method="CM_DOMAIN_Ins">
+    <Parameter Name="p_DOMAIN_CODE" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="p_DOMAIN_NAME" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="p_START_DATE" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_END_DATE" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_RECORD_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MAKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_CREATE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_EDIT_DATE" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="CM_DOMAIN_InsResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="DOMAIN_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DOMAIN_List" Method="CM_DOMAIN_List">
+    <ElementType Name="CM_DOMAIN_ListResult">
+      <Column Name="BRANCH_ID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="FATHER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="IS_POTENTIAL" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="BRANCH_CODE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DAO_CODE" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="DAO_NAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="REGION_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="ADDR" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PROVICE" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TEL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TAX_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DOMAIN_Search" Method="CM_DOMAIN_Search">
+    <Parameter Name="p_DOMAIN_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_DOMAIN_CODE" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_DOMAIN_NAME" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="p_START_DATE" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_END_DATE" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_RECORD_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MAKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_CREATE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_EDIT_DATE" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_TOP" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CM_DOMAIN_SearchResult">
+      <Column Name="DOMAIN_ID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="DOMAIN_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DOMAIN_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="START_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="END_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EDIT_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DOMAIN_Upd" Method="CM_DOMAIN_Upd">
+    <Parameter Name="p_DOMAIN_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_DOMAIN_CODE" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_DOMAIN_NAME" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="p_START_DATE" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_END_DATE" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_RECORD_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MAKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_CREATE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_EDIT_DATE" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="CM_DOMAIN_UpdResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="DOMAIN_ID" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

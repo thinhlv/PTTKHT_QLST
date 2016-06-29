@@ -1,0 +1,546 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblRegions" xml:space="preserve">
+    <value>Danh sách vùng miền</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="Record_Status" xml:space="preserve">
+    <value>Hoạt động</value>
+  </data>
+  <data name="RegionID" xml:space="preserve">
+    <value>Mã vùng miền</value>
+  </data>
+  <data name="RegionName" xml:space="preserve">
+    <value>Tên vùng miền</value>
+  </data>
+  <data name="Addr" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="BranchCode" xml:space="preserve">
+    <value>Đơn vị</value>
+  </data>
+  <data name="BranchID" xml:space="preserve">
+    <value>Mã đơn vị</value>
+  </data>
+  <data name="BranchName" xml:space="preserve">
+    <value>Tên đơn vị</value>
+  </data>
+  <data name="FatherID" xml:space="preserve">
+    <value>Mã đơn vị cha</value>
+  </data>
+  <data name="Tel" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="lblBranch" xml:space="preserve">
+    <value>Danh sách chi nhánh</value>
+  </data>
+  <data name="BranchType" xml:space="preserve">
+    <value>Loại đơn vị</value>
+  </data>
+  <data name="lblBranch1" xml:space="preserve">
+    <value>Chi nhánh</value>
+  </data>
+  <data name="lblHeadquarter" xml:space="preserve">
+    <value>Hội sở</value>
+  </data>
+  <data name="lblRegion" xml:space="preserve">
+    <value>Khu vực</value>
+  </data>
+  <data name="lblTransactionOffice" xml:space="preserve">
+    <value>Phòng giao dịch</value>
+  </data>
+  <data name="Agr_ID" xml:space="preserve">
+    <value>Mã tham số</value>
+  </data>
+  <data name="Amort_Acctno" xml:space="preserve">
+    <value>Tài khoản khấu hao</value>
+  </data>
+  <data name="Arg_Code" xml:space="preserve">
+    <value>Mã tham số</value>
+  </data>
+  <data name="Arg_ID" xml:space="preserve">
+    <value>Mã tham số</value>
+  </data>
+  <data name="Arg_Name" xml:space="preserve">
+    <value>Giá trị tham số</value>
+  </data>
+  <data name="Asset_Acctno" xml:space="preserve">
+    <value>Tài khoản tài sản</value>
+  </data>
+  <data name="Capital" xml:space="preserve">
+    <value>Vốn chủ sở hữu</value>
+  </data>
+  <data name="Cate_Id" xml:space="preserve">
+    <value>Mã danh mục tài sản</value>
+  </data>
+  <data name="Cate_Name" xml:space="preserve">
+    <value>Tên danh mục</value>
+  </data>
+  <data name="ContactPerson" xml:space="preserve">
+    <value>Người liên hệ</value>
+  </data>
+  <data name="Dep_Code" xml:space="preserve">
+    <value>Mã phòng</value>
+  </data>
+  <data name="Dep_Id" xml:space="preserve">
+    <value>Mã phòng ban</value>
+  </data>
+  <data name="Dep_Name" xml:space="preserve">
+    <value>Tên phòng ban</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Thông tin mô tả</value>
+  </data>
+  <data name="DivId" xml:space="preserve">
+    <value>Mã địa điểm</value>
+  </data>
+  <data name="DivName" xml:space="preserve">
+    <value>Tên địa điểm</value>
+  </data>
+  <data name="Div_Code" xml:space="preserve">
+    <value>Mã địa điểm</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Exp_Acctno" xml:space="preserve">
+    <value>Tài khoản Exp</value>
+  </data>
+  <data name="Father_Id" xml:space="preserve">
+    <value>Mã nhóm cha</value>
+  </data>
+  <data name="Gd_Code" xml:space="preserve">
+    <value>Mã hàng hóa</value>
+  </data>
+  <data name="Gd_Type_Code" xml:space="preserve">
+    <value>Mã loại hàng hóa</value>
+  </data>
+  <data name="GoodsCode" xml:space="preserve">
+    <value>Mã code</value>
+  </data>
+  <data name="GoodsID" xml:space="preserve">
+    <value>Mã hàng hóa</value>
+  </data>
+  <data name="GoodsName" xml:space="preserve">
+    <value>Tên hàng hóa</value>
+  </data>
+  <data name="GoodsTypeID" xml:space="preserve">
+    <value>Mã loại hàng hóa</value>
+  </data>
+  <data name="GoodsTypeName" xml:space="preserve">
+    <value>Tên loại hàng hóa</value>
+  </data>
+  <data name="Group_Code" xml:space="preserve">
+    <value>Mã nhóm tài sản</value>
+  </data>
+  <data name="Group_Id" xml:space="preserve">
+    <value>Mã nhóm tài sản</value>
+  </data>
+  <data name="Group_Level" xml:space="preserve">
+    <value>Mức nhóm</value>
+  </data>
+  <data name="Group_Name" xml:space="preserve">
+    <value>Tên nhóm tài sản</value>
+  </data>
+  <data name="Is_Leaf" xml:space="preserve">
+    <value>Là nốt lá</value>
+  </data>
+  <data name="lblArgument" xml:space="preserve">
+    <value>Danh sách tham số</value>
+  </data>
+  <data name="lblAssetCategory" xml:space="preserve">
+    <value>Danh sách danh mục tài sản</value>
+  </data>
+  <data name="lblAssetGroup" xml:space="preserve">
+    <value>Danh sách nhóm tài sản</value>
+  </data>
+  <data name="lblAssetType" xml:space="preserve">
+    <value>Danh sách loại tài sản</value>
+  </data>
+  <data name="lblDepartment" xml:space="preserve">
+    <value>Danh sách phòng ban</value>
+  </data>
+  <data name="lblDivision" xml:space="preserve">
+    <value>Danh sách địa điểm</value>
+  </data>
+  <data name="lblGoods" xml:space="preserve">
+    <value>Danh sách hàng hóa</value>
+  </data>
+  <data name="lblGoodsType" xml:space="preserve">
+    <value>Danh sách loại hàng hóa</value>
+  </data>
+  <data name="lblSupplier" xml:space="preserve">
+    <value>Danh sách nhà cung cấp</value>
+  </data>
+  <data name="lblSupplierType" xml:space="preserve">
+    <value>Danh sách loại nhà cung cấp</value>
+  </data>
+  <data name="Licene" xml:space="preserve">
+    <value>Giấy phép kinh danh</value>
+  </data>
+  <data name="Max_Time" xml:space="preserve">
+    <value>Thời gian khấu hao tối đa</value>
+  </data>
+  <data name="Parent_Id" xml:space="preserve">
+    <value>Mã nhóm cha</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Giá tài sản</value>
+  </data>
+  <data name="Ranked" xml:space="preserve">
+    <value>Xếp hạng</value>
+  </data>
+  <data name="Region_Code" xml:space="preserve">
+    <value>Mã vùng miền</value>
+  </data>
+  <data name="SupID" xml:space="preserve">
+    <value>Mã nhà cung cấp</value>
+  </data>
+  <data name="SupName" xml:space="preserve">
+    <value>Tên cung cấp</value>
+  </data>
+  <data name="SupTypeID" xml:space="preserve">
+    <value>Mã loại nhà cung cấp</value>
+  </data>
+  <data name="SupTypeName" xml:space="preserve">
+    <value>Tên loại nhà cung cấp</value>
+  </data>
+  <data name="Sup_Code" xml:space="preserve">
+    <value>Mã nhà cung cấp</value>
+  </data>
+  <data name="Sup_Type_Code" xml:space="preserve">
+    <value>Mã loại nhà cung cấp</value>
+  </data>
+  <data name="TaxNo" xml:space="preserve">
+    <value>Mã số thuế</value>
+  </data>
+  <data name="Type_Code" xml:space="preserve">
+    <value>Mã loại tài sản</value>
+  </data>
+  <data name="Type_Id" xml:space="preserve">
+    <value>Loại tài sản</value>
+  </data>
+  <data name="Type_Name" xml:space="preserve">
+    <value>Tên loại tài sản</value>
+  </data>
+  <data name="Type_Shortcut" xml:space="preserve">
+    <value>Tên viết tắt</value>
+  </data>
+  <data name="UnitID" xml:space="preserve">
+    <value>Đơn vị tính</value>
+  </data>
+  <data name="AmortRate" xml:space="preserve">
+    <value>Tỷ lệ khấu hao</value>
+  </data>
+  <data name="ExpAcctno" xml:space="preserve">
+    <value>Tài khoản chi phí</value>
+  </data>
+  <data name="IncAcctno" xml:space="preserve">
+    <value>Tài khoản thu nhập</value>
+  </data>
+  <data name="LiqAcctno" xml:space="preserve">
+    <value>Tài khoản chi phí thanh lý</value>
+  </data>
+  <data name="AuthStatus" xml:space="preserve">
+    <value>Trạng thái duyệt</value>
+  </data>
+  <data name="AssCat" xml:space="preserve">
+    <value>Danh mục tài sản</value>
+  </data>
+  <data name="Branch" xml:space="preserve">
+    <value>Đơn vị</value>
+  </data>
+  <data name="Dep" xml:space="preserve">
+    <value>Phòng ban</value>
+  </data>
+  <data name="EmpCode" xml:space="preserve">
+    <value>Mã nhân viên</value>
+  </data>
+  <data name="EmployeeInfor" xml:space="preserve">
+    <value>Thông tin nhân viên</value>
+  </data>
+  <data name="EmployeeList" xml:space="preserve">
+    <value>Danh sách nhân viên</value>
+  </data>
+  <data name="EmpName" xml:space="preserve">
+    <value>Họ tên nhân viên</value>
+  </data>
+  <data name="DataType" xml:space="preserve">
+    <value>Kiểu dữ liệu</value>
+  </data>
+  <data name="GroupDep" xml:space="preserve">
+    <value>Nhóm phòng ban</value>
+  </data>
+  <data name="DISCIPLINES" xml:space="preserve">
+    <value>Lĩnh vực hoạt động</value>
+  </data>
+  <data name="NotYesUse" xml:space="preserve">
+    <value>Tài sản chưa xuất sử dụng</value>
+  </data>
+  <data name="AccountBank" xml:space="preserve">
+    <value>Tài khoản tài sản NHNN</value>
+  </data>
+  <data name="DepartmentTypeID" xml:space="preserve">
+    <value>Mã loại phòng ban</value>
+  </data>
+  <data name="DepartmentTypeName" xml:space="preserve">
+    <value>Tên loại phòng ban</value>
+  </data>
+  <data name="DepartmentTypeList" xml:space="preserve">
+    <value>Danh sách loại phòng ban</value>
+  </data>
+  <data name="InsuareCompanyName" xml:space="preserve">
+    <value>Tên công ty bảo hiểm</value>
+  </data>
+  <data name="InsureCompanyID" xml:space="preserve">
+    <value>Mã công ty bảo hiểm</value>
+  </data>
+  <data name="InsureCompanyList" xml:space="preserve">
+    <value>Danh sách công ty bảo hiểm</value>
+  </data>
+  <data name="CDAllCodeList" xml:space="preserve">
+    <value>Danh sách trường giao dịch</value>
+  </data>
+  <data name="CDName" xml:space="preserve">
+    <value>Tên trường</value>
+  </data>
+  <data name="CDType" xml:space="preserve">
+    <value>Mã phân hệ</value>
+  </data>
+  <data name="CDVal" xml:space="preserve">
+    <value>Kí hiệu giá trị trường</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Tên giá trị trường</value>
+  </data>
+  <data name="LSTODR" xml:space="preserve">
+    <value>Thứ tự liệt kê</value>
+  </data>
+  <data name="GroupParentName" xml:space="preserve">
+    <value>Tên nhóm cha</value>
+  </data>
+  <data name="CarTypeList" xml:space="preserve">
+    <value>Danh sách loại xe</value>
+  </data>
+  <data name="CarTypeName" xml:space="preserve">
+    <value>Tên loại xe</value>
+  </data>
+  <data name="CarType" xml:space="preserve">
+    <value>Loại xe</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>Hãng sãn xuất</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="ModelList" xml:space="preserve">
+    <value>Thông tin model</value>
+  </data>
+  <data name="ModelName" xml:space="preserve">
+    <value>Tên Model</value>
+  </data>
+  <data name="PowerRate" xml:space="preserve">
+    <value>Định mức nhiên liệu</value>
+  </data>
+  <data name="lblFileExportName" xml:space="preserve">
+    <value>Tên file hạch toán</value>
+  </data>
+  <data name="err_DIS_CODE" xml:space="preserve">
+    <value>Mã Quận/ Huyện không được rỗng</value>
+  </data>
+  <data name="err_DIS_NAME" xml:space="preserve">
+    <value>Tên Quận/ Huyện không được rỗng</value>
+  </data>
+  <data name="err_DIS_NAME_not_Choose" xml:space="preserve">
+    <value>Chưa chọn  Quận/ Huyện</value>
+  </data>
+  <data name="err_NAT_CODE" xml:space="preserve">
+    <value>Mã quốc gia trống</value>
+  </data>
+  <data name="err_NAT_NAME" xml:space="preserve">
+    <value>Tên quốc gia trống</value>
+  </data>
+  <data name="err_NAT_NAME_not_Choose" xml:space="preserve">
+    <value>Chưa chọn  Quốc gia</value>
+  </data>
+  <data name="err_PRO_CODE" xml:space="preserve">
+    <value>Mã Tỉnh/Thành phố không được rỗng</value>
+  </data>
+  <data name="err_PRO_NAME" xml:space="preserve">
+    <value>Tên Tỉnh/Thành phố không được rỗng</value>
+  </data>
+  <data name="err_PRO_NAME_not_Choose" xml:space="preserve">
+    <value>Chưa chọn Tỉnh/Thành phố</value>
+  </data>
+  <data name="err_WAR_CODE" xml:space="preserve">
+    <value>Mã Phường/ Xã không được rỗng</value>
+  </data>
+  <data name="err_WAR_NAME" xml:space="preserve">
+    <value>Tên Phường/ Xã không được rỗng</value>
+  </data>
+  <data name="lbl_wg_District" xml:space="preserve">
+    <value>Quận/ Huyện</value>
+  </data>
+  <data name="lbl_wg_District_Code" xml:space="preserve">
+    <value>Mã Quận/ Huyện</value>
+  </data>
+  <data name="lbl_wg_District_Name" xml:space="preserve">
+    <value>Tên Quận/ Huyện</value>
+  </data>
+  <data name="lbl_wg_District_Type" xml:space="preserve">
+    <value>Quận/ Huyện</value>
+  </data>
+  <data name="lbl_wg_Nation" xml:space="preserve">
+    <value>Quốc gia</value>
+  </data>
+  <data name="lbl_wg_Nation_Code" xml:space="preserve">
+    <value>Mã Quốc gia</value>
+  </data>
+  <data name="lbl_wg_Nation_Name" xml:space="preserve">
+    <value>Tên Quốc gia</value>
+  </data>
+  <data name="lbl_wg_Province" xml:space="preserve">
+    <value>Tỉnh/ Thành</value>
+  </data>
+  <data name="lbl_wg_Province_Code" xml:space="preserve">
+    <value>Mã Tỉnh/ Thành</value>
+  </data>
+  <data name="lbl_wg_Province_Name" xml:space="preserve">
+    <value>Tên Tỉnh/ Thành</value>
+  </data>
+  <data name="lbl_wg_Province_Type" xml:space="preserve">
+    <value>Tỉnh</value>
+  </data>
+  <data name="lbl_wg_Ward" xml:space="preserve">
+    <value>Phường/ Xã</value>
+  </data>
+  <data name="lbl_wg_Ward_Code" xml:space="preserve">
+    <value>Mã Phường/ Xã</value>
+  </data>
+  <data name="lbl_wg_Ward_Name" xml:space="preserve">
+    <value>Tên Phường/ Xã</value>
+  </data>
+  <data name="lbl_wg_Ward_Type" xml:space="preserve">
+    <value>Phường</value>
+  </data>
+</root>

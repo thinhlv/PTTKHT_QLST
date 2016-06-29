@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DeleteSuccessful" xml:space="preserve">
+    <value>Delete successful</value>
+  </data>
+  <data name="ErrorExist" xml:space="preserve">
+    <value>Insert false, item was existed!</value>
+  </data>
+  <data name="ErrorInsert" xml:space="preserve">
+    <value>Insert false. Please check your input value!</value>
+  </data>
+  <data name="ErrorUpdate" xml:space="preserve">
+    <value>Update false. Please check your input value!</value>
+  </data>
+  <data name="InsertSuccessful" xml:space="preserve">
+    <value>Insert successful</value>
+  </data>
+  <data name="lblErrorInput" xml:space="preserve">
+    <value>Input amount is false</value>
+  </data>
+  <data name="lblErrorOutput" xml:space="preserve">
+    <value>Output amount is false</value>
+  </data>
+  <data name="lblTestRow" xml:space="preserve">
+    <value>Test row</value>
+  </data>
+  <data name="NotEmpty" xml:space="preserve">
+    <value>not empty</value>
+  </data>
+  <data name="UpdateSuccessful" xml:space="preserve">
+    <value>Update successful</value>
+  </data>
+  <data name="lblErrorChange" xml:space="preserve">
+    <value>Error change your password</value>
+  </data>
+  <data name="lblNotToWork" xml:space="preserve">
+    <value>Nothing to work!</value>
+  </data>
+  <data name="lblErrorMatchTransfer" xml:space="preserve">
+    <value>Transfer amount is not match</value>
+  </data>
+  <data name="lblErrorSelectTill" xml:space="preserve">
+    <value>Select receive till</value>
+  </data>
+  <data name="ErrorDeleteTill" xml:space="preserve">
+    <value>Deleting fail: Till's balance is greater than 0.</value>
+  </data>
+  <data name="ErrorDeleteDenom" xml:space="preserve">
+    <value>Deleting fail: Denom's balance is greater than 0.</value>
+  </data>
+  <data name="lblAuthTransfeMoneyErro" xml:space="preserve">
+    <value>Approve false</value>
+  </data>
+  <data name="lblAuthTransfeMoneySuccessful" xml:space="preserve">
+    <value>Approve successful</value>
+  </data>
+  <data name="lblPaymentErro" xml:space="preserve">
+    <value>Payment false</value>
+  </data>
+  <data name="lblPaymentSuccessful" xml:space="preserve">
+    <value>Payment successful</value>
+  </data>
+  <data name="OpenTillSuccessful" xml:space="preserve">
+    <value>Open till successfull</value>
+  </data>
+  <data name="TillOpened" xml:space="preserve">
+    <value>Till opened</value>
+  </data>
+  <data name="CloseTillSuccessful" xml:space="preserve">
+    <value>Close till successful</value>
+  </data>
+  <data name="ErroInput" xml:space="preserve">
+    <value>Input incorrect</value>
+  </data>
+  <data name="TillClosed" xml:space="preserve">
+    <value>Till closed</value>
+  </data>
+  <data name="lblNotOpenTill" xml:space="preserve">
+    <value>Must open Till first</value>
+  </data>
+  <data name="Character" xml:space="preserve">
+    <value>character</value>
+  </data>
+  <data name="Characters" xml:space="preserve">
+    <value>characters</value>
+  </data>
+  <data name="MustEqual" xml:space="preserve">
+    <value>must equal to</value>
+  </data>
+  <data name="MustHave" xml:space="preserve">
+    <value>must have</value>
+  </data>
+  <data name="Or" xml:space="preserve">
+    <value>or</value>
+  </data>
+  <data name="ErrorFormat" xml:space="preserve">
+    <value>Format is not correct</value>
+  </data>
+  <data name="ErrorAccDD" xml:space="preserve">
+    <value>Please, check account id againt!</value>
+  </data>
+  <data name="lblNotTrue" xml:space="preserve">
+    <value>is not true</value>
+  </data>
+  <data name="lblAccNotOwn" xml:space="preserve">
+    <value>The account is not of</value>
+  </data>
+  <data name="lblLessThan" xml:space="preserve">
+    <value>is not less than</value>
+  </data>
+  <data name="lblErrorAmount" xml:space="preserve">
+    <value>Amount of limit is not enough</value>
+  </data>
+  <data name="lblErrorMoreThan" xml:space="preserve">
+    <value>is not more than the first due date</value>
+  </data>
+  <data name="lblErrorNotCrSch" xml:space="preserve">
+    <value>Schedule was be not really create</value>
+  </data>
+  <data name="ErrorApprove" xml:space="preserve">
+    <value>Approve false</value>
+  </data>
+  <data name="SuccessfulApprove" xml:space="preserve">
+    <value>Approve successful</value>
+  </data>
+  <data name="ErrorClose" xml:space="preserve">
+    <value>Close fail</value>
+  </data>
+  <data name="SuccessfulClose" xml:space="preserve">
+    <value>Close successful</value>
+  </data>
+  <data name="lblErrorSelectCol" xml:space="preserve">
+    <value>Select colleteral</value>
+  </data>
+  <data name="ErrorFull" xml:space="preserve">
+    <value>is full</value>
+  </data>
+  <data name="ErrorNotUse" xml:space="preserve">
+    <value>not permission to use</value>
+  </data>
+  <data name="CompareAMTDB" xml:space="preserve">
+    <value>Error! Disbursement Amount &lt;= Current Amount</value>
+  </data>
+  <data name="ErroDecreaseValueCollateral" xml:space="preserve">
+    <value>Input incorrect</value>
+  </data>
+  <data name="ErroIncreaseValueCollateral" xml:space="preserve">
+    <value>Input incorrect</value>
+  </data>
+  <data name="lblDuedate" xml:space="preserve">
+    <value>Due date &gt; current date</value>
+  </data>
+  <data name="lblErroInCollateral" xml:space="preserve">
+    <value>Error! Input amount &gt;= Current Amount in limit</value>
+  </data>
+  <data name="lblErrorDOB" xml:space="preserve">
+    <value>Birthday&lt; curent date</value>
+  </data>
+  <data name="lblErrorLicdate" xml:space="preserve">
+    <value>Issue date &lt;= current date</value>
+  </data>
+  <data name="lblFullAMT" xml:space="preserve">
+    <value>Account was fully disbursed</value>
+  </data>
+  <data name="lblnotActive" xml:space="preserve">
+    <value>Account not approved or closed</value>
+  </data>
+  <data name="lblnotExist" xml:space="preserve">
+    <value>Error not exist init accounting</value>
+  </data>
+  <data name="lblMoreThan" xml:space="preserve">
+    <value>is not more than</value>
+  </data>
+  <data name="lblTooLarge" xml:space="preserve">
+    <value>too large</value>
+  </data>
+  <data name="lblApproveSuccessfull" xml:space="preserve">
+    <value>Approve successful</value>
+  </data>
+  <data name="lblErrorPermission" xml:space="preserve">
+    <value>You are not permitted to approve this item</value>
+  </data>
+  <data name="lblIsUsing" xml:space="preserve">
+    <value>is using</value>
+  </data>
+  <data name="lblMust" xml:space="preserve">
+    <value>must</value>
+  </data>
+  <data name="NotClosed" xml:space="preserve">
+    <value>Not closed</value>
+  </data>
+  <data name="CurrentDate" xml:space="preserve">
+    <value>Current date</value>
+  </data>
+  <data name="lblExisted" xml:space="preserve">
+    <value>not the same</value>
+  </data>
+  <data name="FullRelease" xml:space="preserve">
+    <value>FullRelease</value>
+  </data>
+  <data name="ExistTill" xml:space="preserve">
+    <value>Till is opened</value>
+  </data>
+  <data name="ExistUser" xml:space="preserve">
+    <value>You opened till ( Please. Login again!)</value>
+  </data>
+  <data name="NotOpenTill" xml:space="preserve">
+    <value>You haven't opened till yet.</value>
+  </data>
+  <data name="lblAccClosed" xml:space="preserve">
+    <value>The account was closed</value>
+  </data>
+  <data name="lblPerEdit" xml:space="preserve">
+    <value>You are not allowed to edit this object</value>
+  </data>
+  <data name="lblErrorDeletePer" xml:space="preserve">
+    <value>You are not allowed to delete this object</value>
+  </data>
+  <data name="lblPerView" xml:space="preserve">
+    <value>You're not permistion to view item</value>
+  </data>
+  <data name="lblCurrentYear" xml:space="preserve">
+    <value>current year</value>
+  </data>
+  <data name="lblExistAssetLiquid" xml:space="preserve">
+    <value>List of liquid asset error</value>
+  </data>
+  <data name="lblRepeat" xml:space="preserve">
+    <value>repeat</value>
+  </data>
+  <data name="lblTimes" xml:space="preserve">
+    <value>times</value>
+  </data>
+  <data name="SendBackError" xml:space="preserve">
+    <value>Send back error</value>
+  </data>
+  <data name="SuccessfulSendBack" xml:space="preserve">
+    <value>Send back successful</value>
+  </data>
+  <data name="NotExist" xml:space="preserve">
+    <value>not exist</value>
+  </data>
+  <data name="OfferStatus" xml:space="preserve">
+    <value>OfferStatus</value>
+  </data>
+  <data name="PARAMETERSError" xml:space="preserve">
+    <value>PARAMETERS Error</value>
+  </data>
+  <data name="MoreZero" xml:space="preserve">
+    <value>more than 0</value>
+  </data>
+  <data name="NotYetUpdate" xml:space="preserve">
+    <value>No update done and the actual date of actual completion</value>
+  </data>
+  <data name="delFileSuccessful" xml:space="preserve">
+    <value>Delete file successfull</value>
+  </data>
+  <data name="errodelFileSuccessful" xml:space="preserve">
+    <value>Delete file fail</value>
+  </data>
+</root>

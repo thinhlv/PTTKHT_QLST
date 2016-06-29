@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 29.125, 78.75" name="Asset">
+  <DataContextMoniker Name="/AssetDataContext" />
+  <nestedChildShapes>
+    <classShape Id="dd357a75-1cfb-4362-89e5-d654f4356928" absoluteBounds="0.75, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/AssetDataContext/CM_ALLCODE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f919edf3-a33c-415b-abd6-d213a0963a40" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9d6599db-538b-4a64-aa98-70004e2c4c36" absoluteBounds="3.75, 0.75, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/AssetDataContext/TL_USER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9ab217f4-2ebe-4052-bde9-bb7a47f15af9" absoluteBounds="3.765, 1.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="773e7cd4-c740-4f71-9c87-63f245908575" absoluteBounds="6.75, 0.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/AssetDataContext/CM_ARGUMENT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b2a65fe-0e41-4b26-809d-a9c5f67fdc2b" absoluteBounds="6.765, 1.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1dee9dc-d184-4f0e-b576-ec33bc348480" absoluteBounds="0.75, 6.75, 2, 3.6939111328124987">
+      <DataClassMoniker Name="/AssetDataContext/CM_ATTACH_FILE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a36b030-6d0d-454b-95f9-d1cdaf3c898f" absoluteBounds="0.765, 7.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0bf59b2-0d21-4837-be04-1d60753d9283" absoluteBounds="3.75, 6.75, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/AssetDataContext/CM_ATTACH_FILE_HIST" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e8c54fb0-843b-43b2-9a7a-b0a0eb25e927" absoluteBounds="3.765, 7.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8ae72564-f6c5-47fd-8110-8c87ba153f83" absoluteBounds="6.75, 4.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/AssetDataContext/CM_AUTH_STATUS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2a4622a-0e69-42b3-b49f-13ae7a374aec" absoluteBounds="6.765, 5.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d83f2a41-6b5b-4a43-a179-3005af28b416" absoluteBounds="6.75, 6.75, 2, 4.6554182942708318">
+      <DataClassMoniker Name="/AssetDataContext/CM_BRANCH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0dcf1a56-85a1-4dec-905b-a6fb77aa6182" absoluteBounds="6.765, 7.21, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="df82e430-1393-4bdb-9bf7-361dfbaf3198" absoluteBounds="9.75, 0.75, 2, 3.6939111328124992">
+      <DataClassMoniker Name="/AssetDataContext/CM_DEPARTMENT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5c12c4c5-daf3-479e-a123-5e3cbb2b7839" absoluteBounds="9.765, 1.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a5152be-fd74-4c0f-be74-3e65c2f1f18b" absoluteBounds="9.75, 5.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AssetDataContext/SYS_CODEMASTER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1565700d-d503-42d4-87f9-544a657c5af7" absoluteBounds="9.765, 6.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b4b0f7c5-7622-40c3-83a7-2a90487c8a69" absoluteBounds="9.75, 8.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/AssetDataContext/SYS_ERROR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a3d0ed05-5107-4e57-96b8-d54f6db3a8eb" absoluteBounds="9.765, 9.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1c2cd373-866c-46a6-a5e6-5bb254f2f229" absoluteBounds="0.75, 11.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/AssetDataContext/SYS_PARAMETER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f707186c-7774-4dd9-942f-3ed3a8567fbc" absoluteBounds="0.765, 12.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="697394b7-73b1-4644-ae0b-78f84d307be3" absoluteBounds="9.75, 11.75, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/AssetDataContext/SYS_PREFIX" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e466ee2a-e2f0-404c-a931-eefb79dcb2bf" absoluteBounds="9.765, 12.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e55c0301-342c-4039-b768-5555cb75954e" absoluteBounds="12.75, 0.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/AssetDataContext/TL_MENU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="878bcd34-7a68-43f4-a99d-dc00f6263082" absoluteBounds="12.765, 1.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3b8dc8b3-6ee7-45f9-a9c2-1077804dec14" absoluteBounds="3.75, 12.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/AssetDataContext/TL_SYSROLE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="adb31885-6092-4229-9b21-dba4cc170b58" absoluteBounds="3.765, 13.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="019a8003-2479-4f7f-91dc-4b88b52d63d2" absoluteBounds="12.75, 4.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/AssetDataContext/TL_SYSROLEDETAIL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="72c93e8e-2fb6-4178-9631-a23fed1b4503" absoluteBounds="12.765, 5.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ff03f293-267b-417d-a962-060da6b2ab45" absoluteBounds="3.625, 2.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/AssetDataContext/CM_DEPT_GROUP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f235dbba-9bf6-4304-856d-a922820e6669" absoluteBounds="3.64, 3.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7828f663-98b9-4de8-abcb-b2e0a8b82b91" absoluteBounds="15.125, 38.25, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_BENH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cfbba416-8369-4149-a5b0-6ec5f75eebb8" absoluteBounds="15.14, 38.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7238598b-8de7-4f3c-bdf2-8081c37ccde2" absoluteBounds="12.375, 35.25, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_TYPE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5b0a6dff-e531-47e6-8629-a260888dfb87" absoluteBounds="12.39, 35.71, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="94c521a5-9a23-4991-bf72-123694c50df7" absoluteBounds="20.875, 34.875, 2, 2.7324039713541737">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_CHOAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ef7ee96b-160a-458c-a714-30c7f5b05c32" absoluteBounds="20.89, 35.335, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5cce94c-fa3a-4fb1-8a5a-f32857091a7f" absoluteBounds="15.125, 33.25, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_CHUONG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2544e0a2-1579-47f4-8d11-13e660ce4e8d" absoluteBounds="15.14, 33.71, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f05e9112-b138-4123-b3f5-51dc5d785b3a" absoluteBounds="17.875, 38.625, 2, 3.3093082682291595">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_DIEUTRI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c8e1e44-f6ae-4f7b-9c05-f8c1f51d00a8" absoluteBounds="17.89, 39.085, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d6597bd7-b80b-4cd2-89a5-cc1ca3cd91a6" absoluteBounds="23.875, 30.75, 2, 6.0015283203125023">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_DONGVAT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc81ce73-8973-4f9c-87ae-8dbd323543be" absoluteBounds="23.89, 31.21, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af45235b-4835-4d68-a047-9018f384f320" absoluteBounds="17.875, 56.875, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_DONTHUOC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6faac9f-ca9b-484a-81e4-6b06aad2f3c6" absoluteBounds="17.89, 57.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3aa1c102-5769-4e5a-8879-dd33d23f6e0a" absoluteBounds="18.125, 34.25, 2, 3.3093082682291737">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_HOSO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d7b2893-d414-4b8f-945c-7c5e4c3caf6e" absoluteBounds="18.14, 34.71, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8d6b57fd-8832-490c-b387-016fd0d7e158" absoluteBounds="15.125, 42.5, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_KHAUPHANAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d509b8a1-d6e5-422c-b8e5-2b1ae7d77888" absoluteBounds="15.14, 42.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="511d398b-4aa4-4b6f-a25b-e201620465d8" absoluteBounds="12.375, 31.75, 2, 2.732403971354163">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_LOAIDV" />
+      <nestedChildShapes>
+        <elementListCompartment Id="422890dc-32f3-43e5-9a72-e485b538094d" absoluteBounds="12.39, 32.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bf28d906-7753-467c-abea-753d64245b0c" absoluteBounds="15.125, 69.5, 2, 4.0785139973958451">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_NHANVIEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c139c215-7d7d-423e-8bd6-9fc3fb723358" absoluteBounds="15.14, 69.96, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c0909dee-7b02-401f-b94b-e947f9afaaf1" absoluteBounds="23.625, 52.625, 2, 3.3093082682291595">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHANCONGCHOAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fdc8bf4b-8de1-4ad3-933c-0700df5ba62d" absoluteBounds="23.64, 53.085, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e84d66c-af3e-4c1f-919d-e3ccb53cb682" absoluteBounds="20.625, 53.5, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHANCONGDIEUTRI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ba70654e-eb94-4915-bb24-b1fe42765ed8" absoluteBounds="20.64, 53.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1eba1d43-8403-41ec-b6c2-f32276dd4e9f" absoluteBounds="17.875, 51.75, 2, 3.3093082682291737">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHANCONGVESINH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e4aab3a1-fd63-42f6-a4c5-5a2422d9b0b1" absoluteBounds="17.89, 52.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9c782d96-5df1-4ddf-be92-086b2624882b" absoluteBounds="23.875, 41.25, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHIEUDATTHUCAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c7059ea-aacc-4225-92ad-50808effac03" absoluteBounds="23.89, 41.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5dc47ebc-b1e9-4d07-9f34-26475b4e0ea6" absoluteBounds="20.875, 57.5, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHIEUDATTHUOC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05fc690b-8e60-411a-9688-df3dc0d7fadf" absoluteBounds="20.89, 57.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="750e4c0e-6e98-4aee-ac66-600b74555861" absoluteBounds="23.875, 37.5, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHIEUNHAPTHUCAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="14058a45-b26c-47a9-a987-88342a768bcb" absoluteBounds="23.89, 37.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a07c249f-6bda-47b7-9499-43d06f786fc2" absoluteBounds="17.875, 75, 2, 2.9247054036458451">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHIEUNHAPTHUOC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eb17b7f2-818b-4224-aa32-dd7c81fde161" absoluteBounds="17.89, 75.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fdde435c-b790-46f6-bb56-b29d27c6c221" absoluteBounds="18.125, 43.375, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHIEUXUATTHUCAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dc94efb3-8d6e-43a3-ba58-d824a331f97b" absoluteBounds="18.14, 43.835, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e8ce54ad-0590-41ab-bdd2-c5a463d39bdf" absoluteBounds="17.875, 61.5, 2, 3.1170068359374952">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHIEUXUATTHUOC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ecd5595-0108-4964-9c78-9b437f98a291" absoluteBounds="17.89, 61.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fd705510-51b1-4750-aabf-6abf562a7f8e" absoluteBounds="12.375, 39.625, 2, 2.7324039713541737">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_STATUS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ccb1bb04-6a51-4062-bfe3-de2229bd87e9" absoluteBounds="12.39, 40.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e31be9a3-04b8-43e2-a823-84f77ca45561" absoluteBounds="21.125, 39.125, 2, 3.6939111328125023">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_THUCAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="91ff8024-68ec-436a-a026-c640a7beabea" absoluteBounds="21.14, 39.585, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6d61faa0-6baf-4287-86b8-95be06ba0e39" absoluteBounds="26.875, 40.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_THUCDON" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a0da5558-6ea9-4729-8507-ac7b818f0ee8" absoluteBounds="26.89, 41.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="468185b1-d007-4b47-8916-18d200a6856a" absoluteBounds="15.125, 74.375, 2, 4.0785139973958451">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_THUOC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05e92501-848d-431f-a28f-ac8e3eb801c3" absoluteBounds="15.14, 74.835, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(17.125 : 33.71875); (17.8854166666667 : 33.71875 : JumpStart); (18.0520833333333 : 33.71875 : JumpEnd); (21.875 : 33.71875); (21.875 : 34.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_CHUONG/ZOO_CHUONG_ZOO_CHOAN" />
+      <nodes>
+        <classShapeMoniker Id="b5cce94c-fa3a-4fb1-8a5a-f32857091a7f" />
+        <classShapeMoniker Id="94c521a5-9a23-4991-bf72-123694c50df7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 36.0008048502604); (14.6666666666667 : 36.0008048502604 : JumpStart); (14.8333333333333 : 36.0008048502604 : JumpEnd); (14.8541666666667 : 36.0008048502604 : JumpStart); (15.0208333333333 : 36.0008048502604 : JumpEnd); (15.125 : 36.0008048502604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_TYPE/ZOO_TYPE_ZOO_CHUONG" />
+      <nodes>
+        <classShapeMoniker Id="7238598b-8de7-4f3c-bdf2-8081c37ccde2" />
+        <classShapeMoniker Id="b5cce94c-fa3a-4fb1-8a5a-f32857091a7f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.125 : 39.9960034179688); (17.6041666666667 : 39.9960034179688 : JumpStart); (17.7708333333333 : 39.9960034179688 : JumpEnd); (17.875 : 39.9960034179688)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_BENH/ZOO_BENH_ZOO_DIEUTRI" />
+      <nodes>
+        <classShapeMoniker Id="7828f663-98b9-4de8-abcb-b2e0a8b82b91" />
+        <classShapeMoniker Id="f05e9112-b138-4123-b3f5-51dc5d785b3a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(23.875 : 32.234375); (17.96875 : 32.234375); (17.96875 : 38.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_DONGVAT/ZOO_DONGVAT_ZOO_DIEUTRI" />
+      <nodes>
+        <classShapeMoniker Id="d6597bd7-b80b-4cd2-89a5-cc1ca3cd91a6" />
+        <classShapeMoniker Id="f05e9112-b138-4123-b3f5-51dc5d785b3a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.125 : 34.015625); (17.8854166666667 : 34.015625 : JumpStart); (18.0520833333333 : 34.015625 : JumpEnd); (21.7916666666667 : 34.015625 : JumpStart); (21.9583333333333 : 34.015625 : JumpEnd); (23.875 : 34.015625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_CHUONG/ZOO_CHUONG_ZOO_DONGVAT" />
+      <nodes>
+        <classShapeMoniker Id="b5cce94c-fa3a-4fb1-8a5a-f32857091a7f" />
+        <classShapeMoniker Id="d6597bd7-b80b-4cd2-89a5-cc1ca3cd91a6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.125 : 41.3670068359375); (17.5 : 41.7420068359375); (17.5 : 58.3373527018229); (17.875 : 58.3373527018229)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_BENH/ZOO_BENH_ZOO_DONTHUOC" />
+      <nodes>
+        <classShapeMoniker Id="7828f663-98b9-4de8-abcb-b2e0a8b82b91" />
+        <classShapeMoniker Id="af45235b-4835-4d68-a047-9018f384f320" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 37.186708984375); (14.6666666666667 : 37.186708984375 : JumpStart); (14.8333333333333 : 37.186708984375 : JumpEnd); (14.8541666666667 : 37.186708984375 : JumpStart); (15.0208333333333 : 37.186708984375 : JumpEnd); (17.5383054120593 : 37.186708984375 : JumpStart); (17.7049720787259 : 37.186708984375 : JumpEnd); (17.8854166666667 : 37.186708984375 : JumpStart); (18.0520833333333 : 37.186708984375 : JumpEnd); (18.125 : 37.186708984375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_TYPE/ZOO_TYPE_ZOO_HOSO" />
+      <nodes>
+        <classShapeMoniker Id="7238598b-8de7-4f3c-bdf2-8081c37ccde2" />
+        <classShapeMoniker Id="3aa1c102-5769-4e5a-8879-dd33d23f6e0a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.125 : 43.0969555664063); (17.6041666666667 : 43.0969555664063 : JumpStart); (17.7708333333333 : 43.0969555664063 : JumpEnd); (19.9947916666667 : 43.0969555664063 : JumpStart); (20.1614583333333 : 43.0969555664063 : JumpEnd); (20.7135416666667 : 43.0969555664063 : JumpStart); (20.8802083333333 : 43.0969555664063 : JumpEnd); (20.96875 : 43.0969555664063); (20.96875 : 37.6074039713542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_KHAUPHANAN/ZOO_KHAUPHANAN_ZOO_CHOAN" />
+      <nodes>
+        <classShapeMoniker Id="8d6b57fd-8832-490c-b387-016fd0d7e158" />
+        <classShapeMoniker Id="94c521a5-9a23-4991-bf72-123694c50df7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 33.8662019856771); (15.125 : 33.8662019856771)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_LOAIDV/ZOO_LOAIDV_ZOO_CHUONG" />
+      <nodes>
+        <classShapeMoniker Id="511d398b-4aa4-4b6f-a25b-e201620465d8" />
+        <classShapeMoniker Id="b5cce94c-fa3a-4fb1-8a5a-f32857091a7f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 32.7734375); (17.8854166666667 : 32.7734375 : JumpStart); (18.0520833333333 : 32.7734375 : JumpEnd); (23.875 : 32.7734375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_LOAIDV/ZOO_LOAIDV_ZOO_DONGVAT" />
+      <nodes>
+        <classShapeMoniker Id="511d398b-4aa4-4b6f-a25b-e201620465d8" />
+        <classShapeMoniker Id="d6597bd7-b80b-4cd2-89a5-cc1ca3cd91a6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 34.4808645098157); (14.75 : 34.8558645098157); (14.75 : 43.9623527018229); (15.125 : 43.9623527018229)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_LOAIDV/ZOO_LOAIDV_ZOO_KHAUPHANAN" />
+      <nodes>
+        <classShapeMoniker Id="511d398b-4aa4-4b6f-a25b-e201620465d8" />
+        <classShapeMoniker Id="8d6b57fd-8832-490c-b387-016fd0d7e158" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(22.875 : 37.1257641601563); (23.71875 : 37.1257641601563); (23.71875 : 52.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_CHOAN/ZOO_CHOAN_ZOO_PHANCONGCHOAN" />
+      <nodes>
+        <classShapeMoniker Id="94c521a5-9a23-4991-bf72-123694c50df7" />
+        <classShapeMoniker Id="c0909dee-7b02-401f-b94b-e947f9afaaf1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.125 : 71.5392569986979); (24.625 : 71.5392569986979); (24.625 : 55.9343082682292)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_NHANVIEN/ZOO_NHANVIEN_ZOO_PHANCONGCHOAN" />
+      <nodes>
+        <classShapeMoniker Id="bf28d906-7753-467c-abea-753d64245b0c" />
+        <classShapeMoniker Id="c0909dee-7b02-401f-b94b-e947f9afaaf1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.875 : 38.84375); (20.796875 : 38.84375); (20.796875 : 53.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_DIEUTRI/ZOO_DIEUTRI_ZOO_PHANCONGDIEUTRI" />
+      <nodes>
+        <classShapeMoniker Id="f05e9112-b138-4123-b3f5-51dc5d785b3a" />
+        <classShapeMoniker Id="7e84d66c-af3e-4c1f-919d-e3ccb53cb682" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.125 : 69.5); (16.125 : 55.8694075520833); (20.625 : 55.8694075520833)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_NHANVIEN/ZOO_NHANVIEN_ZOO_PHANCONGDIEUTRI" />
+      <nodes>
+        <classShapeMoniker Id="bf28d906-7753-467c-abea-753d64245b0c" />
+        <classShapeMoniker Id="7e84d66c-af3e-4c1f-919d-e3ccb53cb682" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.125 : 36.6900702389824); (17.6875 : 37.2525702389824); (17.6875 : 53.4046541341146); (17.875 : 53.4046541341146)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_CHUONG/ZOO_CHUONG_ZOO_PHANCONGVESINH" />
+      <nodes>
+        <classShapeMoniker Id="b5cce94c-fa3a-4fb1-8a5a-f32857091a7f" />
+        <classShapeMoniker Id="1eba1d43-8403-41ec-b6c2-f32276dd4e9f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.6562525 : 69.5); (16.6562525 : 54.2632337011719); (17.875 : 54.2632337011719)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_NHANVIEN/ZOO_NHANVIEN_ZOO_PHANCONGVESINH" />
+      <nodes>
+        <classShapeMoniker Id="bf28d906-7753-467c-abea-753d64245b0c" />
+        <classShapeMoniker Id="1eba1d43-8403-41ec-b6c2-f32276dd4e9f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 40.4960034179688); (14.5416666666667 : 40.4960034179688 : JumpStart); (14.8333333333333 : 40.4960034179688 : JumpEnd); (15.125 : 40.4960034179688)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_BENH" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="7828f663-98b9-4de8-abcb-b2e0a8b82b91" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 39.9980017089844); (15.125 : 39.9980017089844)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_BENH1" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="7828f663-98b9-4de8-abcb-b2e0a8b82b91" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 39.6865374615385); (14.9375 : 39.1240374615385); (14.9375 : 34.9335034179688); (15.125 : 34.9335034179688)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_CHUONG" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="b5cce94c-fa3a-4fb1-8a5a-f32857091a7f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 41.6819075520833); (14.6666666666667 : 41.6819075520833 : JumpStart); (14.9583333333333 : 41.6819075520833 : JumpEnd); (17.6041666666667 : 41.6819075520833 : JumpStart); (17.7708333333333 : 41.6819075520833 : JumpEnd); (17.875 : 41.6819075520833)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_DIEUTRI" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="f05e9112-b138-4123-b3f5-51dc5d785b3a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 41.088955485026); (14.625 : 41.088955485026); (14.625 : 38); (14.6666666666667 : 38 : JumpStart); (14.8333333333333 : 38 : JumpEnd); (14.8541666666667 : 38 : JumpStart); (15.0208333333333 : 38 : JumpEnd); (17.6041666666667 : 38 : JumpStart); (17.7708333333333 : 38 : JumpEnd); (17.8854166666667 : 38 : JumpStart); (18.0520833333333 : 38 : JumpEnd); (19.9479166666667 : 38 : JumpStart); (20.1145833333333 : 38 : JumpEnd); (20.8854166666667 : 38 : JumpStart); (21.0520833333333 : 38 : JumpEnd); (22.9479166666667 : 38 : JumpStart); (23.1145833333333 : 38 : JumpEnd); (23.375 : 38); (23.375 : 37.25); (23.6354166666667 : 37.25 : JumpStart); (23.8020833333333 : 37.25 : JumpEnd); (24.875 : 37.25); (24.875 : 36.7515283203125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_DONGVAT" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="d6597bd7-b80b-4cd2-89a5-cc1ca3cd91a6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 42.1771061197917); (17.6041666666667 : 42.1771061197917 : JumpStart); (17.7708333333333 : 42.1771061197917 : JumpEnd); (20.03125 : 42.1771061197917); (20.03125 : 37.5593082682292)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_HOSO" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="3aa1c102-5769-4e5a-8879-dd33d23f6e0a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.375 : 42.3574039713542); (13.375 : 43.1999238509115); (13.5572929166667 : 43.1999238509115 : JumpStart); (13.7239595833333 : 43.1999238509115 : JumpEnd); (13.8229191666667 : 43.1999238509115 : JumpStart); (13.9895858333333 : 43.1999238509115 : JumpEnd); (14.0885454166667 : 43.1999238509115 : JumpStart); (14.3880252083333 : 43.1999238509115 : JumpEnd); (14.6666666666667 : 43.1999238509115 : JumpStart); (14.8333333333333 : 43.1999238509115 : JumpEnd); (15.125 : 43.1999238509115)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_KHAUPHANAN" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="8d6b57fd-8832-490c-b387-016fd0d7e158" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.9062525 : 42.3574039713542); (13.9062525 : 71.5392569986979); (15.125 : 71.5392569986979)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_NHANVIEN" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="bf28d906-7753-467c-abea-753d64245b0c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 41.3854315185547); (14.6666666666667 : 41.3854315185547 : JumpStart); (14.8333333333333 : 41.3854315185547 : JumpEnd); (14.875 : 41.3854315185547); (14.875 : 42.3093082682292); (17.6041666666667 : 42.3093082682292 : JumpStart); (17.7708333333333 : 42.3093082682292 : JumpEnd); (20.625 : 42.3093082682292); (20.625 : 44.6170068359375); (20.7135416666667 : 44.6170068359375 : JumpStart); (20.8802083333333 : 44.6170068359375 : JumpEnd); (23.2916666666667 : 44.6170068359375 : JumpStart); (23.4583333333333 : 44.6170068359375 : JumpEnd); (23.6354166666667 : 44.6170068359375 : JumpStart); (23.8020833333333 : 44.6170068359375 : JumpEnd); (24.703127 : 44.6170068359375); (24.703127 : 52.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_PHANCONGCHOAN" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="c0909dee-7b02-401f-b94b-e947f9afaaf1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.8437475 : 42.3574039713542); (12.8437475 : 55.4643554101563); (13.8229191666667 : 55.4643554101563 : JumpStart); (13.9895858333333 : 55.4643554101563 : JumpEnd); (14.2213585416667 : 55.4643554101563 : JumpStart); (14.3880252083333 : 55.4643554101563 : JumpEnd); (20.625 : 55.4643554101563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_PHANCONGDIEUTRI" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="7e84d66c-af3e-4c1f-919d-e3ccb53cb682" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.17187875 : 42.3574039713542); (14.17187875 : 52.5460745670573); (14.2213585416667 : 52.5460745670573 : JumpStart); (14.3880252083333 : 52.5460745670573 : JumpEnd); (17.6041666666667 : 52.5460745670573 : JumpStart); (17.7708333333333 : 52.5460745670573 : JumpEnd); (17.875 : 52.5460745670573)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_PHANCONGVESINH" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="1eba1d43-8403-41ec-b6c2-f32276dd4e9f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.64062625 : 42.3574039713542); (13.64062625 : 60.2396061197917); (13.8229191666667 : 60.2396061197917 : JumpStart); (13.9895858333333 : 60.2396061197917 : JumpEnd); (14.2213585416667 : 60.2396061197917 : JumpStart); (14.3880252083333 : 60.2396061197917 : JumpEnd); (16.0416666666667 : 60.2396061197917 : JumpStart); (16.2083333333333 : 60.2396061197917 : JumpEnd); (20.875 : 60.2396061197917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_PHIEUDATTHUOC" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="5dc47ebc-b1e9-4d07-9f34-26475b4e0ea6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.10937375 : 42.3574039713542); (13.10937375 : 45.9896061197917); (13.8229191666667 : 45.9896061197917 : JumpStart); (13.9895858333333 : 45.9896061197917 : JumpEnd); (14.2213585416667 : 45.9896061197917 : JumpStart); (14.3880252083333 : 45.9896061197917 : JumpEnd); (17.6041666666667 : 45.9896061197917 : JumpStart); (17.7708333333333 : 45.9896061197917 : JumpEnd); (18.125 : 45.9896061197917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_PHIEUXUATTHUCAN" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="fdde435c-b790-46f6-bb56-b29d27c6c221" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(12.57812125 : 42.3574039713542); (12.57812125 : 63.0585034179688); (13.8229191666667 : 63.0585034179688 : JumpStart); (13.9895858333333 : 63.0585034179688 : JumpEnd); (14.2213585416667 : 63.0585034179688 : JumpStart); (14.3880252083333 : 63.0585034179688 : JumpEnd); (16.0416666666667 : 63.0585034179688 : JumpStart); (16.2083333333333 : 63.0585034179688 : JumpEnd); (17.875 : 63.0585034179688)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_PHIEUXUATTHUOC" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="e8ce54ad-0590-41ab-bdd2-c5a463d39bdf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(23.125 : 42.0344555664063); (23.6354166666667 : 42.0344555664063 : JumpStart); (23.8020833333333 : 42.0344555664063 : JumpEnd); (23.875 : 42.0344555664063)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_THUCAN/ZOO_THUCAN_ZOO_PHIEUDATTHUCAN" />
+      <nodes>
+        <classShapeMoniker Id="e31be9a3-04b8-43e2-a823-84f77ca45561" />
+        <classShapeMoniker Id="9c782d96-5df1-4ddf-be92-086b2624882b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(23.125 : 39.7748527018229); (23.6354166666667 : 39.7748527018229 : JumpStart); (23.8020833333333 : 39.7748527018229 : JumpEnd); (23.875 : 39.7748527018229)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_THUCAN/ZOO_THUCAN_ZOO_PHIEUNHAPTHUCAN" />
+      <nodes>
+        <classShapeMoniker Id="e31be9a3-04b8-43e2-a823-84f77ca45561" />
+        <classShapeMoniker Id="750e4c0e-6e98-4aee-ac66-600b74555861" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(21.125 : 42.5641097005208); (20.8802083333333 : 42.5641097005208 : JumpStart); (20.7135416666667 : 42.5641097005208 : JumpEnd); (20.078125 : 42.5641097005208); (20.078125 : 43.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_THUCAN/ZOO_THUCAN_ZOO_PHIEUXUATTHUCAN" />
+      <nodes>
+        <classShapeMoniker Id="e31be9a3-04b8-43e2-a823-84f77ca45561" />
+        <classShapeMoniker Id="fdde435c-b790-46f6-bb56-b29d27c6c221" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 42.0244571940104); (17.6041666666667 : 42.0244571940104 : JumpStart); (17.7708333333333 : 42.0244571940104 : JumpEnd); (19.9479166666667 : 42.0244571940104 : JumpStart); (20.1145833333333 : 42.0244571940104 : JumpEnd); (20.7135416666667 : 42.0244571940104 : JumpStart); (20.8802083333333 : 42.0244571940104 : JumpEnd); (21.125 : 42.0244571940104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_THUCAN" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="e31be9a3-04b8-43e2-a823-84f77ca45561" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 37.8349519856771); (14.8541666666667 : 37.8349519856771 : JumpStart); (15.0208333333333 : 37.8349519856771 : JumpEnd); (17.6041666666667 : 37.8349519856771 : JumpStart); (17.7708333333333 : 37.8349519856771 : JumpEnd); (17.8854166666667 : 37.8349519856771 : JumpStart); (18.0520833333333 : 37.8349519856771 : JumpEnd); (19.9479166666667 : 37.8349519856771 : JumpStart); (20.1145833333333 : 37.8349519856771 : JumpEnd); (20.8854166666667 : 37.8349519856771 : JumpStart); (21.0520833333333 : 37.8349519856771 : JumpEnd); (23.03125 : 37.8349519856771); (23.03125 : 39.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_TYPE/ZOO_TYPE_ZOO_THUCAN" />
+      <nodes>
+        <classShapeMoniker Id="7238598b-8de7-4f3c-bdf2-8081c37ccde2" />
+        <classShapeMoniker Id="e31be9a3-04b8-43e2-a823-84f77ca45561" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.125 : 44.292082485026); (17.6041666666667 : 44.292082485026 : JumpStart); (17.7708333333333 : 44.292082485026 : JumpEnd); (17.875 : 44.292082485026); (17.875 : 43.25); (19.9947916666667 : 43.25 : JumpStart); (20.1614583333333 : 43.25 : JumpEnd); (20.7135416666667 : 43.25 : JumpStart); (20.8802083333333 : 43.25 : JumpEnd); (23.375 : 43.25); (23.375 : 44.8670068359375); (23.6354166666667 : 44.8670068359375 : JumpStart); (23.8020833333333 : 44.8670068359375 : JumpEnd); (27.875 : 44.8670068359375); (27.875 : 43.6747054036458)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_KHAUPHANAN/ZOO_KHAUPHANAN_ZOO_THUCDON" />
+      <nodes>
+        <classShapeMoniker Id="8d6b57fd-8832-490c-b387-016fd0d7e158" />
+        <classShapeMoniker Id="6d61faa0-6baf-4287-86b8-95be06ba0e39" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(23.125 : 40.96875); (23.6354166666667 : 40.96875 : JumpStart); (23.8020833333333 : 40.96875 : JumpEnd); (26.875 : 40.96875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_THUCAN/ZOO_THUCAN_ZOO_THUCDON" />
+      <nodes>
+        <classShapeMoniker Id="e31be9a3-04b8-43e2-a823-84f77ca45561" />
+        <classShapeMoniker Id="6d61faa0-6baf-4287-86b8-95be06ba0e39" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.0926923076923 : 74.375); (17.5625 : 73.9051923076923); (17.5625 : 59.0997810527344); (17.875 : 59.0997810527344)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_THUOC/ZOO_THUOC_ZOO_DONTHUOC" />
+      <nodes>
+        <classShapeMoniker Id="468185b1-d007-4b47-8916-18d200a6856a" />
+        <classShapeMoniker Id="af45235b-4835-4d68-a047-9018f384f320" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.125 : 78.2203597005208); (21.875 : 78.2203597005208); (21.875 : 60.6170068359375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_THUOC/ZOO_THUOC_ZOO_PHIEUDATTHUOC" />
+      <nodes>
+        <classShapeMoniker Id="468185b1-d007-4b47-8916-18d200a6856a" />
+        <classShapeMoniker Id="5dc47ebc-b1e9-4d07-9f34-26475b4e0ea6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.125 : 76.4623527018229); (17.875 : 76.4623527018229)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_THUOC/ZOO_THUOC_ZOO_PHIEUNHAPTHUOC" />
+      <nodes>
+        <classShapeMoniker Id="468185b1-d007-4b47-8916-18d200a6856a" />
+        <classShapeMoniker Id="a07c249f-6bda-47b7-9499-43d06f786fc2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.125 : 74.4103836153846); (17.75 : 73.7853836153846); (17.75 : 63.8690071269531); (17.875 : 63.8690071269531)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_THUOC/ZOO_THUOC_ZOO_PHIEUXUATTHUOC" />
+      <nodes>
+        <classShapeMoniker Id="468185b1-d007-4b47-8916-18d200a6856a" />
+        <classShapeMoniker Id="e8ce54ad-0590-41ab-bdd2-c5a463d39bdf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.304691875 : 42.3574039713542); (14.304691875 : 76.4142569986979); (15.125 : 76.4142569986979)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_STATUS/ZOO_STATUS_ZOO_THUOC" />
+      <nodes>
+        <classShapeMoniker Id="fd705510-51b1-4750-aabf-6abf562a7f8e" />
+        <classShapeMoniker Id="468185b1-d007-4b47-8916-18d200a6856a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

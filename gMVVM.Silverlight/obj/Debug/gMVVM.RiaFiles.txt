@@ -1,0 +1,2 @@
+D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight
+Generated_Code\gMVVM.Web.g.cs

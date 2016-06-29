@@ -1,0 +1,2 @@
+127.0.0.1
+PublicKeyToken=15d1a32b-ad23-421d-b715-0678a23cb822

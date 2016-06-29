@@ -1,0 +1,156 @@
+﻿<UserControl x:Class="gMVVM.Views.AssCommon.BranchEdit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"     
+             xmlns:common="clr-namespace:gMVVM.Views.Common"
+              xmlns:local="clr-namespace:gMVVM.CommonClass"
+             xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+           xmlns:interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity">
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel  Grid.Row="0">
+            <StackPanel x:Name="splHeader" Grid.Row="0" Style="{StaticResource splHeader}" >
+                <HyperlinkButton Style="{StaticResource hplHome}" NavigateUri="/Home"/>
+                <TextBlock Text="{Binding Path=lblBranch, Source={StaticResource currentAssCommonCulture}}" Style="{StaticResource backStyle}" Cursor="Hand">
+                    <interactivity:Interaction.Triggers>
+                            <interactivity:EventTrigger EventName="MouseLeftButtonDown">
+                                <interactivity:InvokeCommandAction Command="{Binding Path=ActionCommand}" CommandParameter="Cancel"/>
+                            </interactivity:EventTrigger>
+                        </interactivity:Interaction.Triggers>
+                </TextBlock>
+                <ContentControl Style="{StaticResource ArrowStyle}" />
+                <TextBlock Text="{Binding Path=HeaderText}" Style="{StaticResource titleStyle}"/>
+            </StackPanel>
+            <toolkit:Expander Grid.Row="1" Header="{Binding Path=lblDetail, Source={StaticResource currentCommonCulture}}" Style="{StaticResource ExpanderNewStyle}" IsExpanded="True" local:EyeCandy.Image="/gMVVM;component/Data/Icons/edit_icon.png">
+                <Grid Background="White" >
+                    <StackPanel Margin="5">
+                        <common:MessageAlarm DataContext="{Binding Path=MessagePop}"/>
+                        <ContentControl Visibility="{Binding IsApproved}" Style="{StaticResource approveStyle}"/>
+                        <UserControl IsEnabled="{Binding Path=IsView}">
+                            <Grid x:Name="grdItems" Margin="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <!--<ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>-->
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding BranchID, Source={StaticResource currentAssCommonCulture}}" 
+    				Style="{StaticResource tblStyle}"/>
+                                <!--<TextBlock Grid.Row="0" Grid.Column="2" Text="DAO Code" 
+    				Style="{StaticResource tblStyle}"/>-->
+                                <TextBlock Grid.Row="1" Grid.Column="0" Text="{Binding BranchName, Source={StaticResource currentAssCommonCulture}}" 
+    				Style="{StaticResource tblStyle}"/>
+                                <!--<TextBlock Grid.Row="1" Grid.Column="2" Text="DAO Name" 
+    				Style="{StaticResource tblStyle}"/>-->
+                                <TextBlock Grid.Row="2" Grid.Column="0" Text="{Binding RegionID, Source={StaticResource currentAssCommonCulture}}" 
+    				Style="{StaticResource tblStyle}"/>
+                               
+                                <TextBlock Grid.Row="3" Grid.Column="0" Text="{Binding BranchType, Source={StaticResource currentAssCommonCulture}}"
+    				Style="{StaticResource tblStyle}"/>
+                                <TextBlock Grid.Row="4" Grid.Column="0" Text="{Binding FatherID, Source={StaticResource currentAssCommonCulture}}"
+    				Style="{StaticResource tblStyle}"/>
+                                <TextBlock Grid.Row="5" Grid.Column="0" Text="{Binding Addr, Source={StaticResource currentAssCommonCulture}}"
+    				Style="{StaticResource tblStyle}"/>
+                                <TextBlock Grid.Row="6" Grid.Column="0" Text="{Binding Tel, Source={StaticResource currentAssCommonCulture}}"
+    				Style="{StaticResource tblStyle}"/>
+                                <TextBlock Grid.Row="7" Grid.Column="0" Text="{Binding TaxNo, Source={StaticResource currentAssCommonCulture}}"
+                        			Style="{StaticResource tblStyle}"/>
+                                <!--<TextBlock Grid.Row="8" Grid.Column="0" Text="{Binding Record_Status, Source={StaticResource currentAssCommonCulture}}"
+    				Style="{StaticResource tblStyle}" Visibility="Collapsed"/>-->
+                                <TextBlock Text="PGD tìm năng" Grid.Row="8" Grid.Column="0"
+    				                        Style="{StaticResource tblStyle}"/>
+                                <TextBlock Grid.Row="9" Grid.Column="0" Text="{Binding Note, Source={StaticResource currentAssCommonCulture}}"
+    				Style="{StaticResource tblStyle}"/>
+
+                                <TextBox Grid.Row="0" Grid.Column="1" Style="{StaticResource txbNormal}"
+    				Text="{Binding CurrentItem.BRANCH_CODE, Mode=TwoWay}" MaxLength="15" />
+                                <!--<TextBox Grid.Row="0" Grid.Column="3" Style="{StaticResource txbNormal}"
+    				Text="{Binding CurrentItem.DAO_CODE, Mode=TwoWay}" MaxLength="15" />-->
+                                <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource txbNormal}"
+    				Text="{Binding CurrentItem.BRANCH_NAME, Mode=TwoWay}"/>
+                                <!--<TextBox Grid.Row="1" Grid.Column="3" Style="{StaticResource txbNormal}"
+    				Text="{Binding CurrentItem.DAO_NAME, Mode=TwoWay}"/>-->
+
+                                <ComboBox Grid.Row="2" Grid.Column="1" Style="{StaticResource cmbStyle}"
+                              ItemsSource="{Binding Path=RegionData}" SelectedValue="{Binding Path=RegionID, Mode=TwoWay}" SelectedValuePath="REGION_ID">
+                                    <ComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                <TextBlock Text="{Binding Path=REGION_CODE}" Margin="5" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding Path=REGION_NAME}" Margin="5" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ComboBox.ItemTemplate>
+                                </ComboBox>
+                                <ComboBox Grid.Row="3" Grid.Column="1" Style="{StaticResource cmbStyle}"
+                              ItemsSource="{Binding Path=BranchTypeData}" SelectedValue="{Binding Path=BranchTypeId, Mode=TwoWay}" SelectedValuePath="Id">
+                                    <ComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                <TextBlock Text="{Binding Path=Id}" Margin="5" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding Path=Name}" Margin="5" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ComboBox.ItemTemplate>
+                                </ComboBox>
+                                
+                                <ComboBox Grid.Row="4" Grid.Column="1" Style="{StaticResource cmbStyle}"
+                              ItemsSource="{Binding Path=BranchData}" SelectedValue="{Binding Path=CurrentItem.FATHER_ID, Mode=TwoWay}" SelectedValuePath="BRANCH_ID">
+                                    <ComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                <TextBlock Text="{Binding Path=BRANCH_CODE}" Margin="5" VerticalAlignment="Center"/>
+                                                <TextBlock Text="{Binding Path=BRANCH_NAME}" Margin="5" VerticalAlignment="Center"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ComboBox.ItemTemplate>
+                                </ComboBox>
+
+                                <TextBox Grid.Row="5" Grid.Column="1" Style="{StaticResource txbNormal}"
+    				Text="{Binding CurrentItem.ADDR, Mode=TwoWay}" TextWrapping="Wrap" Height="50" />
+                                <TextBox Grid.Row="6" Grid.Column="1" Style="{StaticResource txbNormal}"
+    				Text="{Binding CurrentItem.TEL, Mode=TwoWay}" />
+                                <TextBox Grid.Row="7" Grid.Column="1" Style="{StaticResource txbNormal}"
+    				Text="{Binding CurrentItem.TAX_NO, Mode=TwoWay}" />
+                                <StackPanel Grid.Row="8" Grid.Column="1" Orientation="Horizontal" Grid.ColumnSpan="2">
+                                    <CheckBox IsChecked="{Binding IsChecked,Mode=TwoWay}" Style="{StaticResource chbStyle}" Visibility="Collapsed"/>
+                                    <!--<TextBlock Text="PGD tìm năng"
+    				                        Style="{StaticResource tblStyle}"/>-->
+                                    <CheckBox IsChecked="{Binding IsPotential,Mode=TwoWay}" Style="{StaticResource chbStyle}"/>
+                                </StackPanel>
+                                
+                                <TextBox Grid.Row="9" Grid.Column="1" Style="{StaticResource txbNormal}" Grid.ColumnSpan="3"
+    				Text="{Binding CurrentItem.NOTES, Mode=TwoWay}" TextWrapping="Wrap" Height="50" Width="250"/>
+
+                                <TextBlock Grid.Row="1" Grid.Column="2" Style="{StaticResource Required}"/>
+                                <TextBlock Grid.Row="0" Grid.Column="2" Style="{StaticResource Required}"/>
+
+                            </Grid>
+                        </UserControl>
+                    </StackPanel>
+                </Grid>
+            </toolkit:Expander>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

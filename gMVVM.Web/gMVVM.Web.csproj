@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C45EB4CF-1437-433C-A4AE-D31DCEE88338}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gMVVM.Web</RootNamespace>
+    <AssemblyName>gMVVM.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SilverlightApplicationList>{A6B2F18B-703B-405A-BBC8-79D4A3465444}|..\AssetManagement\AssetManagement.csproj|ClientBin|False</SilverlightApplicationList>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <ExcludeGeneratedDebugSymbol>false</ExcludeGeneratedDebugSymbol>
+    <ExcludeApp_Data>false</ExcludeApp_Data>
+    <PrecompileBeforePublish>false</PrecompileBeforePublish>
+    <IncludeIisSettings>false</IncludeIisSettings>
+    <PublishDatabases>true</PublishDatabases>
+    <EnableUpdateable>true</EnableUpdateable>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\gMVVM.Web.xml</DocumentationFile>
+    <RegisterForComInterop>true</RegisterForComInterop>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined.1.8.20.0.Fakes">
+      <HintPath>FakesAssemblies\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20.0.Fakes.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells, Version=8.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells.GridDesktop, Version=8.5.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Cells.GridDesktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=7.0.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DC.SilverlightFileUpload, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\DLL\DC.SilverlightFileUpload.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\DLL\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.Configuration, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.StorageClient, Version=1.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="OpenXmlPackaging">
+      <HintPath>..\DLL\OpenXmlPackaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Silverlight">
+      <HintPath>..\..\..\..\DLL\System.Web.Silverlight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.7.1\lib\net40\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20\lib\net40\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.0.3.12153\lib\net40-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.0.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.0.3.12153\lib\net40-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Membership.OpenAuth.1.0.0\lib\net40\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing">
+      <HintPath>..\packages\ZXing.Net.0.14.0.1\lib\net40\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation">
+      <HintPath>..\packages\ZXing.Net.0.14.0.1\lib\net40\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\gMVVM.xap" />
+    <Content Include="gMVVM.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config" />
+    <Content Include="ReportPages\Mangement\DownloadExcel.aspx" />
+    <Content Include="ReportPages\Mangement\ExcelTemplate\ExcelTemplateDescription.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ReportPages\Mangement\GenerateData\ReportDataColumn.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ReportPages\ExportReport\DownloadExcel.aspx" />
+    <Content Include="ReportPages\ExportReport\ExportReport.aspx" />
+    <Content Include="ReportPages\Tools\QuerryForm.aspx" />
+    <Content Include="Reports\Management\ReportDataSet.xsc">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="ReportPages\Mangement\ExcelTemplate\INVENTORY_BYID.xlsx" />
+    <Content Include="ReportPages\Mangement\ExcelTemplate\KH_BC01.xlsx" />
+    <None Include="Properties\PublishProfiles\Publish1.pubxml" />
+    <Content Include="ReportPages\ExportReport\Template\SP_TEST - Copy.xlsx" />
+    <Content Include="ReportPages\ExportReport\Template\SP_TEST.docx" />
+    <Content Include="ReportPages\ExportReport\Template\SP_TEST.xlsx" />
+    <None Include="Reports\Management\ReportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Reports\Management\ReportDataSet.xss">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="ReportPages\Mangement\Report.aspx" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Services\KeHoach\GhiNhanKeHoach.svc" />
+    <Content Include="Services\Management\clientaccesspolicy.xml" />
+    <Content Include="Services\Management\crossdomain.xml" />
+    <Content Include="Services\EduBanking\SessionService.svc" />
+    <Content Include="Services\Management\gMVVMService.svc" />
+    <Content Include="Silverlight.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportPages\Mangement\DownloadExcel.aspx.cs">
+      <DependentUpon>DownloadExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\Mangement\DownloadExcel.aspx.designer.cs">
+      <DependentUpon>DownloadExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\Mangement\GenerateData\ConnectData.cs" />
+    <Compile Include="ReportPages\Mangement\GenerateData\ExcelTemplate.cs" />
+    <Compile Include="ReportPages\Mangement\GenerateData\ExportReportCalulate.cs" />
+    <Compile Include="ReportPages\Mangement\GenerateData\GenerateDataTable.cs" />
+    <Compile Include="ReportPages\Mangement\GenerateData\ReportDB.cs" />
+    <Compile Include="ReportPages\Mangement\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\Mangement\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\ExportReport\CodeExport\ExcelTemplateExportBase.cs" />
+    <Compile Include="ReportPages\ExportReport\CodeExport\WordTemplateBase.cs" />
+    <Compile Include="ReportPages\ExportReport\ConvertHelper.cs" />
+    <Compile Include="ReportPages\ExportReport\DownloadExcel.aspx.cs">
+      <DependentUpon>DownloadExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\ExportReport\DownloadExcel.aspx.designer.cs">
+      <DependentUpon>DownloadExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\ExportReport\ExcelErrorObject.cs" />
+    <Compile Include="ReportPages\ExportReport\ExcelTemplateBase.cs" />
+    <Compile Include="ReportPages\ExportReport\ExportReport.aspx.cs">
+      <DependentUpon>ExportReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\ExportReport\ExportReport.aspx.designer.cs">
+      <DependentUpon>ExportReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPages\ExportReport\ModelProperties.cs" />
+    <Compile Include="ReportPages\Tools\QuerryForm.aspx.cs">
+      <DependentUpon>QuerryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPages\Tools\QuerryForm.aspx.designer.cs">
+      <DependentUpon>QuerryForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Management\InventoryCCLD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryCCLD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Management\InventoryTSCD.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryTSCD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Management\ReportDataSet.cs">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Management\ReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Services\KeHoach\Asset.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Asset.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Services\KeHoach\GhiNhanKeHoach.svc.cs">
+      <DependentUpon>GhiNhanKeHoach.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\KeHoach\Implement\ImplementInterface.cs" />
+    <Compile Include="Services\KeHoach\Interfaces\GhiNhanKeHoach\ICM_Domain.cs" />
+    <Compile Include="Services\KeHoach\Interfaces\GhiNhanKeHoach\IGhiNhan.cs" />
+    <Compile Include="Services\Management\Asset.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Asset.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Management\Functions\ListMessage.cs" />
+    <Compile Include="Services\Management\Functions\MyHelper.cs" />
+    <Compile Include="Services\Management\gMVVMService.svc.cs">
+      <DependentUpon>gMVVMService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Management\Implement\CommonClass.cs" />
+    <Compile Include="Services\Management\Implement\ImplementInterface.cs" />
+    <Compile Include="Services\Management\Implement\ViewDetailClass.cs" />
+    <Compile Include="Services\Management\Interfaces\AssCommon\IARGUMENT.cs" />
+    <Compile Include="Services\Management\Interfaces\AssCommon\IBranch.cs" />
+    <Compile Include="Services\Management\Interfaces\AssCommon\ICM_ALLCODE.cs" />
+    <Compile Include="Services\Management\Interfaces\AssCommon\ICM_BRANCH.cs" />
+    <Compile Include="Services\Management\Interfaces\AssCommon\ICM_DEPT_GROUP.cs" />
+    <Compile Include="Services\Management\Interfaces\AssCommon\IDEPARTMENT.cs" />
+    <Compile Include="Services\Management\Interfaces\AssCommon\ISYS_PARAMETERS.cs" />
+    <Compile Include="Services\Management\Interfaces\SystemRole\ITLMENU.cs" />
+    <Compile Include="Services\Management\Interfaces\SystemRole\ITLSYSROLE.cs" />
+    <Compile Include="Services\Management\Interfaces\SystemRole\ITLUSER.cs" />
+    <Compile Include="Services\EduBanking\ISessionService.cs" />
+    <Compile Include="Services\EduBanking\SessionService.svc.cs">
+      <DependentUpon>SessionService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Services\FileUpload.ashx.cs">
+      <DependentUpon>FileUpload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Management\Interfaces\QuanLySoThu\IZOO_BaoCaoTonKho.cs" />
+    <Compile Include="Services\Upload\FileUpload.ashx.cs">
+      <DependentUpon>FileUpload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Upload\FileUploadProcess.cs" />
+    <Compile Include="Services\Upload\MultiFileUploadControl.cs" />
+    <Compile Include="WebRole.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="aspnet_client\system_web\4_0_30319\" />
+    <Folder Include="Content\" />
+    <Folder Include="Lib\" />
+    <Folder Include="Services\EduBanking\Images\" />
+    <Folder Include="Services\KeHoach\Functions\" />
+    <Folder Include="Upload\AssetData\" />
+    <Folder Include="Upload\EduBanking\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Services\FileUpload.ashx" />
+    <Content Include="Services\Management\Asset.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Asset.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Services\Upload\FileUpload.ashx" />
+    <Content Include="Services\KeHoach\Asset.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Asset.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Services\Management\Asset.dbml.layout">
+      <DependentUpon>Asset.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\Management\InventoryCCLD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InventoryCCLD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Management\InventoryTSCD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InventoryTSCD.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Services\KeHoach\Asset.dbml.layout">
+      <DependentUpon>Asset.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20259</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:36229/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

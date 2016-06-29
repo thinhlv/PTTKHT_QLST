@@ -1,0 +1,27 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:resourceCulture="clr-namespace:gMVVM.Resources"
+             xmlns:commonClass="clr-namespace:gMVVM.CommonClass"
+             x:Class="gMVVM.App"
+             xmlns:src="clr-namespace:gMVVM"
+             xmlns:mvvmDll="clr-namespace:mvvmCommon;assembly=mvvmCommon"
+             >
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Assets/Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <resourceCulture:CommonResource x:Key="currentCommonCulture"/>
+            <resourceCulture:AssCommonResource x:Key="currentAssCommonCulture"/>
+            <resourceCulture:SystemRoleResource x:Key="currentSystemRoleCulture"/>
+            <resourceCulture:SearchResource x:Key="currentSearchCulture"/>
+            <commonClass:ImageConverter x:Key="coverBitmapImage"/>
+            <resourceCulture:PlanManagerResource x:Key="currentPlanManagerCulture"/>
+            <resourceCulture:QuanLySoThuResource x:Key="currentMedicineManagerCulture"/>
+            <commonClass:FormatMoneyVN x:Key="FormatMoney"/>        
+            <mvvmDll:FocusTextBox x:Key="FocusTextMoney"/>
+            <mvvmDll:ChangeDate x:Key="ShortDate"/>
+            <mvvmDll:ChangeLongDate x:Key="LongDate"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

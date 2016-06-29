@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AmortRate" xml:space="preserve">
+    <value>Tỷ lệ khấu hao</value>
+  </data>
+  <data name="AmountExe" xml:space="preserve">
+    <value>Giá trị thực hiện</value>
+  </data>
+  <data name="Auth_Status" xml:space="preserve">
+    <value>Trạng thái duyệt</value>
+  </data>
+  <data name="BranchID" xml:space="preserve">
+    <value>Mã đơn vị</value>
+  </data>
+  <data name="EffectDate" xml:space="preserve">
+    <value>Ngày hiệu lực</value>
+  </data>
+  <data name="GoodsID" xml:space="preserve">
+    <value>Mã sản phẩm</value>
+  </data>
+  <data name="GoodsName" xml:space="preserve">
+    <value>Tên sản phẩm</value>
+  </data>
+  <data name="lblTrade" xml:space="preserve">
+    <value>Danh sách kế hoạch mua sắm</value>
+  </data>
+  <data name="MonthExe" xml:space="preserve">
+    <value>Tháng thực hiện</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>STT</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="PlanID" xml:space="preserve">
+    <value>Mã kế hoạch</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="Record_Status" xml:space="preserve">
+    <value>Hoạt động</value>
+  </data>
+  <data name="RemainValue" xml:space="preserve">
+    <value>Giá trị còn lại</value>
+  </data>
+  <data name="TradeName" xml:space="preserve">
+    <value>Tên kế hoạch</value>
+  </data>
+  <data name="UnitID" xml:space="preserve">
+    <value>Đơn vị tính</value>
+  </data>
+  <data name="UsedAmt" xml:space="preserve">
+    <value>Tổng giá trị</value>
+  </data>
+  <data name="Verson" xml:space="preserve">
+    <value>Số lần thay đổi</value>
+  </data>
+  <data name="YearExe" xml:space="preserve">
+    <value>Năm thực hiện</value>
+  </data>
+  <data name="ApproveValue" xml:space="preserve">
+    <value>Kinh phí được duyệt (vnđ)</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>Ngày dự kiến hoàn thành</value>
+  </data>
+  <data name="ExpectedValue" xml:space="preserve">
+    <value>Kinh phí đề xuất (vnđ)</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Ngày dự kiến xây dựng</value>
+  </data>
+  <data name="VerifyValue" xml:space="preserve">
+    <value>Kinh phí trình (vnđ)</value>
+  </data>
+  <data name="ConstructionList" xml:space="preserve">
+    <value>Các công trình xây dựng cơ bản</value>
+  </data>
+  <data name="lblConstruction" xml:space="preserve">
+    <value>Danh sách kế hoạch xây dựng cơ bản</value>
+  </data>
+  <data name="AssetID" xml:space="preserve">
+    <value>Mã tài sản</value>
+  </data>
+  <data name="AssetName" xml:space="preserve">
+    <value>Tên tài sản</value>
+  </data>
+  <data name="ConstID" xml:space="preserve">
+    <value>Mã công trình</value>
+  </data>
+  <data name="ConstName" xml:space="preserve">
+    <value>Tên công trình</value>
+  </data>
+  <data name="ExeDate" xml:space="preserve">
+    <value>Thời gian thực hiện (tháng)</value>
+  </data>
+  <data name="lblConstList" xml:space="preserve">
+    <value>CÁC CÔNG TRÌNH XÂY DỰNG CƠ BẢN</value>
+  </data>
+  <data name="lblLiquidation" xml:space="preserve">
+    <value>Danh sách kế hoạch thanh lý</value>
+  </data>
+  <data name="lblLiquidList" xml:space="preserve">
+    <value>DANH MỤC CÁC TÀI SẢN CẦN THANH LÝ</value>
+  </data>
+  <data name="LiquidType" xml:space="preserve">
+    <value>Hình thức thanh lý</value>
+  </data>
+  <data name="MonthLiquid" xml:space="preserve">
+    <value>Tháng dự kiến thanh lý</value>
+  </data>
+  <data name="PlanName" xml:space="preserve">
+    <value>Tên kế hoạch</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Nguyên giá</value>
+  </data>
+  <data name="RecordStatusAss" xml:space="preserve">
+    <value>Hiện trạng tài sản</value>
+  </data>
+  <data name="RecoveryValue" xml:space="preserve">
+    <value>Giá dự kiến thu hồi</value>
+  </data>
+  <data name="AssetGroup" xml:space="preserve">
+    <value>Nhóm tài sản</value>
+  </data>
+  <data name="lblAssetList" xml:space="preserve">
+    <value>DANH SÁCH TÀI SẢN NGÂN HÀNG</value>
+  </data>
+  <data name="btnAddAsset" xml:space="preserve">
+    <value>Thêm tài sản</value>
+  </data>
+  <data name="QuantityExe" xml:space="preserve">
+    <value>Số lượng đã thực hiện</value>
+  </data>
+  <data name="QuantityRemain" xml:space="preserve">
+    <value>Số lượng còn lại</value>
+  </data>
+  <data name="btnSendPlan" xml:space="preserve">
+    <value>Gửi kế hoạch</value>
+  </data>
+  <data name="lblPlanInfo" xml:space="preserve">
+    <value>THÔNG TIN KẾ HOẠCH</value>
+  </data>
+  <data name="PutLiquid" xml:space="preserve">
+    <value>Đưa vào thanh lý</value>
+  </data>
+  <data name="RemainMonAmort" xml:space="preserve">
+    <value>Số kỳ khấu hao còn lại</value>
+  </data>
+  <data name="StatusAmort" xml:space="preserve">
+    <value>Tình trạng khấu hao</value>
+  </data>
+  <data name="StatusAsset" xml:space="preserve">
+    <value>Tình trạng tài sản</value>
+  </data>
+  <data name="PlanMonth" xml:space="preserve">
+    <value>Tháng kế hoạch</value>
+  </data>
+  <data name="lblAddConstruction" xml:space="preserve">
+    <value>Thêm mới công trình</value>
+  </data>
+  <data name="lblEditConstruction" xml:space="preserve">
+    <value>Chi tiết công trinh</value>
+  </data>
+  <data name="lblTradeDetail" xml:space="preserve">
+    <value>Chi tiết kế hoạch</value>
+  </data>
+  <data name="lblLiquidAsset" xml:space="preserve">
+    <value>Tài sản thanh lý</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="ConstructionRepair" xml:space="preserve">
+    <value>Nội dung xây dựng mới/sửa chữa</value>
+  </data>
+  <data name="Checked" xml:space="preserve">
+    <value>Chọn</value>
+  </data>
+  <data name="Amort_End_DT" xml:space="preserve">
+    <value>Tháng kết thúc khấu hao</value>
+  </data>
+  <data name="Amort_Firt_DT" xml:space="preserve">
+    <value>Tháng khấu hao đầu tiên</value>
+  </data>
+  <data name="MonthOfAmort" xml:space="preserve">
+    <value>Số tháng khấu hao (tháng)</value>
+  </data>
+  <data name="BranchName" xml:space="preserve">
+    <value>Tên đơn vị</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="SupplierID" xml:space="preserve">
+    <value>Mã nhà cung cấp</value>
+  </data>
+  <data name="SupplierName" xml:space="preserve">
+    <value>Tên nhà cung cấp</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="lblTotality" xml:space="preserve">
+    <value>Toàn phần</value>
+  </data>
+  <data name="Div_Id" xml:space="preserve">
+    <value>Địa điểm</value>
+  </data>
+  <data name="Const_Type" xml:space="preserve">
+    <value>Loại công trình</value>
+  </data>
+  <data name="lblSendPlanError" xml:space="preserve">
+    <value>Gửi kế hoạch thất bại</value>
+  </data>
+  <data name="lblSendPlanSuccessfull" xml:space="preserve">
+    <value>Gửi kế hoạch thành công</value>
+  </data>
+  <data name="lblDoneValue" xml:space="preserve">
+    <value>Tổng giá trị đã thực hiện</value>
+  </data>
+  <data name="lblStepStatus" xml:space="preserve">
+    <value>Tình trạng xử lý</value>
+  </data>
+  <data name="lblPer" xml:space="preserve">
+    <value>Tỉ lệ</value>
+  </data>
+  <data name="lblPlanList" xml:space="preserve">
+    <value>Danh sách kế hoạch</value>
+  </data>
+  <data name="btnSendBack" xml:space="preserve">
+    <value>Không duyệt</value>
+  </data>
+  <data name="msgSendBack" xml:space="preserve">
+    <value>Kế hoạch đã được gửi trở lại</value>
+  </data>
+  <data name="msgSendPlan" xml:space="preserve">
+    <value>Gửi kế hoạch thành công</value>
+  </data>
+  <data name="CurrentYear" xml:space="preserve">
+    <value>Năm hiện tại</value>
+  </data>
+  <data name="lblConList" xml:space="preserve">
+    <value>Danh  sách công trình</value>
+  </data>
+  <data name="Row" xml:space="preserve">
+    <value>Dòng </value>
+  </data>
+  <data name="lblPlanBranch" xml:space="preserve">
+    <value>Đơn vị lập kế hoạch</value>
+  </data>
+</root>

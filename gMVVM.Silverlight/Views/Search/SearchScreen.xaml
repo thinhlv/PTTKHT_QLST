@@ -1,0 +1,213 @@
+﻿<sdk:ChildWindow
+           x:Class="gMVVM.Views.Search.SearchScreen"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+    xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" 
+    xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" 
+    xmlns:uriMapper="clr-namespace:System.Windows.Navigation;assembly=System.Windows.Controls.Navigation"
+    mc:Ignorable="d" x:Name="childWindow"          
+           BorderThickness="0" DialogResult="False" >
+
+    <sdk:ChildWindow.Resources>
+        <Storyboard x:Name="StoryboardNavigateFrame">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0" Value="180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationZ)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.CenterOfRotationX)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.CenterOfRotationY)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Style x:Key="ButtonCloseStyle" TargetType="Button">
+            <Setter Property="Background" Value="#FF1F3B53"/>
+            <Setter Property="Foreground" Value="#FF000000"/>
+            <Setter Property="Padding" Value="3"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                        <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                        <GradientStop Color="#FF718597" Offset="0.375"/>
+                        <GradientStop Color="#FF617584" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image" d:IsOptimized="True"/>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed"/>
+                                    <VisualState x:Name="Disabled"/>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused"/>
+                                    <VisualState x:Name="Unfocused"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Image x:Name="image" HorizontalAlignment="Center" Width="16" Height="16" VerticalAlignment="Center" Source="/gMVVM;component/Data/Icons/66.png" Opacity="0.7"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Storyboard x:Name="StoryboardBackClick">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-180"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleX)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.CenterOfRotationX)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.CenterOfRotationY)" Storyboard.TargetName="LayoutRoot">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </sdk:ChildWindow.Resources>
+    <i:Interaction.Triggers>
+        <i:EventTrigger SourceName="button" SourceObject="{Binding ElementName=button}" EventName="Click">
+            <ei:ChangePropertyAction x:Name="buttonclo" TargetObject="{Binding ElementName=childWindow}" PropertyName="DialogResult" Value="False"/>
+        </i:EventTrigger>
+        <i:EventTrigger SourceName="ButtonClose" SourceObject="{Binding ElementName=ButtonClose}" EventName="Click">
+            <ei:ChangePropertyAction x:Name="buttonclo1" TargetObject="{Binding ElementName=childWindow}" PropertyName="DialogResult" Value="False"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <sdk:ChildWindow.Style>
+        <StaticResource ResourceKey="ChildWindowStyle"/>
+    </sdk:ChildWindow.Style>
+
+    <sdk:ChildWindow.Projection>
+        <PlaneProjection/>
+    </sdk:ChildWindow.Projection>
+
+    <toolkit:BusyIndicator x:Name="Processing1" BusyContent="{Binding lblWaiting, Source={StaticResource  currentCommonCulture}}">
+        <Grid x:Name="LayoutRoot" Margin="0" RenderTransformOrigin="0.5,0.5" Background="Transparent"  MinWidth="600" MaxWidth="1040">
+            <Grid.Effect>
+                <DropShadowEffect Color="#CA050505" BlurRadius="2" ShadowDepth="2"/>
+            </Grid.Effect>
+            <Grid.RenderTransform>
+                <CompositeTransform/>
+            </Grid.RenderTransform>
+            <Grid.Projection>
+                <PlaneProjection/>
+            </Grid.Projection>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="auto" MinHeight="300"/>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="1" Background="White">
+                <ScrollViewer  BorderThickness="0" Padding="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                    <ContentControl x:Name="FrameChi"  Margin="5,0,5,0">
+                        <ContentControl.Projection>
+                            <PlaneProjection/>
+                        </ContentControl.Projection>
+                    </ContentControl>
+                </ScrollViewer>
+            </Grid>
+
+            <Border BorderBrush="#FFEEEEEE" BorderThickness="0,0,0,1.5" Margin="0" Background="White">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="50"/>
+                    </Grid.ColumnDefinitions>
+
+                    <sdk:Label x:Name="lblTitle"  HorizontalAlignment="Left" Foreground="#CC393939" FontSize="18.667" FontFamily="Arial" VerticalAlignment="Center" Margin="10,0,0,0" />
+                    <Button x:Name="ButtonClose" Content="false" Grid.Column="1" Width="16" Height="16" BorderThickness="0" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource ButtonCloseStyle}" />
+
+                </Grid>
+            </Border>
+            <Border BorderBrush="#FFDDDDDD" BorderThickness="0,1,0,0" Margin="0" Grid.Row="2" Background="WhiteSmoke">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <HyperlinkButton x:Name="hyperlinkButton1" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource btnAddStyle}" Width="70" Margin="10,0,0,0" NavigateUri="{Binding Path=UriAdd,Mode=TwoWay}" Visibility="Collapsed">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <ei:ControlStoryboardAction Storyboard="{StaticResource StoryboardNavigateFrame}"/>
+                                <ei:ChangePropertyAction PropertyName="Visibility">
+                                    <ei:ChangePropertyAction.Value>
+                                        <Visibility>Collapsed</Visibility>
+                                    </ei:ChangePropertyAction.Value>
+                                </ei:ChangePropertyAction>
+                                <ei:ChangePropertyAction TargetName="hyperlinkButton" TargetObject="{Binding ElementName=hyperlinkButton}" PropertyName="Visibility"/>
+                                <ei:ChangePropertyAction TargetName="button" TargetObject="{Binding ElementName=button}" PropertyName="Visibility">
+                                    <ei:ChangePropertyAction.Value>
+                                        <Visibility>Collapsed</Visibility>
+                                    </ei:ChangePropertyAction.Value>
+                                </ei:ChangePropertyAction>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </HyperlinkButton>
+                    <HyperlinkButton x:Name="hyperlinkButton" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource HyperlinkButtonNMStyle}" Width="70" Height="30" Foreground="#FFE9F0F9" Margin="10,0,0,0" Visibility="Collapsed" >
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <ei:ControlStoryboardAction Storyboard="{StaticResource StoryboardBackClick}"/>
+                                <ei:ChangePropertyAction PropertyName="Visibility">
+                                    <ei:ChangePropertyAction.Value>
+                                        <Visibility>Collapsed</Visibility>
+                                    </ei:ChangePropertyAction.Value>
+                                </ei:ChangePropertyAction>
+                                <ei:ChangePropertyAction TargetName="hyperlinkButton1" TargetObject="{Binding ElementName=hyperlinkButton1}" PropertyName="Visibility"/>
+                                <ei:CallMethodAction TargetObject="{Binding ElementName=FrameChi}" MethodName="GoBack"/>
+                                <ei:ChangePropertyAction TargetName="button" TargetObject="{Binding ElementName=button}" PropertyName="Visibility"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </HyperlinkButton>
+                    <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,15,0">
+                        <Button Width="80"  Content="{Binding Path=btnSearch, Source={StaticResource currentCommonCulture}}" Style="{StaticResource btnStyle}" Margin="3"
+                            Command="{Binding Path=ActionCommand, Mode=TwoWay}" CommandParameter="Search"/>
+                        <Button Width="80"  Content="{Binding Path=btnOk, Source={StaticResource currentCommonCulture}}" Style="{StaticResource btnStyle}" Margin="3"
+                            Command="{Binding Path=ActionCommand, Mode=TwoWay}" CommandParameter="Ok"/>
+                        <Button x:Name="button"  Width="80"  Content="{Binding Path=btnCancel, Source={StaticResource currentCommonCulture}}" Style="{StaticResource btnStyle}" Margin="3"></Button>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </toolkit:BusyIndicator>
+</sdk:ChildWindow>

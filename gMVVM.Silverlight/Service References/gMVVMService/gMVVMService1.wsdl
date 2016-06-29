@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="gMVVMService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:36229/Services/Management/gMVVMService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:36229/Services/Management/gMVVMService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:36229/Services/Management/gMVVMService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" />
+      <xsd:import schemaLocation="http://localhost:36229/Services/Management/gMVVMService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management.Interfaces.SystemRole" />
+      <xsd:import schemaLocation="http://localhost:36229/Services/Management/gMVVMService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost:36229/Services/Management/gMVVMService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management.Interfaces.AssCommon" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITLUSER_ContainsTLUSER_InputMessage">
+    <wsdl:part name="parameters" element="tns:ContainsTLUSER" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_ContainsTLUSER_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ContainsTLUSERResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_CheckUserLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUserLogin" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_CheckUserLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckUserLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_CheckLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckLogin" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_CheckLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_GetByAllTLUSER_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByAllTLUSER" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_GetByAllTLUSER_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByAllTLUSERResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_InsertTLUSER_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTLUSER" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_InsertTLUSER_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTLUSERResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_UpdateTLUSER_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTLUSER" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_UpdateTLUSER_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTLUSERResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_DeleteTLUSER_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTLUSER" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_DeleteTLUSER_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTLUSERResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_ApproveTLUSER_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveTLUSER" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_ApproveTLUSER_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveTLUSERResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_SearchTLUSER_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchTLUSER" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_SearchTLUSER_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchTLUSERResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_GetByTopTLUSER_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByTopTLUSER" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_GetByTopTLUSER_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByTopTLUSERResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_InsertAllTLUSER_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAllTLUSER" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_InsertAllTLUSER_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAllTLUSERResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_SendCodeTLUSER_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendCodeTLUSER" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_SendCodeTLUSER_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendCodeTLUSERResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_ChangePassTLUSER_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePassTLUSER" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_ChangePassTLUSER_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChangePassTLUSERResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_GetUserInfomation_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInfomation" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_GetUserInfomation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserInfomationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_LoginAD_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoginAD" />
+  </wsdl:message>
+  <wsdl:message name="ITLUSER_LoginAD_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginADResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLSYSROLE_GetByAllTLSYSROLE_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByAllTLSYSROLE" />
+  </wsdl:message>
+  <wsdl:message name="ITLSYSROLE_GetByAllTLSYSROLE_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByAllTLSYSROLEResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLSYSROLE_InsertTLSYSROLE_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTLSYSROLE" />
+  </wsdl:message>
+  <wsdl:message name="ITLSYSROLE_InsertTLSYSROLE_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTLSYSROLEResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLSYSROLE_UpdateTLSYSROLE_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTLSYSROLE" />
+  </wsdl:message>
+  <wsdl:message name="ITLSYSROLE_UpdateTLSYSROLE_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTLSYSROLEResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLSYSROLE_DeleteTLSYSROLE_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTLSYSROLE" />
+  </wsdl:message>
+  <wsdl:message name="ITLSYSROLE_DeleteTLSYSROLE_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTLSYSROLEResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLSYSROLE_GetByTopTLSYSROLE_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByTopTLSYSROLE" />
+  </wsdl:message>
+  <wsdl:message name="ITLSYSROLE_GetByTopTLSYSROLE_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByTopTLSYSROLEResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLSYSROLE_GetByTopTLROLEDETAIL_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByTopTLROLEDETAIL" />
+  </wsdl:message>
+  <wsdl:message name="ITLSYSROLE_GetByTopTLROLEDETAIL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByTopTLROLEDETAILResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLMENU_GetByAllTLMENU_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByAllTLMENU" />
+  </wsdl:message>
+  <wsdl:message name="ITLMENU_GetByAllTLMENU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByAllTLMENUResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLMENU_InsertTLMENU_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTLMENU" />
+  </wsdl:message>
+  <wsdl:message name="ITLMENU_InsertTLMENU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTLMENUResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLMENU_UpdateTLMENU_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTLMENU" />
+  </wsdl:message>
+  <wsdl:message name="ITLMENU_UpdateTLMENU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTLMENUResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLMENU_DeleteTLMENU_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTLMENU" />
+  </wsdl:message>
+  <wsdl:message name="ITLMENU_DeleteTLMENU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTLMENUResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLMENU_GetByTopTLMENU_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByTopTLMENU" />
+  </wsdl:message>
+  <wsdl:message name="ITLMENU_GetByTopTLMENU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByTopTLMENUResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITLMENU_GetParentTLMENU_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetParentTLMENU" />
+  </wsdl:message>
+  <wsdl:message name="ITLMENU_GetParentTLMENU_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetParentTLMENUResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_GetByAllBranch_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByAllBranch" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_GetByAllBranch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByAllBranchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_InsertBranch_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertBranch" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_InsertBranch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertBranchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_UpdateBranch_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBranch" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_UpdateBranch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateBranchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_DeleteBranch_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBranch" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_DeleteBranch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteBranchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_GetByTopBranch_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByTopBranch" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_GetByTopBranch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByTopBranchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_ApproveBranch_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveBranch" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_ApproveBranch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveBranchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_GetByParentBranchID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByParentBranchID" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_GetByParentBranchID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByParentBranchIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_CM_BRANCH_Level_InputMessage">
+    <wsdl:part name="parameters" element="tns:CM_BRANCH_Level" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_CM_BRANCH_Level_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CM_BRANCH_LevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_BranchSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:BranchSearch" />
+  </wsdl:message>
+  <wsdl:message name="IBranch_BranchSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BranchSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDEPARTMENT_InsertDEPARTMENT_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDEPARTMENT" />
+  </wsdl:message>
+  <wsdl:message name="IDEPARTMENT_InsertDEPARTMENT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertDEPARTMENTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDEPARTMENT_UpdateDEPARTMENT_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDEPARTMENT" />
+  </wsdl:message>
+  <wsdl:message name="IDEPARTMENT_UpdateDEPARTMENT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateDEPARTMENTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDEPARTMENT_DeleteDEPARTMENT_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDEPARTMENT" />
+  </wsdl:message>
+  <wsdl:message name="IDEPARTMENT_DeleteDEPARTMENT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDEPARTMENTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDEPARTMENT_SearchDEPARTMENT_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDEPARTMENT" />
+  </wsdl:message>
+  <wsdl:message name="IDEPARTMENT_SearchDEPARTMENT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDEPARTMENTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDEPARTMENT_ApproveDEPARTMENT_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveDEPARTMENT" />
+  </wsdl:message>
+  <wsdl:message name="IDEPARTMENT_ApproveDEPARTMENT_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveDEPARTMENTResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDEPARTMENT_CM_DEPARTMENT_Lst_InputMessage">
+    <wsdl:part name="parameters" element="tns:CM_DEPARTMENT_Lst" />
+  </wsdl:message>
+  <wsdl:message name="IDEPARTMENT_CM_DEPARTMENT_Lst_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CM_DEPARTMENT_LstResponse" />
+  </wsdl:message>
+  <wsdl:message name="IARGUMENT_GetByAllArgument_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByAllArgument" />
+  </wsdl:message>
+  <wsdl:message name="IARGUMENT_GetByAllArgument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByAllArgumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IARGUMENT_InsertArgument_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertArgument" />
+  </wsdl:message>
+  <wsdl:message name="IARGUMENT_InsertArgument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertArgumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IARGUMENT_UpdateArgument_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateArgument" />
+  </wsdl:message>
+  <wsdl:message name="IARGUMENT_UpdateArgument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateArgumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IARGUMENT_DeleteArgument_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteArgument" />
+  </wsdl:message>
+  <wsdl:message name="IARGUMENT_DeleteArgument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteArgumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IARGUMENT_GetByTopArgument_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetByTopArgument" />
+  </wsdl:message>
+  <wsdl:message name="IARGUMENT_GetByTopArgument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetByTopArgumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IARGUMENT_ApproveArgument_InputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveArgument" />
+  </wsdl:message>
+  <wsdl:message name="IARGUMENT_ApproveArgument_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ApproveArgumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISYS_PARAMETERS_GetParameterById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetParameterById" />
+  </wsdl:message>
+  <wsdl:message name="ISYS_PARAMETERS_GetParameterById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetParameterByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_BaoCaoTonKho_LayBaoCaoTonKho_InputMessage">
+    <wsdl:part name="parameters" element="tns:LayBaoCaoTonKho" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_BaoCaoTonKho_LayBaoCaoTonKho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LayBaoCaoTonKhoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICM_ALLCODE_CM_ALLCODE_ById_InputMessage">
+    <wsdl:part name="parameters" element="tns:CM_ALLCODE_ById" />
+  </wsdl:message>
+  <wsdl:message name="ICM_ALLCODE_CM_ALLCODE_ById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CM_ALLCODE_ByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICM_ALLCODE_CM_ALLCODE_Ins_InputMessage">
+    <wsdl:part name="parameters" element="tns:CM_ALLCODE_Ins" />
+  </wsdl:message>
+  <wsdl:message name="ICM_ALLCODE_CM_ALLCODE_Ins_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CM_ALLCODE_InsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICM_ALLCODE_CM_ALLCODE_Upd_InputMessage">
+    <wsdl:part name="parameters" element="tns:CM_ALLCODE_Upd" />
+  </wsdl:message>
+  <wsdl:message name="ICM_ALLCODE_CM_ALLCODE_Upd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CM_ALLCODE_UpdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICM_ALLCODE_CM_ALLCODE_Del_InputMessage">
+    <wsdl:part name="parameters" element="tns:CM_ALLCODE_Del" />
+  </wsdl:message>
+  <wsdl:message name="ICM_ALLCODE_CM_ALLCODE_Del_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CM_ALLCODE_DelResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICM_ALLCODE_CM_ALLCODE_By_Type_Id_InputMessage">
+    <wsdl:part name="parameters" element="tns:CM_ALLCODE_By_Type_Id" />
+  </wsdl:message>
+  <wsdl:message name="ICM_ALLCODE_CM_ALLCODE_By_Type_Id_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CM_ALLCODE_By_Type_IdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICM_ALLCODE_CM_ALLCODE_Search_InputMessage">
+    <wsdl:part name="parameters" element="tns:CM_ALLCODE_Search" />
+  </wsdl:message>
+  <wsdl:message name="ICM_ALLCODE_CM_ALLCODE_Search_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CM_ALLCODE_SearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICM_DEPT_GROUP_CM_DEPT_GROUP_Ins_InputMessage">
+    <wsdl:part name="parameters" element="tns:CM_DEPT_GROUP_Ins" />
+  </wsdl:message>
+  <wsdl:message name="ICM_DEPT_GROUP_CM_DEPT_GROUP_Ins_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CM_DEPT_GROUP_InsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICM_DEPT_GROUP_CM_DEPT_GROUP_Upd_InputMessage">
+    <wsdl:part name="parameters" element="tns:CM_DEPT_GROUP_Upd" />
+  </wsdl:message>
+  <wsdl:message name="ICM_DEPT_GROUP_CM_DEPT_GROUP_Upd_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CM_DEPT_GROUP_UpdResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICM_DEPT_GROUP_CM_DEPT_GROUP_Del_InputMessage">
+    <wsdl:part name="parameters" element="tns:CM_DEPT_GROUP_Del" />
+  </wsdl:message>
+  <wsdl:message name="ICM_DEPT_GROUP_CM_DEPT_GROUP_Del_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CM_DEPT_GROUP_DelResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICM_DEPT_GROUP_SearchCM_DEPT_GROUP_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCM_DEPT_GROUP" />
+  </wsdl:message>
+  <wsdl:message name="ICM_DEPT_GROUP_SearchCM_DEPT_GROUP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchCM_DEPT_GROUPResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICM_DEPT_GROUP_CM_DEPT_GROUP_Appr_InputMessage">
+    <wsdl:part name="parameters" element="tns:CM_DEPT_GROUP_Appr" />
+  </wsdl:message>
+  <wsdl:message name="ICM_DEPT_GROUP_CM_DEPT_GROUP_Appr_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CM_DEPT_GROUP_ApprResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITLUSER">
+    <wsdl:operation name="ContainsTLUSER">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/ContainsTLUSER" message="tns:ITLUSER_ContainsTLUSER_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/ContainsTLUSERResponse" message="tns:ITLUSER_ContainsTLUSER_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/CheckUserLogin" message="tns:ITLUSER_CheckUserLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/CheckUserLoginResponse" message="tns:ITLUSER_CheckUserLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/CheckLogin" message="tns:ITLUSER_CheckLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/CheckLoginResponse" message="tns:ITLUSER_CheckLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByAllTLUSER">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/GetByAllTLUSER" message="tns:ITLUSER_GetByAllTLUSER_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/GetByAllTLUSERResponse" message="tns:ITLUSER_GetByAllTLUSER_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTLUSER">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/InsertTLUSER" message="tns:ITLUSER_InsertTLUSER_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/InsertTLUSERResponse" message="tns:ITLUSER_InsertTLUSER_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTLUSER">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/UpdateTLUSER" message="tns:ITLUSER_UpdateTLUSER_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/UpdateTLUSERResponse" message="tns:ITLUSER_UpdateTLUSER_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTLUSER">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/DeleteTLUSER" message="tns:ITLUSER_DeleteTLUSER_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/DeleteTLUSERResponse" message="tns:ITLUSER_DeleteTLUSER_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveTLUSER">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/ApproveTLUSER" message="tns:ITLUSER_ApproveTLUSER_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/ApproveTLUSERResponse" message="tns:ITLUSER_ApproveTLUSER_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchTLUSER">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/SearchTLUSER" message="tns:ITLUSER_SearchTLUSER_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/SearchTLUSERResponse" message="tns:ITLUSER_SearchTLUSER_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByTopTLUSER">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/GetByTopTLUSER" message="tns:ITLUSER_GetByTopTLUSER_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/GetByTopTLUSERResponse" message="tns:ITLUSER_GetByTopTLUSER_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAllTLUSER">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/InsertAllTLUSER" message="tns:ITLUSER_InsertAllTLUSER_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/InsertAllTLUSERResponse" message="tns:ITLUSER_InsertAllTLUSER_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendCodeTLUSER">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/SendCodeTLUSER" message="tns:ITLUSER_SendCodeTLUSER_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/SendCodeTLUSERResponse" message="tns:ITLUSER_SendCodeTLUSER_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassTLUSER">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/ChangePassTLUSER" message="tns:ITLUSER_ChangePassTLUSER_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/ChangePassTLUSERResponse" message="tns:ITLUSER_ChangePassTLUSER_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfomation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/GetUserInfomation" message="tns:ITLUSER_GetUserInfomation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/GetUserInfomationResponse" message="tns:ITLUSER_GetUserInfomation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginAD">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLUSER/LoginAD" message="tns:ITLUSER_LoginAD_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLUSER/LoginADResponse" message="tns:ITLUSER_LoginAD_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ITLSYSROLE">
+    <wsdl:operation name="GetByAllTLSYSROLE">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLSYSROLE/GetByAllTLSYSROLE" message="tns:ITLSYSROLE_GetByAllTLSYSROLE_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLSYSROLE/GetByAllTLSYSROLEResponse" message="tns:ITLSYSROLE_GetByAllTLSYSROLE_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTLSYSROLE">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLSYSROLE/InsertTLSYSROLE" message="tns:ITLSYSROLE_InsertTLSYSROLE_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLSYSROLE/InsertTLSYSROLEResponse" message="tns:ITLSYSROLE_InsertTLSYSROLE_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTLSYSROLE">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLSYSROLE/UpdateTLSYSROLE" message="tns:ITLSYSROLE_UpdateTLSYSROLE_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLSYSROLE/UpdateTLSYSROLEResponse" message="tns:ITLSYSROLE_UpdateTLSYSROLE_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTLSYSROLE">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLSYSROLE/DeleteTLSYSROLE" message="tns:ITLSYSROLE_DeleteTLSYSROLE_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLSYSROLE/DeleteTLSYSROLEResponse" message="tns:ITLSYSROLE_DeleteTLSYSROLE_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByTopTLSYSROLE">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLSYSROLE/GetByTopTLSYSROLE" message="tns:ITLSYSROLE_GetByTopTLSYSROLE_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLSYSROLE/GetByTopTLSYSROLEResponse" message="tns:ITLSYSROLE_GetByTopTLSYSROLE_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByTopTLROLEDETAIL">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLSYSROLE/GetByTopTLROLEDETAIL" message="tns:ITLSYSROLE_GetByTopTLROLEDETAIL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLSYSROLE/GetByTopTLROLEDETAILResponse" message="tns:ITLSYSROLE_GetByTopTLROLEDETAIL_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ITLMENU">
+    <wsdl:operation name="GetByAllTLMENU">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLMENU/GetByAllTLMENU" message="tns:ITLMENU_GetByAllTLMENU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLMENU/GetByAllTLMENUResponse" message="tns:ITLMENU_GetByAllTLMENU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTLMENU">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLMENU/InsertTLMENU" message="tns:ITLMENU_InsertTLMENU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLMENU/InsertTLMENUResponse" message="tns:ITLMENU_InsertTLMENU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTLMENU">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLMENU/UpdateTLMENU" message="tns:ITLMENU_UpdateTLMENU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLMENU/UpdateTLMENUResponse" message="tns:ITLMENU_UpdateTLMENU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTLMENU">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLMENU/DeleteTLMENU" message="tns:ITLMENU_DeleteTLMENU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLMENU/DeleteTLMENUResponse" message="tns:ITLMENU_DeleteTLMENU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByTopTLMENU">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLMENU/GetByTopTLMENU" message="tns:ITLMENU_GetByTopTLMENU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLMENU/GetByTopTLMENUResponse" message="tns:ITLMENU_GetByTopTLMENU_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParentTLMENU">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITLMENU/GetParentTLMENU" message="tns:ITLMENU_GetParentTLMENU_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITLMENU/GetParentTLMENUResponse" message="tns:ITLMENU_GetParentTLMENU_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IBranch">
+    <wsdl:operation name="GetByAllBranch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBranch/GetByAllBranch" message="tns:IBranch_GetByAllBranch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBranch/GetByAllBranchResponse" message="tns:IBranch_GetByAllBranch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertBranch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBranch/InsertBranch" message="tns:IBranch_InsertBranch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBranch/InsertBranchResponse" message="tns:IBranch_InsertBranch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBranch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBranch/UpdateBranch" message="tns:IBranch_UpdateBranch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBranch/UpdateBranchResponse" message="tns:IBranch_UpdateBranch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBranch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBranch/DeleteBranch" message="tns:IBranch_DeleteBranch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBranch/DeleteBranchResponse" message="tns:IBranch_DeleteBranch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByTopBranch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBranch/GetByTopBranch" message="tns:IBranch_GetByTopBranch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBranch/GetByTopBranchResponse" message="tns:IBranch_GetByTopBranch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveBranch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBranch/ApproveBranch" message="tns:IBranch_ApproveBranch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBranch/ApproveBranchResponse" message="tns:IBranch_ApproveBranch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByParentBranchID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBranch/GetByParentBranchID" message="tns:IBranch_GetByParentBranchID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBranch/GetByParentBranchIDResponse" message="tns:IBranch_GetByParentBranchID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CM_BRANCH_Level">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBranch/CM_BRANCH_Level" message="tns:IBranch_CM_BRANCH_Level_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBranch/CM_BRANCH_LevelResponse" message="tns:IBranch_CM_BRANCH_Level_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BranchSearch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBranch/BranchSearch" message="tns:IBranch_BranchSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBranch/BranchSearchResponse" message="tns:IBranch_BranchSearch_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IDEPARTMENT">
+    <wsdl:operation name="InsertDEPARTMENT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDEPARTMENT/InsertDEPARTMENT" message="tns:IDEPARTMENT_InsertDEPARTMENT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDEPARTMENT/InsertDEPARTMENTResponse" message="tns:IDEPARTMENT_InsertDEPARTMENT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDEPARTMENT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDEPARTMENT/UpdateDEPARTMENT" message="tns:IDEPARTMENT_UpdateDEPARTMENT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDEPARTMENT/UpdateDEPARTMENTResponse" message="tns:IDEPARTMENT_UpdateDEPARTMENT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDEPARTMENT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDEPARTMENT/DeleteDEPARTMENT" message="tns:IDEPARTMENT_DeleteDEPARTMENT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDEPARTMENT/DeleteDEPARTMENTResponse" message="tns:IDEPARTMENT_DeleteDEPARTMENT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchDEPARTMENT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDEPARTMENT/SearchDEPARTMENT" message="tns:IDEPARTMENT_SearchDEPARTMENT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDEPARTMENT/SearchDEPARTMENTResponse" message="tns:IDEPARTMENT_SearchDEPARTMENT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveDEPARTMENT">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDEPARTMENT/ApproveDEPARTMENT" message="tns:IDEPARTMENT_ApproveDEPARTMENT_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDEPARTMENT/ApproveDEPARTMENTResponse" message="tns:IDEPARTMENT_ApproveDEPARTMENT_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CM_DEPARTMENT_Lst">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDEPARTMENT/CM_DEPARTMENT_Lst" message="tns:IDEPARTMENT_CM_DEPARTMENT_Lst_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDEPARTMENT/CM_DEPARTMENT_LstResponse" message="tns:IDEPARTMENT_CM_DEPARTMENT_Lst_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IARGUMENT">
+    <wsdl:operation name="GetByAllArgument">
+      <wsdl:input wsaw:Action="http://tempuri.org/IARGUMENT/GetByAllArgument" message="tns:IARGUMENT_GetByAllArgument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IARGUMENT/GetByAllArgumentResponse" message="tns:IARGUMENT_GetByAllArgument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertArgument">
+      <wsdl:input wsaw:Action="http://tempuri.org/IARGUMENT/InsertArgument" message="tns:IARGUMENT_InsertArgument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IARGUMENT/InsertArgumentResponse" message="tns:IARGUMENT_InsertArgument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateArgument">
+      <wsdl:input wsaw:Action="http://tempuri.org/IARGUMENT/UpdateArgument" message="tns:IARGUMENT_UpdateArgument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IARGUMENT/UpdateArgumentResponse" message="tns:IARGUMENT_UpdateArgument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteArgument">
+      <wsdl:input wsaw:Action="http://tempuri.org/IARGUMENT/DeleteArgument" message="tns:IARGUMENT_DeleteArgument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IARGUMENT/DeleteArgumentResponse" message="tns:IARGUMENT_DeleteArgument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetByTopArgument">
+      <wsdl:input wsaw:Action="http://tempuri.org/IARGUMENT/GetByTopArgument" message="tns:IARGUMENT_GetByTopArgument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IARGUMENT/GetByTopArgumentResponse" message="tns:IARGUMENT_GetByTopArgument_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ApproveArgument">
+      <wsdl:input wsaw:Action="http://tempuri.org/IARGUMENT/ApproveArgument" message="tns:IARGUMENT_ApproveArgument_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IARGUMENT/ApproveArgumentResponse" message="tns:IARGUMENT_ApproveArgument_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ISYS_PARAMETERS">
+    <wsdl:operation name="GetParameterById">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISYS_PARAMETERS/GetParameterById" message="tns:ISYS_PARAMETERS_GetParameterById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISYS_PARAMETERS/GetParameterByIdResponse" message="tns:ISYS_PARAMETERS_GetParameterById_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IZOO_BaoCaoTonKho">
+    <wsdl:operation name="LayBaoCaoTonKho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZOO_BaoCaoTonKho/LayBaoCaoTonKho" message="tns:IZOO_BaoCaoTonKho_LayBaoCaoTonKho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZOO_BaoCaoTonKho/LayBaoCaoTonKhoResponse" message="tns:IZOO_BaoCaoTonKho_LayBaoCaoTonKho_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ICM_ALLCODE">
+    <wsdl:operation name="CM_ALLCODE_ById">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_ById" message="tns:ICM_ALLCODE_CM_ALLCODE_ById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_ByIdResponse" message="tns:ICM_ALLCODE_CM_ALLCODE_ById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CM_ALLCODE_Ins">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_Ins" message="tns:ICM_ALLCODE_CM_ALLCODE_Ins_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_InsResponse" message="tns:ICM_ALLCODE_CM_ALLCODE_Ins_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CM_ALLCODE_Upd">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_Upd" message="tns:ICM_ALLCODE_CM_ALLCODE_Upd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_UpdResponse" message="tns:ICM_ALLCODE_CM_ALLCODE_Upd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CM_ALLCODE_Del">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_Del" message="tns:ICM_ALLCODE_CM_ALLCODE_Del_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_DelResponse" message="tns:ICM_ALLCODE_CM_ALLCODE_Del_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CM_ALLCODE_By_Type_Id">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_By_Type_Id" message="tns:ICM_ALLCODE_CM_ALLCODE_By_Type_Id_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_By_Type_IdResponse" message="tns:ICM_ALLCODE_CM_ALLCODE_By_Type_Id_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CM_ALLCODE_Search">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_Search" message="tns:ICM_ALLCODE_CM_ALLCODE_Search_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_SearchResponse" message="tns:ICM_ALLCODE_CM_ALLCODE_Search_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ICM_DEPT_GROUP">
+    <wsdl:operation name="CM_DEPT_GROUP_Ins">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICM_DEPT_GROUP/CM_DEPT_GROUP_Ins" message="tns:ICM_DEPT_GROUP_CM_DEPT_GROUP_Ins_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICM_DEPT_GROUP/CM_DEPT_GROUP_InsResponse" message="tns:ICM_DEPT_GROUP_CM_DEPT_GROUP_Ins_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CM_DEPT_GROUP_Upd">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICM_DEPT_GROUP/CM_DEPT_GROUP_Upd" message="tns:ICM_DEPT_GROUP_CM_DEPT_GROUP_Upd_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICM_DEPT_GROUP/CM_DEPT_GROUP_UpdResponse" message="tns:ICM_DEPT_GROUP_CM_DEPT_GROUP_Upd_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CM_DEPT_GROUP_Del">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICM_DEPT_GROUP/CM_DEPT_GROUP_Del" message="tns:ICM_DEPT_GROUP_CM_DEPT_GROUP_Del_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICM_DEPT_GROUP/CM_DEPT_GROUP_DelResponse" message="tns:ICM_DEPT_GROUP_CM_DEPT_GROUP_Del_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchCM_DEPT_GROUP">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICM_DEPT_GROUP/SearchCM_DEPT_GROUP" message="tns:ICM_DEPT_GROUP_SearchCM_DEPT_GROUP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICM_DEPT_GROUP/SearchCM_DEPT_GROUPResponse" message="tns:ICM_DEPT_GROUP_SearchCM_DEPT_GROUP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CM_DEPT_GROUP_Appr">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICM_DEPT_GROUP/CM_DEPT_GROUP_Appr" message="tns:ICM_DEPT_GROUP_CM_DEPT_GROUP_Appr_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICM_DEPT_GROUP/CM_DEPT_GROUP_ApprResponse" message="tns:ICM_DEPT_GROUP_CM_DEPT_GROUP_Appr_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITLUSER" type="tns:ITLUSER">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ContainsTLUSER">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/ContainsTLUSER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUserLogin">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/CheckUserLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckLogin">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/CheckLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByAllTLUSER">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/GetByAllTLUSER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTLUSER">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/InsertTLUSER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTLUSER">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/UpdateTLUSER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTLUSER">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/DeleteTLUSER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveTLUSER">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/ApproveTLUSER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchTLUSER">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/SearchTLUSER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByTopTLUSER">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/GetByTopTLUSER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAllTLUSER">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/InsertAllTLUSER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendCodeTLUSER">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/SendCodeTLUSER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChangePassTLUSER">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/ChangePassTLUSER" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfomation">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/GetUserInfomation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginAD">
+      <soap:operation soapAction="http://tempuri.org/ITLUSER/LoginAD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_ITLSYSROLE" type="tns:ITLSYSROLE">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetByAllTLSYSROLE">
+      <soap:operation soapAction="http://tempuri.org/ITLSYSROLE/GetByAllTLSYSROLE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTLSYSROLE">
+      <soap:operation soapAction="http://tempuri.org/ITLSYSROLE/InsertTLSYSROLE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTLSYSROLE">
+      <soap:operation soapAction="http://tempuri.org/ITLSYSROLE/UpdateTLSYSROLE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTLSYSROLE">
+      <soap:operation soapAction="http://tempuri.org/ITLSYSROLE/DeleteTLSYSROLE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByTopTLSYSROLE">
+      <soap:operation soapAction="http://tempuri.org/ITLSYSROLE/GetByTopTLSYSROLE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByTopTLROLEDETAIL">
+      <soap:operation soapAction="http://tempuri.org/ITLSYSROLE/GetByTopTLROLEDETAIL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_ITLMENU" type="tns:ITLMENU">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetByAllTLMENU">
+      <soap:operation soapAction="http://tempuri.org/ITLMENU/GetByAllTLMENU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTLMENU">
+      <soap:operation soapAction="http://tempuri.org/ITLMENU/InsertTLMENU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTLMENU">
+      <soap:operation soapAction="http://tempuri.org/ITLMENU/UpdateTLMENU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTLMENU">
+      <soap:operation soapAction="http://tempuri.org/ITLMENU/DeleteTLMENU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByTopTLMENU">
+      <soap:operation soapAction="http://tempuri.org/ITLMENU/GetByTopTLMENU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParentTLMENU">
+      <soap:operation soapAction="http://tempuri.org/ITLMENU/GetParentTLMENU" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IBranch" type="tns:IBranch">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetByAllBranch">
+      <soap:operation soapAction="http://tempuri.org/IBranch/GetByAllBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertBranch">
+      <soap:operation soapAction="http://tempuri.org/IBranch/InsertBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBranch">
+      <soap:operation soapAction="http://tempuri.org/IBranch/UpdateBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteBranch">
+      <soap:operation soapAction="http://tempuri.org/IBranch/DeleteBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByTopBranch">
+      <soap:operation soapAction="http://tempuri.org/IBranch/GetByTopBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveBranch">
+      <soap:operation soapAction="http://tempuri.org/IBranch/ApproveBranch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByParentBranchID">
+      <soap:operation soapAction="http://tempuri.org/IBranch/GetByParentBranchID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CM_BRANCH_Level">
+      <soap:operation soapAction="http://tempuri.org/IBranch/CM_BRANCH_Level" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BranchSearch">
+      <soap:operation soapAction="http://tempuri.org/IBranch/BranchSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IDEPARTMENT" type="tns:IDEPARTMENT">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertDEPARTMENT">
+      <soap:operation soapAction="http://tempuri.org/IDEPARTMENT/InsertDEPARTMENT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateDEPARTMENT">
+      <soap:operation soapAction="http://tempuri.org/IDEPARTMENT/UpdateDEPARTMENT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDEPARTMENT">
+      <soap:operation soapAction="http://tempuri.org/IDEPARTMENT/DeleteDEPARTMENT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchDEPARTMENT">
+      <soap:operation soapAction="http://tempuri.org/IDEPARTMENT/SearchDEPARTMENT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveDEPARTMENT">
+      <soap:operation soapAction="http://tempuri.org/IDEPARTMENT/ApproveDEPARTMENT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CM_DEPARTMENT_Lst">
+      <soap:operation soapAction="http://tempuri.org/IDEPARTMENT/CM_DEPARTMENT_Lst" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IARGUMENT" type="tns:IARGUMENT">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetByAllArgument">
+      <soap:operation soapAction="http://tempuri.org/IARGUMENT/GetByAllArgument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertArgument">
+      <soap:operation soapAction="http://tempuri.org/IARGUMENT/InsertArgument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateArgument">
+      <soap:operation soapAction="http://tempuri.org/IARGUMENT/UpdateArgument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteArgument">
+      <soap:operation soapAction="http://tempuri.org/IARGUMENT/DeleteArgument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetByTopArgument">
+      <soap:operation soapAction="http://tempuri.org/IARGUMENT/GetByTopArgument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApproveArgument">
+      <soap:operation soapAction="http://tempuri.org/IARGUMENT/ApproveArgument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_ISYS_PARAMETERS" type="tns:ISYS_PARAMETERS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetParameterById">
+      <soap:operation soapAction="http://tempuri.org/ISYS_PARAMETERS/GetParameterById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IZOO_BaoCaoTonKho" type="tns:IZOO_BaoCaoTonKho">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LayBaoCaoTonKho">
+      <soap:operation soapAction="http://tempuri.org/IZOO_BaoCaoTonKho/LayBaoCaoTonKho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_ICM_ALLCODE" type="tns:ICM_ALLCODE">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CM_ALLCODE_ById">
+      <soap:operation soapAction="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_ById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CM_ALLCODE_Ins">
+      <soap:operation soapAction="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_Ins" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CM_ALLCODE_Upd">
+      <soap:operation soapAction="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_Upd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CM_ALLCODE_Del">
+      <soap:operation soapAction="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_Del" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CM_ALLCODE_By_Type_Id">
+      <soap:operation soapAction="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_By_Type_Id" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CM_ALLCODE_Search">
+      <soap:operation soapAction="http://tempuri.org/ICM_ALLCODE/CM_ALLCODE_Search" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_ICM_DEPT_GROUP" type="tns:ICM_DEPT_GROUP">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CM_DEPT_GROUP_Ins">
+      <soap:operation soapAction="http://tempuri.org/ICM_DEPT_GROUP/CM_DEPT_GROUP_Ins" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CM_DEPT_GROUP_Upd">
+      <soap:operation soapAction="http://tempuri.org/ICM_DEPT_GROUP/CM_DEPT_GROUP_Upd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CM_DEPT_GROUP_Del">
+      <soap:operation soapAction="http://tempuri.org/ICM_DEPT_GROUP/CM_DEPT_GROUP_Del" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchCM_DEPT_GROUP">
+      <soap:operation soapAction="http://tempuri.org/ICM_DEPT_GROUP/SearchCM_DEPT_GROUP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CM_DEPT_GROUP_Appr">
+      <soap:operation soapAction="http://tempuri.org/ICM_DEPT_GROUP/CM_DEPT_GROUP_Appr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="gMVVMService">
+    <wsdl:port name="BasicHttpBinding_ITLUSER" binding="tns:BasicHttpBinding_ITLUSER">
+      <soap:address location="http://localhost:36229/Services/Management/gMVVMService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_ITLSYSROLE" binding="tns:BasicHttpBinding_ITLSYSROLE">
+      <soap:address location="http://localhost:36229/Services/Management/gMVVMService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_ITLMENU" binding="tns:BasicHttpBinding_ITLMENU">
+      <soap:address location="http://localhost:36229/Services/Management/gMVVMService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IBranch" binding="tns:BasicHttpBinding_IBranch">
+      <soap:address location="http://localhost:36229/Services/Management/gMVVMService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IDEPARTMENT" binding="tns:BasicHttpBinding_IDEPARTMENT">
+      <soap:address location="http://localhost:36229/Services/Management/gMVVMService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IARGUMENT" binding="tns:BasicHttpBinding_IARGUMENT">
+      <soap:address location="http://localhost:36229/Services/Management/gMVVMService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_ISYS_PARAMETERS" binding="tns:BasicHttpBinding_ISYS_PARAMETERS">
+      <soap:address location="http://localhost:36229/Services/Management/gMVVMService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IZOO_BaoCaoTonKho" binding="tns:BasicHttpBinding_IZOO_BaoCaoTonKho">
+      <soap:address location="http://localhost:36229/Services/Management/gMVVMService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_ICM_ALLCODE" binding="tns:BasicHttpBinding_ICM_ALLCODE">
+      <soap:address location="http://localhost:36229/Services/Management/gMVVMService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_ICM_DEPT_GROUP" binding="tns:BasicHttpBinding_ICM_DEPT_GROUP">
+      <soap:address location="http://localhost:36229/Services/Management/gMVVMService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

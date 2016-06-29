@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="gMVVM.Web.Services.Management.gMVVMService" CodeBehind="gMVVMService.svc.cs" %>

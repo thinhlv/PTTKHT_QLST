@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management.Interfaces.SystemRole" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management.Interfaces.SystemRole" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:36229/Services/Management/gMVVMService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" />
+  <xs:complexType name="LoginData">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="Roles" nillable="true" type="q1:ArrayOfTL_SYSROLEDETAIL" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="User" nillable="true" type="q2:TL_USER_SearchResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoginData" nillable="true" type="tns:LoginData" />
+</xs:schema>

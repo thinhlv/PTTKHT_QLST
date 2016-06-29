@@ -1,0 +1,101 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_ITLUSER" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_ITLSYSROLE" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_ITLMENU" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IBranch" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IDEPARTMENT" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IARGUMENT" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_ISYS_PARAMETERS" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_ICM_ALLCODE" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_ICM_DEPT_GROUP" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_ISessionService" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IGhiNhan" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_ICM_Domain" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IZOO_BaoCaoTonKho" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="../Services/EduBanking/SessionService.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ISessionService"
+                contract="SessionService.ISessionService" name="BasicHttpBinding_ISessionService" />
+            <endpoint address="../Services/KeHoach/GhiNhanKeHoach.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_IGhiNhan" contract="GhiNhanService.IGhiNhan"
+                name="BasicHttpBinding_IGhiNhan" />
+            <endpoint address="../Services/KeHoach/GhiNhanKeHoach.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_ICM_Domain" contract="GhiNhanService.ICM_Domain"
+                name="BasicHttpBinding_ICM_Domain" />
+            <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_ITLUSER" contract="gMVVMService.ITLUSER"
+                name="BasicHttpBinding_ITLUSER" />
+            <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_ITLSYSROLE" contract="gMVVMService.ITLSYSROLE"
+                name="BasicHttpBinding_ITLSYSROLE" />
+            <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_ITLMENU" contract="gMVVMService.ITLMENU"
+                name="BasicHttpBinding_ITLMENU" />
+            <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_IBranch" contract="gMVVMService.IBranch"
+                name="BasicHttpBinding_IBranch" />
+            <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_IDEPARTMENT" contract="gMVVMService.IDEPARTMENT"
+                name="BasicHttpBinding_IDEPARTMENT" />
+            <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_IARGUMENT" contract="gMVVMService.IARGUMENT"
+                name="BasicHttpBinding_IARGUMENT" />
+            <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_ISYS_PARAMETERS" contract="gMVVMService.ISYS_PARAMETERS"
+                name="BasicHttpBinding_ISYS_PARAMETERS" />
+            <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_IZOO_BaoCaoTonKho"
+                contract="gMVVMService.IZOO_BaoCaoTonKho" name="BasicHttpBinding_IZOO_BaoCaoTonKho" />
+            <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_ICM_ALLCODE" contract="gMVVMService.ICM_ALLCODE"
+                name="BasicHttpBinding_ICM_ALLCODE" />
+            <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_ICM_DEPT_GROUP" contract="gMVVMService.ICM_DEPT_GROUP"
+                name="BasicHttpBinding_ICM_DEPT_GROUP" />
+        </client>
+    </system.serviceModel>
+</configuration>

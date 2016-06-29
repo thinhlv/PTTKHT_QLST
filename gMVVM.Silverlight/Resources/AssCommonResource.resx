@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblRegions" xml:space="preserve">
+    <value>Regions list</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="Record_Status" xml:space="preserve">
+    <value>Record Status</value>
+  </data>
+  <data name="RegionID" xml:space="preserve">
+    <value>Region Id</value>
+  </data>
+  <data name="RegionName" xml:space="preserve">
+    <value>Region Name</value>
+  </data>
+  <data name="Addr" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="BranchCode" xml:space="preserve">
+    <value>Branch code</value>
+  </data>
+  <data name="BranchID" xml:space="preserve">
+    <value>Branch Id</value>
+  </data>
+  <data name="BranchName" xml:space="preserve">
+    <value>Branch Name</value>
+  </data>
+  <data name="FatherID" xml:space="preserve">
+    <value>Father Id</value>
+  </data>
+  <data name="Tel" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="lblBranch" xml:space="preserve">
+    <value>Branch list</value>
+  </data>
+  <data name="BranchType" xml:space="preserve">
+    <value>Branch type</value>
+  </data>
+  <data name="lblBranch1" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="lblHeadquarter" xml:space="preserve">
+    <value>Headquarter</value>
+  </data>
+  <data name="lblRegion" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="lblTransactionOffice" xml:space="preserve">
+    <value>Transaction office</value>
+  </data>
+  <data name="Agr_ID" xml:space="preserve">
+    <value>Agrument Id</value>
+  </data>
+  <data name="Amort_Acctno" xml:space="preserve">
+    <value>Amort Acctno</value>
+  </data>
+  <data name="Arg_Code" xml:space="preserve">
+    <value>Argrument Code</value>
+  </data>
+  <data name="Arg_ID" xml:space="preserve">
+    <value>Argrument Id</value>
+  </data>
+  <data name="Arg_Name" xml:space="preserve">
+    <value>Argrument Name</value>
+  </data>
+  <data name="Asset_Acctno" xml:space="preserve">
+    <value>Asset Acctno</value>
+  </data>
+  <data name="Capital" xml:space="preserve">
+    <value>Capital</value>
+  </data>
+  <data name="Cate_Id" xml:space="preserve">
+    <value>Category Id</value>
+  </data>
+  <data name="Cate_Name" xml:space="preserve">
+    <value>Category Name</value>
+  </data>
+  <data name="ContactPerson" xml:space="preserve">
+    <value>Contact Person</value>
+  </data>
+  <data name="Dep_Code" xml:space="preserve">
+    <value>Department Code</value>
+  </data>
+  <data name="Dep_Id" xml:space="preserve">
+    <value>Department Id</value>
+  </data>
+  <data name="Dep_Name" xml:space="preserve">
+    <value>Department Name</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="DivId" xml:space="preserve">
+    <value>Division Id</value>
+  </data>
+  <data name="DivName" xml:space="preserve">
+    <value>Division Name</value>
+  </data>
+  <data name="Div_Code" xml:space="preserve">
+    <value>Division Code</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Exp_Acctno" xml:space="preserve">
+    <value>Exp Acctno</value>
+  </data>
+  <data name="Father_Id" xml:space="preserve">
+    <value>Father Id</value>
+  </data>
+  <data name="Gd_Code" xml:space="preserve">
+    <value>Goods Code</value>
+  </data>
+  <data name="Gd_Type_Code" xml:space="preserve">
+    <value>Goods Type Code</value>
+  </data>
+  <data name="GoodsCode" xml:space="preserve">
+    <value>Goods Code</value>
+  </data>
+  <data name="GoodsID" xml:space="preserve">
+    <value>Goods Id</value>
+  </data>
+  <data name="GoodsName" xml:space="preserve">
+    <value>Goods Name</value>
+  </data>
+  <data name="GoodsTypeID" xml:space="preserve">
+    <value>GoodsType Id</value>
+  </data>
+  <data name="GoodsTypeName" xml:space="preserve">
+    <value>GoodsType Name</value>
+  </data>
+  <data name="Group_Code" xml:space="preserve">
+    <value>Group Code</value>
+  </data>
+  <data name="Group_Id" xml:space="preserve">
+    <value>Group Id</value>
+  </data>
+  <data name="Group_Level" xml:space="preserve">
+    <value>Group Level</value>
+  </data>
+  <data name="Group_Name" xml:space="preserve">
+    <value>Group Name</value>
+  </data>
+  <data name="Is_Leaf" xml:space="preserve">
+    <value>Is Leaf</value>
+  </data>
+  <data name="lblArgument" xml:space="preserve">
+    <value>Argument List</value>
+  </data>
+  <data name="lblAssetCategory" xml:space="preserve">
+    <value>Asset Category List</value>
+  </data>
+  <data name="lblAssetGroup" xml:space="preserve">
+    <value>Asset Group List</value>
+  </data>
+  <data name="lblAssetType" xml:space="preserve">
+    <value>Asset Type List</value>
+  </data>
+  <data name="lblDepartment" xml:space="preserve">
+    <value>Department List</value>
+  </data>
+  <data name="lblDivision" xml:space="preserve">
+    <value>Division List</value>
+  </data>
+  <data name="lblGoods" xml:space="preserve">
+    <value>Goods</value>
+  </data>
+  <data name="lblGoodsType" xml:space="preserve">
+    <value>GoodsType</value>
+  </data>
+  <data name="lblSupplier" xml:space="preserve">
+    <value>Supplier</value>
+  </data>
+  <data name="lblSupplierType" xml:space="preserve">
+    <value>SupplierType</value>
+  </data>
+  <data name="Licene" xml:space="preserve">
+    <value>Licene</value>
+  </data>
+  <data name="Max_Time" xml:space="preserve">
+    <value>Max Time</value>
+  </data>
+  <data name="Parent_Id" xml:space="preserve">
+    <value>Parent ID</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="Ranked" xml:space="preserve">
+    <value>Ranked</value>
+  </data>
+  <data name="Region_Code" xml:space="preserve">
+    <value>Region Code</value>
+  </data>
+  <data name="SupID" xml:space="preserve">
+    <value>Sup ID</value>
+  </data>
+  <data name="SupName" xml:space="preserve">
+    <value>Sup Name</value>
+  </data>
+  <data name="SupTypeID" xml:space="preserve">
+    <value>SupType ID</value>
+  </data>
+  <data name="SupTypeName" xml:space="preserve">
+    <value>SupType Name</value>
+  </data>
+  <data name="Sup_Code" xml:space="preserve">
+    <value>Supplier Code</value>
+  </data>
+  <data name="Sup_Type_Code" xml:space="preserve">
+    <value>Supplier Type Code</value>
+  </data>
+  <data name="TaxNo" xml:space="preserve">
+    <value>Tax No</value>
+  </data>
+  <data name="Type_Code" xml:space="preserve">
+    <value>Type Code</value>
+  </data>
+  <data name="Type_Id" xml:space="preserve">
+    <value>Type Id</value>
+  </data>
+  <data name="Type_Name" xml:space="preserve">
+    <value>Type Name</value>
+  </data>
+  <data name="Type_Shortcut" xml:space="preserve">
+    <value>Type Shortcut</value>
+  </data>
+  <data name="UnitID" xml:space="preserve">
+    <value>Unit ID</value>
+  </data>
+  <data name="AmortRate" xml:space="preserve">
+    <value>Amort Rate</value>
+  </data>
+  <data name="ExpAcctno" xml:space="preserve">
+    <value>Exp Acctno</value>
+  </data>
+  <data name="IncAcctno" xml:space="preserve">
+    <value>Inc Acctno</value>
+  </data>
+  <data name="LiqAcctno" xml:space="preserve">
+    <value>Liq Acctno</value>
+  </data>
+  <data name="AssCat" xml:space="preserve">
+    <value>Ass Cat</value>
+  </data>
+  <data name="AuthStatus" xml:space="preserve">
+    <value>Auth Status</value>
+  </data>
+  <data name="Branch" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="Dep" xml:space="preserve">
+    <value>Dep</value>
+  </data>
+  <data name="EmpCode" xml:space="preserve">
+    <value>Emp Code</value>
+  </data>
+  <data name="EmployeeInfor" xml:space="preserve">
+    <value>Employee Infor</value>
+  </data>
+  <data name="EmployeeList" xml:space="preserve">
+    <value>Employee List</value>
+  </data>
+  <data name="EmpName" xml:space="preserve">
+    <value>Emp Name</value>
+  </data>
+  <data name="DataType" xml:space="preserve">
+    <value>Data Type</value>
+  </data>
+  <data name="GroupDep" xml:space="preserve">
+    <value>Department Group</value>
+  </data>
+  <data name="DISCIPLINES" xml:space="preserve">
+    <value>DISCIPLINES</value>
+  </data>
+  <data name="NotYesUse" xml:space="preserve">
+    <value>Asset not use</value>
+  </data>
+  <data name="AccountBank" xml:space="preserve">
+    <value>Account Bank</value>
+  </data>
+  <data name="RecordStatus" xml:space="preserve">
+    <value>Record Status</value>
+  </data>
+  <data name="DepartmentTypeName" xml:space="preserve">
+    <value>Department Type Name</value>
+  </data>
+  <data name="DepartmentTypeID" xml:space="preserve">
+    <value>Department Type ID</value>
+  </data>
+  <data name="DepartmentTypeList" xml:space="preserve">
+    <value>Department Type List</value>
+  </data>
+  <data name="InsuareCompanyName" xml:space="preserve">
+    <value>Insuare Company Name</value>
+  </data>
+  <data name="InsureCompanyID" xml:space="preserve">
+    <value>Insure Company ID</value>
+  </data>
+  <data name="InsureCompanyList" xml:space="preserve">
+    <value>Insure Company List</value>
+  </data>
+  <data name="CDName" xml:space="preserve">
+    <value>CD Name</value>
+  </data>
+  <data name="CDType" xml:space="preserve">
+    <value>CD Type</value>
+  </data>
+  <data name="CDVal" xml:space="preserve">
+    <value>CD Val</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="LSTODR" xml:space="preserve">
+    <value>LSTODR</value>
+  </data>
+  <data name="CDAllCodeList" xml:space="preserve">
+    <value>CD All Code List</value>
+  </data>
+  <data name="GroupParentName" xml:space="preserve">
+    <value>Group Parent Name</value>
+  </data>
+  <data name="CarTypeList" xml:space="preserve">
+    <value>Car Type List</value>
+  </data>
+  <data name="CarTypeName" xml:space="preserve">
+    <value>Car Type Name</value>
+  </data>
+  <data name="CarType" xml:space="preserve">
+    <value>Car Type</value>
+  </data>
+  <data name="Manufacturer" xml:space="preserve">
+    <value>Manufacturer</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>Model</value>
+  </data>
+  <data name="ModelList" xml:space="preserve">
+    <value>Model List</value>
+  </data>
+  <data name="ModelName" xml:space="preserve">
+    <value>Model Name</value>
+  </data>
+  <data name="PowerRate" xml:space="preserve">
+    <value>Power Rate</value>
+  </data>
+  <data name="lblFileExportName" xml:space="preserve">
+    <value>File export name</value>
+  </data>
+  <data name="err_DIS_CODE" xml:space="preserve">
+    <value>District Code Empty</value>
+  </data>
+  <data name="err_DIS_NAME" xml:space="preserve">
+    <value>District Name Empty</value>
+  </data>
+  <data name="err_DIS_NAME_not_Choose" xml:space="preserve">
+    <value>District not choose</value>
+  </data>
+  <data name="err_NAT_CODE" xml:space="preserve">
+    <value>Nation Code Empty</value>
+  </data>
+  <data name="err_NAT_NAME" xml:space="preserve">
+    <value>Nation Name Empty</value>
+  </data>
+  <data name="err_NAT_NAME_not_Choose" xml:space="preserve">
+    <value>Nation not choose</value>
+  </data>
+  <data name="err_PRO_CODE" xml:space="preserve">
+    <value>Province Code Empty</value>
+  </data>
+  <data name="err_PRO_NAME" xml:space="preserve">
+    <value>Province Name Empty</value>
+  </data>
+  <data name="err_PRO_NAME_not_Choose" xml:space="preserve">
+    <value>Province not choose</value>
+  </data>
+  <data name="err_WAR_CODE" xml:space="preserve">
+    <value>Ward Code Empty</value>
+  </data>
+  <data name="err_WAR_NAME" xml:space="preserve">
+    <value>Ward Name Empty</value>
+  </data>
+  <data name="lbl_wg_District" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="lbl_wg_District_Code" xml:space="preserve">
+    <value>District Code</value>
+  </data>
+  <data name="lbl_wg_District_Name" xml:space="preserve">
+    <value>District Name</value>
+  </data>
+  <data name="lbl_wg_District_Type" xml:space="preserve">
+    <value>District Type</value>
+  </data>
+  <data name="lbl_wg_Nation" xml:space="preserve">
+    <value>Nation</value>
+  </data>
+  <data name="lbl_wg_Nation_Code" xml:space="preserve">
+    <value>Nation Code</value>
+  </data>
+  <data name="lbl_wg_Nation_Name" xml:space="preserve">
+    <value>Nation Name</value>
+  </data>
+  <data name="lbl_wg_Province" xml:space="preserve">
+    <value>Province</value>
+  </data>
+  <data name="lbl_wg_Province_Code" xml:space="preserve">
+    <value>Province Code</value>
+  </data>
+  <data name="lbl_wg_Province_Name" xml:space="preserve">
+    <value>Province Name</value>
+  </data>
+  <data name="lbl_wg_Province_Type" xml:space="preserve">
+    <value>Province Type</value>
+  </data>
+  <data name="lbl_wg_Ward" xml:space="preserve">
+    <value>Ward</value>
+  </data>
+  <data name="lbl_wg_Ward_Code" xml:space="preserve">
+    <value>Ward Code</value>
+  </data>
+  <data name="lbl_wg_Ward_Name" xml:space="preserve">
+    <value>Ward Name</value>
+  </data>
+  <data name="lbl_wg_Ward_Type" xml:space="preserve">
+    <value>Ward Type</value>
+  </data>
+</root>

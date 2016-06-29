@@ -1,0 +1,248 @@
+﻿<UserControl
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:Common="clr-namespace:gMVVM.Views.Common" x:Class="gMVVM.Views.SystemRole.UserEdit"
+           xmlns:dataprimitives="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Data"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"           
+           xmlns:local="clr-namespace:gMVVM.CommonClass"
+             xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+           xmlns:controls2="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+           xmlns:interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity">
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <StackPanel>
+            <StackPanel x:Name="splHeader" Grid.Row="0" Style="{StaticResource splHeader}" >
+                <HyperlinkButton Style="{StaticResource hplHome}" NavigateUri="/Home"/>
+                <TextBlock Text="{Binding Path=lblUser, Source={StaticResource currentSystemRoleCulture}}" Style="{StaticResource backStyle}" Cursor="Hand">
+                    <interactivity:Interaction.Triggers>
+                            <interactivity:EventTrigger EventName="MouseLeftButtonDown">
+                                <interactivity:InvokeCommandAction Command="{Binding Path=ActionCommand}" CommandParameter="Cancel"/>
+                            </interactivity:EventTrigger>
+                        </interactivity:Interaction.Triggers>
+                </TextBlock>
+                <ContentControl Style="{StaticResource ArrowStyle}" />
+                <TextBlock Text="{Binding Path=HeaderText}" Style="{StaticResource titleStyle}"/>
+            </StackPanel>
+            <toolkit:Expander Grid.Row="1" Header="{Binding Path=lblDetail, Source={StaticResource currentCommonCulture}}" Style="{StaticResource ExpanderNewStyle}" IsExpanded="True" local:EyeCandy.Image="/gMVVM;component/Data/Icons/edit_icon.png">
+                <Grid Background="White" >
+                    <StackPanel Margin="5">
+                        <Common:MessageAlarm DataContext="{Binding Path=MessagePop}"/>
+                        <ContentControl Visibility="{Binding IsApproved}" Style="{StaticResource approveStyle}"/>
+                        <UserControl IsEnabled="{Binding Path=IsView}">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Row="0" Margin="2">
+                                    <StackPanel Orientation="Horizontal" Margin="100,0,0,0" Visibility="{Binding Path=IsOptionInsert}">
+                                        <RadioButton Content="{Binding Path=lblCust, Source={StaticResource currentSystemRoleCulture}}" Margin="5" GroupName="Options"
+                                         IsChecked="True"/>
+                                        <RadioButton Content="{Binding Path=lblAuto, Source={StaticResource currentSystemRoleCulture}}" Margin="5" GroupName="Options"
+                                         IsChecked="{Binding Path=IsFromFile, Mode=TwoWay}"/>
+                                    </StackPanel>
+                                    <Grid Grid.Column="0" Visibility="{Binding Path=IsCustomer}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource tblStyle}"
+                       Text="{Binding Path=lblUsername, Source={StaticResource currentSystemRoleCulture}}"/>
+                                        <!--<TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource tblStyle}"
+                       Text="{Binding Path=Password, Source={StaticResource currentSystemRoleCulture}}" />-->
+                                        <TextBlock Grid.Row="7" Grid.Column="0" Style="{StaticResource tblStyle}"
+                       Text="{Binding Path=lblRole, Source={StaticResource currentSystemRoleCulture}}"/>
+                                        <TextBlock Grid.Row="6" Grid.Column="0" Style="{StaticResource tblStyle}"
+                       Text="{Binding Path=TLFullName, Source={StaticResource currentSystemRoleCulture}}" />
+                                        <TextBlock Grid.Row="5" Grid.Column="0" Style="{StaticResource tblStyle}"
+                       Text="{Binding Path=EMAIL, Source={StaticResource currentSystemRoleCulture}}" />
+                                        <TextBlock Grid.Row="8" Grid.Column="0" Style="{StaticResource tblStyle}"
+                       Text="{Binding Path=PHONE, Source={StaticResource currentSystemRoleCulture}}" Visibility="Collapsed"/>
+                                        <TextBlock Grid.Row="9" Grid.Column="0" Style="{StaticResource tblStyle}"
+                       Text="{Binding Path=ADDRESS, Source={StaticResource currentSystemRoleCulture}}" Visibility="Collapsed" />
+
+                                        <TextBox Grid.Row="0" Grid.Column="1" Style="{StaticResource txbNormal}"
+                     Text="{Binding Path=TLName, Mode=TwoWay}" TextWrapping="Wrap" IsReadOnly="False"/>
+                                        <StackPanel Grid.Row="0" Grid.Column="3" Orientation="Horizontal">
+                                            <!--<Button Grid.Row="0" Grid.Column="3" Style="{StaticResource btnSearchStyle}" Content="Check" Width="45"
+                                    Command="{Binding Path=ActionCommand}" CommandParameter="CheckUserName"/>-->
+                                            <Image Source="/gMVVM;component/Data/Icons/Delete.png" Height="15" Visibility="{Binding Path=IsError}"/>
+                                            <TextBlock Style="{StaticResource tblStyle}" Text="User không tồn tại" Visibility="{Binding Path=IsError}"/>
+                                            <Image Source="/gMVVM;component/Data/Icons/Ok.png" Height="15"  Visibility="{Binding Path=IsOk}"/>
+                                            <TextBlock Style="{StaticResource tblStyle}" Text="Ok" Visibility="{Binding Path=IsOk}"/>
+                                        </StackPanel>
+                                        
+                                        <!--<TextBox Grid.Row="0" Grid.Column="1" Style="{StaticResource txbNormal}" IsEnabled="{Binding Path=IsEnabledEdit}"
+                     Text="{Binding Path=TLName, Mode=TwoWay}" TextWrapping="Wrap"/>-->
+                                        <!--<PasswordBox Grid.Row="1" Grid.Column="1" Style="{StaticResource pbNormal}" Password="{Binding Path=CurrentUser.Password, Mode=TwoWay}"/>-->
+                                        <!--<TextBlock Grid.Row="2" Grid.Column="0" Text="{Binding Path=lblRegion, Source={StaticResource currentAssCommonCulture}}" 
+                           Style="{StaticResource tblStyle}"/>-->
+                                        <TextBlock Grid.Row="3" Grid.Column="0" Text="{Binding Path=BranchID, Source={StaticResource currentPlanManagerCulture}}" 
+                           Style="{StaticResource tblStyle}"/>
+                                        <!--<TextBlock Grid.Row="4" Grid.Column="0" Text="{Binding Path=lblTransactionOffice, Source={StaticResource currentAssCommonCulture}}" 
+                           Style="{StaticResource tblStyle}"/>-->
+                                        <!--<ComboBox Grid.Row="2" Grid.Column="1" Style="{StaticResource cmbStyle}" DisplayMemberPath="BRANCH_NAME"
+                              ItemsSource="{Binding Path=KVData}" SelectedValue="{Binding Path=KVId, Mode=TwoWay}" SelectedValuePath="BRANCH_ID" SelectedItem="{Binding KvItem, Mode=TwoWay}">
+                                        </ComboBox>-->
+                                        <!--<ComboBox Grid.Row="3" Grid.Column="1" Style="{StaticResource cmbStyle}"
+                              ItemsSource="{Binding Path=BranchData}" SelectedValue="{Binding Path=BranchId, Mode=TwoWay}" DisplayMemberPath="BRANCH_NAME" SelectedValuePath="BRANCH_ID" SelectedItem="{Binding CnItem, Mode=TwoWay}">
+                                        </ComboBox>-->
+                                        <ComboBox Grid.Row="3" Grid.Column="1" Style="{StaticResource cmbStyle}"
+                              ItemsSource="{Binding Path=BranchByParentData}" SelectedValue="{Binding Path=CurBranchId, Mode=TwoWay}" SelectedItem="{Binding Path=CurrentItemBranch, Mode=TwoWay}" SelectedValuePath="BRANCH_ID" >                                            
+                                            <ComboBox.ItemTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Horizontal" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center">
+                                                        <Run Text="{Binding BRANCH_CODE}"/>
+                                                        <Run Text="{Binding BRANCH_NAME}"/>
+                                                        </TextBlock>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </ComboBox.ItemTemplate>
+                                        </ComboBox>
+                                        <!--<ComboBox Grid.Row="4" Grid.Column="1" Style="{StaticResource cmbStyle}" DisplayMemberPath="BRANCH_NAME"
+                              ItemsSource="{Binding Path=PGDData}" SelectedValue="{Binding Path=PGDId, Mode=TwoWay}" SelectedValuePath="BRANCH_ID" SelectedItem="{Binding PgdItem, Mode=TwoWay}">
+                                        </ComboBox>-->
+                                        <TextBox Grid.Row="5" Grid.Column="1" Style="{StaticResource txbNormal}"
+                     Text="{Binding Path=Email, Mode=TwoWay}"  TextWrapping="Wrap"/>                   
+                                        <TextBox Grid.Row="6" Grid.Column="1" Style="{StaticResource txbNormal}"
+                     Text="{Binding Path=CurrentUser.TLFullName, Mode=TwoWay}" TextWrapping="Wrap"/>                     
+                                        <ComboBox Grid.Row="7" Grid.Column="1" Width="200" Margin="5" Style="{StaticResource cmbStyle}" HorizontalAlignment="Left" Height="30" IsEnabled="{Binding Path=IsEditEnable}"
+                             ItemsSource="{Binding Path= RoleData}" SelectedValue="{Binding Path=CurrentUser.RoleName, Mode=TwoWay}"
+                          SelectedValuePath="ROLE_ID" DisplayMemberPath="ROLE_ID">
+                                        </ComboBox>
+                                        <TextBox Grid.Row="8" Grid.Column="1" Style="{StaticResource txbNormal}"
+                     Text="{Binding Path=CurrentUser.PHONE, Mode=TwoWay}"  Visibility="Collapsed"/>
+                                        <TextBox Grid.Row="9" Grid.Column="1" Style="{StaticResource txbNormal}"
+                     Text="{Binding Path=CurrentUser.ADDRESS, Mode=TwoWay}" TextWrapping="Wrap" Height="50"  Visibility="Collapsed"/>
+
+                                        
+                                        <TextBlock Grid.Row="5" Grid.Column="3" Style="{StaticResource Required}"/>
+                                        <!--<TextBlock Grid.Row="0" Grid.Column="3" Style="{StaticResource Required}"/>-->
+                                        <TextBlock Grid.Row="6" Grid.Column="3" Style="{StaticResource Required}"/>
+                                        <TextBlock Grid.Row="7" Grid.Column="3" Style="{StaticResource Required}"/>
+                                        <TextBlock Grid.Row="8" Grid.Column="3" Style="{StaticResource Required}" Visibility="Collapsed"/>
+                                    </Grid>
+                                    <Grid Visibility="{Binding Path=IsAuto}">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                            <RowDefinition Height="auto"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Row="0" Grid.Column="0" Style="{StaticResource tblStyle}"
+                       Text="{Binding Path=lblFile, Source={StaticResource currentSystemRoleCulture}}"/>
+                                        <Button Grid.Row="0" Grid.Column="3" Style="{StaticResource btnSearchStyle}"
+                                    Command="{Binding Path=ActionCommand}" CommandParameter="GetFile"/>
+                                        <TextBlock Grid.Row="1" Grid.Column="0" Style="{StaticResource tblStyle}"
+                       Text="{Binding Path=lblRole, Source={StaticResource currentSystemRoleCulture}}"/>
+
+                                        <TextBox Grid.Row="0" Grid.Column="1" IsEnabled="{Binding Path=IsEnabledEdit}"
+                     Text="{Binding Path=FileName, Mode=TwoWay}" Style="{StaticResource txbNormal}" IsReadOnly="True" Margin="5,5,0,0" VerticalAlignment="Top"/>
+                                        <ComboBox Grid.Row="1" Grid.Column="1" Width="200" Margin="5" Style="{StaticResource cmbStyle}" HorizontalAlignment="Left" Height="30" IsEnabled="{Binding Path=IsEditEnable}"
+                             ItemsSource="{Binding Path= RoleData}" SelectedValue="{Binding Path=RoleName, Mode=TwoWay}"
+                          SelectedValuePath="ROLE_ID" DisplayMemberPath="ROLE_ID">
+                                        </ComboBox>
+                                        <StackPanel Grid.Row="2" HorizontalAlignment="Left" Grid.ColumnSpan="5">
+                                            <sdk:DataGrid Name="dgdCustomer" Margin="5,5,5,0" AutoGenerateColumns="False" Height="300" MaxWidth="900"
+                    ItemsSource="{Binding Path=PageData}" Style="{StaticResource DataGridStyle1}" RowStyle="{StaticResource DataGridRowStyle1}">
+
+                                                <sdk:DataGrid.Columns>
+
+                                                    <sdk:DataGridTextColumn Binding="{Binding Path=TLSUBBRID, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" IsReadOnly="True">
+                                                        <sdk:DataGridColumn.HeaderStyle>
+                                                            <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
+                                                                <Setter Property="ContentTemplate">
+                                                                    <Setter.Value>
+                                                                        <DataTemplate>
+                                                                            <TextBlock Text="{Binding Path=Branch, Source={StaticResource currentSystemRoleCulture}}" Style="{StaticResource txtFontStyle}"></TextBlock>
+                                                                        </DataTemplate>
+                                                                    </Setter.Value>
+                                                                </Setter>
+                                                            </Style>
+                                                        </sdk:DataGridColumn.HeaderStyle>
+                                                    </sdk:DataGridTextColumn>
+
+                                                    <sdk:DataGridTextColumn Binding="{Binding Path=TLNANME, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" IsReadOnly="True">
+                                                        <sdk:DataGridColumn.HeaderStyle>
+                                                            <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
+                                                                <Setter Property="ContentTemplate">
+                                                                    <Setter.Value>
+                                                                        <DataTemplate>
+                                                                            <TextBlock Text="{Binding Path=lblUsername, Source={StaticResource currentSystemRoleCulture}}" Style="{StaticResource txtFontStyle}"></TextBlock>
+                                                                        </DataTemplate>
+                                                                    </Setter.Value>
+                                                                </Setter>
+                                                            </Style>
+                                                        </sdk:DataGridColumn.HeaderStyle>
+                                                    </sdk:DataGridTextColumn>
+
+                                                    <sdk:DataGridTextColumn Binding="{Binding Path=TLFullName, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" IsReadOnly="True">
+                                                        <sdk:DataGridColumn.HeaderStyle>
+                                                            <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
+                                                                <Setter Property="ContentTemplate">
+                                                                    <Setter.Value>
+                                                                        <DataTemplate>
+                                                                            <TextBlock Text="{Binding Path=TLFullName, Source={StaticResource currentSystemRoleCulture}}" Style="{StaticResource txtFontStyle}"></TextBlock>
+                                                                        </DataTemplate>
+                                                                    </Setter.Value>
+                                                                </Setter>
+                                                            </Style>
+                                                        </sdk:DataGridColumn.HeaderStyle>
+                                                    </sdk:DataGridTextColumn>
+
+                                                    <sdk:DataGridTextColumn Binding="{Binding Path=EMAIL, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" IsReadOnly="True">
+                                                        <sdk:DataGridColumn.HeaderStyle>
+                                                            <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
+                                                                <Setter Property="ContentTemplate">
+                                                                    <Setter.Value>
+                                                                        <DataTemplate>
+                                                                            <TextBlock Text="{Binding Path=EMAIL, Source={StaticResource currentSystemRoleCulture}}" Style="{StaticResource txtFontStyle}"></TextBlock>
+                                                                        </DataTemplate>
+                                                                    </Setter.Value>
+                                                                </Setter>
+                                                            </Style>
+                                                        </sdk:DataGridColumn.HeaderStyle>
+                                                    </sdk:DataGridTextColumn>
+                                                </sdk:DataGrid.Columns>
+                                            </sdk:DataGrid>
+                                            <sdk:DataPager Margin="5,0,5,5" PageSize="10" Source="{Binding Path=ItemsSource,ElementName=dgdCustomer}" DisplayMode="FirstLastNumeric" Style="{StaticResource DataPagerStyle1}"/>
+                                        </StackPanel>
+
+                                        <TextBlock Grid.Row="0" Grid.Column="3" Style="{StaticResource Required}"/>
+                                        <TextBlock Grid.Row="1" Grid.Column="3" Style="{StaticResource Required}"/>
+                                    </Grid>
+                                </StackPanel>
+
+                            </Grid>
+                        </UserControl>
+                    </StackPanel>
+                </Grid>
+            </toolkit:Expander>
+        </StackPanel>
+    </Grid>
+    
+</UserControl>

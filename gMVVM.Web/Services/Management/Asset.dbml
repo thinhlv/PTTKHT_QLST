@@ -1,0 +1,1449 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TAISANDAMBAO_PRO" Class="AssetDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=KIEPDATRANG\SQLEXPRESS;Initial Catalog=TAISANDAMBAO_PRO;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="gMVVMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CM_ALLCODE" Member="CM_ALLCODEs">
+    <Type Name="CM_ALLCODE">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CDNAME" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CDVAL" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CONTENT" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CDTYPE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="LSTODR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TL_USER" Member="TL_USERs">
+    <Type Name="TL_USER">
+      <Column Name="TLID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="TLNANME" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TLFullName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TLSUBBRID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="RoleName" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PHONE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MARKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="AUTH_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ISAPPROVE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ISFIRSTTIME" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="SECUR_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CM_ARGUMENT" Member="CM_ARGUMENTs">
+    <Type Name="CM_ARGUMENT">
+      <Column Name="ARG_ID" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AGR_CODE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="ARG_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CM_ATTACH_FILE" Member="CM_ATTACH_FILEs">
+    <Type Name="CM_ATTACH_FILE">
+      <Column Name="ATTACH_ID" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REF_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="FILE_NAME_OLD" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PATH_OLD" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="FILE_NAME_NEW" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PATH_NEW" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="FILE_SIZE" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="FILE_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ATTACH_DT" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="EMP_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="[INDEX]" Member="INDEX" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="REF_MASTER" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CM_ATTACH_FILE_HIST" Member="CM_ATTACH_FILE_HISTs">
+    <Type Name="CM_ATTACH_FILE_HIST">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ATTACH_ID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REF_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="FILE_NAME_OLD" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PATH_OLD" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="FILE_NAME_NEW" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PATH_NEW" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="FILE_SIZE" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="FILE_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ATTACH_DT" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="EMP_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="[INDEX]" Member="INDEX" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="VERSION" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="ACTION" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CM_AUTH_STATUS" Member="CM_AUTH_STATUS">
+    <Type Name="CM_AUTH_STATUS">
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(1) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AUTH_STATUS_NAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CM_BRANCH" Member="CM_BRANCHes">
+    <Type Name="CM_BRANCH">
+      <Column Name="BRANCH_ID" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FATHER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="IS_POTENTIAL" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="BRANCH_CODE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DAO_CODE" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="DAO_NAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="REGION_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="ADDR" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PROVICE" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TEL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TAX_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CM_DEPARTMENT" Member="CM_DEPARTMENTs">
+    <Type Name="CM_DEPARTMENT">
+      <Column Name="DEP_ID" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DEP_CODE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="DEP_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DAO_CODE" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="DAO_NAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="BRANCH_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="GROUP_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TEL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SYS_CODEMASTERS" Member="SYS_CODEMASTERs">
+    <Type Name="SYS_CODEMASTER">
+      <Column Name="Prefix" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CurValue" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Active" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SYS_ERROR" Member="SYS_ERRORs">
+    <Type Name="SYS_ERROR">
+      <Column Name="ErrorCode" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Form" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SYS_PARAMETERS" Member="SYS_PARAMETERs">
+    <Type Name="SYS_PARAMETER">
+      <Column Name="ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ParaKey" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ParaValue" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DataType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SYS_PREFIX" Member="SYS_PREFIXes">
+    <Type Name="SYS_PREFIX">
+      <Column Name="ID" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Prefix" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TL_MENU" Member="TL_MENUs">
+    <Type Name="TL_MENU">
+      <Column Name="MENU_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MENU_NAME" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="MENU_NAME_EL" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MENU_PARENT" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="MENU_LINK" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="MENU_ORDER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="DATE_APPROVE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ISAPPROVE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="ISAPPROVE_FUNC" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TL_SYSROLE" Member="TL_SYSROLEs">
+    <Type Name="TL_SYSROLE">
+      <Column Name="ROLE_ID" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ROLE_DESC" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="DATE_APPROVE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ISAPPROVE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TL_SYSROLEDETAIL" Member="TL_SYSROLEDETAILs">
+    <Type Name="TL_SYSROLEDETAIL">
+      <Column Name="ROLE_ID" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MENU_ID" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ISINSERT" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ISUPDATE" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ISDELETE" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ISEDIT" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ISSEARCH" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ISVIEW" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ISAPPROVE" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ISCLOSE" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ISCHECKNULL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CM_DEPT_GROUP" Member="CM_DEPT_GROUPs">
+    <Type Name="CM_DEPT_GROUP">
+      <Column Name="GROUP_ID" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="GROUP_CODE" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GROUP_NAME" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_BENH" Member="ZOO_BENHs">
+    <Type Name="ZOO_BENH">
+      <Column Name="MaBenh" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenBenh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ThoiGianBenh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TrieuChung" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_BENH_ZOO_DIEUTRI" Member="ZOO_DIEUTRIs" ThisKey="MaBenh" OtherKey="MaBenh" Type="ZOO_DIEUTRI" />
+      <Association Name="ZOO_BENH_ZOO_DONTHUOC" Member="ZOO_DONTHUOCs" ThisKey="MaBenh" OtherKey="MaBenh" Type="ZOO_DONTHUOC" />
+      <Association Name="ZOO_STATUS_ZOO_BENH" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+      <Association Name="ZOO_STATUS_ZOO_BENH1" Member="ZOO_STATUS1" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_TYPE" Member="ZOO_TYPEs">
+    <Type Name="ZOO_TYPE">
+      <Column Name="MaLoai" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Loai" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Mota" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_TYPE_ZOO_CHUONG" Member="ZOO_CHUONGs" ThisKey="MaLoai" OtherKey="MaLoaiChuong" Type="ZOO_CHUONG" />
+      <Association Name="ZOO_TYPE_ZOO_HOSO" Member="ZOO_HOSOs" ThisKey="MaLoai" OtherKey="LoaiHoSo" Type="ZOO_HOSO" />
+      <Association Name="ZOO_TYPE_ZOO_THUCAN" Member="ZOO_THUCANs" ThisKey="MaLoai" OtherKey="LoaiThucAn" Type="ZOO_THUCAN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_CHOAN" Member="ZOO_CHOANs">
+    <Type Name="ZOO_CHOAN">
+      <Column Name="MaChoAn" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaChuong" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MaKhauPhanAn" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_CHOAN_ZOO_PHANCONGCHOAN" Member="ZOO_PHANCONGCHOANs" ThisKey="MaChoAn" OtherKey="MaChoAn" Type="ZOO_PHANCONGCHOAN" />
+      <Association Name="ZOO_CHUONG_ZOO_CHOAN" Member="ZOO_CHUONG" ThisKey="MaChoAn" OtherKey="MaChuong" Type="ZOO_CHUONG" IsForeignKey="true" />
+      <Association Name="ZOO_KHAUPHANAN_ZOO_CHOAN" Member="ZOO_KHAUPHANAN" ThisKey="MaChoAn" OtherKey="MaKhauPhanAn" Type="ZOO_KHAUPHANAN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_CHUONG" Member="ZOO_CHUONGs">
+    <Type Name="ZOO_CHUONG">
+      <Column Name="MaChuong" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaLoaiChuong" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MaLoaiDV" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TenChuong" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SoLuongHienTai" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SoLuongToiDa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_CHUONG_ZOO_CHOAN" Member="ZOO_CHOAN" ThisKey="MaChuong" OtherKey="MaChoAn" Type="ZOO_CHOAN" Cardinality="One" />
+      <Association Name="ZOO_CHUONG_ZOO_DONGVAT" Member="ZOO_DONGVAT" ThisKey="MaChuong" OtherKey="MaDongVat" Type="ZOO_DONGVAT" Cardinality="One" />
+      <Association Name="ZOO_CHUONG_ZOO_PHANCONGVESINH" Member="ZOO_PHANCONGVESINHs" ThisKey="MaChuong" OtherKey="MaChuong" Type="ZOO_PHANCONGVESINH" />
+      <Association Name="ZOO_TYPE_ZOO_CHUONG" Member="ZOO_TYPE" ThisKey="MaLoaiChuong" OtherKey="MaLoai" Type="ZOO_TYPE" IsForeignKey="true" />
+      <Association Name="ZOO_LOAIDV_ZOO_CHUONG" Member="ZOO_LOAIDV" ThisKey="MaLoaiDV" OtherKey="MaLoai" Type="ZOO_LOAIDV" IsForeignKey="true" />
+      <Association Name="ZOO_STATUS_ZOO_CHUONG" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_DIEUTRI" Member="ZOO_DIEUTRIs">
+    <Type Name="ZOO_DIEUTRI">
+      <Column Name="MaDieuTri" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaBenh" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MaDongVat" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NgayDieuTri" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgayBenh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_DIEUTRI_ZOO_PHANCONGDIEUTRI" Member="ZOO_PHANCONGDIEUTRIs" ThisKey="MaDieuTri" OtherKey="MaDieuTri" Type="ZOO_PHANCONGDIEUTRI" />
+      <Association Name="ZOO_BENH_ZOO_DIEUTRI" Member="ZOO_BENH" ThisKey="MaBenh" OtherKey="MaBenh" Type="ZOO_BENH" IsForeignKey="true" />
+      <Association Name="ZOO_DONGVAT_ZOO_DIEUTRI" Member="ZOO_DONGVAT" ThisKey="MaDongVat" OtherKey="MaDongVat" Type="ZOO_DONGVAT" IsForeignKey="true" />
+      <Association Name="ZOO_STATUS_ZOO_DIEUTRI" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_DONGVAT" Member="ZOO_DONGVATs">
+    <Type Name="ZOO_DONGVAT">
+      <Column Name="MaDongVat" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenDongVat" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TenKhoaHoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MaLoaiDV" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MaMe" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MaCha" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MaChuong" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Mau" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CanNang" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ChieuCao" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ChieuDai" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgayNhapVe" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="HinhThucGiamSat" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NoiXuatXu" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NoiCuTru" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="TuoiTho" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_DONGVAT_ZOO_DIEUTRI" Member="ZOO_DIEUTRIs" ThisKey="MaDongVat" OtherKey="MaDongVat" Type="ZOO_DIEUTRI" />
+      <Association Name="ZOO_CHUONG_ZOO_DONGVAT" Member="ZOO_CHUONG" ThisKey="MaDongVat" OtherKey="MaChuong" Type="ZOO_CHUONG" IsForeignKey="true" />
+      <Association Name="ZOO_LOAIDV_ZOO_DONGVAT" Member="ZOO_LOAIDV" ThisKey="MaLoaiDV" OtherKey="MaLoai" Type="ZOO_LOAIDV" IsForeignKey="true" />
+      <Association Name="ZOO_STATUS_ZOO_DONGVAT" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_DONTHUOC" Member="ZOO_DONTHUOCs">
+    <Type Name="ZOO_DONTHUOC">
+      <Column Name="MaBenh" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_BENH_ZOO_DONTHUOC" Member="ZOO_BENH" ThisKey="MaBenh" OtherKey="MaBenh" Type="ZOO_BENH" IsForeignKey="true" />
+      <Association Name="ZOO_THUOC_ZOO_DONTHUOC" Member="ZOO_THUOC" ThisKey="MaThuoc" OtherKey="MaThuoc" Type="ZOO_THUOC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_HOSO" Member="ZOO_HOSOs">
+    <Type Name="ZOO_HOSO">
+      <Column Name="MaHoSo" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenHoSo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LoaiHoSo" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TrangThai" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NoiDung" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_TYPE_ZOO_HOSO" Member="ZOO_TYPE" ThisKey="LoaiHoSo" OtherKey="MaLoai" Type="ZOO_TYPE" IsForeignKey="true" />
+      <Association Name="ZOO_STATUS_ZOO_HOSO" Member="ZOO_STATUS" ThisKey="TrangThai" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_KHAUPHANAN" Member="ZOO_KHAUPHANANs">
+    <Type Name="ZOO_KHAUPHANAN">
+      <Column Name="MaKhauPhanAn" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaLoai" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MaTrangThai" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="ThoiGianAn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_KHAUPHANAN_ZOO_CHOAN" Member="ZOO_CHOAN" ThisKey="MaKhauPhanAn" OtherKey="MaChoAn" Type="ZOO_CHOAN" Cardinality="One" />
+      <Association Name="ZOO_KHAUPHANAN_ZOO_THUCDON" Member="ZOO_THUCDONs" ThisKey="MaKhauPhanAn" OtherKey="MaKhauPhanAn" Type="ZOO_THUCDON" />
+      <Association Name="ZOO_LOAIDV_ZOO_KHAUPHANAN" Member="ZOO_LOAIDV" ThisKey="MaLoai" OtherKey="MaLoai" Type="ZOO_LOAIDV" IsForeignKey="true" />
+      <Association Name="ZOO_STATUS_ZOO_KHAUPHANAN" Member="ZOO_STATUS" ThisKey="MaTrangThai" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_LOAIDV" Member="ZOO_LOAIDVs">
+    <Type Name="ZOO_LOAIDV">
+      <Column Name="MaLoai" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenLoai" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Loai" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_LOAIDV_ZOO_CHUONG" Member="ZOO_CHUONGs" ThisKey="MaLoai" OtherKey="MaLoaiDV" Type="ZOO_CHUONG" />
+      <Association Name="ZOO_LOAIDV_ZOO_DONGVAT" Member="ZOO_DONGVATs" ThisKey="MaLoai" OtherKey="MaLoaiDV" Type="ZOO_DONGVAT" />
+      <Association Name="ZOO_LOAIDV_ZOO_KHAUPHANAN" Member="ZOO_KHAUPHANANs" ThisKey="MaLoai" OtherKey="MaLoai" Type="ZOO_KHAUPHANAN" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_NHANVIEN" Member="ZOO_NHANVIENs">
+    <Type Name="ZOO_NHANVIEN">
+      <Column Name="MaNhanVien" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LoaiNhanVien" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TenNhanVien" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GioiTinh" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(80)" CanBeNull="true" />
+      <Column Name="CMND" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SDT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NgayVaoLam" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_NHANVIEN_ZOO_PHANCONGCHOAN" Member="ZOO_PHANCONGCHOAN" ThisKey="MaNhanVien" OtherKey="MaPhanCong" Type="ZOO_PHANCONGCHOAN" Cardinality="One" />
+      <Association Name="ZOO_NHANVIEN_ZOO_PHANCONGDIEUTRI" Member="ZOO_PHANCONGDIEUTRIs" ThisKey="MaNhanVien" OtherKey="MaNhanVien" Type="ZOO_PHANCONGDIEUTRI" />
+      <Association Name="ZOO_NHANVIEN_ZOO_PHANCONGVESINH" Member="ZOO_PHANCONGVESINHs" ThisKey="MaNhanVien" OtherKey="MaNhanVien" Type="ZOO_PHANCONGVESINH" />
+      <Association Name="ZOO_STATUS_ZOO_NHANVIEN" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_PHANCONGCHOAN" Member="ZOO_PHANCONGCHOANs">
+    <Type Name="ZOO_PHANCONGCHOAN">
+      <Column Name="MaPhanCong" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaNhanVien" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaChoAn" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Mota" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NgayChoAn" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_CHOAN_ZOO_PHANCONGCHOAN" Member="ZOO_CHOAN" ThisKey="MaChoAn" OtherKey="MaChoAn" Type="ZOO_CHOAN" IsForeignKey="true" />
+      <Association Name="ZOO_NHANVIEN_ZOO_PHANCONGCHOAN" Member="ZOO_NHANVIEN" ThisKey="MaPhanCong" OtherKey="MaNhanVien" Type="ZOO_NHANVIEN" IsForeignKey="true" />
+      <Association Name="ZOO_STATUS_ZOO_PHANCONGCHOAN" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_PHANCONGDIEUTRI" Member="ZOO_PHANCONGDIEUTRIs">
+    <Type Name="ZOO_PHANCONGDIEUTRI">
+      <Column Name="MaPhanCong" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaNhanVien" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MaDieuTri" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_DIEUTRI_ZOO_PHANCONGDIEUTRI" Member="ZOO_DIEUTRI" ThisKey="MaDieuTri" OtherKey="MaDieuTri" Type="ZOO_DIEUTRI" IsForeignKey="true" />
+      <Association Name="ZOO_NHANVIEN_ZOO_PHANCONGDIEUTRI" Member="ZOO_NHANVIEN" ThisKey="MaNhanVien" OtherKey="MaNhanVien" Type="ZOO_NHANVIEN" IsForeignKey="true" />
+      <Association Name="ZOO_STATUS_ZOO_PHANCONGDIEUTRI" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_PHANCONGVESINH" Member="ZOO_PHANCONGVESINHs">
+    <Type Name="ZOO_PHANCONGVESINH">
+      <Column Name="MaPhanCong" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaNhanVien" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MaChuong" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Mota" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NgayLam" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_CHUONG_ZOO_PHANCONGVESINH" Member="ZOO_CHUONG" ThisKey="MaChuong" OtherKey="MaChuong" Type="ZOO_CHUONG" IsForeignKey="true" />
+      <Association Name="ZOO_NHANVIEN_ZOO_PHANCONGVESINH" Member="ZOO_NHANVIEN" ThisKey="MaNhanVien" OtherKey="MaNhanVien" Type="ZOO_NHANVIEN" IsForeignKey="true" />
+      <Association Name="ZOO_STATUS_ZOO_PHANCONGVESINH" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_PHIEUDATTHUCAN" Member="ZOO_PHIEUDATTHUCANs">
+    <Type Name="ZOO_PHIEUDATTHUCAN">
+      <Column Name="MaPhieuDat" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaThucAn" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NgayDat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_THUCAN_ZOO_PHIEUDATTHUCAN" Member="ZOO_THUCAN" ThisKey="MaThucAn" OtherKey="MaThucAn" Type="ZOO_THUCAN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_PHIEUDATTHUOC" Member="ZOO_PHIEUDATTHUOCs">
+    <Type Name="ZOO_PHIEUDATTHUOC">
+      <Column Name="MaPhieuDat" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NgayDat" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_STATUS_ZOO_PHIEUDATTHUOC" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+      <Association Name="ZOO_THUOC_ZOO_PHIEUDATTHUOC" Member="ZOO_THUOC" ThisKey="MaThuoc" OtherKey="MaThuoc" Type="ZOO_THUOC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_PHIEUNHAPTHUCAN" Member="ZOO_PHIEUNHAPTHUCANs">
+    <Type Name="ZOO_PHIEUNHAPTHUCAN">
+      <Column Name="MaPhieuNhap" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaThucAn" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NgayNhap" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_THUCAN_ZOO_PHIEUNHAPTHUCAN" Member="ZOO_THUCAN" ThisKey="MaThucAn" OtherKey="MaThucAn" Type="ZOO_THUCAN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_PHIEUNHAPTHUOC" Member="ZOO_PHIEUNHAPTHUOCs">
+    <Type Name="ZOO_PHIEUNHAPTHUOC">
+      <Column Name="MaPhieuNhap" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayNhap" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_THUOC_ZOO_PHIEUNHAPTHUOC" Member="ZOO_THUOC" ThisKey="MaThuoc" OtherKey="MaThuoc" Type="ZOO_THUOC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_PHIEUXUATTHUCAN" Member="ZOO_PHIEUXUATTHUCANs">
+    <Type Name="ZOO_PHIEUXUATTHUCAN">
+      <Column Name="MaPhieuXuat" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaThucAn" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="NgayXuat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_STATUS_ZOO_PHIEUXUATTHUCAN" Member="ZOO_STATUS" ThisKey="MaPhieuXuat" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+      <Association Name="ZOO_THUCAN_ZOO_PHIEUXUATTHUCAN" Member="ZOO_THUCAN" ThisKey="MaPhieuXuat" OtherKey="MaThucAn" Type="ZOO_THUCAN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_PHIEUXUATTHUOC" Member="ZOO_PHIEUXUATTHUOCs">
+    <Type Name="ZOO_PHIEUXUATTHUOC">
+      <Column Name="MaPhieuXuat" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NgayXuat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_STATUS_ZOO_PHIEUXUATTHUOC" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+      <Association Name="ZOO_THUOC_ZOO_PHIEUXUATTHUOC" Member="ZOO_THUOC" ThisKey="MaPhieuXuat" OtherKey="MaThuoc" Type="ZOO_THUOC" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_STATUS" Member="ZOO_STATUS">
+    <Type Name="ZOO_STATUS">
+      <Column Name="MaTrangThai" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenTrangThai" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LoaiTrangThai" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_STATUS_ZOO_BENH" Member="ZOO_BENHs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_BENH" />
+      <Association Name="ZOO_STATUS_ZOO_BENH1" Member="ZOO_BENHs1" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_BENH" />
+      <Association Name="ZOO_STATUS_ZOO_CHUONG" Member="ZOO_CHUONGs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_CHUONG" />
+      <Association Name="ZOO_STATUS_ZOO_DIEUTRI" Member="ZOO_DIEUTRIs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_DIEUTRI" />
+      <Association Name="ZOO_STATUS_ZOO_DONGVAT" Member="ZOO_DONGVATs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_DONGVAT" />
+      <Association Name="ZOO_STATUS_ZOO_HOSO" Member="ZOO_HOSOs" ThisKey="MaTrangThai" OtherKey="TrangThai" Type="ZOO_HOSO" />
+      <Association Name="ZOO_STATUS_ZOO_KHAUPHANAN" Member="ZOO_KHAUPHANANs" ThisKey="MaTrangThai" OtherKey="MaTrangThai" Type="ZOO_KHAUPHANAN" />
+      <Association Name="ZOO_STATUS_ZOO_NHANVIEN" Member="ZOO_NHANVIENs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_NHANVIEN" />
+      <Association Name="ZOO_STATUS_ZOO_PHANCONGCHOAN" Member="ZOO_PHANCONGCHOANs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_PHANCONGCHOAN" />
+      <Association Name="ZOO_STATUS_ZOO_PHANCONGDIEUTRI" Member="ZOO_PHANCONGDIEUTRIs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_PHANCONGDIEUTRI" />
+      <Association Name="ZOO_STATUS_ZOO_PHANCONGVESINH" Member="ZOO_PHANCONGVESINHs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_PHANCONGVESINH" />
+      <Association Name="ZOO_STATUS_ZOO_PHIEUDATTHUOC" Member="ZOO_PHIEUDATTHUOCs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_PHIEUDATTHUOC" />
+      <Association Name="ZOO_STATUS_ZOO_PHIEUXUATTHUCAN" Member="ZOO_PHIEUXUATTHUCANs" ThisKey="MaTrangThai" OtherKey="MaPhieuXuat" Type="ZOO_PHIEUXUATTHUCAN" />
+      <Association Name="ZOO_STATUS_ZOO_PHIEUXUATTHUOC" Member="ZOO_PHIEUXUATTHUOCs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_PHIEUXUATTHUOC" />
+      <Association Name="ZOO_STATUS_ZOO_THUCAN" Member="ZOO_THUCANs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_THUCAN" />
+      <Association Name="ZOO_STATUS_ZOO_THUOC" Member="ZOO_THUOCs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_THUOC" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_THUCAN" Member="ZOO_THUCANs">
+    <Type Name="ZOO_THUCAN">
+      <Column Name="MaThucAn" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LoaiThucAn" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="TenThucAn" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NgayNhap" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="HamLuongDinhDuong" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_THUCAN_ZOO_PHIEUDATTHUCAN" Member="ZOO_PHIEUDATTHUCANs" ThisKey="MaThucAn" OtherKey="MaThucAn" Type="ZOO_PHIEUDATTHUCAN" />
+      <Association Name="ZOO_THUCAN_ZOO_PHIEUNHAPTHUCAN" Member="ZOO_PHIEUNHAPTHUCANs" ThisKey="MaThucAn" OtherKey="MaThucAn" Type="ZOO_PHIEUNHAPTHUCAN" />
+      <Association Name="ZOO_THUCAN_ZOO_PHIEUXUATTHUCAN" Member="ZOO_PHIEUXUATTHUCANs" ThisKey="MaThucAn" OtherKey="MaPhieuXuat" Type="ZOO_PHIEUXUATTHUCAN" />
+      <Association Name="ZOO_THUCAN_ZOO_THUCDON" Member="ZOO_THUCDONs" ThisKey="MaThucAn" OtherKey="MaThucAn" Type="ZOO_THUCDON" />
+      <Association Name="ZOO_STATUS_ZOO_THUCAN" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+      <Association Name="ZOO_TYPE_ZOO_THUCAN" Member="ZOO_TYPE" ThisKey="LoaiThucAn" OtherKey="MaLoai" Type="ZOO_TYPE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_THUCDON" Member="ZOO_THUCDONs">
+    <Type Name="ZOO_THUCDON">
+      <Column Name="MaThucAn" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaKhauPhanAn" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_KHAUPHANAN_ZOO_THUCDON" Member="ZOO_KHAUPHANAN" ThisKey="MaKhauPhanAn" OtherKey="MaKhauPhanAn" Type="ZOO_KHAUPHANAN" IsForeignKey="true" />
+      <Association Name="ZOO_THUCAN_ZOO_THUCDON" Member="ZOO_THUCAN" ThisKey="MaThucAn" OtherKey="MaThucAn" Type="ZOO_THUCAN" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZOO_THUOC" Member="ZOO_THUOCs">
+    <Type Name="ZOO_THUOC">
+      <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenThuoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SoLo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NgaySanXuat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgayHetHan" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ToiThieu" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ZOO_THUOC_ZOO_DONTHUOC" Member="ZOO_DONTHUOCs" ThisKey="MaThuoc" OtherKey="MaThuoc" Type="ZOO_DONTHUOC" />
+      <Association Name="ZOO_THUOC_ZOO_PHIEUDATTHUOC" Member="ZOO_PHIEUDATTHUOCs" ThisKey="MaThuoc" OtherKey="MaThuoc" Type="ZOO_PHIEUDATTHUOC" />
+      <Association Name="ZOO_THUOC_ZOO_PHIEUNHAPTHUOC" Member="ZOO_PHIEUNHAPTHUOCs" ThisKey="MaThuoc" OtherKey="MaThuoc" Type="ZOO_PHIEUNHAPTHUOC" />
+      <Association Name="ZOO_THUOC_ZOO_PHIEUXUATTHUOC" Member="ZOO_PHIEUXUATTHUOCs" ThisKey="MaThuoc" OtherKey="MaPhieuXuat" Type="ZOO_PHIEUXUATTHUOC" />
+      <Association Name="ZOO_STATUS_ZOO_THUOC" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.CM_ALLCODE_By_Type_Id" Method="CM_ALLCODE_By_Type_Id">
+    <Parameter Name="CDTYPE" Parameter="cDTYPE" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="CM_ALLCODE_By_Type_IdResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CDNAME" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CDVAL" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CONTENT" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CDTYPE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="LSTODR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.TL_USER_Upd" Method="TL_USER_Upd">
+    <Parameter Name="p_TLNANME" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_TLID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_Password" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_TLFullName" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_TLSUBBRID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="p_RoleName" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_EMAIL" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_ADDRESS" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="p_PHONE" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MARKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_AUTH_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_ISAPPROVE" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_Birthday" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_ISFIRSTTIME" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_SECUR_CODE" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="TL_USER_UpdResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TLID" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_ALLCODE_ById" Method="CM_ALLCODE_ById">
+    <Parameter Name="CDNAME" Parameter="cDNAME" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="CDTYPE" Parameter="cDTYPE" Type="System.String" DbType="VarChar(25)" />
+    <ElementType Name="CM_ALLCODE_ByIdResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CDNAME" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CDVAL" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CONTENT" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CDTYPE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="LSTODR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_ALLCODE_Del" Method="CM_ALLCODE_Del">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CM_ALLCODE_DelResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_ALLCODE_Ins" Method="CM_ALLCODE_Ins">
+    <Parameter Name="p_CDNAME" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_CDVAL" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_CONTENT" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="p_CDTYPE" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_LSTODR" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CM_ALLCODE_InsResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_ALLCODE_Lst" Method="CM_ALLCODE_Lst">
+    <ElementType Name="CM_ALLCODE_LstResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CDNAME" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CDVAL" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CONTENT" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CDTYPE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="LSTODR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_ALLCODE_Search" Method="CM_ALLCODE_Search">
+    <Parameter Name="p_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_CDNAME" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_CDVAL" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_CONTENT" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="p_CDTYPE" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_LSTODR" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_TOP" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CM_ALLCODE_SearchResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CDNAME" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CDVAL" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CONTENT" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CDTYPE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="LSTODR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_ALLCODE_Upd" Method="CM_ALLCODE_Upd">
+    <Parameter Name="p_ID" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_CDNAME" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_CDVAL" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_CONTENT" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="p_CDTYPE" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_LSTODR" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CM_ALLCODE_UpdResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_ARGUMENT_ByTop" Method="CM_ARGUMENT_ByTop">
+    <Parameter Name="Top" Parameter="top" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Where" Parameter="where" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="Order" Parameter="order" Type="System.String" DbType="NVarChar(500)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CM_BRANCH_App" Method="CM_BRANCH_App">
+    <Parameter Name="P_BRANCH_ID" Parameter="p_BRANCH_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="P_AUTH_STATUS" Parameter="p_AUTH_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="P_CHECKER_ID" Parameter="p_CHECKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="P_APPROVE_DT" Parameter="p_APPROVE_DT" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="CM_BRANCH_AppResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_BRANCH_ByTop" Method="CM_BRANCH_ByTop">
+    <Parameter Name="Top" Parameter="top" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Where" Parameter="where" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="Order" Parameter="order" Type="System.String" DbType="NVarChar(500)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CM_BRANCH_Del" Method="CM_BRANCH_Del">
+    <Parameter Name="BRANCH_ID" Parameter="bRANCH_ID" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="CM_BRANCH_DelResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_BRANCH_GETALLCHILD" Method="CM_BRANCH_GETALLCHILD">
+    <Parameter Name="PARENT_ID" Parameter="pARENT_ID" Type="System.String" DbType="NVarChar(15)" />
+    <ElementType Name="CM_BRANCH_GETALLCHILDResult">
+      <Column Name="BRANCH_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="FATHER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="BRANCH_CODE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_BRANCH_GETALLCHILD_NEW" Method="CM_BRANCH_GETALLCHILD_NEW">
+    <Parameter Name="p_BRANCH_ID" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="p_BRANCH_TYPE" Type="System.String" DbType="VarChar(4)" />
+    <ElementType Name="CM_BRANCH_GETALLCHILD_NEWResult">
+      <Column Name="BRANCH_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="FATHER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="BRANCH_CODE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_BRANCH_Lev" Method="CM_BRANCH_Lev">
+    <Parameter Name="p_Branch_Id" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="CM_BRANCH_LevResult">
+      <Column Name="BRANCH_ID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="FATHER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="IS_POTENTIAL" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="BRANCH_CODE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DAO_CODE" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="DAO_NAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="REGION_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="ADDR" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PROVICE" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TEL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TAX_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_BRANCH_List" Method="CM_BRANCH_List">
+    <ElementType Name="CM_BRANCH_ListResult">
+      <Column Name="BRANCH_ID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="FATHER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="IS_POTENTIAL" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="BRANCH_CODE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DAO_CODE" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="DAO_NAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="REGION_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="ADDR" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PROVICE" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TEL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TAX_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_BRANCH_Search" Method="CM_BRANCH_Search">
+    <Parameter Name="p_BRANCH_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_FATHER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_FATHER_CODE" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_BRANCH_CODE" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="p_BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_REGION_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="P_REGION_CODE" Parameter="p_REGION_CODE" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="p_ADDR" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_TEL" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_RECORD_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MAKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_CREATE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_TOP" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_BRANCH_LOGIN" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="CM_BRANCH_SearchResult">
+      <Column Name="BRANCH_ID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="FATHER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="IS_POTENTIAL" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="BRANCH_CODE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DAO_CODE" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="DAO_NAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="REGION_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="ADDR" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="PROVICE" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TEL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="TAX_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="F_BRANCH_CODE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="F_BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_BRANCH_Upd" Method="CM_BRANCH_Upd">
+    <Parameter Name="p_BRANCH_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_FATHER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_BRANCH_CODE" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="p_BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_REGION_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="p_ADDR" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_TEL" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_RECORD_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MAKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_CREATE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="CM_BRANCH_UpdResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CAR_ID" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DEPARTMENT_App" Method="CM_DEPARTMENT_App">
+    <Parameter Name="P_DEP_ID" Parameter="p_DEP_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="P_AUTH_STATUS" Parameter="p_AUTH_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="P_CHECKER_ID" Parameter="p_CHECKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="P_APPROVE_DT" Parameter="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="CM_DEPARTMENT_AppResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DEPARTMENT_ById" Method="CM_DEPARTMENT_ById">
+    <Parameter Name="DEP_ID" Parameter="dEP_ID" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="CM_DEPARTMENT_ByIdResult">
+      <Column Name="DEP_ID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="DEP_CODE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="DEP_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DAO_CODE" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="DAO_NAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="BRANCH_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="GROUP_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TEL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DEPARTMENT_Del" Method="CM_DEPARTMENT_Del">
+    <Parameter Name="DEP_ID" Parameter="dEP_ID" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="CM_DEPARTMENT_DelResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DEPARTMENT_Lst" Method="CM_DEPARTMENT_Lst">
+    <ElementType Name="CM_DEPARTMENT_LstResult">
+      <Column Name="DEP_ID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="DEP_CODE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="DEP_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DAO_CODE" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="DAO_NAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="BRANCH_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="GROUP_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TEL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DEPARTMENT_Search" Method="CM_DEPARTMENT_Search">
+    <Parameter Name="p_DEP_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_DEP_CODE" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_DEP_NAME" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_DAO_CODE" Type="System.String" DbType="VarChar(40)" />
+    <Parameter Name="p_DAO_NAME" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="p_BRANCH_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_GROUP_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_TEL" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_RECORD_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MAKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_CREATE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_TOP" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CM_DEPARTMENT_SearchResult">
+      <Column Name="DEP_ID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="DEP_CODE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="DEP_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="DAO_CODE" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="DAO_NAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="BRANCH_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="GROUP_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TEL" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BRANCH_CODE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="AUTH_STATUS_NAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DEPARTMENT_Upd" Method="CM_DEPARTMENT_Upd">
+    <Parameter Name="p_DEP_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_DEP_CODE" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_DEP_NAME" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_DAO_CODE" Type="System.String" DbType="VarChar(40)" />
+    <Parameter Name="p_DAO_NAME" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="p_BRANCH_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_GROUP_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_TEL" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_RECORD_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MAKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_CREATE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="CM_DEPARTMENT_UpdResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="DEP_ID" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.EXECSQL" Method="EXECSQL">
+    <Parameter Name="l_QUERY" Type="System.String" DbType="NVarChar(MAX)" />
+    <ElementType Name="EXECSQLResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SYS_CodeMasters_Gen" Method="SYS_CodeMasters_Gen">
+    <Parameter Name="p_Kind" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="p_InforId" Type="System.String" DbType="VarChar(17)" />
+    <Parameter Name="p_KeyGen" Type="System.String" DbType="VarChar(20)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SYS_PARAMETERS_ById" Method="SYS_PARAMETERS_ById">
+    <Parameter Name="p_ParaKey" Type="System.String" DbType="VarChar(100)" />
+    <ElementType Name="SYS_PARAMETERS_ByIdResult">
+      <Column Name="ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ParaKey" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ParaValue" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="DataType" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.TL_USER_App" Method="TL_USER_App">
+    <Parameter Name="p_TLNAME" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="TL_USER_AppResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="TLNANME" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.TL_USER_ById" Method="TL_USER_ById">
+    <Parameter Name="TLNANME" Parameter="tLNANME" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="TL_USER_ByIdResult">
+      <Column Name="TLID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="TLNANME" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TLFullName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TLSUBBRID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="RoleName" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PHONE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MARKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="AUTH_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ISAPPROVE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ISFIRSTTIME" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="SECUR_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.TL_USER_Del" Method="TL_USER_Del">
+    <Parameter Name="TLNANME" Parameter="tLNANME" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="TL_USER_DelResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.TL_USER_Ins" Method="TL_USER_Ins">
+    <Parameter Name="p_TLNANME" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_Password" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_TLFullName" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_TLSUBBRID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="p_RoleName" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_EMAIL" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_ADDRESS" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="p_PHONE" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MARKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_AUTH_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_ISAPPROVE" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_Birthday" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_ISFIRSTTIME" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_SECUR_CODE" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="TL_USER_InsResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TLID" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.TL_USER_Lst" Method="TL_USER_Lst">
+    <ElementType Name="TL_USER_LstResult">
+      <Column Name="TLID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="TLNANME" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TLFullName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TLSUBBRID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="RoleName" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PHONE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MARKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="AUTH_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ISAPPROVE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ISFIRSTTIME" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="SECUR_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.TL_USER_Search" Method="TL_USER_Search">
+    <Parameter Name="p_TLID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_TLNANME" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_Password" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_TLFullName" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_TLSUBBRID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="p_RoleName" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_EMAIL" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_ADDRESS" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="p_PHONE" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MARKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_AUTH_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_ISAPPROVE" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_Birthday" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_ISFIRSTTIME" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_SECUR_CODE" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_TOP" Type="System.Int32" DbType="Int" />
+    <Parameter Name="P_LEVEL" Parameter="p_LEVEL" Type="System.String" DbType="VarChar(10)" />
+    <ElementType Name="TL_USER_SearchResult">
+      <Column Name="TLID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="TLNANME" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TLFullName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TLSUBBRID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="RoleName" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ADDRESS" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PHONE" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MARKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="AUTH_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ISAPPROVE" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="Birthday" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ISFIRSTTIME" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="SECUR_CODE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AUTH_STATUS_NAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="BRANCH_CODE" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="KHU_VUC" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CHI_NHANH" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="PGD" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TAX_NO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_BRANCH_Ins" Method="CM_BRANCH_Ins">
+    <Parameter Name="p_FATHER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_BRANCH_CODE" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="p_BRANCH_NAME" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_REGION_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_BRANCH_TYPE" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="p_ADDR" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_TEL" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_RECORD_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MAKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_CREATE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="CM_BRANCH_InsResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="BRANCH_ID" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DEPARTMENT_Ins" Method="CM_DEPARTMENT_Ins">
+    <Parameter Name="p_DEP_CODE" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_DEP_NAME" Type="System.String" DbType="NVarChar(200)" />
+    <Parameter Name="p_DAO_CODE" Type="System.String" DbType="VarChar(40)" />
+    <Parameter Name="p_DAO_NAME" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="p_BRANCH_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_GROUP_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_TEL" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_RECORD_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MAKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_CREATE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="CM_DEPARTMENT_InsResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="DEP_ID" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DEPT_GROUP_Appr" Method="CM_DEPT_GROUP_Appr">
+    <Parameter Name="p_GROUP_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="CM_DEPT_GROUP_ApprResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DEPT_GROUP_Upd" Method="CM_DEPT_GROUP_Upd">
+    <Parameter Name="p_GROUP_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_GROUP_CODE" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="p_GROUP_NAME" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_RECORD_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MAKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_CREATE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="CM_DEPT_GROUP_UpdResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="GROUP_ID" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DEPT_GROUP_ById" Method="CM_DEPT_GROUP_ById">
+    <Parameter Name="GROUP_ID" Parameter="gROUP_ID" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="CM_DEPT_GROUP_ByIdResult">
+      <Column Name="GROUP_ID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="GROUP_CODE" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GROUP_NAME" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DEPT_GROUP_ByTop" Method="CM_DEPT_GROUP_ByTop">
+    <Parameter Name="Top" Parameter="top" Type="System.String" DbType="NVarChar(10)" />
+    <Parameter Name="Where" Parameter="where" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="Order" Parameter="order" Type="System.String" DbType="NVarChar(500)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.CM_DEPT_GROUP_Del" Method="CM_DEPT_GROUP_Del">
+    <Parameter Name="GROUP_ID" Parameter="gROUP_ID" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="CM_DEPT_GROUP_DelResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DEPT_GROUP_Lst" Method="CM_DEPT_GROUP_Lst">
+    <ElementType Name="CM_DEPT_GROUP_LstResult">
+      <Column Name="GROUP_ID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="GROUP_CODE" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GROUP_NAME" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DEPT_GROUP_Search" Method="CM_DEPT_GROUP_Search">
+    <Parameter Name="p_GROUP_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_GROUP_CODE" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="p_GROUP_NAME" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_RECORD_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MAKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_CREATE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_TOP" Type="System.Int32" DbType="Int" />
+    <ElementType Name="CM_DEPT_GROUP_SearchResult">
+      <Column Name="GROUP_ID" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="GROUP_CODE" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GROUP_NAME" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS_NAME" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS_NAME" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.CM_DEPT_GROUP_Ins" Method="CM_DEPT_GROUP_Ins">
+    <Parameter Name="p_GROUP_CODE" Type="System.String" DbType="NVarChar(500)" />
+    <Parameter Name="p_GROUP_NAME" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_RECORD_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MAKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_CREATE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(12)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="CM_DEPT_GROUP_InsResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="GROUP_ID" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ZOO_BAOCAOTONKHO_Search" Method="ZOO_BAOCAOTONKHO_Search">
+    <Parameter Name="p_MaThuoc" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_TenThuoc" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="p_NgayHetHan" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_TOP" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ZOO_BAOCAOTONKHO_SearchResult">
+      <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="TenThuoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NgayHetHan" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

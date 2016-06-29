@@ -1,0 +1,426 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" x:Class="gMVVM.LoginSystem"
+    mc:Ignorable="d" xmlns:pb="clr-namespace:gMVVM.ViewModels">
+    <UserControl.Resources>
+    	<Style x:Key="BorderBackViewContainerStyle" TargetType="Border" >
+    		<Setter Property="Visibility" Value="Collapsed"/>
+    	</Style>
+    	<Storyboard x:Name="SwivelToBackStoryboard">
+    		<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="SwivelPanelBack" Storyboard.TargetProperty="(UIElement.Visibility)">
+    			<DiscreteObjectKeyFrame KeyTime="00:00:00">
+    				<DiscreteObjectKeyFrame.Value>
+    					<Visibility>Collapsed</Visibility>
+    				</DiscreteObjectKeyFrame.Value>
+    			</DiscreteObjectKeyFrame>
+    			<DiscreteObjectKeyFrame KeyTime="00:00:00.4000000">
+    				<DiscreteObjectKeyFrame.Value>
+    					<Visibility>Visible</Visibility>
+    				</DiscreteObjectKeyFrame.Value>
+    			</DiscreteObjectKeyFrame>
+    		</ObjectAnimationUsingKeyFrames>
+    		<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="SwivelPanelFront" Storyboard.TargetProperty="(UIElement.Visibility)">
+    			<DiscreteObjectKeyFrame KeyTime="00:00:00.0000000">
+    				<DiscreteObjectKeyFrame.Value>
+    					<Visibility>Visible</Visibility>
+    				</DiscreteObjectKeyFrame.Value>
+    			</DiscreteObjectKeyFrame>
+    			<DiscreteObjectKeyFrame KeyTime="00:00:00.4000000">
+    				<DiscreteObjectKeyFrame.Value>
+    					<Visibility>Collapsed</Visibility>
+    				</DiscreteObjectKeyFrame.Value>
+    			</DiscreteObjectKeyFrame>
+    		</ObjectAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="SwivelPanelFront" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+    			<EasingDoubleKeyFrame KeyTime="00:00:00.0000000" Value="0">
+    				<EasingDoubleKeyFrame.EasingFunction>
+    					<CubicEase EasingMode="EaseIn"/>
+    				</EasingDoubleKeyFrame.EasingFunction>
+    			</EasingDoubleKeyFrame>
+    			<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-90">
+    				<EasingDoubleKeyFrame.EasingFunction>
+    					<CubicEase EasingMode="EaseIn"/>
+    				</EasingDoubleKeyFrame.EasingFunction>
+    			</EasingDoubleKeyFrame>
+    			<EasingDoubleKeyFrame KeyTime="00:00:01" Value="-180">
+    				<EasingDoubleKeyFrame.EasingFunction>
+    					<CubicEase EasingMode="EaseOut"/>
+    				</EasingDoubleKeyFrame.EasingFunction>
+    			</EasingDoubleKeyFrame>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="SwivelPanelBack" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+    			<EasingDoubleKeyFrame KeyTime="00:00:00.0000000" Value="180">
+    				<EasingDoubleKeyFrame.EasingFunction>
+    					<CubicEase EasingMode="EaseIn"/>
+    				</EasingDoubleKeyFrame.EasingFunction>
+    			</EasingDoubleKeyFrame>
+    			<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="90">
+    				<EasingDoubleKeyFrame.EasingFunction>
+    					<CubicEase EasingMode="EaseIn"/>
+    				</EasingDoubleKeyFrame.EasingFunction>
+    			</EasingDoubleKeyFrame>
+    			<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0">
+    				<EasingDoubleKeyFrame.EasingFunction>
+    					<CubicEase EasingMode="EaseOut"/>
+    				</EasingDoubleKeyFrame.EasingFunction>
+    			</EasingDoubleKeyFrame>
+    		</DoubleAnimationUsingKeyFrames>
+    	</Storyboard>
+    	<Storyboard x:Name="SwivelToFrontStoryboard">
+    		<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="SwivelPanelBack" Storyboard.TargetProperty="(UIElement.Visibility)">
+    			<DiscreteObjectKeyFrame KeyTime="00:00:00.0000000">
+    				<DiscreteObjectKeyFrame.Value>
+    					<Visibility>Visible</Visibility>
+    				</DiscreteObjectKeyFrame.Value>
+    			</DiscreteObjectKeyFrame>
+    			<DiscreteObjectKeyFrame KeyTime="00:00:00.4000000">
+    				<DiscreteObjectKeyFrame.Value>
+    					<Visibility>Collapsed</Visibility>
+    				</DiscreteObjectKeyFrame.Value>
+    			</DiscreteObjectKeyFrame>
+    		</ObjectAnimationUsingKeyFrames>
+    		<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="SwivelPanelFront" Storyboard.TargetProperty="(UIElement.Visibility)">
+    			<DiscreteObjectKeyFrame KeyTime="00:00:00.0000000">
+    				<DiscreteObjectKeyFrame.Value>
+    					<Visibility>Collapsed</Visibility>
+    				</DiscreteObjectKeyFrame.Value>
+    			</DiscreteObjectKeyFrame>
+    			<DiscreteObjectKeyFrame KeyTime="00:00:00.4000000">
+    				<DiscreteObjectKeyFrame.Value>
+    					<Visibility>Visible</Visibility>
+    				</DiscreteObjectKeyFrame.Value>
+    			</DiscreteObjectKeyFrame>
+    		</ObjectAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="SwivelPanelFront" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+    			<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-180">
+    				<EasingDoubleKeyFrame.EasingFunction>
+    					<CubicEase EasingMode="EaseIn"/>
+    				</EasingDoubleKeyFrame.EasingFunction>
+    			</EasingDoubleKeyFrame>
+    			<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-90">
+    				<EasingDoubleKeyFrame.EasingFunction>
+    					<CubicEase EasingMode="EaseIn"/>
+    				</EasingDoubleKeyFrame.EasingFunction>
+    			</EasingDoubleKeyFrame>
+    			<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0">
+    				<EasingDoubleKeyFrame.EasingFunction>
+    					<CubicEase EasingMode="EaseOut"/>
+    				</EasingDoubleKeyFrame.EasingFunction>
+    			</EasingDoubleKeyFrame>
+    		</DoubleAnimationUsingKeyFrames>
+    		<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="SwivelPanelBack" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+    			<EasingDoubleKeyFrame KeyTime="00:00:00" Value="0">
+    				<EasingDoubleKeyFrame.EasingFunction>
+    					<CubicEase EasingMode="EaseIn"/>
+    				</EasingDoubleKeyFrame.EasingFunction>
+    			</EasingDoubleKeyFrame>
+    			<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="90">
+    				<EasingDoubleKeyFrame.EasingFunction>
+    					<CubicEase EasingMode="EaseIn"/>
+    				</EasingDoubleKeyFrame.EasingFunction>
+    			</EasingDoubleKeyFrame>
+    			<EasingDoubleKeyFrame KeyTime="00:00:01" Value="180">
+    				<EasingDoubleKeyFrame.EasingFunction>
+    					<CubicEase EasingMode="EaseOut"/>
+    				</EasingDoubleKeyFrame.EasingFunction>
+    			</EasingDoubleKeyFrame>
+    		</DoubleAnimationUsingKeyFrames>
+    	</Storyboard>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot" Background="white" >
+        <toolkit:BusyIndicator x:Name="ProcessingLogin" BusyContent="{Binding lblWaiting, Source={StaticResource currentCommonCulture}}">
+            <Grid >                                
+                <Grid.RowDefinitions>
+                	<RowDefinition Height="80"/>
+                	<RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Margin="0,0,0,0" Background="#FF008fd5">
+
+                    <Image Grid.Row="0" Source="/gMVVM;component/Data/Images/GSOFT.png" Stretch="Fill"
+            			Margin="25,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="60" Width="201"/>
+            		<TextBlock Text="{Binding lblAsset, Source={StaticResource currentSystemRoleCulture}}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25">
+                        <TextBlock.Foreground>
+                            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                <GradientStop Color="#FFA7D4F9" Offset="1"/>
+                                <GradientStop Color="White" Offset="0.422"/>
+                            </LinearGradientBrush>
+                        </TextBlock.Foreground>
+                    </TextBlock>
+                </Grid>
+                
+                <Grid Grid.Row="1" >
+                    <Grid.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="/gMVVM;component/Data/Images/login_body_bg.png"/>
+                    </Grid.Background>
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,90,0,0">                                           
+                        <!--Style="{StaticResource BorderBackViewContainerStyle}"-->
+                        <Border x:Name="SwivelPanelBack" Style="{StaticResource BorderBackViewContainerStyle}">
+                            <Border.Projection>
+                                <PlaneProjection/>
+                            </Border.Projection>
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                	<RowDefinition Height="auto"/>
+                                	<RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                	<ColumnDefinition Width="auto" />
+                                	<ColumnDefinition Width="auto" />
+                                	<ColumnDefinition Width="auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <!--Background-->
+                                <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2" Source="/gMVVM;component/Data/Images/mainform.png" Stretch="None" Margin="0,0,0,0"/>
+
+                                <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal" VerticalAlignment="Top"  HorizontalAlignment="Center" Margin="0,20,0,10" >
+                                    <Image Source="/gMVVM;component/Data/Images/Send.png" Margin="0,0,20,0"/>
+                                    <TextBlock  FontSize="26" Text="{Binding lblRenewPass, Source={StaticResource currentSystemRoleCulture}}" VerticalAlignment="Center" Foreground="#FF2b8ebc"/>
+                                </StackPanel>
+
+                                <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+                                    <Grid.RowDefinitions>
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                    	<ColumnDefinition Width="auto" />
+                                    	<ColumnDefinition Width="auto" />
+                                    	<ColumnDefinition Width="auto" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Visibility="{Binding IsGetCodeVisible}">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                            	<ColumnDefinition Width="auto" />
+                                            	<ColumnDefinition Width="auto" />
+                                            	<ColumnDefinition Width="auto" />
+                                            </Grid.ColumnDefinitions>
+                                            
+                                            <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"
+                               Text="{Binding lblUsername, Source={StaticResource currentSystemRoleCulture}}" Foreground="#FF555555"  FontSize="12"/>
+                                            <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"
+                               Text="{Binding lblSecurityCode, Source={StaticResource currentSystemRoleCulture}}" Foreground="#FF555555"  FontSize="12"/>
+
+                                            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding SendUserName, Mode=TwoWay}" 
+                                                        Style="{StaticResource txbNormal}"/>
+
+                                            <StackPanel Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal">
+                                                <ContentControl Content="{Binding CaptchaItem}" Margin="5"/>
+                                                <TextBox  Width="100" Text="{Binding InputCaptcha, Mode=TwoWay}" Style="{StaticResource txbNormal}"/>
+                                            </StackPanel>
+                                        </Grid>
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Visibility="{Binding IsChangePassVisible}">
+                                        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+                                            <Grid.RowDefinitions>
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            	<RowDefinition Height="auto" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                            	<ColumnDefinition Width="auto" />
+                                            	<ColumnDefinition Width="auto" />
+                                            	<ColumnDefinition Width="auto" />
+                                            </Grid.ColumnDefinitions>
+
+                                            
+                                            <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"
+                               Text="{Binding lblUsername, Source={StaticResource currentSystemRoleCulture}}" Foreground="#FF555555" FontSize="12"/>
+                                            <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"
+                               Text="{Binding lblCode, Source={StaticResource currentSystemRoleCulture}}" Foreground="#FF555555"  FontSize="12"/>
+                                            <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"
+                               Text="{Binding lblNewPass, Source={StaticResource currentSystemRoleCulture}}" Foreground="#FF555555"  FontSize="12"/>
+                                            <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"
+                               Text="{Binding lblNewPassAgaint, Source={StaticResource currentSystemRoleCulture}}" Foreground="#FF555555"  FontSize="12"/>
+
+                                            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding UserNameLast, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" 
+                                                Style="{StaticResource txbNormal}"/>
+                                            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding SecCode, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" 
+                                     Style="{StaticResource txbNormal}"/>
+                                            <PasswordBox Grid.Row="3" Grid.Column="1" Password="{Binding NewPass, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" 
+                                     Style="{StaticResource pbNormal}"/>
+                                            <PasswordBox Grid.Row="4" Grid.Column="1" Password="{Binding NewPassAgaint, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" 
+                                     Style="{StaticResource pbNormal}"/>
+
+                                        </Grid>
+                                    </StackPanel>
+                                    <StackPanel Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <RadioButton Content="{Binding rdbChangePass, Source={StaticResource currentSystemRoleCulture}}" GroupName="Options" IsChecked="True"/>
+                                        <RadioButton Content="{Binding rdbGetCode, Source={StaticResource currentSystemRoleCulture}}" GroupName="Options" Margin="10,0,0,0"
+                                                     IsChecked="{Binding IsGetCode, Mode=TwoWay}"/>
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="5,2,5,0">
+                                        <Button HorizontalAlignment="Left" Margin="5,5,5,0" Style="{StaticResource btnStyle}" FontSize="12"
+                                Command="{Binding Login}" CommandParameter="SendPass"
+                                        Content="{Binding btnSend, Source={StaticResource currentSystemRoleCulture}}" Height="30" Width="80"/>
+                                        <HyperlinkButton Grid.Row="4" Grid.Column="1" Content="{Binding lblBack, Source={StaticResource currentSystemRoleCulture}}" Margin="10,5,5,0" VerticalContentAlignment="Center" Foreground="#FF0c4da2"
+                                                 FontSize="12">
+                                            <i:Interaction.Triggers>
+                                            	<i:EventTrigger EventName="Click">
+                                            		<i:Interaction.Behaviors>
+                                            			<ei:ConditionBehavior>
+                                            				<ei:ConditionalExpression>
+                                            					<ei:ComparisonCondition/>
+                                            				</ei:ConditionalExpression>
+                                            			</ei:ConditionBehavior>
+                                            		</i:Interaction.Behaviors>
+                                            		<ei:ControlStoryboardAction Storyboard="{StaticResource SwivelToFrontStoryboard}"/>
+                                            	</i:EventTrigger>
+                                            </i:Interaction.Triggers>
+                                        </HyperlinkButton>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                                        <TextBlock Text="{Binding MessageSend}" TextAlignment="Center" VerticalAlignment="Center" Foreground="#FF555555" FontSize="12"/>
+                                    </StackPanel>
+                                </Grid>
+
+                            </Grid>
+
+                        </Border>
+
+                        <Border x:Name="SwivelPanelFront">
+                            <Border.Projection>
+                                <PlaneProjection/>
+                            </Border.Projection>
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                	<RowDefinition Height="auto"/>
+                                	<RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                	<ColumnDefinition Width="auto" />
+                                	<ColumnDefinition Width="auto" />
+                                	<ColumnDefinition Width="auto" />
+                                </Grid.ColumnDefinitions>
+
+                                <!--Background-->
+                                <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="2" Source="/gMVVM;component/Data/Images/login_box.jpg" Stretch="None" Margin="0,0,0,0"/>
+
+                                <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal" VerticalAlignment="Top"  HorizontalAlignment="Left" Margin="70,30,0,0" >
+                                    <!--<Image Source="/gMVVM;component/Data/Images/loginlock.png" Margin="0,0,20,0"/>-->
+                                    <TextBlock  FontSize="18" Text="{Binding lblLogin, Source={StaticResource currentSystemRoleCulture}}" VerticalAlignment="Center" Foreground="#FF2b8ebc" HorizontalAlignment="Left"/>
+                                </StackPanel>
+
+                                <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Left" Margin="140,30,0,0">
+                                    <Grid.RowDefinitions>
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    	<RowDefinition Height="auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                    	<ColumnDefinition Width="auto" />
+                                    	<ColumnDefinition Width="auto" />
+                                    	<ColumnDefinition Width="auto" />
+                                    </Grid.ColumnDefinitions>
+
+<!--<Image Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Source="/gMVVM;component/Data/Images/logintextbox.png" Margin="0,3,0,3"/>
+                                    <Image Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Source="/gMVVM;component/Data/Images/logintextbox.png" Margin="0,3,0,3"/>-->
+<!--<Image Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Source="/gMVVM;component/Data/Images/logintextbox.png" Margin="0,3,0,3"/>
+                                    <Image Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Source="/gMVVM;component/Data/Images/logintextbox.png" Margin="0,3,0,3"/>
+                                    <Image Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Source="/gMVVM;component/Data/Images/logintextbox.png" Margin="0,3,0,0"/>--><!--<TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"
+                               Text="{Binding Path=lblUnit, Source={StaticResource currentSystemRoleCulture}}" Foreground="#FF555555" FontSize="12"/>
+                                    <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"
+                               Text="{Binding Path=lblClass, Source={StaticResource currentSystemRoleCulture}}" Foreground="#FF555555" FontSize="12"/>-->
+                                    <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"
+                               Text="{Binding lblUsername, Source={StaticResource currentSystemRoleCulture}}" Foreground="#FF555555"  FontSize="12"/>
+                                    <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0"
+                               Text="{Binding lblPassword, Source={StaticResource currentSystemRoleCulture}}" Foreground="#FF555555"  FontSize="12"/>
+                                    <TextBlock Grid.Row="5" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="15,0,0,0" Visibility="Collapsed"
+                               Text="{Binding lblLanguage, Source={StaticResource currentSystemRoleCulture}}" Foreground="#FF555555"  FontSize="12"/>
+
+                                    <!--<ComboBox Grid.Row="1" Grid.Column="1" Width="200" Height="25" ItemsSource="{Binding Path=ListUnit, Mode=TwoWay}" VerticalAlignment="Center"
+                              SelectedValuePath="Id" DisplayMemberPath="Name" SelectedValue="{Binding Path=CurrentUnit, Mode=TwoWay}"  Background="#FFFAF9F9" BorderThickness="0" BorderBrush="{x:Null}" Foreground="#FF555555"/>
+                                    <ComboBox Grid.Row="2" Grid.Column="1" Width="200" Height="25" ItemsSource="{Binding Path=ListClass, Mode=TwoWay}" VerticalAlignment="Center"
+                              SelectedValuePath="Id" DisplayMemberPath="Name" SelectedValue="{Binding Path=CurrentClass, Mode=TwoWay}"  Background="#FFFAF9F9" BorderThickness="0" BorderBrush="{x:Null}" Foreground="#FF555555"/>-->
+                                    <TextBox Grid.Row="3" Grid.Column="1"  Text="{Binding UserName, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" 
+                                     Style="{StaticResource txbNormal}">
+                                        <i:Interaction.Behaviors>
+                                            <pb:EnterKey/>
+                                        </i:Interaction.Behaviors>
+                                    </TextBox>
+                                    <PasswordBox Grid.Row="4" Grid.Column="1" Password="{Binding Password, Mode=TwoWay, NotifyOnValidationError=True, ValidatesOnDataErrors=True, ValidatesOnExceptions=True}" 
+                                     Style="{StaticResource pbNormal}">
+                                        <i:Interaction.Behaviors>
+                                            <pb:EnterKey/>
+                                        </i:Interaction.Behaviors>
+                                    </PasswordBox>
+
+                                    <StackPanel Visibility="Collapsed" Grid.Row="5" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                                        <RadioButton Content="{Binding lblVietnamese, Source={StaticResource currentSystemRoleCulture}}"  Foreground="#FF555555" FontSize="12"
+                                             GroupName="language" Margin="5" IsChecked="{Binding IsCheckedVN, Mode=TwoWay}" />
+                                        <RadioButton Content="{Binding lblEnglish, Source={StaticResource currentSystemRoleCulture}}"  Foreground="#FF555555" FontSize="12"
+                                             GroupName="language" Margin="5" IsChecked="{Binding IsCheckedEL, Mode=TwoWay}"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="3">
+                                        <Button Style="{StaticResource btnStyle}" FontSize="12"
+                                            Command="{Binding Login}" CommandParameter="Login"
+                                            Content="{Binding btnLogin, Source={StaticResource currentSystemRoleCulture}}" Height="30" Width="80"/>
+                                        <HyperlinkButton Content="{Binding lblForgotPassword, Source={StaticResource currentSystemRoleCulture}}" Margin="3,3,3,0" VerticalContentAlignment="Center" Foreground="#FF0c4da2" Height="30" Width="110"
+                                                 FontSize="12">
+                                            <i:Interaction.Triggers>
+                                            	<i:EventTrigger EventName="Click">
+                                            		<i:Interaction.Behaviors>
+                                            			<ei:ConditionBehavior>
+                                            				<ei:ConditionalExpression>
+                                            					<ei:ComparisonCondition/>
+                                            				</ei:ConditionalExpression>
+                                            			</ei:ConditionBehavior>
+                                            		</i:Interaction.Behaviors>
+                                            		<ei:ControlStoryboardAction Storyboard="{StaticResource SwivelToBackStoryboard}"/>
+                                            	</i:EventTrigger>
+                                            </i:Interaction.Triggers>
+                                        </HyperlinkButton>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,0"
+                                Visibility="{Binding IsErrorVisible}">
+                                        <Image  Source="/gMVVM;component/Data/Images/Delete.png" 
+                                Height="18" Width="18"  HorizontalAlignment="Left" Margin="5,0,5,0"/>
+                                        <TextBlock Text="{Binding lblLoginError, Source={StaticResource currentSystemRoleCulture}}" TextAlignment="Center" VerticalAlignment="Center" Foreground="#FF555555"/>
+                                    </StackPanel>
+                                </Grid>
+
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </Grid>
+
+            </Grid>
+        </toolkit:BusyIndicator>
+    </Grid>
+</UserControl>

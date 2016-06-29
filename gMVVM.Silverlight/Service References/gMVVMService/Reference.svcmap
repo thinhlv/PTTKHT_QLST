@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="14eb1764-c66c-4666-8e8c-7a6282eb7677" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:36229/Services/Management/gMVVMService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="gMVVMService1.wsdl" MetadataType="Wsdl" ID="bc2140a9-08eb-4b1f-8745-3872b9afeca8" SourceId="1" SourceUrl="http://localhost:36229/Services/Management/gMVVMService.svc?wsdl" />
+    <MetadataFile FileName="gMVVMService6.xsd" MetadataType="Schema" ID="972d99f1-5fa5-4ae3-a161-c418af5988d4" SourceId="1" SourceUrl="http://localhost:36229/Services/Management/gMVVMService.svc?xsd=xsd3" />
+    <MetadataFile FileName="gMVVMService61.xsd" MetadataType="Schema" ID="076991ea-6c30-4fda-a863-e7cf688d2e75" SourceId="1" SourceUrl="http://localhost:36229/Services/Management/gMVVMService.svc?xsd=xsd5" />
+    <MetadataFile FileName="gMVVMService62.xsd" MetadataType="Schema" ID="20c972c2-3ae7-4f6a-ab4b-a778b53e15a8" SourceId="1" SourceUrl="http://localhost:36229/Services/Management/gMVVMService.svc?xsd=xsd0" />
+    <MetadataFile FileName="gMVVMService1.disco" MetadataType="Disco" ID="8f68f92f-18f6-4c40-8f27-67141e5c00c1" SourceId="1" SourceUrl="http://localhost:36229/Services/Management/gMVVMService.svc?disco" />
+    <MetadataFile FileName="gMVVMService63.xsd" MetadataType="Schema" ID="c800ced7-fdc6-4a55-855e-30df0bdc148d" SourceId="1" SourceUrl="http://localhost:36229/Services/Management/gMVVMService.svc?xsd=xsd2" />
+    <MetadataFile FileName="gMVVMService64.xsd" MetadataType="Schema" ID="fec59a6a-465a-4035-8087-97cee035d23f" SourceId="1" SourceUrl="http://localhost:36229/Services/Management/gMVVMService.svc?xsd=xsd4" />
+    <MetadataFile FileName="gMVVMService65.xsd" MetadataType="Schema" ID="b32ccc57-03bc-4dcf-aabb-504358e05a0c" SourceId="1" SourceUrl="http://localhost:36229/Services/Management/gMVVMService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

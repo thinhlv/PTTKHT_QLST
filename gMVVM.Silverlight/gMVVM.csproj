@@ -1,0 +1,773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6B2F18B-703B-405A-BBC8-79D4A3465444}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gMVVM</RootNamespace>
+    <AssemblyName>gMVVM</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+      vi-VN
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>gMVVM.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>gMVVM.App</SilverlightAppEntry>
+    <TestPageFileName>Management.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>..\gMVVM.Web\gMVVM.Web.csproj</LinkedServerProject>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.1.20402.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FJ.Core">
+      <HintPath>..\..\..\..\..\DLL\FJ.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentValidation">
+      <HintPath>..\..\..\..\..\DLL\FluentValidation.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.SL5, Version=4.0.21.32885, Culture=neutral, PublicKeyToken=c114982fcf1a3a2e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\DLL\GalaSoft.MvvmLight.SL5.dll</HintPath>
+    </Reference>
+    <Reference Include="Lite.ExcelLibrary">
+      <HintPath>..\..\..\..\..\DLL\Lite.ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Lite.Library">
+      <HintPath>..\..\..\..\..\DLL\Lite.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Drawing" />
+    <Reference Include="Microsoft.Expression.Effects" />
+    <Reference Include="Microsoft.Expression.Interactions, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Expression.Prototyping.Interactivity, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="mscorlib" />
+    <Reference Include="mvvmCommon">
+      <HintPath>..\..\..\..\..\mvvmCommon\mvvmCommon\Bin\Debug\mvvmCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="Silverlight.Md5">
+      <HintPath>..\..\..\..\..\DLL\Silverlight.Md5.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=5.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.DomainServices.Client, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.DomainServices.Client.Web, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.Web.Extensions, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core">
+      <HintPath>$(TargetFrameworkDirectory)System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data.Input, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data.Toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="system.windows.controls.datavisualization.toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Input, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="system.windows.controls.layout.toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Navigation, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Toolkit, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Data, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Interactivity, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Xml.Linq, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CommonClass\CommandProperty.cs" />
+    <Compile Include="CommonClass\DelegateCommand.cs" />
+    <Compile Include="CommonClass\ExportFile.cs" />
+    <Compile Include="CommonClass\EyeCandy.cs" />
+    <Compile Include="CommonClass\ImageButton.cs" />
+    <Compile Include="CommonClass\ListMessage.cs" />
+    <Compile Include="CommonClass\PageSizeProperty.cs" />
+    <Compile Include="CommonClass\PublicClass.cs" />
+    <Compile Include="CommonClass\ValidateReport.cs" />
+    <Compile Include="CommonClass\VisibleButton.cs" />
+    <Compile Include="CommonClass\VisibleProperty.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AssCommonResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssCommonResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CommonResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\QuanLySoThuResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLySoThuResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\PlanManagerResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlanManagerResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SearchResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SearchResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\SystemRoleResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SystemRoleResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ValidatorResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ValidatorResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\GhiNhanService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\gMVVMService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\SessionService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\AssCommon\AllCodeEditViewModel.cs" />
+    <Compile Include="ViewModels\AssCommon\AllCodeViewModel.cs" />
+    <Compile Include="ViewModels\AssCommon\ArgumentEditViewModel.cs" />
+    <Compile Include="ViewModels\AssCommon\ArgumentViewModel.cs" />
+    <Compile Include="ViewModels\AssCommon\BranchEditViewModel.cs" />
+    <Compile Include="ViewModels\AssCommon\BranchViewModel.cs" />
+    <Compile Include="ViewModels\AssCommon\DepartmentEditViewModel.cs" />
+    <Compile Include="ViewModels\AssCommon\DepartmentTypeEditViewModel.cs" />
+    <Compile Include="ViewModels\AssCommon\DepartmentTypeViewModel.cs" />
+    <Compile Include="ViewModels\AssCommon\DepartmentViewModel.cs" />
+    <Compile Include="ViewModels\Common\ActionMenuViewModel.cs" />
+    <Compile Include="ViewModels\Common\CalendarEditViewModel.cs" />
+    <Compile Include="ViewModels\Common\LeftMenuViewModel.cs" />
+    <Compile Include="ViewModels\Common\MessageAlarmViewModel.cs" />
+    <Compile Include="ViewModels\Common\ProfileViewModel.cs" />
+    <Compile Include="ViewModels\Common\ToolHeaderViewModel.cs" />
+    <Compile Include="ViewModels\GhiNhanKeHoach\DomainViewModel.cs" />
+    <Compile Include="ViewModels\GhiNhanKeHoach\GhiNhanKeHoachViewModel.cs" />
+    <Compile Include="ViewModels\LoginSystemViewModel.cs" />
+    <Compile Include="ViewModels\MainPageViewModel.cs" />
+    <Compile Include="ViewModels\QuanLyKhamChuaBenh\QuanLyTonKho.cs" />
+    <Compile Include="ViewModels\Search\BranchSearchingViewModel.cs" />
+    <Compile Include="ViewModels\SystemRole\CaptchaViewModel.cs" />
+    <Compile Include="ViewModels\SystemRole\MenuEditViewModel.cs" />
+    <Compile Include="ViewModels\SystemRole\MenuViewModel.cs" />
+    <Compile Include="ViewModels\SystemRole\RolesEditViewModel.cs" />
+    <Compile Include="ViewModels\SystemRole\RolesViewModel.cs" />
+    <Compile Include="ViewModels\SystemRole\UserEditViewModel.cs" />
+    <Compile Include="ViewModels\SystemRole\UserViewModel.cs" />
+    <Compile Include="Views\AssCommon\AllCodeEdit.xaml.cs">
+      <DependentUpon>AllCodeEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AssCommon\AllCodeList.xaml.cs">
+      <DependentUpon>AllCodeList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AssCommon\ArgumentEdit.xaml.cs">
+      <DependentUpon>ArgumentEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AssCommon\ArgumentList.xaml.cs">
+      <DependentUpon>ArgumentList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AssCommon\BranchEdit.xaml.cs">
+      <DependentUpon>BranchEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AssCommon\BranchList.xaml.cs">
+      <DependentUpon>BranchList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AssCommon\DepartmentEdit.xaml.cs">
+      <DependentUpon>DepartmentEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AssCommon\DepartmentList.xaml.cs">
+      <DependentUpon>DepartmentList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AssCommon\DepartmentTypeEdit.xaml.cs">
+      <DependentUpon>DepartmentTypeEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AssCommon\DepartmentTypeList.xaml.cs">
+      <DependentUpon>DepartmentTypeList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\ActionMenu.xaml.cs">
+      <DependentUpon>ActionMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\CalendarEdit.xaml.cs">
+      <DependentUpon>CalendarEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\LeftMenu.xaml.cs">
+      <DependentUpon>LeftMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\MessageAlarm.xaml.cs">
+      <DependentUpon>MessageAlarm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\MessageBoxCustomer.xaml.cs">
+      <DependentUpon>MessageBoxCustomer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\Profile.xaml.cs">
+      <DependentUpon>Profile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Common\ToolHeader.xaml.cs">
+      <DependentUpon>ToolHeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GhiNhanKeHoach\DomainList.xaml.cs">
+      <DependentUpon>DomainList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GhiNhanKeHoach\GhiNhanKeHoach.xaml.cs">
+      <DependentUpon>GhiNhanKeHoach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginSystem.xaml.cs">
+      <DependentUpon>LoginSystem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QuanLyKhamChuaBenh\BaoCaoTonKho.xaml.cs">
+      <DependentUpon>BaoCaoTonKho.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Search\BranchSearching.xaml.cs">
+      <DependentUpon>BranchSearching.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Search\SearchScreen.xaml.cs">
+      <DependentUpon>SearchScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SystemRole\CaptChaControl.xaml.cs">
+      <DependentUpon>CaptChaControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SystemRole\Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SystemRole\MenuEdit.xaml.cs">
+      <DependentUpon>MenuEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SystemRole\Roles.xaml.cs">
+      <DependentUpon>Roles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SystemRole\RolesEdit.xaml.cs">
+      <DependentUpon>RolesEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SystemRole\User.xaml.cs">
+      <DependentUpon>User.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SystemRole\UserEdit.xaml.cs">
+      <DependentUpon>UserEdit.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Assets\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AssCommon\AllCodeEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AssCommon\AllCodeList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AssCommon\ArgumentEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AssCommon\ArgumentList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AssCommon\BranchEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AssCommon\BranchList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AssCommon\DepartmentEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AssCommon\DepartmentList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AssCommon\DepartmentTypeEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\AssCommon\DepartmentTypeList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Common\ActionMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Common\CalendarEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Common\LeftMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Common\MessageAlarm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Common\MessageBoxCustomer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Common\Profile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Common\ToolHeader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GhiNhanKeHoach\DomainList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GhiNhanKeHoach\GhiNhanKeHoach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\LoginSystem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\QuanLyKhamChuaBenh\BaoCaoTonKho.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Search\BranchSearching.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Search\SearchScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SystemRole\CaptChaControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SystemRole\Menu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SystemRole\MenuEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SystemRole\Roles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SystemRole\RolesEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SystemRole\User.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\SystemRole\UserEdit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GhiNhanService\GhiNhanKeHoach.wsdl" />
+    <None Include="Service References\GhiNhanService\GhiNhanKeHoach.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GhiNhanService\GhiNhanKeHoach1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GhiNhanService\GhiNhanKeHoach2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\GhiNhanService\gMVVM.GhiNhanService.CM_DOMAIN_InsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.BranchLevel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_ALLCODE_ByIdResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_ALLCODE_By_Type_IdResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_ALLCODE_DelResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_ALLCODE_InsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_ALLCODE_SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_ALLCODE_UpdResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_BRANCH.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_BRANCH_GETALLCHILDResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_BRANCH_SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_DEPARTMENT_AppResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_DEPARTMENT_DelResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_DEPARTMENT_InsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_DEPARTMENT_LstResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_DEPARTMENT_SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_DEPARTMENT_UpdResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_DEPT_GROUP_ApprResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_DEPT_GROUP_DelResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_DEPT_GROUP_InsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_DEPT_GROUP_SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.CM_DEPT_GROUP_UpdResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.LoginData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.SYS_PARAMETER.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.SYS_PARAMETERS_ByIdResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.TL_MENU.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.TL_SYSROLE.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.TL_SYSROLEDETAIL.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.TL_USER.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.TL_USER_AppResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.TL_USER_DelResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.TL_USER_InsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.TL_USER_SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.TL_USER_UpdResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.ZOO_BAOCAOTONKHO_SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVMService1.wsdl" />
+    <None Include="Service References\gMVVMService\gMVVMService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVMService61.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVMService62.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVMService63.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVMService64.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVMService65.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SessionService\SessionService.wsdl" />
+    <None Include="Service References\SessionService\SessionService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SessionService\SessionService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Resource Include="Data\Icons\msg_delete.png" />
+    <None Include="Service References\SessionService\SessionService.disco" />
+    <None Include="Service References\SessionService\configuration91.svcinfo" />
+    <None Include="Service References\SessionService\configuration.svcinfo" />
+    <None Include="Service References\SessionService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\gMVVMService\configuration91.svcinfo" />
+    <None Include="Service References\gMVVMService\configuration.svcinfo" />
+    <None Include="Service References\gMVVMService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVMService1.disco" />
+    <Resource Include="Data\Icons\avatar2.jpg" />
+    <Resource Include="Data\Images\GSOFT.png" />
+    <None Include="Service References\GhiNhanService\GhiNhanKeHoach.disco" />
+    <None Include="Service References\GhiNhanService\configuration91.svcinfo" />
+    <None Include="Service References\GhiNhanService\configuration.svcinfo" />
+    <None Include="Service References\GhiNhanService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="ServiceReferences.ClientConfig">
+      <SubType>Designer</SubType>
+    </Content>
+    <Resource Include="Data\Icons\grd_delete.png" />
+    <Resource Include="Data\Icons\grd_insert.png" />
+    <Resource Include="Data\Images\btnPath.png" />
+    <Resource Include="Data\Icons\avatar1.png" />
+    <Resource Include="Data\Icons\avatar1.jpg" />
+    <Resource Include="Data\Icons\Delete.png" />
+    <Resource Include="Data\Icons\logofotter.png" />
+    <Resource Include="Data\Images\sacombuilding.png" />
+    <Resource Include="Data\Icons\Bao cao.png" />
+    <Resource Include="Data\Icons\Danh muc.png" />
+    <Resource Include="Data\Icons\He Thong.png" />
+    <Resource Include="Data\Icons\Ke hoach.png" />
+    <Resource Include="Data\Icons\Mua sam.png" />
+    <Resource Include="Data\Icons\Tai san.png" />
+    <Resource Include="Data\Icons\Xe.png" />
+    <Resource Include="Data\Icons\CTXDCB.png" />
+    <Resource Include="Data\Icons\CT_XDCB.png" />
+    <Resource Include="Data\Icons\1010.png" />
+    <Resource Include="Data\Icons\11.png" />
+    <Resource Include="Data\Icons\22.png" />
+    <Resource Include="Data\Icons\44.png" />
+    <Resource Include="Data\Icons\55.png" />
+    <Resource Include="Data\Icons\66.png" />
+    <Resource Include="Data\Icons\77.png" />
+    <Resource Include="Data\Icons\88.png" />
+    <Resource Include="Data\Icons\Ok.png" />
+    <Resource Include="Data\Icons\tagicon.png" />
+    <Resource Include="Data\Icons\home_icon.png" />
+    <Resource Include="Data\Icons\search_icon.png" />
+    <Resource Include="Data\Icons\edit_icon.png" />
+    <Resource Include="Data\Icons\insert_icon.png" />
+    <Resource Include="Data\Images\logo_sacombank.png" />
+    <Resource Include="Data\Icons\approve_icon.png" />
+    <Resource Include="Data\Icons\delete_icon.png" />
+    <Resource Include="Data\Icons\save_icon.png" />
+    <Resource Include="Data\Icons\view_icon.png" />
+    <None Include="Properties\AppManifest.xml" />
+    <Resource Include="Data\Images\login_box.jpg" />
+    <Resource Include="Data\Images\login_body_bg.png" />
+    <Resource Include="Data\Images\btnPre.png" />
+    <Resource Include="Data\Images\btnNext.png" />
+    <Resource Include="Data\Images\error.png" />
+    <Resource Include="Data\Images\info.png" />
+    <Resource Include="Data\Images\warningMs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\Images\Accept.png" />
+    <Resource Include="Data\Images\Accept1.png" />
+    <Resource Include="Data\Images\add.png" />
+    <Resource Include="Data\Images\add1.png" />
+    <Resource Include="Data\Images\Approved.png" />
+    <Resource Include="Data\Images\Delete.png" />
+    <Resource Include="Data\Images\Delete1.png" />
+    <Resource Include="Data\Images\Edit.png" />
+    <Resource Include="Data\Images\Edit1.png" />
+    <Resource Include="Data\Images\flag_en.PNG" />
+    <Resource Include="Data\Images\flag_vi.PNG" />
+    <Resource Include="Data\Images\Lock.png" />
+    <Resource Include="Data\Images\Lock1.png" />
+    <Resource Include="Data\Images\Login.png" />
+    <Resource Include="Data\Images\mainform.png" />
+    <Resource Include="Data\Images\Preview.png" />
+    <Resource Include="Data\Images\Preview1.png" />
+    <Resource Include="Data\Images\question.png" />
+    <Resource Include="Data\Images\Save.png" />
+    <Resource Include="Data\Images\Save1.png" />
+    <Resource Include="Data\Images\search.png" />
+    <Resource Include="Data\Images\search1.png" />
+    <Resource Include="Data\Images\Searchbtn.png" />
+    <Resource Include="Data\Images\Send.png" />
+    <Resource Include="Data\Images\ToolBackground.png" />
+    <Resource Include="Data\Images\Toolfooter.png" />
+    <Resource Include="Data\Images\Toolheader.png" />
+    <Resource Include="Data\Images\UI.png" />
+    <Resource Include="Data\Images\Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Validators\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AssCommonResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AssCommonResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AssCommonResource.vi-VN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CommonResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CommonResource.vi-VN.resx" />
+    <EmbeddedResource Include="Resources\QuanLySoThuResource.vi-VN.resx" />
+    <EmbeddedResource Include="Resources\QuanLySoThuResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>QuanLySoThuResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PlanManagerResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PlanManagerResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PlanManagerResource.vi-VN.resx" />
+    <EmbeddedResource Include="Resources\SearchResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SearchResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SearchResource.vi-VN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SystemRoleResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SystemRoleResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SystemRoleResource.vi-VN.resx" />
+    <EmbeddedResource Include="Resources\ValidatorResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidatorResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ValidatorResource.vi-VN.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\Images\btnBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\Images\title_bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\GhiNhanService\" />
+    <WCFMetadataStorage Include="Service References\gMVVMService\" />
+    <WCFMetadataStorage Include="Service References\SessionService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

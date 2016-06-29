@@ -1,0 +1,153 @@
+﻿<UserControl x:Class="gMVVM.Views.AssCommon.ArgumentList"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"      
+    xmlns:dataprimitives="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Data"
+             xmlns:Common="clr-namespace:gMVVM.Views.Common"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" 
+             xmlns:local="clr-namespace:gMVVM.CommonClass"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" >
+        <Grid x:Name="front">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel x:Name="splHeader" Grid.Row="0" Style="{StaticResource splHeader}">
+                <HyperlinkButton Style="{StaticResource hplHome}" NavigateUri="/Home"/>
+                <TextBlock Text="{Binding lblArgument, Source={StaticResource currentAssCommonCulture}}" Style="{StaticResource tblStyle}"/>
+            </StackPanel>
+            <toolkit:Expander Grid.Row="1" Header="{Binding Path=lblSearch, Source={StaticResource currentCommonCulture}}" Style="{StaticResource ExpanderNewStyle}" IsExpanded="True" local:EyeCandy.Image="/gMVVM;component/Data/Icons/search_icon.png">
+                <Grid Background="White" >
+                    <Grid Margin="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Common:MessageAlarm Grid.Row="1" DataContext="{Binding Path=MessagePop}"/>
+                        <Border Grid.Row="2" >
+                            <Grid >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Row="0" Grid.Column="2" Text="{Binding Path=Arg_Name, Source={StaticResource currentAssCommonCulture}}" 
+                           Style="{StaticResource tblStyle}"/>
+                                <TextBlock Grid.Row="0" Grid.Column="4" Text="{Binding Path=DataType, Source={StaticResource currentAssCommonCulture}}" 
+                           Style="{StaticResource tblStyle}"/>
+                                <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding Path=Arg_Code, Source={StaticResource currentAssCommonCulture}}" 
+                           Style="{StaticResource tblStyle}"/>
+                                <TextBox Grid.Row="0" Grid.Column="1" Style="{StaticResource txbNormal}"
+                              Text="{Binding Path=Arg_Code, Mode=TwoWay}" MaxLength="100"/>
+                                <TextBox Grid.Row="0" Grid.Column="3" Style="{StaticResource txbNormal}"
+                              Text="{Binding Path=Arg_Name, Mode=TwoWay}" MaxLength="500"/>
+
+                                <TextBox Grid.Row="0" Grid.Column="5" Style="{StaticResource txbNormal}"
+                              Text="{Binding Path=DataType, Mode=TwoWay}" MaxLength="50"/>
+
+                            </Grid>
+                        </Border>
+                        <Grid Grid.Row="3">
+                            <StackPanel Grid.Row="1" >
+                                <sdk:DataGrid Name="dgdData" Margin="5,5,5,0" AutoGenerateColumns="False"
+                                              local:EyeCandy.Image="/gMVVM;component/Data/Icons/55.png"  Tag="{Binding lblArgument, Source={StaticResource currentAssCommonCulture}}"
+                    ItemsSource="{Binding Path=DataItem}" SelectedItem="{Binding Path=CurrentSelectItem, Mode=TwoWay}"  Style="{StaticResource DataGridStyle1}" RowStyle="{StaticResource DataGridRowStyle1}" >
+                                    <i:Interaction.Triggers>
+                                        <i:EventTrigger EventName="MouseLeftButtonUp">
+                                            <i:InvokeCommandAction Command="{Binding DoubleClickItemCommand}" />
+                                        </i:EventTrigger>
+                                    </i:Interaction.Triggers>
+
+                                    <sdk:DataGrid.Columns>
+                                        <sdk:DataGridTextColumn Binding="{Binding Path=ParaKey, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" IsReadOnly="True" MinWidth="170">
+                                            <sdk:DataGridColumn.HeaderStyle>
+                                                <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
+                                                    <Setter Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock Text="{Binding Path=Arg_Code, Source={StaticResource currentAssCommonCulture}}" Style="{StaticResource txtFontStyle}"></TextBlock>
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </sdk:DataGridColumn.HeaderStyle>
+                                        </sdk:DataGridTextColumn>
+
+                                        <sdk:DataGridTextColumn Binding="{Binding Path=ParaValue, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" IsReadOnly="True"  MinWidth="320">
+                                            <sdk:DataGridColumn.HeaderStyle>
+                                                <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
+                                                    <Setter Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock Text="{Binding Path=Arg_Name, Source={StaticResource currentAssCommonCulture}}" Style="{StaticResource txtFontStyle}"></TextBlock>
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </sdk:DataGridColumn.HeaderStyle>
+                                        </sdk:DataGridTextColumn>
+
+                                        <sdk:DataGridTextColumn Binding="{Binding Path=DataType, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" IsReadOnly="True"  MinWidth="320">
+                                            <sdk:DataGridColumn.HeaderStyle>
+                                                <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
+                                                    <Setter Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock Text="{Binding Path=DataType, Source={StaticResource currentAssCommonCulture}}" Style="{StaticResource txtFontStyle}"></TextBlock>
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </sdk:DataGridColumn.HeaderStyle>
+                                        </sdk:DataGridTextColumn>
+
+                                        <sdk:DataGridTextColumn Binding="{Binding Path=Description, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" IsReadOnly="True"  MinWidth="150">
+                                            <sdk:DataGridColumn.HeaderStyle>
+                                                <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
+                                                    <Setter Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock Text="{Binding Path=Description, Source={StaticResource currentAssCommonCulture}}" Style="{StaticResource txtFontStyle}"></TextBlock>
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </sdk:DataGridColumn.HeaderStyle>
+                                        </sdk:DataGridTextColumn>
+
+                                        
+
+                                    </sdk:DataGrid.Columns>
+
+                                </sdk:DataGrid>
+                                <sdk:DataPager  PageSize="10" Source="{Binding Path=ItemsSource,ElementName=dgdData}" DisplayMode="FirstLastNumeric" Style="{StaticResource DataPagerStyle1}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </toolkit:Expander>
+        </Grid>
+        <Grid x:Name="back"/>
+    </Grid>
+</UserControl>

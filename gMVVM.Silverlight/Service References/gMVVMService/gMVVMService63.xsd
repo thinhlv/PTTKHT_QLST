@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="TL_USER">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ADDRESS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="APPROVE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AUTH_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AUTH_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Birthday" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ISAPPROVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ISFIRSTTIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MARKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PHONE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SECUR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TLFullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TLID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TLNANME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TLSUBBRID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TL_USER" nillable="true" type="tns:TL_USER" />
+  <xs:complexType name="ArrayOfTL_SYSROLEDETAIL">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TL_SYSROLEDETAIL" nillable="true" type="tns:TL_SYSROLEDETAIL" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTL_SYSROLEDETAIL" nillable="true" type="tns:ArrayOfTL_SYSROLEDETAIL" />
+  <xs:complexType name="TL_SYSROLEDETAIL">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ISAPPROVE" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ISCHECKNULL" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ISCLOSE" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ISDELETE" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ISEDIT" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ISINSERT" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ISSEARCH" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ISUPDATE" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ISVIEW" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MENU_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLE_ID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TL_SYSROLEDETAIL" nillable="true" type="tns:TL_SYSROLEDETAIL" />
+  <xs:complexType name="TL_USER_SearchResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ADDRESS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="APPROVE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AUTH_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AUTH_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AUTH_STATUS_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Birthday" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CHI_NHANH" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ISAPPROVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ISFIRSTTIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="KHU_VUC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MARKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PGD" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PHONE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SECUR_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TAX_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TLFullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TLID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TLNANME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TLSUBBRID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TL_USER_SearchResult" nillable="true" type="tns:TL_USER_SearchResult" />
+  <xs:complexType name="ArrayOfTL_USER">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TL_USER" nillable="true" type="tns:TL_USER" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTL_USER" nillable="true" type="tns:ArrayOfTL_USER" />
+  <xs:complexType name="TL_USER_InsResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TLID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TL_USER_InsResult" nillable="true" type="tns:TL_USER_InsResult" />
+  <xs:complexType name="TL_USER_UpdResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TLID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TL_USER_UpdResult" nillable="true" type="tns:TL_USER_UpdResult" />
+  <xs:complexType name="TL_USER_DelResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TL_USER_DelResult" nillable="true" type="tns:TL_USER_DelResult" />
+  <xs:complexType name="TL_USER_AppResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TLNANME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TL_USER_AppResult" nillable="true" type="tns:TL_USER_AppResult" />
+  <xs:complexType name="ArrayOfTL_USER_SearchResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TL_USER_SearchResult" nillable="true" type="tns:TL_USER_SearchResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTL_USER_SearchResult" nillable="true" type="tns:ArrayOfTL_USER_SearchResult" />
+  <xs:complexType name="ArrayOfTL_SYSROLE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TL_SYSROLE" nillable="true" type="tns:TL_SYSROLE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTL_SYSROLE" nillable="true" type="tns:ArrayOfTL_SYSROLE" />
+  <xs:complexType name="TL_SYSROLE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AUTH_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHECKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DATE_APPROVE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ISAPPROVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLE_DESC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ROLE_ID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TL_SYSROLE" nillable="true" type="tns:TL_SYSROLE" />
+  <xs:complexType name="ArrayOfTL_MENU">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TL_MENU" nillable="true" type="tns:TL_MENU" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTL_MENU" nillable="true" type="tns:ArrayOfTL_MENU" />
+  <xs:complexType name="TL_MENU">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AUTH_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHECKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DATE_APPROVE" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ISAPPROVE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ISAPPROVE_FUNC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MENU_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="MENU_LINK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MENU_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MENU_NAME_EL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MENU_ORDER" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="MENU_PARENT" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TL_MENU" nillable="true" type="tns:TL_MENU" />
+  <xs:complexType name="ArrayOfCM_BRANCH">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CM_BRANCH" nillable="true" type="tns:CM_BRANCH" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCM_BRANCH" nillable="true" type="tns:ArrayOfCM_BRANCH" />
+  <xs:complexType name="CM_BRANCH">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ADDR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="APPROVE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AUTH_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHECKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DAO_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DAO_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FATHER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_POTENTIAL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOTES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROVICE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RECORD_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REGION_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TAX_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TEL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_BRANCH" nillable="true" type="tns:CM_BRANCH" />
+  <xs:complexType name="ArrayOfCM_BRANCH_GETALLCHILDResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CM_BRANCH_GETALLCHILDResult" nillable="true" type="tns:CM_BRANCH_GETALLCHILDResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCM_BRANCH_GETALLCHILDResult" nillable="true" type="tns:ArrayOfCM_BRANCH_GETALLCHILDResult" />
+  <xs:complexType name="CM_BRANCH_GETALLCHILDResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BRANCH_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FATHER_ID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_BRANCH_GETALLCHILDResult" nillable="true" type="tns:CM_BRANCH_GETALLCHILDResult" />
+  <xs:complexType name="CM_BRANCH_SearchResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ADDR" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="APPROVE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AUTH_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHECKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DAO_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DAO_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FATHER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="F_BRANCH_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="F_BRANCH_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_POTENTIAL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOTES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PROVICE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RECORD_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REGION_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TAX_NO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TEL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_BRANCH_SearchResult" nillable="true" type="tns:CM_BRANCH_SearchResult" />
+  <xs:complexType name="ArrayOfCM_BRANCH_SearchResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CM_BRANCH_SearchResult" nillable="true" type="tns:CM_BRANCH_SearchResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCM_BRANCH_SearchResult" nillable="true" type="tns:ArrayOfCM_BRANCH_SearchResult" />
+  <xs:complexType name="CM_DEPARTMENT_SearchResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APPROVE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AUTH_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AUTH_STATUS_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHECKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DAO_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DAO_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DEP_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DEP_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DEP_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GROUP_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOTES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RECORD_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TEL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_DEPARTMENT_SearchResult" nillable="true" type="tns:CM_DEPARTMENT_SearchResult" />
+  <xs:complexType name="CM_DEPARTMENT_InsResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DEP_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_DEPARTMENT_InsResult" nillable="true" type="tns:CM_DEPARTMENT_InsResult" />
+  <xs:complexType name="CM_DEPARTMENT_UpdResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DEP_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_DEPARTMENT_UpdResult" nillable="true" type="tns:CM_DEPARTMENT_UpdResult" />
+  <xs:complexType name="CM_DEPARTMENT_DelResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_DEPARTMENT_DelResult" nillable="true" type="tns:CM_DEPARTMENT_DelResult" />
+  <xs:complexType name="ArrayOfCM_DEPARTMENT_SearchResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CM_DEPARTMENT_SearchResult" nillable="true" type="tns:CM_DEPARTMENT_SearchResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCM_DEPARTMENT_SearchResult" nillable="true" type="tns:ArrayOfCM_DEPARTMENT_SearchResult" />
+  <xs:complexType name="CM_DEPARTMENT_AppResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_DEPARTMENT_AppResult" nillable="true" type="tns:CM_DEPARTMENT_AppResult" />
+  <xs:complexType name="ArrayOfCM_DEPARTMENT_LstResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CM_DEPARTMENT_LstResult" nillable="true" type="tns:CM_DEPARTMENT_LstResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCM_DEPARTMENT_LstResult" nillable="true" type="tns:ArrayOfCM_DEPARTMENT_LstResult" />
+  <xs:complexType name="CM_DEPARTMENT_LstResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APPROVE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AUTH_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BRANCH_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHECKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DAO_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DAO_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DEP_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DEP_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DEP_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GROUP_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOTES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RECORD_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TEL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_DEPARTMENT_LstResult" nillable="true" type="tns:CM_DEPARTMENT_LstResult" />
+  <xs:complexType name="ArrayOfSYS_PARAMETER">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SYS_PARAMETER" nillable="true" type="tns:SYS_PARAMETER" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSYS_PARAMETER" nillable="true" type="tns:ArrayOfSYS_PARAMETER" />
+  <xs:complexType name="SYS_PARAMETER">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APPROVE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AUTH_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHECKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DataType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MAKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParaKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParaValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RECORD_STATUS" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SYS_PARAMETER" nillable="true" type="tns:SYS_PARAMETER" />
+  <xs:complexType name="SYS_PARAMETERS_ByIdResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APPROVE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AUTH_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHECKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DataType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MAKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParaKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParaValue" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RECORD_STATUS" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SYS_PARAMETERS_ByIdResult" nillable="true" type="tns:SYS_PARAMETERS_ByIdResult" />
+  <xs:complexType name="ArrayOfZOO_BAOCAOTONKHO_SearchResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ZOO_BAOCAOTONKHO_SearchResult" nillable="true" type="tns:ZOO_BAOCAOTONKHO_SearchResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfZOO_BAOCAOTONKHO_SearchResult" nillable="true" type="tns:ArrayOfZOO_BAOCAOTONKHO_SearchResult" />
+  <xs:complexType name="ZOO_BAOCAOTONKHO_SearchResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DonViTinh" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaThuoc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NgayHetHan" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SoLuong" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="TenThuoc" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ZOO_BAOCAOTONKHO_SearchResult" nillable="true" type="tns:ZOO_BAOCAOTONKHO_SearchResult" />
+  <xs:complexType name="ArrayOfCM_ALLCODE_ByIdResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CM_ALLCODE_ByIdResult" nillable="true" type="tns:CM_ALLCODE_ByIdResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCM_ALLCODE_ByIdResult" nillable="true" type="tns:ArrayOfCM_ALLCODE_ByIdResult" />
+  <xs:complexType name="CM_ALLCODE_ByIdResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CDNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CDTYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CDVAL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="LSTODR" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_ALLCODE_ByIdResult" nillable="true" type="tns:CM_ALLCODE_ByIdResult" />
+  <xs:complexType name="CM_ALLCODE_SearchResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CDNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CDTYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CDVAL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="LSTODR" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_ALLCODE_SearchResult" nillable="true" type="tns:CM_ALLCODE_SearchResult" />
+  <xs:complexType name="CM_ALLCODE_InsResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_ALLCODE_InsResult" nillable="true" type="tns:CM_ALLCODE_InsResult" />
+  <xs:complexType name="CM_ALLCODE_UpdResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_ALLCODE_UpdResult" nillable="true" type="tns:CM_ALLCODE_UpdResult" />
+  <xs:complexType name="CM_ALLCODE_DelResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_ALLCODE_DelResult" nillable="true" type="tns:CM_ALLCODE_DelResult" />
+  <xs:complexType name="ArrayOfCM_ALLCODE_By_Type_IdResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CM_ALLCODE_By_Type_IdResult" nillable="true" type="tns:CM_ALLCODE_By_Type_IdResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCM_ALLCODE_By_Type_IdResult" nillable="true" type="tns:ArrayOfCM_ALLCODE_By_Type_IdResult" />
+  <xs:complexType name="CM_ALLCODE_By_Type_IdResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CDNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CDTYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CDVAL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CONTENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="LSTODR" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_ALLCODE_By_Type_IdResult" nillable="true" type="tns:CM_ALLCODE_By_Type_IdResult" />
+  <xs:complexType name="ArrayOfCM_ALLCODE_SearchResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CM_ALLCODE_SearchResult" nillable="true" type="tns:CM_ALLCODE_SearchResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCM_ALLCODE_SearchResult" nillable="true" type="tns:ArrayOfCM_ALLCODE_SearchResult" />
+  <xs:complexType name="CM_DEPT_GROUP_SearchResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APPROVE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="AUTH_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AUTH_STATUS_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CHECKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CREATE_DT" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="GROUP_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GROUP_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GROUP_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MAKER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOTES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RECORD_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RECORD_STATUS_NAME" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_DEPT_GROUP_SearchResult" nillable="true" type="tns:CM_DEPT_GROUP_SearchResult" />
+  <xs:complexType name="CM_DEPT_GROUP_InsResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GROUP_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_DEPT_GROUP_InsResult" nillable="true" type="tns:CM_DEPT_GROUP_InsResult" />
+  <xs:complexType name="CM_DEPT_GROUP_UpdResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="GROUP_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_DEPT_GROUP_UpdResult" nillable="true" type="tns:CM_DEPT_GROUP_UpdResult" />
+  <xs:complexType name="CM_DEPT_GROUP_DelResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_DEPT_GROUP_DelResult" nillable="true" type="tns:CM_DEPT_GROUP_DelResult" />
+  <xs:complexType name="ArrayOfCM_DEPT_GROUP_SearchResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CM_DEPT_GROUP_SearchResult" nillable="true" type="tns:CM_DEPT_GROUP_SearchResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCM_DEPT_GROUP_SearchResult" nillable="true" type="tns:ArrayOfCM_DEPT_GROUP_SearchResult" />
+  <xs:complexType name="CM_DEPT_GROUP_ApprResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CM_DEPT_GROUP_ApprResult" nillable="true" type="tns:CM_DEPT_GROUP_ApprResult" />
+</xs:schema>

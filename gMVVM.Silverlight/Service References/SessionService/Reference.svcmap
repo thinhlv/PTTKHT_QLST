@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="eb608cc6-1914-46fe-b205-131e0372cec0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:36227/Services/EduBanking/SessionService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SessionService.wsdl" MetadataType="Wsdl" ID="e3c05ad3-0c9a-42cc-86a6-0e7863040fde" SourceId="1" SourceUrl="http://localhost:36227/Services/EduBanking/SessionService.svc?wsdl" />
+    <MetadataFile FileName="SessionService.disco" MetadataType="Disco" ID="21872d31-39ac-4472-aca0-e2abd08893bc" SourceId="1" SourceUrl="http://localhost:36227/Services/EduBanking/SessionService.svc?disco" />
+    <MetadataFile FileName="SessionService.xsd" MetadataType="Schema" ID="f386f878-3e6d-4837-816e-a008535bdb18" SourceId="1" SourceUrl="http://localhost:36227/Services/EduBanking/SessionService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SessionService1.xsd" MetadataType="Schema" ID="41a7a831-2438-4781-8290-e22004b0e763" SourceId="1" SourceUrl="http://localhost:36227/Services/EduBanking/SessionService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,101 @@
+﻿<UserControl x:Class="gMVVM.Views.SystemRole.MenuEdit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Common="clr-namespace:gMVVM.Views.Common"
+    xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"           
+    xmlns:interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    xmlns:local="clr-namespace:gMVVM.CommonClass"
+    xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+    mc:Ignorable="d">
+
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" >
+            <StackPanel x:Name="splHeader" Grid.Row="0" Style="{StaticResource splHeader}" >
+                <HyperlinkButton Style="{StaticResource hplHome}" NavigateUri="/Home"/>
+                <TextBlock Text="{Binding Path=lblMenu, Source={StaticResource currentSystemRoleCulture}}" Style="{StaticResource backStyle}" Cursor="Hand">
+                    <interactivity:Interaction.Triggers>
+                            <interactivity:EventTrigger EventName="MouseLeftButtonDown">
+                                <interactivity:InvokeCommandAction Command="{Binding Path=ActionCommand}" CommandParameter="Cancel"/>
+                            </interactivity:EventTrigger>
+                        </interactivity:Interaction.Triggers>
+                </TextBlock>
+                <ContentControl Style="{StaticResource ArrowStyle}" />               
+                <TextBlock Text="{Binding Path=HeaderText}" Style="{StaticResource titleStyle}"/>
+            </StackPanel>
+            <toolkit:Expander Grid.Row="1" Header="{Binding Path=lblDetail, Source={StaticResource currentCommonCulture}}" Style="{StaticResource ExpanderNewStyle}" IsExpanded="True" local:EyeCandy.Image="/gMVVM;component/Data/Icons/edit_icon.png">
+                <Grid Background="White" >
+                <StackPanel Margin="5">                    
+                    <Common:MessageAlarm DataContext="{Binding Path=MessagePop}"/>
+                    <ContentControl Visibility="{Binding IsApproved}" Style="{StaticResource approveStyle}"/>
+                    <UserControl IsEnabled="{Binding Path=IsView}">
+                        <Grid >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding Path=MENU_NAME, Source={StaticResource currentSystemRoleCulture}}"
+                           Style="{StaticResource tblStyle}"/>
+                                <TextBlock Grid.Row="1" Grid.Column="0" Text="{Binding Path=MENU_NAME_EL, Source={StaticResource currentSystemRoleCulture}}"
+                           Style="{StaticResource tblStyle}"/>
+                                <TextBlock Grid.Row="2" Grid.Column="0" Text="{Binding Path=MENU_PARENT, Source={StaticResource currentSystemRoleCulture}}" 
+                           Style="{StaticResource tblStyle}"/>
+                                <TextBlock Grid.Row="3" Grid.Column="0" Text="{Binding Path=MENU_LINK, Source={StaticResource currentSystemRoleCulture}}" 
+                           Style="{StaticResource tblStyle}"/>
+                                <TextBlock Grid.Row="4" Grid.Column="0" Text="{Binding Path=MENU_ORDER, Source={StaticResource currentSystemRoleCulture}}" 
+                           Style="{StaticResource tblStyle}"/>
+                                <TextBlock Grid.Row="5" Grid.Column="0" Text="{Binding Path=lblIsApprove, Source={StaticResource currentSystemRoleCulture}}" 
+                           Style="{StaticResource tblStyle}"/>
+
+                                <TextBox Grid.Row="0" Grid.Column="1" Style="{StaticResource txbNormal}"
+                             Text="{Binding Path=CurrentMenu.MENU_NAME, Mode=TwoWay}"/>
+                                <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource txbNormal}"
+                             Text="{Binding Path=CurrentMenu.MENU_NAME_EL, Mode=TwoWay}"/>
+                                <ComboBox Grid.Row="2" Grid.Column="1" Style="{StaticResource cmbStyle}"
+                             ItemsSource="{Binding Path= ParentData}" SelectedValue="{Binding Path=CurrentMenu.MENU_PARENT, Mode=TwoWay}"
+                          SelectedValuePath="MENU_PARENT">
+                                    <ComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal" Height="25" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                                <TextBlock Text="{Binding Path=MENU_PARENT}" Margin="5"/>
+                                                <TextBlock Text="{Binding Path=MENU_NAME}" Margin="5"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ComboBox.ItemTemplate>
+                                </ComboBox>
+
+                                <TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource txbNormal}"
+                             Text="{Binding Path=CurrentMenu.MENU_LINK, Mode=TwoWay}" TextWrapping="Wrap"/>
+                                <TextBox Grid.Row="4" Grid.Column="1" Style="{StaticResource txbNormal}"
+                             Text="{Binding Path=CurrentMenu.MENU_ORDER, Mode=TwoWay}" TextWrapping="Wrap"/>
+                                <CheckBox Grid.Row="5" Grid.Column="1" Style="{StaticResource chbStyle}" IsChecked="{Binding Path=IsApproveFuntion, Mode=TwoWay}"/>
+                                <!--<TextBlock Grid.Row="0" Grid.Column="3" Style="{StaticResource Required}"/>-->
+                                <TextBlock Grid.Row="1" Grid.Column="3" Style="{StaticResource Required}"/>
+                                <TextBlock Grid.Row="2" Grid.Column="3" Style="{StaticResource Required}"/>
+                                <TextBlock Grid.Row="0" Grid.Column="3" Style="{StaticResource Required}"/>
+
+                            </Grid>
+                    </UserControl>                    
+                </StackPanel>
+                </Grid>
+            </toolkit:Expander>           
+        </StackPanel>
+    </Grid>
+</UserControl>

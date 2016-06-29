@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management.Interfaces.AssCommon" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management.Interfaces.AssCommon" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:36229/Services/Management/gMVVMService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" />
+  <xs:complexType name="BranchLevel">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="BranchList" nillable="true" type="q1:ArrayOfCM_BRANCH" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="RegionList" nillable="true" type="q2:ArrayOfCM_BRANCH" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="TransList" nillable="true" type="q3:ArrayOfCM_BRANCH" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BranchLevel" nillable="true" type="tns:BranchLevel" />
+</xs:schema>

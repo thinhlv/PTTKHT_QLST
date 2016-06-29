@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="gMVVM.Views.SystemRole.CaptChaControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:MVVM="clr-namespace:gMVVM.ViewModels.SystemRole"
+    mc:Ignorable="d">    
+    <Grid x:Name="LayoutRoot" >        
+        <Grid Width="100" Height="25" Margin="2">
+            <Grid.Background>
+                <LinearGradientBrush x:Name="CaptchaBackground" EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE9F8FD" Offset="1" />
+                    <GradientStop Color="#FFF9F9F9" Offset="0.191" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <TextBlock FontSize="14" Width="Auto" Height="Auto" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center" 
+                   Text="{Binding CaptchaText}"
+                   RenderTransformOrigin="0.5,0.5">
+                <TextBlock.Projection>
+                    <PlaneProjection CenterOfRotationX="1" CenterOfRotationZ="2" CenterOfRotationY="1" GlobalOffsetX="1" GlobalOffsetY="1"/>
+                </TextBlock.Projection>
+                <TextBlock.RenderTransform>
+                    <CompositeTransform SkewX="3" SkewY="1" Rotation="-5"/>
+                </TextBlock.RenderTransform>
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,0" 
+                    StartPoint="0.5,1">
+                        <GradientStop Color="#FF131393" Offset="1" />
+                        <GradientStop Color="#FFB4A5A5" />
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+        </Grid>
+    </Grid>
+</UserControl>

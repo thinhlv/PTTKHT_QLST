@@ -1,0 +1,82 @@
+﻿<UserControl x:Class="gMVVM.Views.AssCommon.DepartmentTypeEdit"
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"     
+             xmlns:Common="clr-namespace:gMVVM.Views.Common"
+             xmlns:local="clr-namespace:gMVVM.CommonClass"
+             xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+           xmlns:interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity">
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel  Grid.Row="0">
+            <StackPanel x:Name="splHeader" Grid.Row="0" Style="{StaticResource splHeader}" >
+                <HyperlinkButton  Style="{StaticResource hplHome}" NavigateUri="/Home"/>
+                <TextBlock Text="{Binding Path=DepartmentTypeList, Source={StaticResource currentAssCommonCulture}}" Style="{StaticResource backStyle}" Cursor="Hand">
+                    <interactivity:Interaction.Triggers>
+                            <interactivity:EventTrigger EventName="MouseLeftButtonDown">
+                                <interactivity:InvokeCommandAction Command="{Binding Path=ActionCommand}" CommandParameter="Cancel"/>
+                            </interactivity:EventTrigger>
+                        </interactivity:Interaction.Triggers>
+                </TextBlock>
+                <ContentControl Style="{StaticResource ArrowStyle}" />
+                <TextBlock Text="{Binding Path=HeaderText}" Style="{StaticResource titleStyle}"/>
+            </StackPanel>
+            <toolkit:Expander Grid.Row="1" Header="{Binding Path=lblDetail, Source={StaticResource currentCommonCulture}}" Style="{StaticResource ExpanderNewStyle}" IsExpanded="True" local:EyeCandy.Image="/gMVVM;component/Data/Icons/edit_icon.png">
+                <Grid Background="White" >
+                    <StackPanel Margin="5">
+                        <Common:MessageAlarm DataContext="{Binding Path=MessagePop}"/>
+                        <ContentControl Visibility="{Binding IsApproved}" Style="{StaticResource approveStyle}"/>
+                        <UserControl IsEnabled="{Binding Path=IsView}">
+                            <Grid x:Name="grdItems" Margin="5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding DepartmentTypeID, Source={StaticResource currentAssCommonCulture}}" 
+    				Style="{StaticResource tblStyle}"/>
+
+                                <TextBlock Grid.Row="1" Grid.Column="0" Text="{Binding DepartmentTypeName, Source={StaticResource currentAssCommonCulture}}"
+    				Style="{StaticResource tblStyle}"/>                                                                                             
+                                <TextBlock Grid.Row="2" Grid.Column="0" Text="{Binding Record_Status, Source={StaticResource currentAssCommonCulture}}"
+    				Style="{StaticResource tblStyle}" Margin="10,0,0,12" VerticalAlignment="Bottom"/>
+                                <TextBlock Grid.Row="3" Grid.Column="0" Text="{Binding Note, Source={StaticResource currentAssCommonCulture}}"
+    				Style="{StaticResource tblStyle}"/>
+
+                                <TextBox Grid.Row="0" Grid.Column="1" Style="{StaticResource txbNormal}"
+    				Text="{Binding CurrentItem.GROUP_CODE, Mode=TwoWay}" MaxLength="15" />
+
+                                <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource txbNormal}"
+                             Text="{Binding CurrentItem.GROUP_NAME, Mode=TwoWay}" MaxLength="200"/>                                
+                                <CheckBox Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Margin="5" IsChecked="{Binding IsChecked,Mode=TwoWay}"/>
+                                <TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource txbNormal}" Grid.ColumnSpan="3" MaxLength="1000"
+    				Text="{Binding CurrentItem.NOTES, Mode=TwoWay}" TextWrapping="Wrap" Height="50" Width="250"/>
+
+                                <TextBlock Grid.Row="1" Grid.Column="3" Style="{StaticResource Required}"/>
+                                <TextBlock Grid.Row="0" Grid.Column="3" Style="{StaticResource Required}"/>                                
+                            </Grid>
+                        </UserControl>
+                    </StackPanel>
+                </Grid>
+            </toolkit:Expander>
+        </StackPanel>
+
+    </Grid>
+</UserControl>
