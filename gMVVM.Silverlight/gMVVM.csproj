@@ -209,6 +209,8 @@
     <Compile Include="ViewModels\GhiNhanKeHoach\GhiNhanKeHoachViewModel.cs" />
     <Compile Include="ViewModels\LoginSystemViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
+    <Compile Include="ViewModels\QuanLyKhamChuaBenh\PhieuNhapThuocEditViewModel.cs" />
+    <Compile Include="ViewModels\QuanLyKhamChuaBenh\PhieuNhapThuocViewModel.cs" />
     <Compile Include="ViewModels\QuanLyKhamChuaBenh\QuanLyTonKho.cs" />
     <Compile Include="ViewModels\Search\BranchSearchingViewModel.cs" />
     <Compile Include="ViewModels\SystemRole\CaptchaViewModel.cs" />
@@ -283,6 +285,18 @@
     </Compile>
     <Compile Include="Views\QuanLyKhamChuaBenh\BaoCaoTonKho.xaml.cs">
       <DependentUpon>BaoCaoTonKho.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QuanLyKhamChuaBenh\PhieuNhapThuocEdit.xaml.cs">
+      <DependentUpon>PhieuNhapThuocEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QuanLyKhamChuaBenh\PhieuNhapThuocList.xaml.cs">
+      <DependentUpon>PhieuNhapThuocList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QuanLyKhamChuaBenh\PhieuXuatThuocEdit.xaml.cs">
+      <DependentUpon>PhieuXuatThuocEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QuanLyKhamChuaBenh\PhieuXuatThuocList.xaml.cs">
+      <DependentUpon>PhieuXuatThuocList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Search\BranchSearching.xaml.cs">
       <DependentUpon>BranchSearching.xaml</DependentUpon>
@@ -410,6 +424,22 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\QuanLyKhamChuaBenh\BaoCaoTonKho.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QuanLyKhamChuaBenh\PhieuNhapThuocEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QuanLyKhamChuaBenh\PhieuNhapThuocList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QuanLyKhamChuaBenh\PhieuXuatThuocEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QuanLyKhamChuaBenh\PhieuXuatThuocList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -564,6 +594,15 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\gMVVMService\gMVVM.gMVVMService.ZOO_BAOCAOTONKHO_SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.ZOO_PHIEUNHAPTHUOC_InsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.ZOO_PHIEUNHAPTHUOC_SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.ZOO_THUOC.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\gMVVMService\gMVVMService1.wsdl" />

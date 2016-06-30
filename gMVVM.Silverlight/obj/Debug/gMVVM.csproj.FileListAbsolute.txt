@@ -683,7 +683,6 @@ D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\ko\System.Xml.Serializatio
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\ru\System.Xml.Serialization.resources.dll
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\zh-Hans\System.Xml.Serialization.resources.dll
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\zh-Hant\System.Xml.Serialization.resources.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\gMVVM.csprojResolveAssemblyReference.cache
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\App.g.cs
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\MainPage.g.cs
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\AssCommon\AllCodeEdit.g.cs
@@ -737,3 +736,8 @@ D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\XapCacheFile.xml
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\gMVVM.Resources.QuanLySoThuResource.resources
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\gMVVM.Resources.QuanLySoThuResource.vi-VN.resources
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\QuanLyKhamChuaBenh\BaoCaoTonKho.g.cs
+D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\QuanLyKhamChuaBenh\PhieuNhapThuocEdit.g.cs
+D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\QuanLyKhamChuaBenh\PhieuNhapThuocList.g.cs
+D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\QuanLyKhamChuaBenh\PhieuXuatThuocEdit.g.cs
+D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\QuanLyKhamChuaBenh\PhieuXuatThuocList.g.cs
+D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\gMVVM.csprojResolveAssemblyReference.cache

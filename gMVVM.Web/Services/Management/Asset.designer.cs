@@ -96,6 +96,9 @@ namespace gMVVM.Web.Services.Management
     partial void InsertZOO_DONGVAT(ZOO_DONGVAT instance);
     partial void UpdateZOO_DONGVAT(ZOO_DONGVAT instance);
     partial void DeleteZOO_DONGVAT(ZOO_DONGVAT instance);
+    partial void InsertZOO_DONTHUOC(ZOO_DONTHUOC instance);
+    partial void UpdateZOO_DONTHUOC(ZOO_DONTHUOC instance);
+    partial void DeleteZOO_DONTHUOC(ZOO_DONTHUOC instance);
     partial void InsertZOO_HOSO(ZOO_HOSO instance);
     partial void UpdateZOO_HOSO(ZOO_HOSO instance);
     partial void DeleteZOO_HOSO(ZOO_HOSO instance);
@@ -117,12 +120,30 @@ namespace gMVVM.Web.Services.Management
     partial void InsertZOO_PHANCONGVESINH(ZOO_PHANCONGVESINH instance);
     partial void UpdateZOO_PHANCONGVESINH(ZOO_PHANCONGVESINH instance);
     partial void DeleteZOO_PHANCONGVESINH(ZOO_PHANCONGVESINH instance);
+    partial void InsertZOO_PHIEUDATTHUCAN(ZOO_PHIEUDATTHUCAN instance);
+    partial void UpdateZOO_PHIEUDATTHUCAN(ZOO_PHIEUDATTHUCAN instance);
+    partial void DeleteZOO_PHIEUDATTHUCAN(ZOO_PHIEUDATTHUCAN instance);
+    partial void InsertZOO_PHIEUDATTHUOC(ZOO_PHIEUDATTHUOC instance);
+    partial void UpdateZOO_PHIEUDATTHUOC(ZOO_PHIEUDATTHUOC instance);
+    partial void DeleteZOO_PHIEUDATTHUOC(ZOO_PHIEUDATTHUOC instance);
+    partial void InsertZOO_PHIEUNHAPTHUCAN(ZOO_PHIEUNHAPTHUCAN instance);
+    partial void UpdateZOO_PHIEUNHAPTHUCAN(ZOO_PHIEUNHAPTHUCAN instance);
+    partial void DeleteZOO_PHIEUNHAPTHUCAN(ZOO_PHIEUNHAPTHUCAN instance);
+    partial void InsertZOO_PHIEUNHAPTHUOC(ZOO_PHIEUNHAPTHUOC instance);
+    partial void UpdateZOO_PHIEUNHAPTHUOC(ZOO_PHIEUNHAPTHUOC instance);
+    partial void DeleteZOO_PHIEUNHAPTHUOC(ZOO_PHIEUNHAPTHUOC instance);
+    partial void InsertZOO_PHIEUXUATTHUCAN(ZOO_PHIEUXUATTHUCAN instance);
+    partial void UpdateZOO_PHIEUXUATTHUCAN(ZOO_PHIEUXUATTHUCAN instance);
+    partial void DeleteZOO_PHIEUXUATTHUCAN(ZOO_PHIEUXUATTHUCAN instance);
     partial void InsertZOO_STATUS(ZOO_STATUS instance);
     partial void UpdateZOO_STATUS(ZOO_STATUS instance);
     partial void DeleteZOO_STATUS(ZOO_STATUS instance);
     partial void InsertZOO_THUCAN(ZOO_THUCAN instance);
     partial void UpdateZOO_THUCAN(ZOO_THUCAN instance);
     partial void DeleteZOO_THUCAN(ZOO_THUCAN instance);
+    partial void InsertZOO_THUCDON(ZOO_THUCDON instance);
+    partial void UpdateZOO_THUCDON(ZOO_THUCDON instance);
+    partial void DeleteZOO_THUCDON(ZOO_THUCDON instance);
     partial void InsertZOO_THUOC(ZOO_THUOC instance);
     partial void UpdateZOO_THUOC(ZOO_THUOC instance);
     partial void DeleteZOO_THUOC(ZOO_THUOC instance);
@@ -878,6 +899,20 @@ namespace gMVVM.Web.Services.Management
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), p_MaThuoc, p_TenThuoc, p_NgayHetHan, p_TOP);
 			return ((ISingleResult<ZOO_BAOCAOTONKHO_SearchResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ZOO_PHIEUNHAPTHUOC_Ins")]
+		public ISingleResult<ZOO_PHIEUNHAPTHUOC_InsResult> ZOO_PHIEUNHAPTHUOC_Ins([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MaThuoc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p_SoLuong, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_NgayNhap, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(1000)")] string p_NOTES, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(1)")] string p_RECORD_STATUS, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MAKER_ID, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_CREATE_DT, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string p_AUTH_STATUS, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_CHECKER_ID, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_APPROVE_DT)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), p_MaThuoc, p_SoLuong, p_NgayNhap, p_NOTES, p_RECORD_STATUS, p_MAKER_ID, p_CREATE_DT, p_AUTH_STATUS, p_CHECKER_ID, p_APPROVE_DT);
+			return ((ISingleResult<ZOO_PHIEUNHAPTHUOC_InsResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ZOO_PHIEUNHAPTHUOC_Search")]
+		public ISingleResult<ZOO_PHIEUNHAPTHUOC_SearchResult> ZOO_PHIEUNHAPTHUOC_Search([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MaPhieuNhap, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_TenThuoc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_NgayNhap, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p_TOP)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), p_MaPhieuNhap, p_TenThuoc, p_NgayNhap, p_TOP);
+			return ((ISingleResult<ZOO_PHIEUNHAPTHUOC_SearchResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -5455,12 +5490,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntitySet<ZOO_DIEUTRI> _ZOO_DIEUTRIs;
-		
-		private EntityRef<ZOO_STATUS> _ZOO_STATUS;
-		
-		private EntityRef<ZOO_STATUS> _ZOO_STATUS1;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -5493,9 +5522,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_BENH()
 		{
-			this._ZOO_DIEUTRIs = new EntitySet<ZOO_DIEUTRI>(new Action<ZOO_DIEUTRI>(this.attach_ZOO_DIEUTRIs), new Action<ZOO_DIEUTRI>(this.detach_ZOO_DIEUTRIs));
-			this._ZOO_STATUS = default(EntityRef<ZOO_STATUS>);
-			this._ZOO_STATUS1 = default(EntityRef<ZOO_STATUS>);
 			OnCreated();
 		}
 		
@@ -5590,10 +5616,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._TinhTrang != value))
 				{
-					if ((this._ZOO_STATUS.HasLoadedOrAssignedValue || this._ZOO_STATUS1.HasLoadedOrAssignedValue))
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnTinhTrangChanging(value);
 					this.SendPropertyChanging();
 					this._TinhTrang = value;
@@ -5743,87 +5765,6 @@ namespace gMVVM.Web.Services.Management
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_BENH_ZOO_DIEUTRI", Storage="_ZOO_DIEUTRIs", ThisKey="MaBenh", OtherKey="MaBenh")]
-		public EntitySet<ZOO_DIEUTRI> ZOO_DIEUTRIs
-		{
-			get
-			{
-				return this._ZOO_DIEUTRIs;
-			}
-			set
-			{
-				this._ZOO_DIEUTRIs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_BENH", Storage="_ZOO_STATUS", ThisKey="TinhTrang", OtherKey="MaTrangThai", IsForeignKey=true)]
-		public ZOO_STATUS ZOO_STATUS
-		{
-			get
-			{
-				return this._ZOO_STATUS.Entity;
-			}
-			set
-			{
-				ZOO_STATUS previousValue = this._ZOO_STATUS.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_STATUS.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_STATUS.Entity = null;
-						previousValue.ZOO_BENHs.Remove(this);
-					}
-					this._ZOO_STATUS.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_BENHs.Add(this);
-						this._TinhTrang = value.MaTrangThai;
-					}
-					else
-					{
-						this._TinhTrang = default(string);
-					}
-					this.SendPropertyChanged("ZOO_STATUS");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_BENH1", Storage="_ZOO_STATUS1", ThisKey="TinhTrang", OtherKey="MaTrangThai", IsForeignKey=true)]
-		public ZOO_STATUS ZOO_STATUS1
-		{
-			get
-			{
-				return this._ZOO_STATUS1.Entity;
-			}
-			set
-			{
-				ZOO_STATUS previousValue = this._ZOO_STATUS1.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_STATUS1.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_STATUS1.Entity = null;
-						previousValue.ZOO_BENHs1.Remove(this);
-					}
-					this._ZOO_STATUS1.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_BENHs1.Add(this);
-						this._TinhTrang = value.MaTrangThai;
-					}
-					else
-					{
-						this._TinhTrang = default(string);
-					}
-					this.SendPropertyChanged("ZOO_STATUS1");
-				}
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -5842,18 +5783,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-		
-		private void attach_ZOO_DIEUTRIs(ZOO_DIEUTRI entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_BENH = this;
-		}
-		
-		private void detach_ZOO_DIEUTRIs(ZOO_DIEUTRI entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_BENH = null;
 		}
 	}
 	
@@ -5885,12 +5814,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntitySet<ZOO_CHUONG> _ZOO_CHUONGs;
-		
-		private EntitySet<ZOO_HOSO> _ZOO_HOSOs;
-		
-		private EntitySet<ZOO_THUCAN> _ZOO_THUCANs;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -5921,9 +5844,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_TYPE()
 		{
-			this._ZOO_CHUONGs = new EntitySet<ZOO_CHUONG>(new Action<ZOO_CHUONG>(this.attach_ZOO_CHUONGs), new Action<ZOO_CHUONG>(this.detach_ZOO_CHUONGs));
-			this._ZOO_HOSOs = new EntitySet<ZOO_HOSO>(new Action<ZOO_HOSO>(this.attach_ZOO_HOSOs), new Action<ZOO_HOSO>(this.detach_ZOO_HOSOs));
-			this._ZOO_THUCANs = new EntitySet<ZOO_THUCAN>(new Action<ZOO_THUCAN>(this.attach_ZOO_THUCANs), new Action<ZOO_THUCAN>(this.detach_ZOO_THUCANs));
 			OnCreated();
 		}
 		
@@ -6147,45 +6067,6 @@ namespace gMVVM.Web.Services.Management
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_TYPE_ZOO_CHUONG", Storage="_ZOO_CHUONGs", ThisKey="MaLoai", OtherKey="MaLoaiChuong")]
-		public EntitySet<ZOO_CHUONG> ZOO_CHUONGs
-		{
-			get
-			{
-				return this._ZOO_CHUONGs;
-			}
-			set
-			{
-				this._ZOO_CHUONGs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_TYPE_ZOO_HOSO", Storage="_ZOO_HOSOs", ThisKey="MaLoai", OtherKey="LoaiHoSo")]
-		public EntitySet<ZOO_HOSO> ZOO_HOSOs
-		{
-			get
-			{
-				return this._ZOO_HOSOs;
-			}
-			set
-			{
-				this._ZOO_HOSOs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_TYPE_ZOO_THUCAN", Storage="_ZOO_THUCANs", ThisKey="MaLoai", OtherKey="LoaiThucAn")]
-		public EntitySet<ZOO_THUCAN> ZOO_THUCANs
-		{
-			get
-			{
-				return this._ZOO_THUCANs;
-			}
-			set
-			{
-				this._ZOO_THUCANs.Assign(value);
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -6204,42 +6085,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-		
-		private void attach_ZOO_CHUONGs(ZOO_CHUONG entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_TYPE = this;
-		}
-		
-		private void detach_ZOO_CHUONGs(ZOO_CHUONG entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_TYPE = null;
-		}
-		
-		private void attach_ZOO_HOSOs(ZOO_HOSO entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_TYPE = this;
-		}
-		
-		private void detach_ZOO_HOSOs(ZOO_HOSO entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_TYPE = null;
-		}
-		
-		private void attach_ZOO_THUCANs(ZOO_THUCAN entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_TYPE = this;
-		}
-		
-		private void detach_ZOO_THUCANs(ZOO_THUCAN entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_TYPE = null;
 		}
 	}
 	
@@ -6269,12 +6114,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntitySet<ZOO_PHANCONGCHOAN> _ZOO_PHANCONGCHOANs;
-		
-		private EntityRef<ZOO_CHUONG> _ZOO_CHUONG;
-		
-		private EntityRef<ZOO_KHAUPHANAN> _ZOO_KHAUPHANAN;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -6303,9 +6142,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_CHOAN()
 		{
-			this._ZOO_PHANCONGCHOANs = new EntitySet<ZOO_PHANCONGCHOAN>(new Action<ZOO_PHANCONGCHOAN>(this.attach_ZOO_PHANCONGCHOANs), new Action<ZOO_PHANCONGCHOAN>(this.detach_ZOO_PHANCONGCHOANs));
-			this._ZOO_CHUONG = default(EntityRef<ZOO_CHUONG>);
-			this._ZOO_KHAUPHANAN = default(EntityRef<ZOO_KHAUPHANAN>);
 			OnCreated();
 		}
 		
@@ -6320,10 +6156,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaChoAn != value))
 				{
-					if ((this._ZOO_CHUONG.HasLoadedOrAssignedValue || this._ZOO_KHAUPHANAN.HasLoadedOrAssignedValue))
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaChoAnChanging(value);
 					this.SendPropertyChanging();
 					this._MaChoAn = value;
@@ -6513,87 +6345,6 @@ namespace gMVVM.Web.Services.Management
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_CHOAN_ZOO_PHANCONGCHOAN", Storage="_ZOO_PHANCONGCHOANs", ThisKey="MaChoAn", OtherKey="MaChoAn")]
-		public EntitySet<ZOO_PHANCONGCHOAN> ZOO_PHANCONGCHOANs
-		{
-			get
-			{
-				return this._ZOO_PHANCONGCHOANs;
-			}
-			set
-			{
-				this._ZOO_PHANCONGCHOANs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_CHUONG_ZOO_CHOAN", Storage="_ZOO_CHUONG", ThisKey="MaChoAn", OtherKey="MaChuong", IsForeignKey=true)]
-		public ZOO_CHUONG ZOO_CHUONG
-		{
-			get
-			{
-				return this._ZOO_CHUONG.Entity;
-			}
-			set
-			{
-				ZOO_CHUONG previousValue = this._ZOO_CHUONG.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_CHUONG.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_CHUONG.Entity = null;
-						previousValue.ZOO_CHOAN = null;
-					}
-					this._ZOO_CHUONG.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_CHOAN = this;
-						this._MaChoAn = value.MaChuong;
-					}
-					else
-					{
-						this._MaChoAn = default(string);
-					}
-					this.SendPropertyChanged("ZOO_CHUONG");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_KHAUPHANAN_ZOO_CHOAN", Storage="_ZOO_KHAUPHANAN", ThisKey="MaChoAn", OtherKey="MaKhauPhanAn", IsForeignKey=true)]
-		public ZOO_KHAUPHANAN ZOO_KHAUPHANAN
-		{
-			get
-			{
-				return this._ZOO_KHAUPHANAN.Entity;
-			}
-			set
-			{
-				ZOO_KHAUPHANAN previousValue = this._ZOO_KHAUPHANAN.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_KHAUPHANAN.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_KHAUPHANAN.Entity = null;
-						previousValue.ZOO_CHOAN = null;
-					}
-					this._ZOO_KHAUPHANAN.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_CHOAN = this;
-						this._MaChoAn = value.MaKhauPhanAn;
-					}
-					else
-					{
-						this._MaChoAn = default(string);
-					}
-					this.SendPropertyChanged("ZOO_KHAUPHANAN");
-				}
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -6612,18 +6363,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-		
-		private void attach_ZOO_PHANCONGCHOANs(ZOO_PHANCONGCHOAN entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_CHOAN = this;
-		}
-		
-		private void detach_ZOO_PHANCONGCHOANs(ZOO_PHANCONGCHOAN entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_CHOAN = null;
 		}
 	}
 	
@@ -6661,18 +6400,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntityRef<ZOO_CHOAN> _ZOO_CHOAN;
-		
-		private EntityRef<ZOO_DONGVAT> _ZOO_DONGVAT;
-		
-		private EntitySet<ZOO_PHANCONGVESINH> _ZOO_PHANCONGVESINHs;
-		
-		private EntityRef<ZOO_TYPE> _ZOO_TYPE;
-		
-		private EntityRef<ZOO_LOAIDV> _ZOO_LOAIDV;
-		
-		private EntityRef<ZOO_STATUS> _ZOO_STATUS;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -6709,12 +6436,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_CHUONG()
 		{
-			this._ZOO_CHOAN = default(EntityRef<ZOO_CHOAN>);
-			this._ZOO_DONGVAT = default(EntityRef<ZOO_DONGVAT>);
-			this._ZOO_PHANCONGVESINHs = new EntitySet<ZOO_PHANCONGVESINH>(new Action<ZOO_PHANCONGVESINH>(this.attach_ZOO_PHANCONGVESINHs), new Action<ZOO_PHANCONGVESINH>(this.detach_ZOO_PHANCONGVESINHs));
-			this._ZOO_TYPE = default(EntityRef<ZOO_TYPE>);
-			this._ZOO_LOAIDV = default(EntityRef<ZOO_LOAIDV>);
-			this._ZOO_STATUS = default(EntityRef<ZOO_STATUS>);
 			OnCreated();
 		}
 		
@@ -6749,10 +6470,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaLoaiChuong != value))
 				{
-					if (this._ZOO_TYPE.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaLoaiChuongChanging(value);
 					this.SendPropertyChanging();
 					this._MaLoaiChuong = value;
@@ -6773,10 +6490,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaLoaiDV != value))
 				{
-					if (this._ZOO_LOAIDV.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaLoaiDVChanging(value);
 					this.SendPropertyChanging();
 					this._MaLoaiDV = value;
@@ -6857,10 +6570,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._TinhTrang != value))
 				{
-					if (this._ZOO_STATUS.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnTinhTrangChanging(value);
 					this.SendPropertyChanging();
 					this._TinhTrang = value;
@@ -7010,179 +6719,6 @@ namespace gMVVM.Web.Services.Management
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_CHUONG_ZOO_CHOAN", Storage="_ZOO_CHOAN", ThisKey="MaChuong", OtherKey="MaChoAn", IsUnique=true, IsForeignKey=false)]
-		public ZOO_CHOAN ZOO_CHOAN
-		{
-			get
-			{
-				return this._ZOO_CHOAN.Entity;
-			}
-			set
-			{
-				ZOO_CHOAN previousValue = this._ZOO_CHOAN.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_CHOAN.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_CHOAN.Entity = null;
-						previousValue.ZOO_CHUONG = null;
-					}
-					this._ZOO_CHOAN.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_CHUONG = this;
-					}
-					this.SendPropertyChanged("ZOO_CHOAN");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_CHUONG_ZOO_DONGVAT", Storage="_ZOO_DONGVAT", ThisKey="MaChuong", OtherKey="MaDongVat", IsUnique=true, IsForeignKey=false)]
-		public ZOO_DONGVAT ZOO_DONGVAT
-		{
-			get
-			{
-				return this._ZOO_DONGVAT.Entity;
-			}
-			set
-			{
-				ZOO_DONGVAT previousValue = this._ZOO_DONGVAT.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_DONGVAT.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_DONGVAT.Entity = null;
-						previousValue.ZOO_CHUONG = null;
-					}
-					this._ZOO_DONGVAT.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_CHUONG = this;
-					}
-					this.SendPropertyChanged("ZOO_DONGVAT");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_CHUONG_ZOO_PHANCONGVESINH", Storage="_ZOO_PHANCONGVESINHs", ThisKey="MaChuong", OtherKey="MaChuong")]
-		public EntitySet<ZOO_PHANCONGVESINH> ZOO_PHANCONGVESINHs
-		{
-			get
-			{
-				return this._ZOO_PHANCONGVESINHs;
-			}
-			set
-			{
-				this._ZOO_PHANCONGVESINHs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_TYPE_ZOO_CHUONG", Storage="_ZOO_TYPE", ThisKey="MaLoaiChuong", OtherKey="MaLoai", IsForeignKey=true)]
-		public ZOO_TYPE ZOO_TYPE
-		{
-			get
-			{
-				return this._ZOO_TYPE.Entity;
-			}
-			set
-			{
-				ZOO_TYPE previousValue = this._ZOO_TYPE.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_TYPE.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_TYPE.Entity = null;
-						previousValue.ZOO_CHUONGs.Remove(this);
-					}
-					this._ZOO_TYPE.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_CHUONGs.Add(this);
-						this._MaLoaiChuong = value.MaLoai;
-					}
-					else
-					{
-						this._MaLoaiChuong = default(string);
-					}
-					this.SendPropertyChanged("ZOO_TYPE");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_LOAIDV_ZOO_CHUONG", Storage="_ZOO_LOAIDV", ThisKey="MaLoaiDV", OtherKey="MaLoai", IsForeignKey=true)]
-		public ZOO_LOAIDV ZOO_LOAIDV
-		{
-			get
-			{
-				return this._ZOO_LOAIDV.Entity;
-			}
-			set
-			{
-				ZOO_LOAIDV previousValue = this._ZOO_LOAIDV.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_LOAIDV.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_LOAIDV.Entity = null;
-						previousValue.ZOO_CHUONGs.Remove(this);
-					}
-					this._ZOO_LOAIDV.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_CHUONGs.Add(this);
-						this._MaLoaiDV = value.MaLoai;
-					}
-					else
-					{
-						this._MaLoaiDV = default(string);
-					}
-					this.SendPropertyChanged("ZOO_LOAIDV");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_CHUONG", Storage="_ZOO_STATUS", ThisKey="TinhTrang", OtherKey="MaTrangThai", IsForeignKey=true)]
-		public ZOO_STATUS ZOO_STATUS
-		{
-			get
-			{
-				return this._ZOO_STATUS.Entity;
-			}
-			set
-			{
-				ZOO_STATUS previousValue = this._ZOO_STATUS.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_STATUS.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_STATUS.Entity = null;
-						previousValue.ZOO_CHUONGs.Remove(this);
-					}
-					this._ZOO_STATUS.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_CHUONGs.Add(this);
-						this._TinhTrang = value.MaTrangThai;
-					}
-					else
-					{
-						this._TinhTrang = default(string);
-					}
-					this.SendPropertyChanged("ZOO_STATUS");
-				}
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -7201,18 +6737,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-		
-		private void attach_ZOO_PHANCONGVESINHs(ZOO_PHANCONGVESINH entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_CHUONG = this;
-		}
-		
-		private void detach_ZOO_PHANCONGVESINHs(ZOO_PHANCONGVESINH entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_CHUONG = null;
 		}
 	}
 	
@@ -7248,14 +6772,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntitySet<ZOO_PHANCONGDIEUTRI> _ZOO_PHANCONGDIEUTRIs;
-		
-		private EntityRef<ZOO_BENH> _ZOO_BENH;
-		
-		private EntityRef<ZOO_DONGVAT> _ZOO_DONGVAT;
-		
-		private EntityRef<ZOO_STATUS> _ZOO_STATUS;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -7290,10 +6806,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_DIEUTRI()
 		{
-			this._ZOO_PHANCONGDIEUTRIs = new EntitySet<ZOO_PHANCONGDIEUTRI>(new Action<ZOO_PHANCONGDIEUTRI>(this.attach_ZOO_PHANCONGDIEUTRIs), new Action<ZOO_PHANCONGDIEUTRI>(this.detach_ZOO_PHANCONGDIEUTRIs));
-			this._ZOO_BENH = default(EntityRef<ZOO_BENH>);
-			this._ZOO_DONGVAT = default(EntityRef<ZOO_DONGVAT>);
-			this._ZOO_STATUS = default(EntityRef<ZOO_STATUS>);
 			OnCreated();
 		}
 		
@@ -7328,10 +6840,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaBenh != value))
 				{
-					if (this._ZOO_BENH.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaBenhChanging(value);
 					this.SendPropertyChanging();
 					this._MaBenh = value;
@@ -7352,10 +6860,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaDongVat != value))
 				{
-					if (this._ZOO_DONGVAT.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaDongVatChanging(value);
 					this.SendPropertyChanging();
 					this._MaDongVat = value;
@@ -7416,10 +6920,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._TinhTrang != value))
 				{
-					if (this._ZOO_STATUS.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnTinhTrangChanging(value);
 					this.SendPropertyChanging();
 					this._TinhTrang = value;
@@ -7569,121 +7069,6 @@ namespace gMVVM.Web.Services.Management
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_DIEUTRI_ZOO_PHANCONGDIEUTRI", Storage="_ZOO_PHANCONGDIEUTRIs", ThisKey="MaDieuTri", OtherKey="MaDieuTri")]
-		public EntitySet<ZOO_PHANCONGDIEUTRI> ZOO_PHANCONGDIEUTRIs
-		{
-			get
-			{
-				return this._ZOO_PHANCONGDIEUTRIs;
-			}
-			set
-			{
-				this._ZOO_PHANCONGDIEUTRIs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_BENH_ZOO_DIEUTRI", Storage="_ZOO_BENH", ThisKey="MaBenh", OtherKey="MaBenh", IsForeignKey=true)]
-		public ZOO_BENH ZOO_BENH
-		{
-			get
-			{
-				return this._ZOO_BENH.Entity;
-			}
-			set
-			{
-				ZOO_BENH previousValue = this._ZOO_BENH.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_BENH.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_BENH.Entity = null;
-						previousValue.ZOO_DIEUTRIs.Remove(this);
-					}
-					this._ZOO_BENH.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_DIEUTRIs.Add(this);
-						this._MaBenh = value.MaBenh;
-					}
-					else
-					{
-						this._MaBenh = default(string);
-					}
-					this.SendPropertyChanged("ZOO_BENH");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_DONGVAT_ZOO_DIEUTRI", Storage="_ZOO_DONGVAT", ThisKey="MaDongVat", OtherKey="MaDongVat", IsForeignKey=true)]
-		public ZOO_DONGVAT ZOO_DONGVAT
-		{
-			get
-			{
-				return this._ZOO_DONGVAT.Entity;
-			}
-			set
-			{
-				ZOO_DONGVAT previousValue = this._ZOO_DONGVAT.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_DONGVAT.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_DONGVAT.Entity = null;
-						previousValue.ZOO_DIEUTRIs.Remove(this);
-					}
-					this._ZOO_DONGVAT.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_DIEUTRIs.Add(this);
-						this._MaDongVat = value.MaDongVat;
-					}
-					else
-					{
-						this._MaDongVat = default(string);
-					}
-					this.SendPropertyChanged("ZOO_DONGVAT");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_DIEUTRI", Storage="_ZOO_STATUS", ThisKey="TinhTrang", OtherKey="MaTrangThai", IsForeignKey=true)]
-		public ZOO_STATUS ZOO_STATUS
-		{
-			get
-			{
-				return this._ZOO_STATUS.Entity;
-			}
-			set
-			{
-				ZOO_STATUS previousValue = this._ZOO_STATUS.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_STATUS.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_STATUS.Entity = null;
-						previousValue.ZOO_DIEUTRIs.Remove(this);
-					}
-					this._ZOO_STATUS.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_DIEUTRIs.Add(this);
-						this._TinhTrang = value.MaTrangThai;
-					}
-					else
-					{
-						this._TinhTrang = default(string);
-					}
-					this.SendPropertyChanged("ZOO_STATUS");
-				}
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -7702,18 +7087,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-		
-		private void attach_ZOO_PHANCONGDIEUTRIs(ZOO_PHANCONGDIEUTRI entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_DIEUTRI = this;
-		}
-		
-		private void detach_ZOO_PHANCONGDIEUTRIs(ZOO_PHANCONGDIEUTRI entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_DIEUTRI = null;
 		}
 	}
 	
@@ -7777,14 +7150,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntitySet<ZOO_DIEUTRI> _ZOO_DIEUTRIs;
-		
-		private EntityRef<ZOO_CHUONG> _ZOO_CHUONG;
-		
-		private EntityRef<ZOO_LOAIDV> _ZOO_LOAIDV;
-		
-		private EntityRef<ZOO_STATUS> _ZOO_STATUS;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -7847,10 +7212,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_DONGVAT()
 		{
-			this._ZOO_DIEUTRIs = new EntitySet<ZOO_DIEUTRI>(new Action<ZOO_DIEUTRI>(this.attach_ZOO_DIEUTRIs), new Action<ZOO_DIEUTRI>(this.detach_ZOO_DIEUTRIs));
-			this._ZOO_CHUONG = default(EntityRef<ZOO_CHUONG>);
-			this._ZOO_LOAIDV = default(EntityRef<ZOO_LOAIDV>);
-			this._ZOO_STATUS = default(EntityRef<ZOO_STATUS>);
 			OnCreated();
 		}
 		
@@ -7865,10 +7226,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaDongVat != value))
 				{
-					if (this._ZOO_CHUONG.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaDongVatChanging(value);
 					this.SendPropertyChanging();
 					this._MaDongVat = value;
@@ -7929,10 +7286,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaLoaiDV != value))
 				{
-					if (this._ZOO_LOAIDV.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaLoaiDVChanging(value);
 					this.SendPropertyChanging();
 					this._MaLoaiDV = value;
@@ -8153,10 +7506,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._TinhTrang != value))
 				{
-					if (this._ZOO_STATUS.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnTinhTrangChanging(value);
 					this.SendPropertyChanging();
 					this._TinhTrang = value;
@@ -8406,121 +7755,6 @@ namespace gMVVM.Web.Services.Management
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_DONGVAT_ZOO_DIEUTRI", Storage="_ZOO_DIEUTRIs", ThisKey="MaDongVat", OtherKey="MaDongVat")]
-		public EntitySet<ZOO_DIEUTRI> ZOO_DIEUTRIs
-		{
-			get
-			{
-				return this._ZOO_DIEUTRIs;
-			}
-			set
-			{
-				this._ZOO_DIEUTRIs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_CHUONG_ZOO_DONGVAT", Storage="_ZOO_CHUONG", ThisKey="MaDongVat", OtherKey="MaChuong", IsForeignKey=true)]
-		public ZOO_CHUONG ZOO_CHUONG
-		{
-			get
-			{
-				return this._ZOO_CHUONG.Entity;
-			}
-			set
-			{
-				ZOO_CHUONG previousValue = this._ZOO_CHUONG.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_CHUONG.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_CHUONG.Entity = null;
-						previousValue.ZOO_DONGVAT = null;
-					}
-					this._ZOO_CHUONG.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_DONGVAT = this;
-						this._MaDongVat = value.MaChuong;
-					}
-					else
-					{
-						this._MaDongVat = default(string);
-					}
-					this.SendPropertyChanged("ZOO_CHUONG");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_LOAIDV_ZOO_DONGVAT", Storage="_ZOO_LOAIDV", ThisKey="MaLoaiDV", OtherKey="MaLoai", IsForeignKey=true)]
-		public ZOO_LOAIDV ZOO_LOAIDV
-		{
-			get
-			{
-				return this._ZOO_LOAIDV.Entity;
-			}
-			set
-			{
-				ZOO_LOAIDV previousValue = this._ZOO_LOAIDV.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_LOAIDV.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_LOAIDV.Entity = null;
-						previousValue.ZOO_DONGVATs.Remove(this);
-					}
-					this._ZOO_LOAIDV.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_DONGVATs.Add(this);
-						this._MaLoaiDV = value.MaLoai;
-					}
-					else
-					{
-						this._MaLoaiDV = default(string);
-					}
-					this.SendPropertyChanged("ZOO_LOAIDV");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_DONGVAT", Storage="_ZOO_STATUS", ThisKey="TinhTrang", OtherKey="MaTrangThai", IsForeignKey=true)]
-		public ZOO_STATUS ZOO_STATUS
-		{
-			get
-			{
-				return this._ZOO_STATUS.Entity;
-			}
-			set
-			{
-				ZOO_STATUS previousValue = this._ZOO_STATUS.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_STATUS.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_STATUS.Entity = null;
-						previousValue.ZOO_DONGVATs.Remove(this);
-					}
-					this._ZOO_STATUS.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_DONGVATs.Add(this);
-						this._TinhTrang = value.MaTrangThai;
-					}
-					else
-					{
-						this._TinhTrang = default(string);
-					}
-					this.SendPropertyChanged("ZOO_STATUS");
-				}
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -8540,23 +7774,15 @@ namespace gMVVM.Web.Services.Management
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
-		
-		private void attach_ZOO_DIEUTRIs(ZOO_DIEUTRI entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_DONGVAT = this;
-		}
-		
-		private void detach_ZOO_DIEUTRIs(ZOO_DIEUTRI entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_DONGVAT = null;
-		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ZOO_DONTHUOC")]
-	public partial class ZOO_DONTHUOC
+	public partial class ZOO_DONTHUOC : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _MaDonThuoc;
 		
 		private string _MaBenh;
 		
@@ -8580,11 +7806,62 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaDonThuocChanging(string value);
+    partial void OnMaDonThuocChanged();
+    partial void OnMaBenhChanging(string value);
+    partial void OnMaBenhChanged();
+    partial void OnMaThuocChanging(string value);
+    partial void OnMaThuocChanged();
+    partial void OnSoLuongChanging(System.Nullable<int> value);
+    partial void OnSoLuongChanged();
+    partial void OnMoTaChanging(string value);
+    partial void OnMoTaChanged();
+    partial void OnNOTESChanging(string value);
+    partial void OnNOTESChanged();
+    partial void OnRECORD_STATUSChanging(string value);
+    partial void OnRECORD_STATUSChanged();
+    partial void OnMAKER_IDChanging(string value);
+    partial void OnMAKER_IDChanged();
+    partial void OnCREATE_DTChanging(System.Nullable<System.DateTime> value);
+    partial void OnCREATE_DTChanged();
+    partial void OnAUTH_STATUSChanging(string value);
+    partial void OnAUTH_STATUSChanged();
+    partial void OnCHECKER_IDChanging(string value);
+    partial void OnCHECKER_IDChanged();
+    partial void OnAPPROVE_DTChanging(System.Nullable<System.DateTime> value);
+    partial void OnAPPROVE_DTChanged();
+    #endregion
+		
 		public ZOO_DONTHUOC()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaBenh", DbType="VarChar(15) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaDonThuoc", DbType="VarChar(15) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string MaDonThuoc
+		{
+			get
+			{
+				return this._MaDonThuoc;
+			}
+			set
+			{
+				if ((this._MaDonThuoc != value))
+				{
+					this.OnMaDonThuocChanging(value);
+					this.SendPropertyChanging();
+					this._MaDonThuoc = value;
+					this.SendPropertyChanged("MaDonThuoc");
+					this.OnMaDonThuocChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaBenh", DbType="VarChar(15)")]
 		public string MaBenh
 		{
 			get
@@ -8595,7 +7872,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaBenh != value))
 				{
+					this.OnMaBenhChanging(value);
+					this.SendPropertyChanging();
 					this._MaBenh = value;
+					this.SendPropertyChanged("MaBenh");
+					this.OnMaBenhChanged();
 				}
 			}
 		}
@@ -8611,7 +7892,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaThuoc != value))
 				{
+					this.OnMaThuocChanging(value);
+					this.SendPropertyChanging();
 					this._MaThuoc = value;
+					this.SendPropertyChanged("MaThuoc");
+					this.OnMaThuocChanged();
 				}
 			}
 		}
@@ -8627,7 +7912,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._SoLuong != value))
 				{
+					this.OnSoLuongChanging(value);
+					this.SendPropertyChanging();
 					this._SoLuong = value;
+					this.SendPropertyChanged("SoLuong");
+					this.OnSoLuongChanged();
 				}
 			}
 		}
@@ -8643,7 +7932,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MoTa != value))
 				{
+					this.OnMoTaChanging(value);
+					this.SendPropertyChanging();
 					this._MoTa = value;
+					this.SendPropertyChanged("MoTa");
+					this.OnMoTaChanged();
 				}
 			}
 		}
@@ -8659,7 +7952,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._NOTES != value))
 				{
+					this.OnNOTESChanging(value);
+					this.SendPropertyChanging();
 					this._NOTES = value;
+					this.SendPropertyChanged("NOTES");
+					this.OnNOTESChanged();
 				}
 			}
 		}
@@ -8675,7 +7972,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._RECORD_STATUS != value))
 				{
+					this.OnRECORD_STATUSChanging(value);
+					this.SendPropertyChanging();
 					this._RECORD_STATUS = value;
+					this.SendPropertyChanged("RECORD_STATUS");
+					this.OnRECORD_STATUSChanged();
 				}
 			}
 		}
@@ -8691,7 +7992,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MAKER_ID != value))
 				{
+					this.OnMAKER_IDChanging(value);
+					this.SendPropertyChanging();
 					this._MAKER_ID = value;
+					this.SendPropertyChanged("MAKER_ID");
+					this.OnMAKER_IDChanged();
 				}
 			}
 		}
@@ -8707,7 +8012,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._CREATE_DT != value))
 				{
+					this.OnCREATE_DTChanging(value);
+					this.SendPropertyChanging();
 					this._CREATE_DT = value;
+					this.SendPropertyChanged("CREATE_DT");
+					this.OnCREATE_DTChanged();
 				}
 			}
 		}
@@ -8723,7 +8032,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._AUTH_STATUS != value))
 				{
+					this.OnAUTH_STATUSChanging(value);
+					this.SendPropertyChanging();
 					this._AUTH_STATUS = value;
+					this.SendPropertyChanged("AUTH_STATUS");
+					this.OnAUTH_STATUSChanged();
 				}
 			}
 		}
@@ -8739,7 +8052,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._CHECKER_ID != value))
 				{
+					this.OnCHECKER_IDChanging(value);
+					this.SendPropertyChanging();
 					this._CHECKER_ID = value;
+					this.SendPropertyChanged("CHECKER_ID");
+					this.OnCHECKER_IDChanged();
 				}
 			}
 		}
@@ -8755,8 +8072,32 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._APPROVE_DT != value))
 				{
+					this.OnAPPROVE_DTChanging(value);
+					this.SendPropertyChanging();
 					this._APPROVE_DT = value;
+					this.SendPropertyChanged("APPROVE_DT");
+					this.OnAPPROVE_DTChanged();
 				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -8793,10 +8134,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntityRef<ZOO_TYPE> _ZOO_TYPE;
-		
-		private EntityRef<ZOO_STATUS> _ZOO_STATUS;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -8831,8 +8168,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_HOSO()
 		{
-			this._ZOO_TYPE = default(EntityRef<ZOO_TYPE>);
-			this._ZOO_STATUS = default(EntityRef<ZOO_STATUS>);
 			OnCreated();
 		}
 		
@@ -8887,10 +8222,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._LoaiHoSo != value))
 				{
-					if (this._ZOO_TYPE.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnLoaiHoSoChanging(value);
 					this.SendPropertyChanging();
 					this._LoaiHoSo = value;
@@ -8911,10 +8242,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._TrangThai != value))
 				{
-					if (this._ZOO_STATUS.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnTrangThaiChanging(value);
 					this.SendPropertyChanging();
 					this._TrangThai = value;
@@ -9104,74 +8431,6 @@ namespace gMVVM.Web.Services.Management
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_TYPE_ZOO_HOSO", Storage="_ZOO_TYPE", ThisKey="LoaiHoSo", OtherKey="MaLoai", IsForeignKey=true)]
-		public ZOO_TYPE ZOO_TYPE
-		{
-			get
-			{
-				return this._ZOO_TYPE.Entity;
-			}
-			set
-			{
-				ZOO_TYPE previousValue = this._ZOO_TYPE.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_TYPE.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_TYPE.Entity = null;
-						previousValue.ZOO_HOSOs.Remove(this);
-					}
-					this._ZOO_TYPE.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_HOSOs.Add(this);
-						this._LoaiHoSo = value.MaLoai;
-					}
-					else
-					{
-						this._LoaiHoSo = default(string);
-					}
-					this.SendPropertyChanged("ZOO_TYPE");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_HOSO", Storage="_ZOO_STATUS", ThisKey="TrangThai", OtherKey="MaTrangThai", IsForeignKey=true)]
-		public ZOO_STATUS ZOO_STATUS
-		{
-			get
-			{
-				return this._ZOO_STATUS.Entity;
-			}
-			set
-			{
-				ZOO_STATUS previousValue = this._ZOO_STATUS.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_STATUS.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_STATUS.Entity = null;
-						previousValue.ZOO_HOSOs.Remove(this);
-					}
-					this._ZOO_STATUS.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_HOSOs.Add(this);
-						this._TrangThai = value.MaTrangThai;
-					}
-					else
-					{
-						this._TrangThai = default(string);
-					}
-					this.SendPropertyChanged("ZOO_STATUS");
-				}
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -9221,11 +8480,7 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntityRef<ZOO_CHOAN> _ZOO_CHOAN;
-		
-		private EntityRef<ZOO_LOAIDV> _ZOO_LOAIDV;
-		
-		private EntityRef<ZOO_STATUS> _ZOO_STATUS;
+		private EntitySet<ZOO_THUCDON> _ZOO_THUCDONs;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -9257,9 +8512,7 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_KHAUPHANAN()
 		{
-			this._ZOO_CHOAN = default(EntityRef<ZOO_CHOAN>);
-			this._ZOO_LOAIDV = default(EntityRef<ZOO_LOAIDV>);
-			this._ZOO_STATUS = default(EntityRef<ZOO_STATUS>);
+			this._ZOO_THUCDONs = new EntitySet<ZOO_THUCDON>(new Action<ZOO_THUCDON>(this.attach_ZOO_THUCDONs), new Action<ZOO_THUCDON>(this.detach_ZOO_THUCDONs));
 			OnCreated();
 		}
 		
@@ -9294,10 +8547,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaLoai != value))
 				{
-					if (this._ZOO_LOAIDV.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaLoaiChanging(value);
 					this.SendPropertyChanging();
 					this._MaLoai = value;
@@ -9318,10 +8567,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaTrangThai != value))
 				{
-					if (this._ZOO_STATUS.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaTrangThaiChanging(value);
 					this.SendPropertyChanging();
 					this._MaTrangThai = value;
@@ -9491,100 +8736,16 @@ namespace gMVVM.Web.Services.Management
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_KHAUPHANAN_ZOO_CHOAN", Storage="_ZOO_CHOAN", ThisKey="MaKhauPhanAn", OtherKey="MaChoAn", IsUnique=true, IsForeignKey=false)]
-		public ZOO_CHOAN ZOO_CHOAN
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_KHAUPHANAN_ZOO_THUCDON", Storage="_ZOO_THUCDONs", ThisKey="MaKhauPhanAn", OtherKey="MaKhauPhanAn")]
+		public EntitySet<ZOO_THUCDON> ZOO_THUCDONs
 		{
 			get
 			{
-				return this._ZOO_CHOAN.Entity;
+				return this._ZOO_THUCDONs;
 			}
 			set
 			{
-				ZOO_CHOAN previousValue = this._ZOO_CHOAN.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_CHOAN.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_CHOAN.Entity = null;
-						previousValue.ZOO_KHAUPHANAN = null;
-					}
-					this._ZOO_CHOAN.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_KHAUPHANAN = this;
-					}
-					this.SendPropertyChanged("ZOO_CHOAN");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_LOAIDV_ZOO_KHAUPHANAN", Storage="_ZOO_LOAIDV", ThisKey="MaLoai", OtherKey="MaLoai", IsForeignKey=true)]
-		public ZOO_LOAIDV ZOO_LOAIDV
-		{
-			get
-			{
-				return this._ZOO_LOAIDV.Entity;
-			}
-			set
-			{
-				ZOO_LOAIDV previousValue = this._ZOO_LOAIDV.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_LOAIDV.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_LOAIDV.Entity = null;
-						previousValue.ZOO_KHAUPHANANs.Remove(this);
-					}
-					this._ZOO_LOAIDV.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_KHAUPHANANs.Add(this);
-						this._MaLoai = value.MaLoai;
-					}
-					else
-					{
-						this._MaLoai = default(string);
-					}
-					this.SendPropertyChanged("ZOO_LOAIDV");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_KHAUPHANAN", Storage="_ZOO_STATUS", ThisKey="MaTrangThai", OtherKey="MaTrangThai", IsForeignKey=true)]
-		public ZOO_STATUS ZOO_STATUS
-		{
-			get
-			{
-				return this._ZOO_STATUS.Entity;
-			}
-			set
-			{
-				ZOO_STATUS previousValue = this._ZOO_STATUS.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_STATUS.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_STATUS.Entity = null;
-						previousValue.ZOO_KHAUPHANANs.Remove(this);
-					}
-					this._ZOO_STATUS.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_KHAUPHANANs.Add(this);
-						this._MaTrangThai = value.MaTrangThai;
-					}
-					else
-					{
-						this._MaTrangThai = default(string);
-					}
-					this.SendPropertyChanged("ZOO_STATUS");
-				}
+				this._ZOO_THUCDONs.Assign(value);
 			}
 		}
 		
@@ -9606,6 +8767,18 @@ namespace gMVVM.Web.Services.Management
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
+		}
+		
+		private void attach_ZOO_THUCDONs(ZOO_THUCDON entity)
+		{
+			this.SendPropertyChanging();
+			entity.ZOO_KHAUPHANAN = this;
+		}
+		
+		private void detach_ZOO_THUCDONs(ZOO_THUCDON entity)
+		{
+			this.SendPropertyChanging();
+			entity.ZOO_KHAUPHANAN = null;
 		}
 	}
 	
@@ -9635,12 +8808,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntitySet<ZOO_CHUONG> _ZOO_CHUONGs;
-		
-		private EntitySet<ZOO_DONGVAT> _ZOO_DONGVATs;
-		
-		private EntitySet<ZOO_KHAUPHANAN> _ZOO_KHAUPHANANs;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -9669,9 +8836,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_LOAIDV()
 		{
-			this._ZOO_CHUONGs = new EntitySet<ZOO_CHUONG>(new Action<ZOO_CHUONG>(this.attach_ZOO_CHUONGs), new Action<ZOO_CHUONG>(this.detach_ZOO_CHUONGs));
-			this._ZOO_DONGVATs = new EntitySet<ZOO_DONGVAT>(new Action<ZOO_DONGVAT>(this.attach_ZOO_DONGVATs), new Action<ZOO_DONGVAT>(this.detach_ZOO_DONGVATs));
-			this._ZOO_KHAUPHANANs = new EntitySet<ZOO_KHAUPHANAN>(new Action<ZOO_KHAUPHANAN>(this.attach_ZOO_KHAUPHANANs), new Action<ZOO_KHAUPHANAN>(this.detach_ZOO_KHAUPHANANs));
 			OnCreated();
 		}
 		
@@ -9875,45 +9039,6 @@ namespace gMVVM.Web.Services.Management
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_LOAIDV_ZOO_CHUONG", Storage="_ZOO_CHUONGs", ThisKey="MaLoai", OtherKey="MaLoaiDV")]
-		public EntitySet<ZOO_CHUONG> ZOO_CHUONGs
-		{
-			get
-			{
-				return this._ZOO_CHUONGs;
-			}
-			set
-			{
-				this._ZOO_CHUONGs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_LOAIDV_ZOO_DONGVAT", Storage="_ZOO_DONGVATs", ThisKey="MaLoai", OtherKey="MaLoaiDV")]
-		public EntitySet<ZOO_DONGVAT> ZOO_DONGVATs
-		{
-			get
-			{
-				return this._ZOO_DONGVATs;
-			}
-			set
-			{
-				this._ZOO_DONGVATs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_LOAIDV_ZOO_KHAUPHANAN", Storage="_ZOO_KHAUPHANANs", ThisKey="MaLoai", OtherKey="MaLoai")]
-		public EntitySet<ZOO_KHAUPHANAN> ZOO_KHAUPHANANs
-		{
-			get
-			{
-				return this._ZOO_KHAUPHANANs;
-			}
-			set
-			{
-				this._ZOO_KHAUPHANANs.Assign(value);
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -9932,42 +9057,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-		
-		private void attach_ZOO_CHUONGs(ZOO_CHUONG entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_LOAIDV = this;
-		}
-		
-		private void detach_ZOO_CHUONGs(ZOO_CHUONG entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_LOAIDV = null;
-		}
-		
-		private void attach_ZOO_DONGVATs(ZOO_DONGVAT entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_LOAIDV = this;
-		}
-		
-		private void detach_ZOO_DONGVATs(ZOO_DONGVAT entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_LOAIDV = null;
-		}
-		
-		private void attach_ZOO_KHAUPHANANs(ZOO_KHAUPHANAN entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_LOAIDV = this;
-		}
-		
-		private void detach_ZOO_KHAUPHANANs(ZOO_KHAUPHANAN entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_LOAIDV = null;
 		}
 	}
 	
@@ -10011,14 +9100,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntityRef<ZOO_PHANCONGCHOAN> _ZOO_PHANCONGCHOAN;
-		
-		private EntitySet<ZOO_PHANCONGDIEUTRI> _ZOO_PHANCONGDIEUTRIs;
-		
-		private EntitySet<ZOO_PHANCONGVESINH> _ZOO_PHANCONGVESINHs;
-		
-		private EntityRef<ZOO_STATUS> _ZOO_STATUS;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -10061,10 +9142,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_NHANVIEN()
 		{
-			this._ZOO_PHANCONGCHOAN = default(EntityRef<ZOO_PHANCONGCHOAN>);
-			this._ZOO_PHANCONGDIEUTRIs = new EntitySet<ZOO_PHANCONGDIEUTRI>(new Action<ZOO_PHANCONGDIEUTRI>(this.attach_ZOO_PHANCONGDIEUTRIs), new Action<ZOO_PHANCONGDIEUTRI>(this.detach_ZOO_PHANCONGDIEUTRIs));
-			this._ZOO_PHANCONGVESINHs = new EntitySet<ZOO_PHANCONGVESINH>(new Action<ZOO_PHANCONGVESINH>(this.attach_ZOO_PHANCONGVESINHs), new Action<ZOO_PHANCONGVESINH>(this.detach_ZOO_PHANCONGVESINHs));
-			this._ZOO_STATUS = default(EntityRef<ZOO_STATUS>);
 			OnCreated();
 		}
 		
@@ -10259,10 +9336,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._TinhTrang != value))
 				{
-					if (this._ZOO_STATUS.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnTinhTrangChanging(value);
 					this.SendPropertyChanging();
 					this._TinhTrang = value;
@@ -10412,95 +9485,6 @@ namespace gMVVM.Web.Services.Management
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_NHANVIEN_ZOO_PHANCONGCHOAN", Storage="_ZOO_PHANCONGCHOAN", ThisKey="MaNhanVien", OtherKey="MaPhanCong", IsUnique=true, IsForeignKey=false)]
-		public ZOO_PHANCONGCHOAN ZOO_PHANCONGCHOAN
-		{
-			get
-			{
-				return this._ZOO_PHANCONGCHOAN.Entity;
-			}
-			set
-			{
-				ZOO_PHANCONGCHOAN previousValue = this._ZOO_PHANCONGCHOAN.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_PHANCONGCHOAN.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_PHANCONGCHOAN.Entity = null;
-						previousValue.ZOO_NHANVIEN = null;
-					}
-					this._ZOO_PHANCONGCHOAN.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_NHANVIEN = this;
-					}
-					this.SendPropertyChanged("ZOO_PHANCONGCHOAN");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_NHANVIEN_ZOO_PHANCONGDIEUTRI", Storage="_ZOO_PHANCONGDIEUTRIs", ThisKey="MaNhanVien", OtherKey="MaNhanVien")]
-		public EntitySet<ZOO_PHANCONGDIEUTRI> ZOO_PHANCONGDIEUTRIs
-		{
-			get
-			{
-				return this._ZOO_PHANCONGDIEUTRIs;
-			}
-			set
-			{
-				this._ZOO_PHANCONGDIEUTRIs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_NHANVIEN_ZOO_PHANCONGVESINH", Storage="_ZOO_PHANCONGVESINHs", ThisKey="MaNhanVien", OtherKey="MaNhanVien")]
-		public EntitySet<ZOO_PHANCONGVESINH> ZOO_PHANCONGVESINHs
-		{
-			get
-			{
-				return this._ZOO_PHANCONGVESINHs;
-			}
-			set
-			{
-				this._ZOO_PHANCONGVESINHs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_NHANVIEN", Storage="_ZOO_STATUS", ThisKey="TinhTrang", OtherKey="MaTrangThai", IsForeignKey=true)]
-		public ZOO_STATUS ZOO_STATUS
-		{
-			get
-			{
-				return this._ZOO_STATUS.Entity;
-			}
-			set
-			{
-				ZOO_STATUS previousValue = this._ZOO_STATUS.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_STATUS.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_STATUS.Entity = null;
-						previousValue.ZOO_NHANVIENs.Remove(this);
-					}
-					this._ZOO_STATUS.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_NHANVIENs.Add(this);
-						this._TinhTrang = value.MaTrangThai;
-					}
-					else
-					{
-						this._TinhTrang = default(string);
-					}
-					this.SendPropertyChanged("ZOO_STATUS");
-				}
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -10519,30 +9503,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-		
-		private void attach_ZOO_PHANCONGDIEUTRIs(ZOO_PHANCONGDIEUTRI entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_NHANVIEN = this;
-		}
-		
-		private void detach_ZOO_PHANCONGDIEUTRIs(ZOO_PHANCONGDIEUTRI entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_NHANVIEN = null;
-		}
-		
-		private void attach_ZOO_PHANCONGVESINHs(ZOO_PHANCONGVESINH entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_NHANVIEN = this;
-		}
-		
-		private void detach_ZOO_PHANCONGVESINHs(ZOO_PHANCONGVESINH entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_NHANVIEN = null;
 		}
 	}
 	
@@ -10578,12 +9538,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntityRef<ZOO_CHOAN> _ZOO_CHOAN;
-		
-		private EntityRef<ZOO_NHANVIEN> _ZOO_NHANVIEN;
-		
-		private EntityRef<ZOO_STATUS> _ZOO_STATUS;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -10618,9 +9572,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_PHANCONGCHOAN()
 		{
-			this._ZOO_CHOAN = default(EntityRef<ZOO_CHOAN>);
-			this._ZOO_NHANVIEN = default(EntityRef<ZOO_NHANVIEN>);
-			this._ZOO_STATUS = default(EntityRef<ZOO_STATUS>);
 			OnCreated();
 		}
 		
@@ -10635,10 +9586,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaPhanCong != value))
 				{
-					if (this._ZOO_NHANVIEN.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaPhanCongChanging(value);
 					this.SendPropertyChanging();
 					this._MaPhanCong = value;
@@ -10679,10 +9626,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaChoAn != value))
 				{
-					if (this._ZOO_CHOAN.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaChoAnChanging(value);
 					this.SendPropertyChanging();
 					this._MaChoAn = value;
@@ -10743,10 +9686,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._TinhTrang != value))
 				{
-					if (this._ZOO_STATUS.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnTinhTrangChanging(value);
 					this.SendPropertyChanging();
 					this._TinhTrang = value;
@@ -10892,108 +9831,6 @@ namespace gMVVM.Web.Services.Management
 					this._APPROVE_DT = value;
 					this.SendPropertyChanged("APPROVE_DT");
 					this.OnAPPROVE_DTChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_CHOAN_ZOO_PHANCONGCHOAN", Storage="_ZOO_CHOAN", ThisKey="MaChoAn", OtherKey="MaChoAn", IsForeignKey=true)]
-		public ZOO_CHOAN ZOO_CHOAN
-		{
-			get
-			{
-				return this._ZOO_CHOAN.Entity;
-			}
-			set
-			{
-				ZOO_CHOAN previousValue = this._ZOO_CHOAN.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_CHOAN.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_CHOAN.Entity = null;
-						previousValue.ZOO_PHANCONGCHOANs.Remove(this);
-					}
-					this._ZOO_CHOAN.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_PHANCONGCHOANs.Add(this);
-						this._MaChoAn = value.MaChoAn;
-					}
-					else
-					{
-						this._MaChoAn = default(string);
-					}
-					this.SendPropertyChanged("ZOO_CHOAN");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_NHANVIEN_ZOO_PHANCONGCHOAN", Storage="_ZOO_NHANVIEN", ThisKey="MaPhanCong", OtherKey="MaNhanVien", IsForeignKey=true)]
-		public ZOO_NHANVIEN ZOO_NHANVIEN
-		{
-			get
-			{
-				return this._ZOO_NHANVIEN.Entity;
-			}
-			set
-			{
-				ZOO_NHANVIEN previousValue = this._ZOO_NHANVIEN.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_NHANVIEN.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_NHANVIEN.Entity = null;
-						previousValue.ZOO_PHANCONGCHOAN = null;
-					}
-					this._ZOO_NHANVIEN.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_PHANCONGCHOAN = this;
-						this._MaPhanCong = value.MaNhanVien;
-					}
-					else
-					{
-						this._MaPhanCong = default(string);
-					}
-					this.SendPropertyChanged("ZOO_NHANVIEN");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_PHANCONGCHOAN", Storage="_ZOO_STATUS", ThisKey="TinhTrang", OtherKey="MaTrangThai", IsForeignKey=true)]
-		public ZOO_STATUS ZOO_STATUS
-		{
-			get
-			{
-				return this._ZOO_STATUS.Entity;
-			}
-			set
-			{
-				ZOO_STATUS previousValue = this._ZOO_STATUS.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_STATUS.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_STATUS.Entity = null;
-						previousValue.ZOO_PHANCONGCHOANs.Remove(this);
-					}
-					this._ZOO_STATUS.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_PHANCONGCHOANs.Add(this);
-						this._TinhTrang = value.MaTrangThai;
-					}
-					else
-					{
-						this._TinhTrang = default(string);
-					}
-					this.SendPropertyChanged("ZOO_STATUS");
 				}
 			}
 		}
@@ -11049,12 +9886,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntityRef<ZOO_DIEUTRI> _ZOO_DIEUTRI;
-		
-		private EntityRef<ZOO_NHANVIEN> _ZOO_NHANVIEN;
-		
-		private EntityRef<ZOO_STATUS> _ZOO_STATUS;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -11087,9 +9918,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_PHANCONGDIEUTRI()
 		{
-			this._ZOO_DIEUTRI = default(EntityRef<ZOO_DIEUTRI>);
-			this._ZOO_NHANVIEN = default(EntityRef<ZOO_NHANVIEN>);
-			this._ZOO_STATUS = default(EntityRef<ZOO_STATUS>);
 			OnCreated();
 		}
 		
@@ -11124,10 +9952,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaNhanVien != value))
 				{
-					if (this._ZOO_NHANVIEN.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaNhanVienChanging(value);
 					this.SendPropertyChanging();
 					this._MaNhanVien = value;
@@ -11148,10 +9972,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaDieuTri != value))
 				{
-					if (this._ZOO_DIEUTRI.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaDieuTriChanging(value);
 					this.SendPropertyChanging();
 					this._MaDieuTri = value;
@@ -11192,10 +10012,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._TinhTrang != value))
 				{
-					if (this._ZOO_STATUS.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnTinhTrangChanging(value);
 					this.SendPropertyChanging();
 					this._TinhTrang = value;
@@ -11341,108 +10157,6 @@ namespace gMVVM.Web.Services.Management
 					this._APPROVE_DT = value;
 					this.SendPropertyChanged("APPROVE_DT");
 					this.OnAPPROVE_DTChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_DIEUTRI_ZOO_PHANCONGDIEUTRI", Storage="_ZOO_DIEUTRI", ThisKey="MaDieuTri", OtherKey="MaDieuTri", IsForeignKey=true)]
-		public ZOO_DIEUTRI ZOO_DIEUTRI
-		{
-			get
-			{
-				return this._ZOO_DIEUTRI.Entity;
-			}
-			set
-			{
-				ZOO_DIEUTRI previousValue = this._ZOO_DIEUTRI.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_DIEUTRI.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_DIEUTRI.Entity = null;
-						previousValue.ZOO_PHANCONGDIEUTRIs.Remove(this);
-					}
-					this._ZOO_DIEUTRI.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_PHANCONGDIEUTRIs.Add(this);
-						this._MaDieuTri = value.MaDieuTri;
-					}
-					else
-					{
-						this._MaDieuTri = default(string);
-					}
-					this.SendPropertyChanged("ZOO_DIEUTRI");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_NHANVIEN_ZOO_PHANCONGDIEUTRI", Storage="_ZOO_NHANVIEN", ThisKey="MaNhanVien", OtherKey="MaNhanVien", IsForeignKey=true)]
-		public ZOO_NHANVIEN ZOO_NHANVIEN
-		{
-			get
-			{
-				return this._ZOO_NHANVIEN.Entity;
-			}
-			set
-			{
-				ZOO_NHANVIEN previousValue = this._ZOO_NHANVIEN.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_NHANVIEN.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_NHANVIEN.Entity = null;
-						previousValue.ZOO_PHANCONGDIEUTRIs.Remove(this);
-					}
-					this._ZOO_NHANVIEN.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_PHANCONGDIEUTRIs.Add(this);
-						this._MaNhanVien = value.MaNhanVien;
-					}
-					else
-					{
-						this._MaNhanVien = default(string);
-					}
-					this.SendPropertyChanged("ZOO_NHANVIEN");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_PHANCONGDIEUTRI", Storage="_ZOO_STATUS", ThisKey="TinhTrang", OtherKey="MaTrangThai", IsForeignKey=true)]
-		public ZOO_STATUS ZOO_STATUS
-		{
-			get
-			{
-				return this._ZOO_STATUS.Entity;
-			}
-			set
-			{
-				ZOO_STATUS previousValue = this._ZOO_STATUS.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_STATUS.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_STATUS.Entity = null;
-						previousValue.ZOO_PHANCONGDIEUTRIs.Remove(this);
-					}
-					this._ZOO_STATUS.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_PHANCONGDIEUTRIs.Add(this);
-						this._TinhTrang = value.MaTrangThai;
-					}
-					else
-					{
-						this._TinhTrang = default(string);
-					}
-					this.SendPropertyChanged("ZOO_STATUS");
 				}
 			}
 		}
@@ -11500,12 +10214,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntityRef<ZOO_CHUONG> _ZOO_CHUONG;
-		
-		private EntityRef<ZOO_NHANVIEN> _ZOO_NHANVIEN;
-		
-		private EntityRef<ZOO_STATUS> _ZOO_STATUS;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -11540,9 +10248,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_PHANCONGVESINH()
 		{
-			this._ZOO_CHUONG = default(EntityRef<ZOO_CHUONG>);
-			this._ZOO_NHANVIEN = default(EntityRef<ZOO_NHANVIEN>);
-			this._ZOO_STATUS = default(EntityRef<ZOO_STATUS>);
 			OnCreated();
 		}
 		
@@ -11577,10 +10282,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaNhanVien != value))
 				{
-					if (this._ZOO_NHANVIEN.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaNhanVienChanging(value);
 					this.SendPropertyChanging();
 					this._MaNhanVien = value;
@@ -11601,10 +10302,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaChuong != value))
 				{
-					if (this._ZOO_CHUONG.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnMaChuongChanging(value);
 					this.SendPropertyChanging();
 					this._MaChuong = value;
@@ -11665,10 +10362,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._TinhTrang != value))
 				{
-					if (this._ZOO_STATUS.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnTinhTrangChanging(value);
 					this.SendPropertyChanging();
 					this._TinhTrang = value;
@@ -11818,108 +10511,6 @@ namespace gMVVM.Web.Services.Management
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_CHUONG_ZOO_PHANCONGVESINH", Storage="_ZOO_CHUONG", ThisKey="MaChuong", OtherKey="MaChuong", IsForeignKey=true)]
-		public ZOO_CHUONG ZOO_CHUONG
-		{
-			get
-			{
-				return this._ZOO_CHUONG.Entity;
-			}
-			set
-			{
-				ZOO_CHUONG previousValue = this._ZOO_CHUONG.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_CHUONG.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_CHUONG.Entity = null;
-						previousValue.ZOO_PHANCONGVESINHs.Remove(this);
-					}
-					this._ZOO_CHUONG.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_PHANCONGVESINHs.Add(this);
-						this._MaChuong = value.MaChuong;
-					}
-					else
-					{
-						this._MaChuong = default(string);
-					}
-					this.SendPropertyChanged("ZOO_CHUONG");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_NHANVIEN_ZOO_PHANCONGVESINH", Storage="_ZOO_NHANVIEN", ThisKey="MaNhanVien", OtherKey="MaNhanVien", IsForeignKey=true)]
-		public ZOO_NHANVIEN ZOO_NHANVIEN
-		{
-			get
-			{
-				return this._ZOO_NHANVIEN.Entity;
-			}
-			set
-			{
-				ZOO_NHANVIEN previousValue = this._ZOO_NHANVIEN.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_NHANVIEN.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_NHANVIEN.Entity = null;
-						previousValue.ZOO_PHANCONGVESINHs.Remove(this);
-					}
-					this._ZOO_NHANVIEN.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_PHANCONGVESINHs.Add(this);
-						this._MaNhanVien = value.MaNhanVien;
-					}
-					else
-					{
-						this._MaNhanVien = default(string);
-					}
-					this.SendPropertyChanged("ZOO_NHANVIEN");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_PHANCONGVESINH", Storage="_ZOO_STATUS", ThisKey="TinhTrang", OtherKey="MaTrangThai", IsForeignKey=true)]
-		public ZOO_STATUS ZOO_STATUS
-		{
-			get
-			{
-				return this._ZOO_STATUS.Entity;
-			}
-			set
-			{
-				ZOO_STATUS previousValue = this._ZOO_STATUS.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_STATUS.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_STATUS.Entity = null;
-						previousValue.ZOO_PHANCONGVESINHs.Remove(this);
-					}
-					this._ZOO_STATUS.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_PHANCONGVESINHs.Add(this);
-						this._TinhTrang = value.MaTrangThai;
-					}
-					else
-					{
-						this._TinhTrang = default(string);
-					}
-					this.SendPropertyChanged("ZOO_STATUS");
-				}
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -11942,8 +10533,10 @@ namespace gMVVM.Web.Services.Management
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ZOO_PHIEUDATTHUCAN")]
-	public partial class ZOO_PHIEUDATTHUCAN
+	public partial class ZOO_PHIEUDATTHUCAN : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private string _MaPhieuDat;
 		
@@ -11969,11 +10562,42 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaPhieuDatChanging(string value);
+    partial void OnMaPhieuDatChanged();
+    partial void OnMaThucAnChanging(string value);
+    partial void OnMaThucAnChanged();
+    partial void OnSoLuongChanging(System.Nullable<int> value);
+    partial void OnSoLuongChanged();
+    partial void OnTinhTrangChanging(string value);
+    partial void OnTinhTrangChanged();
+    partial void OnNgayDatChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayDatChanged();
+    partial void OnNOTESChanging(string value);
+    partial void OnNOTESChanged();
+    partial void OnRECORD_STATUSChanging(string value);
+    partial void OnRECORD_STATUSChanged();
+    partial void OnMAKER_IDChanging(string value);
+    partial void OnMAKER_IDChanged();
+    partial void OnCREATE_DTChanging(System.Nullable<System.DateTime> value);
+    partial void OnCREATE_DTChanged();
+    partial void OnAUTH_STATUSChanging(string value);
+    partial void OnAUTH_STATUSChanged();
+    partial void OnCHECKER_IDChanging(string value);
+    partial void OnCHECKER_IDChanged();
+    partial void OnAPPROVE_DTChanging(System.Nullable<System.DateTime> value);
+    partial void OnAPPROVE_DTChanged();
+    #endregion
+		
 		public ZOO_PHIEUDATTHUCAN()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuDat", DbType="VarChar(15) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuDat", DbType="VarChar(15) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaPhieuDat
 		{
 			get
@@ -11984,7 +10608,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaPhieuDat != value))
 				{
+					this.OnMaPhieuDatChanging(value);
+					this.SendPropertyChanging();
 					this._MaPhieuDat = value;
+					this.SendPropertyChanged("MaPhieuDat");
+					this.OnMaPhieuDatChanged();
 				}
 			}
 		}
@@ -12000,7 +10628,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaThucAn != value))
 				{
+					this.OnMaThucAnChanging(value);
+					this.SendPropertyChanging();
 					this._MaThucAn = value;
+					this.SendPropertyChanged("MaThucAn");
+					this.OnMaThucAnChanged();
 				}
 			}
 		}
@@ -12016,7 +10648,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._SoLuong != value))
 				{
+					this.OnSoLuongChanging(value);
+					this.SendPropertyChanging();
 					this._SoLuong = value;
+					this.SendPropertyChanged("SoLuong");
+					this.OnSoLuongChanged();
 				}
 			}
 		}
@@ -12032,7 +10668,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._TinhTrang != value))
 				{
+					this.OnTinhTrangChanging(value);
+					this.SendPropertyChanging();
 					this._TinhTrang = value;
+					this.SendPropertyChanged("TinhTrang");
+					this.OnTinhTrangChanged();
 				}
 			}
 		}
@@ -12048,7 +10688,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._NgayDat != value))
 				{
+					this.OnNgayDatChanging(value);
+					this.SendPropertyChanging();
 					this._NgayDat = value;
+					this.SendPropertyChanged("NgayDat");
+					this.OnNgayDatChanged();
 				}
 			}
 		}
@@ -12064,7 +10708,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._NOTES != value))
 				{
+					this.OnNOTESChanging(value);
+					this.SendPropertyChanging();
 					this._NOTES = value;
+					this.SendPropertyChanged("NOTES");
+					this.OnNOTESChanged();
 				}
 			}
 		}
@@ -12080,7 +10728,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._RECORD_STATUS != value))
 				{
+					this.OnRECORD_STATUSChanging(value);
+					this.SendPropertyChanging();
 					this._RECORD_STATUS = value;
+					this.SendPropertyChanged("RECORD_STATUS");
+					this.OnRECORD_STATUSChanged();
 				}
 			}
 		}
@@ -12096,7 +10748,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MAKER_ID != value))
 				{
+					this.OnMAKER_IDChanging(value);
+					this.SendPropertyChanging();
 					this._MAKER_ID = value;
+					this.SendPropertyChanged("MAKER_ID");
+					this.OnMAKER_IDChanged();
 				}
 			}
 		}
@@ -12112,7 +10768,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._CREATE_DT != value))
 				{
+					this.OnCREATE_DTChanging(value);
+					this.SendPropertyChanging();
 					this._CREATE_DT = value;
+					this.SendPropertyChanged("CREATE_DT");
+					this.OnCREATE_DTChanged();
 				}
 			}
 		}
@@ -12128,7 +10788,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._AUTH_STATUS != value))
 				{
+					this.OnAUTH_STATUSChanging(value);
+					this.SendPropertyChanging();
 					this._AUTH_STATUS = value;
+					this.SendPropertyChanged("AUTH_STATUS");
+					this.OnAUTH_STATUSChanged();
 				}
 			}
 		}
@@ -12144,7 +10808,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._CHECKER_ID != value))
 				{
+					this.OnCHECKER_IDChanging(value);
+					this.SendPropertyChanging();
 					this._CHECKER_ID = value;
+					this.SendPropertyChanged("CHECKER_ID");
+					this.OnCHECKER_IDChanged();
 				}
 			}
 		}
@@ -12160,15 +10828,41 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._APPROVE_DT != value))
 				{
+					this.OnAPPROVE_DTChanging(value);
+					this.SendPropertyChanging();
 					this._APPROVE_DT = value;
+					this.SendPropertyChanged("APPROVE_DT");
+					this.OnAPPROVE_DTChanged();
 				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ZOO_PHIEUDATTHUOC")]
-	public partial class ZOO_PHIEUDATTHUOC
+	public partial class ZOO_PHIEUDATTHUOC : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private string _MaPhieuDat;
 		
@@ -12194,11 +10888,42 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaPhieuDatChanging(string value);
+    partial void OnMaPhieuDatChanged();
+    partial void OnMaThuocChanging(string value);
+    partial void OnMaThuocChanged();
+    partial void OnSoLuongChanging(System.Nullable<int> value);
+    partial void OnSoLuongChanged();
+    partial void OnTinhTrangChanging(string value);
+    partial void OnTinhTrangChanged();
+    partial void OnNgayDatChanging(System.DateTime value);
+    partial void OnNgayDatChanged();
+    partial void OnNOTESChanging(string value);
+    partial void OnNOTESChanged();
+    partial void OnRECORD_STATUSChanging(string value);
+    partial void OnRECORD_STATUSChanged();
+    partial void OnMAKER_IDChanging(string value);
+    partial void OnMAKER_IDChanged();
+    partial void OnCREATE_DTChanging(System.Nullable<System.DateTime> value);
+    partial void OnCREATE_DTChanged();
+    partial void OnAUTH_STATUSChanging(string value);
+    partial void OnAUTH_STATUSChanged();
+    partial void OnCHECKER_IDChanging(string value);
+    partial void OnCHECKER_IDChanged();
+    partial void OnAPPROVE_DTChanging(System.Nullable<System.DateTime> value);
+    partial void OnAPPROVE_DTChanged();
+    #endregion
+		
 		public ZOO_PHIEUDATTHUOC()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuDat", DbType="VarChar(15) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuDat", DbType="VarChar(15) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaPhieuDat
 		{
 			get
@@ -12209,7 +10934,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaPhieuDat != value))
 				{
+					this.OnMaPhieuDatChanging(value);
+					this.SendPropertyChanging();
 					this._MaPhieuDat = value;
+					this.SendPropertyChanged("MaPhieuDat");
+					this.OnMaPhieuDatChanged();
 				}
 			}
 		}
@@ -12225,7 +10954,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaThuoc != value))
 				{
+					this.OnMaThuocChanging(value);
+					this.SendPropertyChanging();
 					this._MaThuoc = value;
+					this.SendPropertyChanged("MaThuoc");
+					this.OnMaThuocChanged();
 				}
 			}
 		}
@@ -12241,7 +10974,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._SoLuong != value))
 				{
+					this.OnSoLuongChanging(value);
+					this.SendPropertyChanging();
 					this._SoLuong = value;
+					this.SendPropertyChanged("SoLuong");
+					this.OnSoLuongChanged();
 				}
 			}
 		}
@@ -12257,7 +10994,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._TinhTrang != value))
 				{
+					this.OnTinhTrangChanging(value);
+					this.SendPropertyChanging();
 					this._TinhTrang = value;
+					this.SendPropertyChanged("TinhTrang");
+					this.OnTinhTrangChanged();
 				}
 			}
 		}
@@ -12273,7 +11014,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._NgayDat != value))
 				{
+					this.OnNgayDatChanging(value);
+					this.SendPropertyChanging();
 					this._NgayDat = value;
+					this.SendPropertyChanged("NgayDat");
+					this.OnNgayDatChanged();
 				}
 			}
 		}
@@ -12289,7 +11034,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._NOTES != value))
 				{
+					this.OnNOTESChanging(value);
+					this.SendPropertyChanging();
 					this._NOTES = value;
+					this.SendPropertyChanged("NOTES");
+					this.OnNOTESChanged();
 				}
 			}
 		}
@@ -12305,7 +11054,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._RECORD_STATUS != value))
 				{
+					this.OnRECORD_STATUSChanging(value);
+					this.SendPropertyChanging();
 					this._RECORD_STATUS = value;
+					this.SendPropertyChanged("RECORD_STATUS");
+					this.OnRECORD_STATUSChanged();
 				}
 			}
 		}
@@ -12321,7 +11074,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MAKER_ID != value))
 				{
+					this.OnMAKER_IDChanging(value);
+					this.SendPropertyChanging();
 					this._MAKER_ID = value;
+					this.SendPropertyChanged("MAKER_ID");
+					this.OnMAKER_IDChanged();
 				}
 			}
 		}
@@ -12337,7 +11094,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._CREATE_DT != value))
 				{
+					this.OnCREATE_DTChanging(value);
+					this.SendPropertyChanging();
 					this._CREATE_DT = value;
+					this.SendPropertyChanged("CREATE_DT");
+					this.OnCREATE_DTChanged();
 				}
 			}
 		}
@@ -12353,7 +11114,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._AUTH_STATUS != value))
 				{
+					this.OnAUTH_STATUSChanging(value);
+					this.SendPropertyChanging();
 					this._AUTH_STATUS = value;
+					this.SendPropertyChanged("AUTH_STATUS");
+					this.OnAUTH_STATUSChanged();
 				}
 			}
 		}
@@ -12369,7 +11134,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._CHECKER_ID != value))
 				{
+					this.OnCHECKER_IDChanging(value);
+					this.SendPropertyChanging();
 					this._CHECKER_ID = value;
+					this.SendPropertyChanged("CHECKER_ID");
+					this.OnCHECKER_IDChanged();
 				}
 			}
 		}
@@ -12385,15 +11154,41 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._APPROVE_DT != value))
 				{
+					this.OnAPPROVE_DTChanging(value);
+					this.SendPropertyChanging();
 					this._APPROVE_DT = value;
+					this.SendPropertyChanged("APPROVE_DT");
+					this.OnAPPROVE_DTChanged();
 				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ZOO_PHIEUNHAPTHUCAN")]
-	public partial class ZOO_PHIEUNHAPTHUCAN
+	public partial class ZOO_PHIEUNHAPTHUCAN : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private string _MaPhieuNhap;
 		
@@ -12417,11 +11212,40 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaPhieuNhapChanging(string value);
+    partial void OnMaPhieuNhapChanged();
+    partial void OnMaThucAnChanging(string value);
+    partial void OnMaThucAnChanged();
+    partial void OnSoLuongChanging(int value);
+    partial void OnSoLuongChanged();
+    partial void OnNgayNhapChanging(System.DateTime value);
+    partial void OnNgayNhapChanged();
+    partial void OnNOTESChanging(string value);
+    partial void OnNOTESChanged();
+    partial void OnRECORD_STATUSChanging(string value);
+    partial void OnRECORD_STATUSChanged();
+    partial void OnMAKER_IDChanging(string value);
+    partial void OnMAKER_IDChanged();
+    partial void OnCREATE_DTChanging(System.Nullable<System.DateTime> value);
+    partial void OnCREATE_DTChanged();
+    partial void OnAUTH_STATUSChanging(string value);
+    partial void OnAUTH_STATUSChanged();
+    partial void OnCHECKER_IDChanging(string value);
+    partial void OnCHECKER_IDChanged();
+    partial void OnAPPROVE_DTChanging(System.Nullable<System.DateTime> value);
+    partial void OnAPPROVE_DTChanged();
+    #endregion
+		
 		public ZOO_PHIEUNHAPTHUCAN()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuNhap", DbType="VarChar(15) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuNhap", DbType="VarChar(15) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaPhieuNhap
 		{
 			get
@@ -12432,7 +11256,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaPhieuNhap != value))
 				{
+					this.OnMaPhieuNhapChanging(value);
+					this.SendPropertyChanging();
 					this._MaPhieuNhap = value;
+					this.SendPropertyChanged("MaPhieuNhap");
+					this.OnMaPhieuNhapChanged();
 				}
 			}
 		}
@@ -12448,7 +11276,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaThucAn != value))
 				{
+					this.OnMaThucAnChanging(value);
+					this.SendPropertyChanging();
 					this._MaThucAn = value;
+					this.SendPropertyChanged("MaThucAn");
+					this.OnMaThucAnChanged();
 				}
 			}
 		}
@@ -12464,7 +11296,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._SoLuong != value))
 				{
+					this.OnSoLuongChanging(value);
+					this.SendPropertyChanging();
 					this._SoLuong = value;
+					this.SendPropertyChanged("SoLuong");
+					this.OnSoLuongChanged();
 				}
 			}
 		}
@@ -12480,7 +11316,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._NgayNhap != value))
 				{
+					this.OnNgayNhapChanging(value);
+					this.SendPropertyChanging();
 					this._NgayNhap = value;
+					this.SendPropertyChanged("NgayNhap");
+					this.OnNgayNhapChanged();
 				}
 			}
 		}
@@ -12496,7 +11336,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._NOTES != value))
 				{
+					this.OnNOTESChanging(value);
+					this.SendPropertyChanging();
 					this._NOTES = value;
+					this.SendPropertyChanged("NOTES");
+					this.OnNOTESChanged();
 				}
 			}
 		}
@@ -12512,7 +11356,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._RECORD_STATUS != value))
 				{
+					this.OnRECORD_STATUSChanging(value);
+					this.SendPropertyChanging();
 					this._RECORD_STATUS = value;
+					this.SendPropertyChanged("RECORD_STATUS");
+					this.OnRECORD_STATUSChanged();
 				}
 			}
 		}
@@ -12528,7 +11376,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MAKER_ID != value))
 				{
+					this.OnMAKER_IDChanging(value);
+					this.SendPropertyChanging();
 					this._MAKER_ID = value;
+					this.SendPropertyChanged("MAKER_ID");
+					this.OnMAKER_IDChanged();
 				}
 			}
 		}
@@ -12544,7 +11396,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._CREATE_DT != value))
 				{
+					this.OnCREATE_DTChanging(value);
+					this.SendPropertyChanging();
 					this._CREATE_DT = value;
+					this.SendPropertyChanged("CREATE_DT");
+					this.OnCREATE_DTChanged();
 				}
 			}
 		}
@@ -12560,7 +11416,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._AUTH_STATUS != value))
 				{
+					this.OnAUTH_STATUSChanging(value);
+					this.SendPropertyChanging();
 					this._AUTH_STATUS = value;
+					this.SendPropertyChanged("AUTH_STATUS");
+					this.OnAUTH_STATUSChanged();
 				}
 			}
 		}
@@ -12576,7 +11436,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._CHECKER_ID != value))
 				{
+					this.OnCHECKER_IDChanging(value);
+					this.SendPropertyChanging();
 					this._CHECKER_ID = value;
+					this.SendPropertyChanged("CHECKER_ID");
+					this.OnCHECKER_IDChanged();
 				}
 			}
 		}
@@ -12592,15 +11456,41 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._APPROVE_DT != value))
 				{
+					this.OnAPPROVE_DTChanging(value);
+					this.SendPropertyChanging();
 					this._APPROVE_DT = value;
+					this.SendPropertyChanged("APPROVE_DT");
+					this.OnAPPROVE_DTChanged();
 				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ZOO_PHIEUNHAPTHUOC")]
-	public partial class ZOO_PHIEUNHAPTHUOC
+	public partial class ZOO_PHIEUNHAPTHUOC : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private string _MaPhieuNhap;
 		
@@ -12624,11 +11514,40 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaPhieuNhapChanging(string value);
+    partial void OnMaPhieuNhapChanged();
+    partial void OnMaThuocChanging(string value);
+    partial void OnMaThuocChanged();
+    partial void OnSoLuongChanging(System.Nullable<int> value);
+    partial void OnSoLuongChanged();
+    partial void OnNgayNhapChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayNhapChanged();
+    partial void OnNOTESChanging(string value);
+    partial void OnNOTESChanged();
+    partial void OnRECORD_STATUSChanging(string value);
+    partial void OnRECORD_STATUSChanged();
+    partial void OnMAKER_IDChanging(string value);
+    partial void OnMAKER_IDChanged();
+    partial void OnCREATE_DTChanging(System.Nullable<System.DateTime> value);
+    partial void OnCREATE_DTChanged();
+    partial void OnAUTH_STATUSChanging(string value);
+    partial void OnAUTH_STATUSChanged();
+    partial void OnCHECKER_IDChanging(string value);
+    partial void OnCHECKER_IDChanged();
+    partial void OnAPPROVE_DTChanging(System.Nullable<System.DateTime> value);
+    partial void OnAPPROVE_DTChanged();
+    #endregion
+		
 		public ZOO_PHIEUNHAPTHUOC()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuNhap", DbType="VarChar(15) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuNhap", DbType="VarChar(15) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaPhieuNhap
 		{
 			get
@@ -12639,7 +11558,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaPhieuNhap != value))
 				{
+					this.OnMaPhieuNhapChanging(value);
+					this.SendPropertyChanging();
 					this._MaPhieuNhap = value;
+					this.SendPropertyChanged("MaPhieuNhap");
+					this.OnMaPhieuNhapChanged();
 				}
 			}
 		}
@@ -12655,7 +11578,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaThuoc != value))
 				{
+					this.OnMaThuocChanging(value);
+					this.SendPropertyChanging();
 					this._MaThuoc = value;
+					this.SendPropertyChanged("MaThuoc");
+					this.OnMaThuocChanged();
 				}
 			}
 		}
@@ -12671,7 +11598,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._SoLuong != value))
 				{
+					this.OnSoLuongChanging(value);
+					this.SendPropertyChanging();
 					this._SoLuong = value;
+					this.SendPropertyChanged("SoLuong");
+					this.OnSoLuongChanged();
 				}
 			}
 		}
@@ -12687,7 +11618,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._NgayNhap != value))
 				{
+					this.OnNgayNhapChanging(value);
+					this.SendPropertyChanging();
 					this._NgayNhap = value;
+					this.SendPropertyChanged("NgayNhap");
+					this.OnNgayNhapChanged();
 				}
 			}
 		}
@@ -12703,7 +11638,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._NOTES != value))
 				{
+					this.OnNOTESChanging(value);
+					this.SendPropertyChanging();
 					this._NOTES = value;
+					this.SendPropertyChanged("NOTES");
+					this.OnNOTESChanged();
 				}
 			}
 		}
@@ -12719,7 +11658,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._RECORD_STATUS != value))
 				{
+					this.OnRECORD_STATUSChanging(value);
+					this.SendPropertyChanging();
 					this._RECORD_STATUS = value;
+					this.SendPropertyChanged("RECORD_STATUS");
+					this.OnRECORD_STATUSChanged();
 				}
 			}
 		}
@@ -12735,7 +11678,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MAKER_ID != value))
 				{
+					this.OnMAKER_IDChanging(value);
+					this.SendPropertyChanging();
 					this._MAKER_ID = value;
+					this.SendPropertyChanged("MAKER_ID");
+					this.OnMAKER_IDChanged();
 				}
 			}
 		}
@@ -12751,7 +11698,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._CREATE_DT != value))
 				{
+					this.OnCREATE_DTChanging(value);
+					this.SendPropertyChanging();
 					this._CREATE_DT = value;
+					this.SendPropertyChanged("CREATE_DT");
+					this.OnCREATE_DTChanged();
 				}
 			}
 		}
@@ -12767,7 +11718,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._AUTH_STATUS != value))
 				{
+					this.OnAUTH_STATUSChanging(value);
+					this.SendPropertyChanging();
 					this._AUTH_STATUS = value;
+					this.SendPropertyChanged("AUTH_STATUS");
+					this.OnAUTH_STATUSChanged();
 				}
 			}
 		}
@@ -12783,7 +11738,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._CHECKER_ID != value))
 				{
+					this.OnCHECKER_IDChanging(value);
+					this.SendPropertyChanging();
 					this._CHECKER_ID = value;
+					this.SendPropertyChanged("CHECKER_ID");
+					this.OnCHECKER_IDChanged();
 				}
 			}
 		}
@@ -12799,15 +11758,41 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._APPROVE_DT != value))
 				{
+					this.OnAPPROVE_DTChanging(value);
+					this.SendPropertyChanging();
 					this._APPROVE_DT = value;
+					this.SendPropertyChanged("APPROVE_DT");
+					this.OnAPPROVE_DTChanged();
 				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ZOO_PHIEUXUATTHUCAN")]
-	public partial class ZOO_PHIEUXUATTHUCAN
+	public partial class ZOO_PHIEUXUATTHUCAN : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
 		private string _MaPhieuXuat;
 		
@@ -12833,11 +11818,42 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaPhieuXuatChanging(string value);
+    partial void OnMaPhieuXuatChanged();
+    partial void OnMaThucAnChanging(string value);
+    partial void OnMaThucAnChanged();
+    partial void OnSoLuongChanging(int value);
+    partial void OnSoLuongChanged();
+    partial void OnTinhTrangChanging(string value);
+    partial void OnTinhTrangChanged();
+    partial void OnNgayXuatChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayXuatChanged();
+    partial void OnNOTESChanging(string value);
+    partial void OnNOTESChanged();
+    partial void OnRECORD_STATUSChanging(string value);
+    partial void OnRECORD_STATUSChanged();
+    partial void OnMAKER_IDChanging(string value);
+    partial void OnMAKER_IDChanged();
+    partial void OnCREATE_DTChanging(System.Nullable<System.DateTime> value);
+    partial void OnCREATE_DTChanged();
+    partial void OnAUTH_STATUSChanging(string value);
+    partial void OnAUTH_STATUSChanged();
+    partial void OnCHECKER_IDChanging(string value);
+    partial void OnCHECKER_IDChanged();
+    partial void OnAPPROVE_DTChanging(System.Nullable<System.DateTime> value);
+    partial void OnAPPROVE_DTChanged();
+    #endregion
+		
 		public ZOO_PHIEUXUATTHUCAN()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuXuat", DbType="VarChar(15) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuXuat", DbType="VarChar(15) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
 		public string MaPhieuXuat
 		{
 			get
@@ -12848,7 +11864,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaPhieuXuat != value))
 				{
+					this.OnMaPhieuXuatChanging(value);
+					this.SendPropertyChanging();
 					this._MaPhieuXuat = value;
+					this.SendPropertyChanged("MaPhieuXuat");
+					this.OnMaPhieuXuatChanged();
 				}
 			}
 		}
@@ -12864,7 +11884,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaThucAn != value))
 				{
+					this.OnMaThucAnChanging(value);
+					this.SendPropertyChanging();
 					this._MaThucAn = value;
+					this.SendPropertyChanged("MaThucAn");
+					this.OnMaThucAnChanged();
 				}
 			}
 		}
@@ -12880,7 +11904,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._SoLuong != value))
 				{
+					this.OnSoLuongChanging(value);
+					this.SendPropertyChanging();
 					this._SoLuong = value;
+					this.SendPropertyChanged("SoLuong");
+					this.OnSoLuongChanged();
 				}
 			}
 		}
@@ -12896,7 +11924,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._TinhTrang != value))
 				{
+					this.OnTinhTrangChanging(value);
+					this.SendPropertyChanging();
 					this._TinhTrang = value;
+					this.SendPropertyChanged("TinhTrang");
+					this.OnTinhTrangChanged();
 				}
 			}
 		}
@@ -12912,7 +11944,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._NgayXuat != value))
 				{
+					this.OnNgayXuatChanging(value);
+					this.SendPropertyChanging();
 					this._NgayXuat = value;
+					this.SendPropertyChanged("NgayXuat");
+					this.OnNgayXuatChanged();
 				}
 			}
 		}
@@ -12928,7 +11964,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._NOTES != value))
 				{
+					this.OnNOTESChanging(value);
+					this.SendPropertyChanging();
 					this._NOTES = value;
+					this.SendPropertyChanged("NOTES");
+					this.OnNOTESChanged();
 				}
 			}
 		}
@@ -12944,7 +11984,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._RECORD_STATUS != value))
 				{
+					this.OnRECORD_STATUSChanging(value);
+					this.SendPropertyChanging();
 					this._RECORD_STATUS = value;
+					this.SendPropertyChanged("RECORD_STATUS");
+					this.OnRECORD_STATUSChanged();
 				}
 			}
 		}
@@ -12960,7 +12004,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MAKER_ID != value))
 				{
+					this.OnMAKER_IDChanging(value);
+					this.SendPropertyChanging();
 					this._MAKER_ID = value;
+					this.SendPropertyChanged("MAKER_ID");
+					this.OnMAKER_IDChanged();
 				}
 			}
 		}
@@ -12976,7 +12024,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._CREATE_DT != value))
 				{
+					this.OnCREATE_DTChanging(value);
+					this.SendPropertyChanging();
 					this._CREATE_DT = value;
+					this.SendPropertyChanged("CREATE_DT");
+					this.OnCREATE_DTChanged();
 				}
 			}
 		}
@@ -12992,7 +12044,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._AUTH_STATUS != value))
 				{
+					this.OnAUTH_STATUSChanging(value);
+					this.SendPropertyChanging();
 					this._AUTH_STATUS = value;
+					this.SendPropertyChanged("AUTH_STATUS");
+					this.OnAUTH_STATUSChanged();
 				}
 			}
 		}
@@ -13008,7 +12064,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._CHECKER_ID != value))
 				{
+					this.OnCHECKER_IDChanging(value);
+					this.SendPropertyChanging();
 					this._CHECKER_ID = value;
+					this.SendPropertyChanged("CHECKER_ID");
+					this.OnCHECKER_IDChanged();
 				}
 			}
 		}
@@ -13024,8 +12084,32 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._APPROVE_DT != value))
 				{
+					this.OnAPPROVE_DTChanging(value);
+					this.SendPropertyChanging();
 					this._APPROVE_DT = value;
+					this.SendPropertyChanged("APPROVE_DT");
+					this.OnAPPROVE_DTChanged();
 				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -13281,32 +12365,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntitySet<ZOO_BENH> _ZOO_BENHs;
-		
-		private EntitySet<ZOO_BENH> _ZOO_BENHs1;
-		
-		private EntitySet<ZOO_CHUONG> _ZOO_CHUONGs;
-		
-		private EntitySet<ZOO_DIEUTRI> _ZOO_DIEUTRIs;
-		
-		private EntitySet<ZOO_DONGVAT> _ZOO_DONGVATs;
-		
-		private EntitySet<ZOO_HOSO> _ZOO_HOSOs;
-		
-		private EntitySet<ZOO_KHAUPHANAN> _ZOO_KHAUPHANANs;
-		
-		private EntitySet<ZOO_NHANVIEN> _ZOO_NHANVIENs;
-		
-		private EntitySet<ZOO_PHANCONGCHOAN> _ZOO_PHANCONGCHOANs;
-		
-		private EntitySet<ZOO_PHANCONGDIEUTRI> _ZOO_PHANCONGDIEUTRIs;
-		
-		private EntitySet<ZOO_PHANCONGVESINH> _ZOO_PHANCONGVESINHs;
-		
-		private EntitySet<ZOO_THUCAN> _ZOO_THUCANs;
-		
-		private EntitySet<ZOO_THUOC> _ZOO_THUOCs;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -13335,19 +12393,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_STATUS()
 		{
-			this._ZOO_BENHs = new EntitySet<ZOO_BENH>(new Action<ZOO_BENH>(this.attach_ZOO_BENHs), new Action<ZOO_BENH>(this.detach_ZOO_BENHs));
-			this._ZOO_BENHs1 = new EntitySet<ZOO_BENH>(new Action<ZOO_BENH>(this.attach_ZOO_BENHs1), new Action<ZOO_BENH>(this.detach_ZOO_BENHs1));
-			this._ZOO_CHUONGs = new EntitySet<ZOO_CHUONG>(new Action<ZOO_CHUONG>(this.attach_ZOO_CHUONGs), new Action<ZOO_CHUONG>(this.detach_ZOO_CHUONGs));
-			this._ZOO_DIEUTRIs = new EntitySet<ZOO_DIEUTRI>(new Action<ZOO_DIEUTRI>(this.attach_ZOO_DIEUTRIs), new Action<ZOO_DIEUTRI>(this.detach_ZOO_DIEUTRIs));
-			this._ZOO_DONGVATs = new EntitySet<ZOO_DONGVAT>(new Action<ZOO_DONGVAT>(this.attach_ZOO_DONGVATs), new Action<ZOO_DONGVAT>(this.detach_ZOO_DONGVATs));
-			this._ZOO_HOSOs = new EntitySet<ZOO_HOSO>(new Action<ZOO_HOSO>(this.attach_ZOO_HOSOs), new Action<ZOO_HOSO>(this.detach_ZOO_HOSOs));
-			this._ZOO_KHAUPHANANs = new EntitySet<ZOO_KHAUPHANAN>(new Action<ZOO_KHAUPHANAN>(this.attach_ZOO_KHAUPHANANs), new Action<ZOO_KHAUPHANAN>(this.detach_ZOO_KHAUPHANANs));
-			this._ZOO_NHANVIENs = new EntitySet<ZOO_NHANVIEN>(new Action<ZOO_NHANVIEN>(this.attach_ZOO_NHANVIENs), new Action<ZOO_NHANVIEN>(this.detach_ZOO_NHANVIENs));
-			this._ZOO_PHANCONGCHOANs = new EntitySet<ZOO_PHANCONGCHOAN>(new Action<ZOO_PHANCONGCHOAN>(this.attach_ZOO_PHANCONGCHOANs), new Action<ZOO_PHANCONGCHOAN>(this.detach_ZOO_PHANCONGCHOANs));
-			this._ZOO_PHANCONGDIEUTRIs = new EntitySet<ZOO_PHANCONGDIEUTRI>(new Action<ZOO_PHANCONGDIEUTRI>(this.attach_ZOO_PHANCONGDIEUTRIs), new Action<ZOO_PHANCONGDIEUTRI>(this.detach_ZOO_PHANCONGDIEUTRIs));
-			this._ZOO_PHANCONGVESINHs = new EntitySet<ZOO_PHANCONGVESINH>(new Action<ZOO_PHANCONGVESINH>(this.attach_ZOO_PHANCONGVESINHs), new Action<ZOO_PHANCONGVESINH>(this.detach_ZOO_PHANCONGVESINHs));
-			this._ZOO_THUCANs = new EntitySet<ZOO_THUCAN>(new Action<ZOO_THUCAN>(this.attach_ZOO_THUCANs), new Action<ZOO_THUCAN>(this.detach_ZOO_THUCANs));
-			this._ZOO_THUOCs = new EntitySet<ZOO_THUOC>(new Action<ZOO_THUOC>(this.attach_ZOO_THUOCs), new Action<ZOO_THUOC>(this.detach_ZOO_THUOCs));
 			OnCreated();
 		}
 		
@@ -13551,175 +12596,6 @@ namespace gMVVM.Web.Services.Management
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_BENH", Storage="_ZOO_BENHs", ThisKey="MaTrangThai", OtherKey="TinhTrang")]
-		public EntitySet<ZOO_BENH> ZOO_BENHs
-		{
-			get
-			{
-				return this._ZOO_BENHs;
-			}
-			set
-			{
-				this._ZOO_BENHs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_BENH1", Storage="_ZOO_BENHs1", ThisKey="MaTrangThai", OtherKey="TinhTrang")]
-		public EntitySet<ZOO_BENH> ZOO_BENHs1
-		{
-			get
-			{
-				return this._ZOO_BENHs1;
-			}
-			set
-			{
-				this._ZOO_BENHs1.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_CHUONG", Storage="_ZOO_CHUONGs", ThisKey="MaTrangThai", OtherKey="TinhTrang")]
-		public EntitySet<ZOO_CHUONG> ZOO_CHUONGs
-		{
-			get
-			{
-				return this._ZOO_CHUONGs;
-			}
-			set
-			{
-				this._ZOO_CHUONGs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_DIEUTRI", Storage="_ZOO_DIEUTRIs", ThisKey="MaTrangThai", OtherKey="TinhTrang")]
-		public EntitySet<ZOO_DIEUTRI> ZOO_DIEUTRIs
-		{
-			get
-			{
-				return this._ZOO_DIEUTRIs;
-			}
-			set
-			{
-				this._ZOO_DIEUTRIs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_DONGVAT", Storage="_ZOO_DONGVATs", ThisKey="MaTrangThai", OtherKey="TinhTrang")]
-		public EntitySet<ZOO_DONGVAT> ZOO_DONGVATs
-		{
-			get
-			{
-				return this._ZOO_DONGVATs;
-			}
-			set
-			{
-				this._ZOO_DONGVATs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_HOSO", Storage="_ZOO_HOSOs", ThisKey="MaTrangThai", OtherKey="TrangThai")]
-		public EntitySet<ZOO_HOSO> ZOO_HOSOs
-		{
-			get
-			{
-				return this._ZOO_HOSOs;
-			}
-			set
-			{
-				this._ZOO_HOSOs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_KHAUPHANAN", Storage="_ZOO_KHAUPHANANs", ThisKey="MaTrangThai", OtherKey="MaTrangThai")]
-		public EntitySet<ZOO_KHAUPHANAN> ZOO_KHAUPHANANs
-		{
-			get
-			{
-				return this._ZOO_KHAUPHANANs;
-			}
-			set
-			{
-				this._ZOO_KHAUPHANANs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_NHANVIEN", Storage="_ZOO_NHANVIENs", ThisKey="MaTrangThai", OtherKey="TinhTrang")]
-		public EntitySet<ZOO_NHANVIEN> ZOO_NHANVIENs
-		{
-			get
-			{
-				return this._ZOO_NHANVIENs;
-			}
-			set
-			{
-				this._ZOO_NHANVIENs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_PHANCONGCHOAN", Storage="_ZOO_PHANCONGCHOANs", ThisKey="MaTrangThai", OtherKey="TinhTrang")]
-		public EntitySet<ZOO_PHANCONGCHOAN> ZOO_PHANCONGCHOANs
-		{
-			get
-			{
-				return this._ZOO_PHANCONGCHOANs;
-			}
-			set
-			{
-				this._ZOO_PHANCONGCHOANs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_PHANCONGDIEUTRI", Storage="_ZOO_PHANCONGDIEUTRIs", ThisKey="MaTrangThai", OtherKey="TinhTrang")]
-		public EntitySet<ZOO_PHANCONGDIEUTRI> ZOO_PHANCONGDIEUTRIs
-		{
-			get
-			{
-				return this._ZOO_PHANCONGDIEUTRIs;
-			}
-			set
-			{
-				this._ZOO_PHANCONGDIEUTRIs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_PHANCONGVESINH", Storage="_ZOO_PHANCONGVESINHs", ThisKey="MaTrangThai", OtherKey="TinhTrang")]
-		public EntitySet<ZOO_PHANCONGVESINH> ZOO_PHANCONGVESINHs
-		{
-			get
-			{
-				return this._ZOO_PHANCONGVESINHs;
-			}
-			set
-			{
-				this._ZOO_PHANCONGVESINHs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_THUCAN", Storage="_ZOO_THUCANs", ThisKey="MaTrangThai", OtherKey="TinhTrang")]
-		public EntitySet<ZOO_THUCAN> ZOO_THUCANs
-		{
-			get
-			{
-				return this._ZOO_THUCANs;
-			}
-			set
-			{
-				this._ZOO_THUCANs.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_THUOC", Storage="_ZOO_THUOCs", ThisKey="MaTrangThai", OtherKey="TinhTrang")]
-		public EntitySet<ZOO_THUOC> ZOO_THUOCs
-		{
-			get
-			{
-				return this._ZOO_THUOCs;
-			}
-			set
-			{
-				this._ZOO_THUOCs.Assign(value);
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -13738,162 +12614,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
-		}
-		
-		private void attach_ZOO_BENHs(ZOO_BENH entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = this;
-		}
-		
-		private void detach_ZOO_BENHs(ZOO_BENH entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = null;
-		}
-		
-		private void attach_ZOO_BENHs1(ZOO_BENH entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS1 = this;
-		}
-		
-		private void detach_ZOO_BENHs1(ZOO_BENH entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS1 = null;
-		}
-		
-		private void attach_ZOO_CHUONGs(ZOO_CHUONG entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = this;
-		}
-		
-		private void detach_ZOO_CHUONGs(ZOO_CHUONG entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = null;
-		}
-		
-		private void attach_ZOO_DIEUTRIs(ZOO_DIEUTRI entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = this;
-		}
-		
-		private void detach_ZOO_DIEUTRIs(ZOO_DIEUTRI entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = null;
-		}
-		
-		private void attach_ZOO_DONGVATs(ZOO_DONGVAT entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = this;
-		}
-		
-		private void detach_ZOO_DONGVATs(ZOO_DONGVAT entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = null;
-		}
-		
-		private void attach_ZOO_HOSOs(ZOO_HOSO entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = this;
-		}
-		
-		private void detach_ZOO_HOSOs(ZOO_HOSO entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = null;
-		}
-		
-		private void attach_ZOO_KHAUPHANANs(ZOO_KHAUPHANAN entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = this;
-		}
-		
-		private void detach_ZOO_KHAUPHANANs(ZOO_KHAUPHANAN entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = null;
-		}
-		
-		private void attach_ZOO_NHANVIENs(ZOO_NHANVIEN entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = this;
-		}
-		
-		private void detach_ZOO_NHANVIENs(ZOO_NHANVIEN entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = null;
-		}
-		
-		private void attach_ZOO_PHANCONGCHOANs(ZOO_PHANCONGCHOAN entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = this;
-		}
-		
-		private void detach_ZOO_PHANCONGCHOANs(ZOO_PHANCONGCHOAN entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = null;
-		}
-		
-		private void attach_ZOO_PHANCONGDIEUTRIs(ZOO_PHANCONGDIEUTRI entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = this;
-		}
-		
-		private void detach_ZOO_PHANCONGDIEUTRIs(ZOO_PHANCONGDIEUTRI entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = null;
-		}
-		
-		private void attach_ZOO_PHANCONGVESINHs(ZOO_PHANCONGVESINH entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = this;
-		}
-		
-		private void detach_ZOO_PHANCONGVESINHs(ZOO_PHANCONGVESINH entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = null;
-		}
-		
-		private void attach_ZOO_THUCANs(ZOO_THUCAN entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = this;
-		}
-		
-		private void detach_ZOO_THUCANs(ZOO_THUCAN entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = null;
-		}
-		
-		private void attach_ZOO_THUOCs(ZOO_THUOC entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = this;
-		}
-		
-		private void detach_ZOO_THUOCs(ZOO_THUOC entity)
-		{
-			this.SendPropertyChanging();
-			entity.ZOO_STATUS = null;
 		}
 	}
 	
@@ -13933,10 +12653,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntityRef<ZOO_STATUS> _ZOO_STATUS;
-		
-		private EntityRef<ZOO_TYPE> _ZOO_TYPE;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -13975,8 +12691,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_THUCAN()
 		{
-			this._ZOO_STATUS = default(EntityRef<ZOO_STATUS>);
-			this._ZOO_TYPE = default(EntityRef<ZOO_TYPE>);
 			OnCreated();
 		}
 		
@@ -14011,10 +12725,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._LoaiThucAn != value))
 				{
-					if (this._ZOO_TYPE.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnLoaiThucAnChanging(value);
 					this.SendPropertyChanging();
 					this._LoaiThucAn = value;
@@ -14115,10 +12825,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._TinhTrang != value))
 				{
-					if (this._ZOO_STATUS.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnTinhTrangChanging(value);
 					this.SendPropertyChanging();
 					this._TinhTrang = value;
@@ -14288,74 +12994,6 @@ namespace gMVVM.Web.Services.Management
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_THUCAN", Storage="_ZOO_STATUS", ThisKey="TinhTrang", OtherKey="MaTrangThai", IsForeignKey=true)]
-		public ZOO_STATUS ZOO_STATUS
-		{
-			get
-			{
-				return this._ZOO_STATUS.Entity;
-			}
-			set
-			{
-				ZOO_STATUS previousValue = this._ZOO_STATUS.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_STATUS.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_STATUS.Entity = null;
-						previousValue.ZOO_THUCANs.Remove(this);
-					}
-					this._ZOO_STATUS.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_THUCANs.Add(this);
-						this._TinhTrang = value.MaTrangThai;
-					}
-					else
-					{
-						this._TinhTrang = default(string);
-					}
-					this.SendPropertyChanged("ZOO_STATUS");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_TYPE_ZOO_THUCAN", Storage="_ZOO_TYPE", ThisKey="LoaiThucAn", OtherKey="MaLoai", IsForeignKey=true)]
-		public ZOO_TYPE ZOO_TYPE
-		{
-			get
-			{
-				return this._ZOO_TYPE.Entity;
-			}
-			set
-			{
-				ZOO_TYPE previousValue = this._ZOO_TYPE.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_TYPE.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_TYPE.Entity = null;
-						previousValue.ZOO_THUCANs.Remove(this);
-					}
-					this._ZOO_TYPE.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_THUCANs.Add(this);
-						this._LoaiThucAn = value.MaLoai;
-					}
-					else
-					{
-						this._LoaiThucAn = default(string);
-					}
-					this.SendPropertyChanged("ZOO_TYPE");
-				}
-			}
-		}
-		
 		public event PropertyChangingEventHandler PropertyChanging;
 		
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -14378,8 +13016,12 @@ namespace gMVVM.Web.Services.Management
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ZOO_THUCDON")]
-	public partial class ZOO_THUCDON
+	public partial class ZOO_THUCDON : INotifyPropertyChanging, INotifyPropertyChanged
 	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _MaThucDon;
 		
 		private string _MaThucAn;
 		
@@ -14403,11 +13045,65 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
+		private EntityRef<ZOO_KHAUPHANAN> _ZOO_KHAUPHANAN;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaThucDonChanging(string value);
+    partial void OnMaThucDonChanged();
+    partial void OnMaThucAnChanging(string value);
+    partial void OnMaThucAnChanged();
+    partial void OnMaKhauPhanAnChanging(string value);
+    partial void OnMaKhauPhanAnChanged();
+    partial void OnSoLuongChanging(System.Nullable<int> value);
+    partial void OnSoLuongChanged();
+    partial void OnMoTaChanging(string value);
+    partial void OnMoTaChanged();
+    partial void OnNOTESChanging(string value);
+    partial void OnNOTESChanged();
+    partial void OnRECORD_STATUSChanging(string value);
+    partial void OnRECORD_STATUSChanged();
+    partial void OnMAKER_IDChanging(string value);
+    partial void OnMAKER_IDChanged();
+    partial void OnCREATE_DTChanging(System.Nullable<System.DateTime> value);
+    partial void OnCREATE_DTChanged();
+    partial void OnAUTH_STATUSChanging(string value);
+    partial void OnAUTH_STATUSChanged();
+    partial void OnCHECKER_IDChanging(string value);
+    partial void OnCHECKER_IDChanged();
+    partial void OnAPPROVE_DTChanging(System.Nullable<System.DateTime> value);
+    partial void OnAPPROVE_DTChanged();
+    #endregion
+		
 		public ZOO_THUCDON()
 		{
+			this._ZOO_KHAUPHANAN = default(EntityRef<ZOO_KHAUPHANAN>);
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThucAn", DbType="VarChar(15) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThucDon", DbType="VarChar(15) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string MaThucDon
+		{
+			get
+			{
+				return this._MaThucDon;
+			}
+			set
+			{
+				if ((this._MaThucDon != value))
+				{
+					this.OnMaThucDonChanging(value);
+					this.SendPropertyChanging();
+					this._MaThucDon = value;
+					this.SendPropertyChanged("MaThucDon");
+					this.OnMaThucDonChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThucAn", DbType="VarChar(15)")]
 		public string MaThucAn
 		{
 			get
@@ -14418,7 +13114,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaThucAn != value))
 				{
+					this.OnMaThucAnChanging(value);
+					this.SendPropertyChanging();
 					this._MaThucAn = value;
+					this.SendPropertyChanged("MaThucAn");
+					this.OnMaThucAnChanged();
 				}
 			}
 		}
@@ -14434,7 +13134,15 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MaKhauPhanAn != value))
 				{
+					if (this._ZOO_KHAUPHANAN.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMaKhauPhanAnChanging(value);
+					this.SendPropertyChanging();
 					this._MaKhauPhanAn = value;
+					this.SendPropertyChanged("MaKhauPhanAn");
+					this.OnMaKhauPhanAnChanged();
 				}
 			}
 		}
@@ -14450,7 +13158,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._SoLuong != value))
 				{
+					this.OnSoLuongChanging(value);
+					this.SendPropertyChanging();
 					this._SoLuong = value;
+					this.SendPropertyChanged("SoLuong");
+					this.OnSoLuongChanged();
 				}
 			}
 		}
@@ -14466,7 +13178,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MoTa != value))
 				{
+					this.OnMoTaChanging(value);
+					this.SendPropertyChanging();
 					this._MoTa = value;
+					this.SendPropertyChanged("MoTa");
+					this.OnMoTaChanged();
 				}
 			}
 		}
@@ -14482,7 +13198,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._NOTES != value))
 				{
+					this.OnNOTESChanging(value);
+					this.SendPropertyChanging();
 					this._NOTES = value;
+					this.SendPropertyChanged("NOTES");
+					this.OnNOTESChanged();
 				}
 			}
 		}
@@ -14498,7 +13218,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._RECORD_STATUS != value))
 				{
+					this.OnRECORD_STATUSChanging(value);
+					this.SendPropertyChanging();
 					this._RECORD_STATUS = value;
+					this.SendPropertyChanged("RECORD_STATUS");
+					this.OnRECORD_STATUSChanged();
 				}
 			}
 		}
@@ -14514,7 +13238,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._MAKER_ID != value))
 				{
+					this.OnMAKER_IDChanging(value);
+					this.SendPropertyChanging();
 					this._MAKER_ID = value;
+					this.SendPropertyChanged("MAKER_ID");
+					this.OnMAKER_IDChanged();
 				}
 			}
 		}
@@ -14530,7 +13258,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._CREATE_DT != value))
 				{
+					this.OnCREATE_DTChanging(value);
+					this.SendPropertyChanging();
 					this._CREATE_DT = value;
+					this.SendPropertyChanged("CREATE_DT");
+					this.OnCREATE_DTChanged();
 				}
 			}
 		}
@@ -14546,7 +13278,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._AUTH_STATUS != value))
 				{
+					this.OnAUTH_STATUSChanging(value);
+					this.SendPropertyChanging();
 					this._AUTH_STATUS = value;
+					this.SendPropertyChanged("AUTH_STATUS");
+					this.OnAUTH_STATUSChanged();
 				}
 			}
 		}
@@ -14562,7 +13298,11 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._CHECKER_ID != value))
 				{
+					this.OnCHECKER_IDChanging(value);
+					this.SendPropertyChanging();
 					this._CHECKER_ID = value;
+					this.SendPropertyChanged("CHECKER_ID");
+					this.OnCHECKER_IDChanged();
 				}
 			}
 		}
@@ -14578,8 +13318,66 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._APPROVE_DT != value))
 				{
+					this.OnAPPROVE_DTChanging(value);
+					this.SendPropertyChanging();
 					this._APPROVE_DT = value;
+					this.SendPropertyChanged("APPROVE_DT");
+					this.OnAPPROVE_DTChanged();
 				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_KHAUPHANAN_ZOO_THUCDON", Storage="_ZOO_KHAUPHANAN", ThisKey="MaKhauPhanAn", OtherKey="MaKhauPhanAn", IsForeignKey=true)]
+		public ZOO_KHAUPHANAN ZOO_KHAUPHANAN
+		{
+			get
+			{
+				return this._ZOO_KHAUPHANAN.Entity;
+			}
+			set
+			{
+				ZOO_KHAUPHANAN previousValue = this._ZOO_KHAUPHANAN.Entity;
+				if (((previousValue != value) 
+							|| (this._ZOO_KHAUPHANAN.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._ZOO_KHAUPHANAN.Entity = null;
+						previousValue.ZOO_THUCDONs.Remove(this);
+					}
+					this._ZOO_KHAUPHANAN.Entity = value;
+					if ((value != null))
+					{
+						value.ZOO_THUCDONs.Add(this);
+						this._MaKhauPhanAn = value.MaKhauPhanAn;
+					}
+					else
+					{
+						this._MaKhauPhanAn = default(string);
+					}
+					this.SendPropertyChanged("ZOO_KHAUPHANAN");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -14624,8 +13422,6 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _APPROVE_DT;
 		
-		private EntityRef<ZOO_STATUS> _ZOO_STATUS;
-		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -14668,7 +13464,6 @@ namespace gMVVM.Web.Services.Management
 		
 		public ZOO_THUOC()
 		{
-			this._ZOO_STATUS = default(EntityRef<ZOO_STATUS>);
 			OnCreated();
 		}
 		
@@ -14823,10 +13618,6 @@ namespace gMVVM.Web.Services.Management
 			{
 				if ((this._TinhTrang != value))
 				{
-					if (this._ZOO_STATUS.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
 					this.OnTinhTrangChanging(value);
 					this.SendPropertyChanging();
 					this._TinhTrang = value;
@@ -15012,40 +13803,6 @@ namespace gMVVM.Web.Services.Management
 					this._APPROVE_DT = value;
 					this.SendPropertyChanged("APPROVE_DT");
 					this.OnAPPROVE_DTChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="ZOO_STATUS_ZOO_THUOC", Storage="_ZOO_STATUS", ThisKey="TinhTrang", OtherKey="MaTrangThai", IsForeignKey=true)]
-		public ZOO_STATUS ZOO_STATUS
-		{
-			get
-			{
-				return this._ZOO_STATUS.Entity;
-			}
-			set
-			{
-				ZOO_STATUS previousValue = this._ZOO_STATUS.Entity;
-				if (((previousValue != value) 
-							|| (this._ZOO_STATUS.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._ZOO_STATUS.Entity = null;
-						previousValue.ZOO_THUOCs.Remove(this);
-					}
-					this._ZOO_STATUS.Entity = value;
-					if ((value != null))
-					{
-						value.ZOO_THUOCs.Add(this);
-						this._TinhTrang = value.MaTrangThai;
-					}
-					else
-					{
-						this._TinhTrang = default(string);
-					}
-					this.SendPropertyChanged("ZOO_STATUS");
 				}
 			}
 		}
@@ -20814,6 +19571,8 @@ namespace gMVVM.Web.Services.Management
 		
 		private System.Nullable<System.DateTime> _NgayHetHan;
 		
+		private System.Nullable<double> _ToiThieu;
+		
 		public ZOO_BAOCAOTONKHO_SearchResult()
 		{
 		}
@@ -20894,6 +19653,326 @@ namespace gMVVM.Web.Services.Management
 				if ((this._NgayHetHan != value))
 				{
 					this._NgayHetHan = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ToiThieu", DbType="Float")]
+		public System.Nullable<double> ToiThieu
+		{
+			get
+			{
+				return this._ToiThieu;
+			}
+			set
+			{
+				if ((this._ToiThieu != value))
+				{
+					this._ToiThieu = value;
+				}
+			}
+		}
+	}
+	
+	public partial class ZOO_PHIEUNHAPTHUOC_InsResult
+	{
+		
+		private string _Result;
+		
+		private string _MaPhieuNhap;
+		
+		private string _ErrorDesc;
+		
+		public ZOO_PHIEUNHAPTHUOC_InsResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Result", DbType="VarChar(1) NOT NULL", CanBeNull=false)]
+		public string Result
+		{
+			get
+			{
+				return this._Result;
+			}
+			set
+			{
+				if ((this._Result != value))
+				{
+					this._Result = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuNhap", DbType="VarChar(15)")]
+		public string MaPhieuNhap
+		{
+			get
+			{
+				return this._MaPhieuNhap;
+			}
+			set
+			{
+				if ((this._MaPhieuNhap != value))
+				{
+					this._MaPhieuNhap = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ErrorDesc", DbType="VarChar(1) NOT NULL", CanBeNull=false)]
+		public string ErrorDesc
+		{
+			get
+			{
+				return this._ErrorDesc;
+			}
+			set
+			{
+				if ((this._ErrorDesc != value))
+				{
+					this._ErrorDesc = value;
+				}
+			}
+		}
+	}
+	
+	public partial class ZOO_PHIEUNHAPTHUOC_SearchResult
+	{
+		
+		private string _MaPhieuNhap;
+		
+		private string _MaThuoc;
+		
+		private System.Nullable<int> _SoLuong;
+		
+		private System.Nullable<System.DateTime> _NgayNhap;
+		
+		private string _NOTES;
+		
+		private string _RECORD_STATUS;
+		
+		private string _MAKER_ID;
+		
+		private System.Nullable<System.DateTime> _CREATE_DT;
+		
+		private string _AUTH_STATUS;
+		
+		private string _CHECKER_ID;
+		
+		private System.Nullable<System.DateTime> _APPROVE_DT;
+		
+		private string _TenThuoc;
+		
+		private string _DonViTinh;
+		
+		public ZOO_PHIEUNHAPTHUOC_SearchResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuNhap", DbType="VarChar(15) NOT NULL", CanBeNull=false)]
+		public string MaPhieuNhap
+		{
+			get
+			{
+				return this._MaPhieuNhap;
+			}
+			set
+			{
+				if ((this._MaPhieuNhap != value))
+				{
+					this._MaPhieuNhap = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThuoc", DbType="VarChar(15)")]
+		public string MaThuoc
+		{
+			get
+			{
+				return this._MaThuoc;
+			}
+			set
+			{
+				if ((this._MaThuoc != value))
+				{
+					this._MaThuoc = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
+		public System.Nullable<int> SoLuong
+		{
+			get
+			{
+				return this._SoLuong;
+			}
+			set
+			{
+				if ((this._SoLuong != value))
+				{
+					this._SoLuong = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayNhap", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayNhap
+		{
+			get
+			{
+				return this._NgayNhap;
+			}
+			set
+			{
+				if ((this._NgayNhap != value))
+				{
+					this._NgayNhap = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOTES", DbType="NVarChar(1000)")]
+		public string NOTES
+		{
+			get
+			{
+				return this._NOTES;
+			}
+			set
+			{
+				if ((this._NOTES != value))
+				{
+					this._NOTES = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RECORD_STATUS", DbType="VarChar(1)")]
+		public string RECORD_STATUS
+		{
+			get
+			{
+				return this._RECORD_STATUS;
+			}
+			set
+			{
+				if ((this._RECORD_STATUS != value))
+				{
+					this._RECORD_STATUS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MAKER_ID", DbType="VarChar(15)")]
+		public string MAKER_ID
+		{
+			get
+			{
+				return this._MAKER_ID;
+			}
+			set
+			{
+				if ((this._MAKER_ID != value))
+				{
+					this._MAKER_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_DT", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CREATE_DT
+		{
+			get
+			{
+				return this._CREATE_DT;
+			}
+			set
+			{
+				if ((this._CREATE_DT != value))
+				{
+					this._CREATE_DT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AUTH_STATUS", DbType="VarChar(50)")]
+		public string AUTH_STATUS
+		{
+			get
+			{
+				return this._AUTH_STATUS;
+			}
+			set
+			{
+				if ((this._AUTH_STATUS != value))
+				{
+					this._AUTH_STATUS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CHECKER_ID", DbType="VarChar(15)")]
+		public string CHECKER_ID
+		{
+			get
+			{
+				return this._CHECKER_ID;
+			}
+			set
+			{
+				if ((this._CHECKER_ID != value))
+				{
+					this._CHECKER_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_APPROVE_DT", DbType="DateTime")]
+		public System.Nullable<System.DateTime> APPROVE_DT
+		{
+			get
+			{
+				return this._APPROVE_DT;
+			}
+			set
+			{
+				if ((this._APPROVE_DT != value))
+				{
+					this._APPROVE_DT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenThuoc", DbType="NVarChar(50)")]
+		public string TenThuoc
+		{
+			get
+			{
+				return this._TenThuoc;
+			}
+			set
+			{
+				if ((this._TenThuoc != value))
+				{
+					this._TenThuoc = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonViTinh", DbType="NVarChar(50)")]
+		public string DonViTinh
+		{
+			get
+			{
+				return this._DonViTinh;
+			}
+			set
+			{
+				if ((this._DonViTinh != value))
+				{
+					this._DonViTinh = value;
 				}
 			}
 		}

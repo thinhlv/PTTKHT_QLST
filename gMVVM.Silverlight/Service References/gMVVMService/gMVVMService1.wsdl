@@ -310,6 +310,24 @@
   <wsdl:message name="IZOO_BaoCaoTonKho_LayBaoCaoTonKho_OutputMessage">
     <wsdl:part name="parameters" element="tns:LayBaoCaoTonKhoResponse" />
   </wsdl:message>
+  <wsdl:message name="IZOO_PhieuNhapThuoc_LuuPhieuNhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:LuuPhieuNhap" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_PhieuNhapThuoc_LuuPhieuNhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LuuPhieuNhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_PhieuNhapThuoc_TimPhieuNhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimPhieuNhap" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_PhieuNhapThuoc_TimPhieuNhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimPhieuNhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_PhieuNhapThuoc_DanhSachThuoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:DanhSachThuoc" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_PhieuNhapThuoc_DanhSachThuoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DanhSachThuocResponse" />
+  </wsdl:message>
   <wsdl:message name="ICM_ALLCODE_CM_ALLCODE_ById_InputMessage">
     <wsdl:part name="parameters" element="tns:CM_ALLCODE_ById" />
   </wsdl:message>
@@ -590,6 +608,20 @@
     <wsdl:operation name="LayBaoCaoTonKho">
       <wsdl:input wsaw:Action="http://tempuri.org/IZOO_BaoCaoTonKho/LayBaoCaoTonKho" message="tns:IZOO_BaoCaoTonKho_LayBaoCaoTonKho_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IZOO_BaoCaoTonKho/LayBaoCaoTonKhoResponse" message="tns:IZOO_BaoCaoTonKho_LayBaoCaoTonKho_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IZOO_PhieuNhapThuoc">
+    <wsdl:operation name="LuuPhieuNhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZOO_PhieuNhapThuoc/LuuPhieuNhap" message="tns:IZOO_PhieuNhapThuoc_LuuPhieuNhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZOO_PhieuNhapThuoc/LuuPhieuNhapResponse" message="tns:IZOO_PhieuNhapThuoc_LuuPhieuNhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimPhieuNhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZOO_PhieuNhapThuoc/TimPhieuNhap" message="tns:IZOO_PhieuNhapThuoc_TimPhieuNhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZOO_PhieuNhapThuoc/TimPhieuNhapResponse" message="tns:IZOO_PhieuNhapThuoc_TimPhieuNhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DanhSachThuoc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZOO_PhieuNhapThuoc/DanhSachThuoc" message="tns:IZOO_PhieuNhapThuoc_DanhSachThuoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZOO_PhieuNhapThuoc/DanhSachThuocResponse" message="tns:IZOO_PhieuNhapThuoc_DanhSachThuoc_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:portType name="ICM_ALLCODE">
@@ -1114,6 +1146,36 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IZOO_PhieuNhapThuoc" type="tns:IZOO_PhieuNhapThuoc">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="LuuPhieuNhap">
+      <soap:operation soapAction="http://tempuri.org/IZOO_PhieuNhapThuoc/LuuPhieuNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimPhieuNhap">
+      <soap:operation soapAction="http://tempuri.org/IZOO_PhieuNhapThuoc/TimPhieuNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DanhSachThuoc">
+      <soap:operation soapAction="http://tempuri.org/IZOO_PhieuNhapThuoc/DanhSachThuoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
   <wsdl:binding name="BasicHttpBinding_ICM_ALLCODE" type="tns:ICM_ALLCODE">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="CM_ALLCODE_ById">
@@ -1242,6 +1304,9 @@
       <soap:address location="http://localhost:36229/Services/Management/gMVVMService.svc" />
     </wsdl:port>
     <wsdl:port name="BasicHttpBinding_IZOO_BaoCaoTonKho" binding="tns:BasicHttpBinding_IZOO_BaoCaoTonKho">
+      <soap:address location="http://localhost:36229/Services/Management/gMVVMService.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IZOO_PhieuNhapThuoc" binding="tns:BasicHttpBinding_IZOO_PhieuNhapThuoc">
       <soap:address location="http://localhost:36229/Services/Management/gMVVMService.svc" />
     </wsdl:port>
     <wsdl:port name="BasicHttpBinding_ICM_ALLCODE" binding="tns:BasicHttpBinding_ICM_ALLCODE">

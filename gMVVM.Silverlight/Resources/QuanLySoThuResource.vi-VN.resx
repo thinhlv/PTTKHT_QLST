@@ -117,19 +117,52 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblBaoCaoTonKho" xml:space="preserve">
+    <value>Báo cáo tồn kho</value>
+  </data>
   <data name="lblDonViTinh" xml:space="preserve">
     <value>Đơn vị tính</value>
+  </data>
+  <data name="lblGhiChu" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="lblMaPhieuNhap" xml:space="preserve">
+    <value>Mã phiếu nhập</value>
   </data>
   <data name="lblMaThuoc" xml:space="preserve">
     <value>Mã thuốc</value>
   </data>
+  <data name="lblMoTa" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
   <data name="lblNgayHethang" xml:space="preserve">
-    <value>Ngày hết hạng</value>
+    <value>Ngày hết hạn</value>
+  </data>
+  <data name="lblNgayNhap" xml:space="preserve">
+    <value>Ngày nhập</value>
+  </data>
+  <data name="lblNgaySanXuat" xml:space="preserve">
+    <value>Ngày sản xuất</value>
+  </data>
+  <data name="lblNhapThem" xml:space="preserve">
+    <value>Nhập thêm</value>
+  </data>
+  <data name="lblSoLo" xml:space="preserve">
+    <value>Số lô</value>
   </data>
   <data name="lblSoLuong" xml:space="preserve">
     <value>Số lượng</value>
   </data>
   <data name="lblTenThuoc" xml:space="preserve">
     <value>Tên thuốc</value>
+  </data>
+  <data name="lblTinhTrang" xml:space="preserve">
+    <value>Tình trạng</value>
+  </data>
+  <data name="lblToiThieu" xml:space="preserve">
+    <value>Cần tối thiểu</value>
+  </data>
+  <data name="lblTonKho" xml:space="preserve">
+    <value>Số lượng tồn</value>
   </data>
 </root>

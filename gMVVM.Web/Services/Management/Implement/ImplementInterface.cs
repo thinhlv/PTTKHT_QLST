@@ -28,7 +28,7 @@ using gMVVM.Web.Services.Management.Interfaces.QuanLySoThu;
 
 namespace gMVVM.Web.Services.Management.Implement
 {
-    public class ImplementInterface : ITLUSER, ITLSYSROLE, ITLMENU, IBranch, IDEPARTMENT, IARGUMENT, ISYS_PARAMETERS, IZOO_BaoCaoTonKho
+    public class ImplementInterface : ITLUSER, ITLSYSROLE, ITLMENU, IBranch, IDEPARTMENT, IARGUMENT, ISYS_PARAMETERS, IZOO_BaoCaoTonKho, IZOO_PhieuNhapThuoc
        
     {
         public const string formatDate = "dd/MM/yyyy HH:mm:ss";
@@ -1265,6 +1265,78 @@ namespace gMVVM.Web.Services.Management.Implement
         }
         #endregion
 
+        #region IZOO_PhieuNhapThuoc
+        public ZOO_PHIEUNHAPTHUOC_InsResult LuuPhieuNhap(ZOO_PHIEUNHAPTHUOC data)
+        {
+            try
+            {
+
+                using (var dataContext = new AssetDataContext())
+                {
+                    ZOO_PHIEUNHAPTHUOC_InsResult result = dataContext.ZOO_PHIEUNHAPTHUOC_Ins(
+                        data.MaThuoc, 
+                        data.SoLuong, 
+                        data.NgayNhap == null ? "" : data.NgayNhap.Value.ToString(formatDate), 
+                        data.NOTES, 
+                        data.RECORD_STATUS, 
+                        data.MAKER_ID, 
+                        data.CREATE_DT == null ? "" : data.CREATE_DT.Value.ToString(formatDate), 
+                        data.AUTH_STATUS, 
+                        data.CHECKER_ID, 
+                        data.APPROVE_DT == null ? "" : data.APPROVE_DT.Value.ToString(formatDate)
+                        ).FirstOrDefault();
+
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+                return new ZOO_PHIEUNHAPTHUOC_InsResult() { Result = "-1", ErrorDesc = ex.Message, MaPhieuNhap = "" };
+            }
+        }
+
+        public IEnumerable<ZOO_PHIEUNHAPTHUOC_SearchResult> TimPhieuNhap(string maphieu, string tenthuoc, DateTime ngaynhap, int top)
+        {
+            try
+            {
+                using (var dataContext = new AssetDataContext())
+                {
+                    if (DateTime.Compare(DateTime.Now, ngaynhap) > 0)
+                    {
+                        IEnumerable<ZOO_PHIEUNHAPTHUOC_SearchResult> result = dataContext.ZOO_PHIEUNHAPTHUOC_Search(maphieu, tenthuoc, "", top).ToList();
+                        return result;
+                    }
+                    else
+                    {
+                        IEnumerable<ZOO_PHIEUNHAPTHUOC_SearchResult> result = dataContext.ZOO_PHIEUNHAPTHUOC_Search(maphieu, tenthuoc, ngaynhap.ToString(formatDate), top).ToList();
+                        return result;
+                    }
+                    
+                }
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+        public IEnumerable<ZOO_THUOC> DanhSachThuoc()
+        {
+            try
+            {
+                using (var dataContext = new AssetDataContext())
+                {
+                    var result = dataContext.ZOO_THUOCs.ToList();
+                    return result;
+                }
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+        #endregion
+
 
         /// <summary>
         /// Goi Store thong bang parameter
@@ -1298,12 +1370,6 @@ namespace gMVVM.Web.Services.Management.Implement
                 return null;
             }
         }
-
-
-
-
-
-        
     }
 
     public class gParam

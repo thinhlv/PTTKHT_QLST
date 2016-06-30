@@ -242,10 +242,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_BENH_ZOO_DIEUTRI" Member="ZOO_DIEUTRIs" ThisKey="MaBenh" OtherKey="MaBenh" Type="ZOO_DIEUTRI" />
-      <Association Name="ZOO_BENH_ZOO_DONTHUOC" Member="ZOO_DONTHUOCs" ThisKey="MaBenh" OtherKey="MaBenh" Type="ZOO_DONTHUOC" />
-      <Association Name="ZOO_STATUS_ZOO_BENH" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
-      <Association Name="ZOO_STATUS_ZOO_BENH1" Member="ZOO_STATUS1" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_TYPE" Member="ZOO_TYPEs">
@@ -261,9 +257,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_TYPE_ZOO_CHUONG" Member="ZOO_CHUONGs" ThisKey="MaLoai" OtherKey="MaLoaiChuong" Type="ZOO_CHUONG" />
-      <Association Name="ZOO_TYPE_ZOO_HOSO" Member="ZOO_HOSOs" ThisKey="MaLoai" OtherKey="LoaiHoSo" Type="ZOO_HOSO" />
-      <Association Name="ZOO_TYPE_ZOO_THUCAN" Member="ZOO_THUCANs" ThisKey="MaLoai" OtherKey="LoaiThucAn" Type="ZOO_THUCAN" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_CHOAN" Member="ZOO_CHOANs">
@@ -278,9 +271,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_CHOAN_ZOO_PHANCONGCHOAN" Member="ZOO_PHANCONGCHOANs" ThisKey="MaChoAn" OtherKey="MaChoAn" Type="ZOO_PHANCONGCHOAN" />
-      <Association Name="ZOO_CHUONG_ZOO_CHOAN" Member="ZOO_CHUONG" ThisKey="MaChoAn" OtherKey="MaChuong" Type="ZOO_CHUONG" IsForeignKey="true" />
-      <Association Name="ZOO_KHAUPHANAN_ZOO_CHOAN" Member="ZOO_KHAUPHANAN" ThisKey="MaChoAn" OtherKey="MaKhauPhanAn" Type="ZOO_KHAUPHANAN" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_CHUONG" Member="ZOO_CHUONGs">
@@ -299,12 +289,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_CHUONG_ZOO_CHOAN" Member="ZOO_CHOAN" ThisKey="MaChuong" OtherKey="MaChoAn" Type="ZOO_CHOAN" Cardinality="One" />
-      <Association Name="ZOO_CHUONG_ZOO_DONGVAT" Member="ZOO_DONGVAT" ThisKey="MaChuong" OtherKey="MaDongVat" Type="ZOO_DONGVAT" Cardinality="One" />
-      <Association Name="ZOO_CHUONG_ZOO_PHANCONGVESINH" Member="ZOO_PHANCONGVESINHs" ThisKey="MaChuong" OtherKey="MaChuong" Type="ZOO_PHANCONGVESINH" />
-      <Association Name="ZOO_TYPE_ZOO_CHUONG" Member="ZOO_TYPE" ThisKey="MaLoaiChuong" OtherKey="MaLoai" Type="ZOO_TYPE" IsForeignKey="true" />
-      <Association Name="ZOO_LOAIDV_ZOO_CHUONG" Member="ZOO_LOAIDV" ThisKey="MaLoaiDV" OtherKey="MaLoai" Type="ZOO_LOAIDV" IsForeignKey="true" />
-      <Association Name="ZOO_STATUS_ZOO_CHUONG" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_DIEUTRI" Member="ZOO_DIEUTRIs">
@@ -322,10 +306,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_DIEUTRI_ZOO_PHANCONGDIEUTRI" Member="ZOO_PHANCONGDIEUTRIs" ThisKey="MaDieuTri" OtherKey="MaDieuTri" Type="ZOO_PHANCONGDIEUTRI" />
-      <Association Name="ZOO_BENH_ZOO_DIEUTRI" Member="ZOO_BENH" ThisKey="MaBenh" OtherKey="MaBenh" Type="ZOO_BENH" IsForeignKey="true" />
-      <Association Name="ZOO_DONGVAT_ZOO_DIEUTRI" Member="ZOO_DONGVAT" ThisKey="MaDongVat" OtherKey="MaDongVat" Type="ZOO_DONGVAT" IsForeignKey="true" />
-      <Association Name="ZOO_STATUS_ZOO_DIEUTRI" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_DONGVAT" Member="ZOO_DONGVATs">
@@ -357,15 +337,12 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_DONGVAT_ZOO_DIEUTRI" Member="ZOO_DIEUTRIs" ThisKey="MaDongVat" OtherKey="MaDongVat" Type="ZOO_DIEUTRI" />
-      <Association Name="ZOO_CHUONG_ZOO_DONGVAT" Member="ZOO_CHUONG" ThisKey="MaDongVat" OtherKey="MaChuong" Type="ZOO_CHUONG" IsForeignKey="true" />
-      <Association Name="ZOO_LOAIDV_ZOO_DONGVAT" Member="ZOO_LOAIDV" ThisKey="MaLoaiDV" OtherKey="MaLoai" Type="ZOO_LOAIDV" IsForeignKey="true" />
-      <Association Name="ZOO_STATUS_ZOO_DONGVAT" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_DONTHUOC" Member="ZOO_DONTHUOCs">
     <Type Name="ZOO_DONTHUOC">
-      <Column Name="MaBenh" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaDonThuoc" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaBenh" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="MoTa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
@@ -376,8 +353,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_BENH_ZOO_DONTHUOC" Member="ZOO_BENH" ThisKey="MaBenh" OtherKey="MaBenh" Type="ZOO_BENH" IsForeignKey="true" />
-      <Association Name="ZOO_THUOC_ZOO_DONTHUOC" Member="ZOO_THUOC" ThisKey="MaThuoc" OtherKey="MaThuoc" Type="ZOO_THUOC" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_HOSO" Member="ZOO_HOSOs">
@@ -395,8 +370,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_TYPE_ZOO_HOSO" Member="ZOO_TYPE" ThisKey="LoaiHoSo" OtherKey="MaLoai" Type="ZOO_TYPE" IsForeignKey="true" />
-      <Association Name="ZOO_STATUS_ZOO_HOSO" Member="ZOO_STATUS" ThisKey="TrangThai" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_KHAUPHANAN" Member="ZOO_KHAUPHANANs">
@@ -412,10 +385,7 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_KHAUPHANAN_ZOO_CHOAN" Member="ZOO_CHOAN" ThisKey="MaKhauPhanAn" OtherKey="MaChoAn" Type="ZOO_CHOAN" Cardinality="One" />
       <Association Name="ZOO_KHAUPHANAN_ZOO_THUCDON" Member="ZOO_THUCDONs" ThisKey="MaKhauPhanAn" OtherKey="MaKhauPhanAn" Type="ZOO_THUCDON" />
-      <Association Name="ZOO_LOAIDV_ZOO_KHAUPHANAN" Member="ZOO_LOAIDV" ThisKey="MaLoai" OtherKey="MaLoai" Type="ZOO_LOAIDV" IsForeignKey="true" />
-      <Association Name="ZOO_STATUS_ZOO_KHAUPHANAN" Member="ZOO_STATUS" ThisKey="MaTrangThai" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_LOAIDV" Member="ZOO_LOAIDVs">
@@ -430,9 +400,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_LOAIDV_ZOO_CHUONG" Member="ZOO_CHUONGs" ThisKey="MaLoai" OtherKey="MaLoaiDV" Type="ZOO_CHUONG" />
-      <Association Name="ZOO_LOAIDV_ZOO_DONGVAT" Member="ZOO_DONGVATs" ThisKey="MaLoai" OtherKey="MaLoaiDV" Type="ZOO_DONGVAT" />
-      <Association Name="ZOO_LOAIDV_ZOO_KHAUPHANAN" Member="ZOO_KHAUPHANANs" ThisKey="MaLoai" OtherKey="MaLoai" Type="ZOO_KHAUPHANAN" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_NHANVIEN" Member="ZOO_NHANVIENs">
@@ -454,10 +421,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_NHANVIEN_ZOO_PHANCONGCHOAN" Member="ZOO_PHANCONGCHOAN" ThisKey="MaNhanVien" OtherKey="MaPhanCong" Type="ZOO_PHANCONGCHOAN" Cardinality="One" />
-      <Association Name="ZOO_NHANVIEN_ZOO_PHANCONGDIEUTRI" Member="ZOO_PHANCONGDIEUTRIs" ThisKey="MaNhanVien" OtherKey="MaNhanVien" Type="ZOO_PHANCONGDIEUTRI" />
-      <Association Name="ZOO_NHANVIEN_ZOO_PHANCONGVESINH" Member="ZOO_PHANCONGVESINHs" ThisKey="MaNhanVien" OtherKey="MaNhanVien" Type="ZOO_PHANCONGVESINH" />
-      <Association Name="ZOO_STATUS_ZOO_NHANVIEN" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_PHANCONGCHOAN" Member="ZOO_PHANCONGCHOANs">
@@ -475,9 +438,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_CHOAN_ZOO_PHANCONGCHOAN" Member="ZOO_CHOAN" ThisKey="MaChoAn" OtherKey="MaChoAn" Type="ZOO_CHOAN" IsForeignKey="true" />
-      <Association Name="ZOO_NHANVIEN_ZOO_PHANCONGCHOAN" Member="ZOO_NHANVIEN" ThisKey="MaPhanCong" OtherKey="MaNhanVien" Type="ZOO_NHANVIEN" IsForeignKey="true" />
-      <Association Name="ZOO_STATUS_ZOO_PHANCONGCHOAN" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_PHANCONGDIEUTRI" Member="ZOO_PHANCONGDIEUTRIs">
@@ -494,9 +454,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_DIEUTRI_ZOO_PHANCONGDIEUTRI" Member="ZOO_DIEUTRI" ThisKey="MaDieuTri" OtherKey="MaDieuTri" Type="ZOO_DIEUTRI" IsForeignKey="true" />
-      <Association Name="ZOO_NHANVIEN_ZOO_PHANCONGDIEUTRI" Member="ZOO_NHANVIEN" ThisKey="MaNhanVien" OtherKey="MaNhanVien" Type="ZOO_NHANVIEN" IsForeignKey="true" />
-      <Association Name="ZOO_STATUS_ZOO_PHANCONGDIEUTRI" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_PHANCONGVESINH" Member="ZOO_PHANCONGVESINHs">
@@ -514,14 +471,11 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_CHUONG_ZOO_PHANCONGVESINH" Member="ZOO_CHUONG" ThisKey="MaChuong" OtherKey="MaChuong" Type="ZOO_CHUONG" IsForeignKey="true" />
-      <Association Name="ZOO_NHANVIEN_ZOO_PHANCONGVESINH" Member="ZOO_NHANVIEN" ThisKey="MaNhanVien" OtherKey="MaNhanVien" Type="ZOO_NHANVIEN" IsForeignKey="true" />
-      <Association Name="ZOO_STATUS_ZOO_PHANCONGVESINH" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_PHIEUDATTHUCAN" Member="ZOO_PHIEUDATTHUCANs">
     <Type Name="ZOO_PHIEUDATTHUCAN">
-      <Column Name="MaPhieuDat" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaPhieuDat" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MaThucAn" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
@@ -533,12 +487,11 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_THUCAN_ZOO_PHIEUDATTHUCAN" Member="ZOO_THUCAN" ThisKey="MaThucAn" OtherKey="MaThucAn" Type="ZOO_THUCAN" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_PHIEUDATTHUOC" Member="ZOO_PHIEUDATTHUOCs">
     <Type Name="ZOO_PHIEUDATTHUOC">
-      <Column Name="MaPhieuDat" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaPhieuDat" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
@@ -550,13 +503,11 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_STATUS_ZOO_PHIEUDATTHUOC" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
-      <Association Name="ZOO_THUOC_ZOO_PHIEUDATTHUOC" Member="ZOO_THUOC" ThisKey="MaThuoc" OtherKey="MaThuoc" Type="ZOO_THUOC" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_PHIEUNHAPTHUCAN" Member="ZOO_PHIEUNHAPTHUCANs">
     <Type Name="ZOO_PHIEUNHAPTHUCAN">
-      <Column Name="MaPhieuNhap" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaPhieuNhap" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MaThucAn" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="NgayNhap" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
@@ -567,12 +518,11 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_THUCAN_ZOO_PHIEUNHAPTHUCAN" Member="ZOO_THUCAN" ThisKey="MaThucAn" OtherKey="MaThucAn" Type="ZOO_THUCAN" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_PHIEUNHAPTHUOC" Member="ZOO_PHIEUNHAPTHUOCs">
     <Type Name="ZOO_PHIEUNHAPTHUOC">
-      <Column Name="MaPhieuNhap" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaPhieuNhap" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="NgayNhap" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
@@ -583,12 +533,11 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_THUOC_ZOO_PHIEUNHAPTHUOC" Member="ZOO_THUOC" ThisKey="MaThuoc" OtherKey="MaThuoc" Type="ZOO_THUOC" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_PHIEUXUATTHUCAN" Member="ZOO_PHIEUXUATTHUCANs">
     <Type Name="ZOO_PHIEUXUATTHUCAN">
-      <Column Name="MaPhieuXuat" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaPhieuXuat" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MaThucAn" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
@@ -600,8 +549,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_STATUS_ZOO_PHIEUXUATTHUCAN" Member="ZOO_STATUS" ThisKey="MaPhieuXuat" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
-      <Association Name="ZOO_THUCAN_ZOO_PHIEUXUATTHUCAN" Member="ZOO_THUCAN" ThisKey="MaPhieuXuat" OtherKey="MaThucAn" Type="ZOO_THUCAN" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_PHIEUXUATTHUOC" Member="ZOO_PHIEUXUATTHUOCs">
@@ -618,8 +565,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_STATUS_ZOO_PHIEUXUATTHUOC" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
-      <Association Name="ZOO_THUOC_ZOO_PHIEUXUATTHUOC" Member="ZOO_THUOC" ThisKey="MaPhieuXuat" OtherKey="MaThuoc" Type="ZOO_THUOC" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_STATUS" Member="ZOO_STATUS">
@@ -634,22 +579,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_STATUS_ZOO_BENH" Member="ZOO_BENHs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_BENH" />
-      <Association Name="ZOO_STATUS_ZOO_BENH1" Member="ZOO_BENHs1" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_BENH" />
-      <Association Name="ZOO_STATUS_ZOO_CHUONG" Member="ZOO_CHUONGs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_CHUONG" />
-      <Association Name="ZOO_STATUS_ZOO_DIEUTRI" Member="ZOO_DIEUTRIs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_DIEUTRI" />
-      <Association Name="ZOO_STATUS_ZOO_DONGVAT" Member="ZOO_DONGVATs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_DONGVAT" />
-      <Association Name="ZOO_STATUS_ZOO_HOSO" Member="ZOO_HOSOs" ThisKey="MaTrangThai" OtherKey="TrangThai" Type="ZOO_HOSO" />
-      <Association Name="ZOO_STATUS_ZOO_KHAUPHANAN" Member="ZOO_KHAUPHANANs" ThisKey="MaTrangThai" OtherKey="MaTrangThai" Type="ZOO_KHAUPHANAN" />
-      <Association Name="ZOO_STATUS_ZOO_NHANVIEN" Member="ZOO_NHANVIENs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_NHANVIEN" />
-      <Association Name="ZOO_STATUS_ZOO_PHANCONGCHOAN" Member="ZOO_PHANCONGCHOANs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_PHANCONGCHOAN" />
-      <Association Name="ZOO_STATUS_ZOO_PHANCONGDIEUTRI" Member="ZOO_PHANCONGDIEUTRIs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_PHANCONGDIEUTRI" />
-      <Association Name="ZOO_STATUS_ZOO_PHANCONGVESINH" Member="ZOO_PHANCONGVESINHs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_PHANCONGVESINH" />
-      <Association Name="ZOO_STATUS_ZOO_PHIEUDATTHUOC" Member="ZOO_PHIEUDATTHUOCs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_PHIEUDATTHUOC" />
-      <Association Name="ZOO_STATUS_ZOO_PHIEUXUATTHUCAN" Member="ZOO_PHIEUXUATTHUCANs" ThisKey="MaTrangThai" OtherKey="MaPhieuXuat" Type="ZOO_PHIEUXUATTHUCAN" />
-      <Association Name="ZOO_STATUS_ZOO_PHIEUXUATTHUOC" Member="ZOO_PHIEUXUATTHUOCs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_PHIEUXUATTHUOC" />
-      <Association Name="ZOO_STATUS_ZOO_THUCAN" Member="ZOO_THUCANs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_THUCAN" />
-      <Association Name="ZOO_STATUS_ZOO_THUOC" Member="ZOO_THUOCs" ThisKey="MaTrangThai" OtherKey="TinhTrang" Type="ZOO_THUOC" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_THUCAN" Member="ZOO_THUCANs">
@@ -669,17 +598,12 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_THUCAN_ZOO_PHIEUDATTHUCAN" Member="ZOO_PHIEUDATTHUCANs" ThisKey="MaThucAn" OtherKey="MaThucAn" Type="ZOO_PHIEUDATTHUCAN" />
-      <Association Name="ZOO_THUCAN_ZOO_PHIEUNHAPTHUCAN" Member="ZOO_PHIEUNHAPTHUCANs" ThisKey="MaThucAn" OtherKey="MaThucAn" Type="ZOO_PHIEUNHAPTHUCAN" />
-      <Association Name="ZOO_THUCAN_ZOO_PHIEUXUATTHUCAN" Member="ZOO_PHIEUXUATTHUCANs" ThisKey="MaThucAn" OtherKey="MaPhieuXuat" Type="ZOO_PHIEUXUATTHUCAN" />
-      <Association Name="ZOO_THUCAN_ZOO_THUCDON" Member="ZOO_THUCDONs" ThisKey="MaThucAn" OtherKey="MaThucAn" Type="ZOO_THUCDON" />
-      <Association Name="ZOO_STATUS_ZOO_THUCAN" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
-      <Association Name="ZOO_TYPE_ZOO_THUCAN" Member="ZOO_TYPE" ThisKey="LoaiThucAn" OtherKey="MaLoai" Type="ZOO_TYPE" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_THUCDON" Member="ZOO_THUCDONs">
     <Type Name="ZOO_THUCDON">
-      <Column Name="MaThucAn" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaThucDon" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaThucAn" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="MaKhauPhanAn" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="MoTa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
@@ -691,7 +615,6 @@
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Association Name="ZOO_KHAUPHANAN_ZOO_THUCDON" Member="ZOO_KHAUPHANAN" ThisKey="MaKhauPhanAn" OtherKey="MaKhauPhanAn" Type="ZOO_KHAUPHANAN" IsForeignKey="true" />
-      <Association Name="ZOO_THUCAN_ZOO_THUCDON" Member="ZOO_THUCAN" ThisKey="MaThucAn" OtherKey="MaThucAn" Type="ZOO_THUCAN" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ZOO_THUOC" Member="ZOO_THUOCs">
@@ -713,11 +636,6 @@
       <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="ZOO_THUOC_ZOO_DONTHUOC" Member="ZOO_DONTHUOCs" ThisKey="MaThuoc" OtherKey="MaThuoc" Type="ZOO_DONTHUOC" />
-      <Association Name="ZOO_THUOC_ZOO_PHIEUDATTHUOC" Member="ZOO_PHIEUDATTHUOCs" ThisKey="MaThuoc" OtherKey="MaThuoc" Type="ZOO_PHIEUDATTHUOC" />
-      <Association Name="ZOO_THUOC_ZOO_PHIEUNHAPTHUOC" Member="ZOO_PHIEUNHAPTHUOCs" ThisKey="MaThuoc" OtherKey="MaThuoc" Type="ZOO_PHIEUNHAPTHUOC" />
-      <Association Name="ZOO_THUOC_ZOO_PHIEUXUATTHUOC" Member="ZOO_PHIEUXUATTHUOCs" ThisKey="MaThuoc" OtherKey="MaPhieuXuat" Type="ZOO_PHIEUXUATTHUOC" />
-      <Association Name="ZOO_STATUS_ZOO_THUOC" Member="ZOO_STATUS" ThisKey="TinhTrang" OtherKey="MaTrangThai" Type="ZOO_STATUS" IsForeignKey="true" />
     </Type>
   </Table>
   <Function Name="dbo.CM_ALLCODE_By_Type_Id" Method="CM_ALLCODE_By_Type_Id">
@@ -1444,6 +1362,45 @@
       <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="SoLuong" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="NgayHetHan" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ToiThieu" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ZOO_PHIEUNHAPTHUOC_Ins" Method="ZOO_PHIEUNHAPTHUOC_Ins">
+    <Parameter Name="p_MaThuoc" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_SoLuong" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_NgayNhap" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_RECORD_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MAKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_CREATE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="ZOO_PHIEUNHAPTHUOC_InsResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="MaPhieuNhap" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ZOO_PHIEUNHAPTHUOC_Search" Method="ZOO_PHIEUNHAPTHUOC_Search">
+    <Parameter Name="p_MaPhieuNhap" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_TenThuoc" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_NgayNhap" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_TOP" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ZOO_PHIEUNHAPTHUOC_SearchResult">
+      <Column Name="MaPhieuNhap" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NgayNhap" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TenThuoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

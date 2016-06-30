@@ -61,11 +61,38 @@ namespace gMVVM.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Inventory.
+        /// </summary>
+        public static string lblBaoCaoTonKho {
+            get {
+                return ResourceManager.GetString("lblBaoCaoTonKho", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unit.
         /// </summary>
         public static string lblDonViTinh {
             get {
                 return ResourceManager.GetString("lblDonViTinh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Notes.
+        /// </summary>
+        public static string lblGhiChu {
+            get {
+                return ResourceManager.GetString("lblGhiChu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vouchers ID.
+        /// </summary>
+        public static string lblMaPhieuNhap {
+            get {
+                return ResourceManager.GetString("lblMaPhieuNhap", resourceCulture);
             }
         }
         
@@ -79,11 +106,56 @@ namespace gMVVM.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Expired Date.
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        public static string lblMoTa {
+            get {
+                return ResourceManager.GetString("lblMoTa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expired date.
         /// </summary>
         public static string lblNgayHethang {
             get {
                 return ResourceManager.GetString("lblNgayHethang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Purchase date.
+        /// </summary>
+        public static string lblNgayNhap {
+            get {
+                return ResourceManager.GetString("lblNgayNhap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Produce date.
+        /// </summary>
+        public static string lblNgaySanXuat {
+            get {
+                return ResourceManager.GetString("lblNgaySanXuat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Purchase number.
+        /// </summary>
+        public static string lblNhapThem {
+            get {
+                return ResourceManager.GetString("lblNhapThem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Batch number.
+        /// </summary>
+        public static string lblSoLo {
+            get {
+                return ResourceManager.GetString("lblSoLo", resourceCulture);
             }
         }
         
@@ -102,6 +174,33 @@ namespace gMVVM.Resources {
         public static string lblTenThuoc {
             get {
                 return ResourceManager.GetString("lblTenThuoc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status.
+        /// </summary>
+        public static string lblTinhTrang {
+            get {
+                return ResourceManager.GetString("lblTinhTrang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Minimum.
+        /// </summary>
+        public static string lblToiThieu {
+            get {
+                return ResourceManager.GetString("lblToiThieu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Inventory.
+        /// </summary>
+        public static string lblTonKho {
+            get {
+                return ResourceManager.GetString("lblTonKho", resourceCulture);
             }
         }
     }

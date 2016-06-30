@@ -54,6 +54,10 @@
                     maxReceivedMessageSize="2147483647">
                     <security mode="None" />
                 </binding>
+                <binding name="BasicHttpBinding_IZOO_PhieuNhapThuoc" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
             </basicHttpBinding>
         </bindings>
         <client>
@@ -90,6 +94,9 @@
             <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
                 bindingConfiguration="BasicHttpBinding_IZOO_BaoCaoTonKho"
                 contract="gMVVMService.IZOO_BaoCaoTonKho" name="BasicHttpBinding_IZOO_BaoCaoTonKho" />
+            <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_IZOO_PhieuNhapThuoc"
+                contract="gMVVMService.IZOO_PhieuNhapThuoc" name="BasicHttpBinding_IZOO_PhieuNhapThuoc" />
             <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
                 bindingConfiguration="BasicHttpBinding_ICM_ALLCODE" contract="gMVVMService.ICM_ALLCODE"
                 name="BasicHttpBinding_ICM_ALLCODE" />

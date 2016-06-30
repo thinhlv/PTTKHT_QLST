@@ -335,6 +335,7 @@
     <Compile Include="Services\Management\Interfaces\AssCommon\ICM_DEPT_GROUP.cs" />
     <Compile Include="Services\Management\Interfaces\AssCommon\IDEPARTMENT.cs" />
     <Compile Include="Services\Management\Interfaces\AssCommon\ISYS_PARAMETERS.cs" />
+    <Compile Include="Services\Management\Interfaces\QuanLySoThu\IZOO_PhieuNhapThuoc.cs" />
     <Compile Include="Services\Management\Interfaces\SystemRole\ITLMENU.cs" />
     <Compile Include="Services\Management\Interfaces\SystemRole\ITLSYSROLE.cs" />
     <Compile Include="Services\Management\Interfaces\SystemRole\ITLUSER.cs" />
