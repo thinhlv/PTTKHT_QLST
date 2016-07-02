@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5546f6cb-a23b-4f9b-9700-f4bda6fabf75" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:36229/Services/QuanLySoThu/QuanLySoThu.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="QuanLySoThu.xsd" MetadataType="Schema" ID="f6f4e217-ad40-4d2e-bdab-66f2992a32a2" SourceId="1" SourceUrl="http://localhost:36229/Services/QuanLySoThu/QuanLySoThu.svc?xsd=xsd2" />
+    <MetadataFile FileName="QuanLySoThu1.xsd" MetadataType="Schema" ID="a939dab2-8438-4787-831f-6766142750d2" SourceId="1" SourceUrl="http://localhost:36229/Services/QuanLySoThu/QuanLySoThu.svc?xsd=xsd0" />
+    <MetadataFile FileName="QuanLySoThu.disco" MetadataType="Disco" ID="7aa26c06-0690-41fe-885d-d0aa4d089524" SourceId="1" SourceUrl="http://localhost:36229/Services/QuanLySoThu/QuanLySoThu.svc?disco" />
+    <MetadataFile FileName="QuanLySoThu2.xsd" MetadataType="Schema" ID="40576575-aa6b-4234-9dc0-dee8f4b4ae4d" SourceId="1" SourceUrl="http://localhost:36229/Services/QuanLySoThu/QuanLySoThu.svc?xsd=xsd1" />
+    <MetadataFile FileName="QuanLySoThu.wsdl" MetadataType="Wsdl" ID="dc86431e-ca9a-431a-b424-5d651f8da603" SourceId="1" SourceUrl="http://localhost:36229/Services/QuanLySoThu/QuanLySoThu.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

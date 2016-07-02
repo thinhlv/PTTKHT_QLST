@@ -215,11 +215,11 @@
     <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Services\KeHoach\GhiNhanKeHoach.svc" />
     <Content Include="Services\Management\clientaccesspolicy.xml" />
     <Content Include="Services\Management\crossdomain.xml" />
     <Content Include="Services\EduBanking\SessionService.svc" />
     <Content Include="Services\Management\gMVVMService.svc" />
+    <Content Include="Services\QuanLySoThu\QuanLySoThu.svc" />
     <Content Include="Silverlight.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -304,17 +304,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ReportDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Services\KeHoach\Asset.designer.cs">
+    <Compile Include="Services\QuanLySoThu\Asset.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Asset.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Services\KeHoach\GhiNhanKeHoach.svc.cs">
-      <DependentUpon>GhiNhanKeHoach.svc</DependentUpon>
-    </Compile>
-    <Compile Include="Services\KeHoach\Implement\ImplementInterface.cs" />
-    <Compile Include="Services\KeHoach\Interfaces\GhiNhanKeHoach\ICM_Domain.cs" />
-    <Compile Include="Services\KeHoach\Interfaces\GhiNhanKeHoach\IGhiNhan.cs" />
+    <Compile Include="Services\QuanLySoThu\Implement\ImplementInterface.cs" />
     <Compile Include="Services\Management\Asset.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -335,7 +330,7 @@
     <Compile Include="Services\Management\Interfaces\AssCommon\ICM_DEPT_GROUP.cs" />
     <Compile Include="Services\Management\Interfaces\AssCommon\IDEPARTMENT.cs" />
     <Compile Include="Services\Management\Interfaces\AssCommon\ISYS_PARAMETERS.cs" />
-    <Compile Include="Services\Management\Interfaces\QuanLySoThu\IZOO_PhieuNhapThuoc.cs" />
+    <Compile Include="Services\QuanLySoThu\Interfaces\QuanLySoThu\IZOO_PhieuNhapThuoc.cs" />
     <Compile Include="Services\Management\Interfaces\SystemRole\ITLMENU.cs" />
     <Compile Include="Services\Management\Interfaces\SystemRole\ITLSYSROLE.cs" />
     <Compile Include="Services\Management\Interfaces\SystemRole\ITLUSER.cs" />
@@ -346,7 +341,10 @@
     <Compile Include="Services\FileUpload.ashx.cs">
       <DependentUpon>FileUpload.ashx</DependentUpon>
     </Compile>
-    <Compile Include="Services\Management\Interfaces\QuanLySoThu\IZOO_BaoCaoTonKho.cs" />
+    <Compile Include="Services\QuanLySoThu\Interfaces\QuanLySoThu\IZOO_BaoCaoTonKho.cs" />
+    <Compile Include="Services\QuanLySoThu\QuanLySoThu.svc.cs">
+      <DependentUpon>QuanLySoThu.svc</DependentUpon>
+    </Compile>
     <Compile Include="Services\Upload\FileUpload.ashx.cs">
       <DependentUpon>FileUpload.ashx</DependentUpon>
     </Compile>
@@ -359,7 +357,7 @@
     <Folder Include="Content\" />
     <Folder Include="Lib\" />
     <Folder Include="Services\EduBanking\Images\" />
-    <Folder Include="Services\KeHoach\Functions\" />
+    <Folder Include="Services\QuanLySoThu\Functions\" />
     <Folder Include="Upload\AssetData\" />
     <Folder Include="Upload\EduBanking\" />
   </ItemGroup>
@@ -371,7 +369,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Services\Upload\FileUpload.ashx" />
-    <Content Include="Services\KeHoach\Asset.dbml">
+    <Content Include="Services\QuanLySoThu\Asset.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>Asset.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
@@ -404,7 +402,7 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>InventoryTSCD.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Services\KeHoach\Asset.dbml.layout">
+    <None Include="Services\QuanLySoThu\Asset.dbml.layout">
       <DependentUpon>Asset.dbml</DependentUpon>
     </None>
   </ItemGroup>

@@ -1,4 +1,4 @@
-﻿using gMVVM.gMVVMService;
+﻿using gMVVM.QLSoThu;
 using gMVVM.ViewModels.Common;
 using gMVVM.CommonClass;
 using gMVVM.Resources;
@@ -20,7 +20,9 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
 {
     public class PhieuNhapThuocEditViewModel : ViewModelBase
     {
-        ZOO_PhieuNhapThuocClient phieuNhapThuocClient;
+        //private TLMENUClient menuClient;
+        private ZOO_PhieuNhapThuocClient phieuNhapClient;
+
         public PhieuNhapThuocEditViewModel()
         {
             this.actionCommand = new ActionButton(this);
@@ -56,7 +58,7 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
             }
 
             this.messagePop.Reset();
-            this.CurrentPhieuNhapThuoc = obj.currentObject != null ? (obj.currentObject as ZOO_PHIEUNHAPTHUOC)
+            this.currentPhieuNhapThuoc = obj.currentObject != null ? (obj.currentObject as ZOO_PHIEUNHAPTHUOC)
                 : new ZOO_PHIEUNHAPTHUOC()
                 {
                     MaThuoc = "",
@@ -67,6 +69,7 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
                     RECORD_STATUS = "1",
                     AUTH_STATUS = "U",
                     MAKER_ID = CurrentSystemLogin.CurrentUser.TLNANME,
+                    NOTES = ""
                 };
 
             if (this.currentPhieuNhapThuoc.AUTH_STATUS.Equals("A"))
@@ -76,10 +79,11 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
 
             this.OnPropertyChanged("IsView");
             this.OnPropertyChanged("IsApproved");
+            this.OnPropertyChanged("IsApproveFuntion");
             this.OnPropertyChanged("");
         }
 
-        private string preAuthStatus = "";
+        private string preAuthStatus = "";        
 
         #region[All Properties]
 
@@ -134,7 +138,7 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
                 return this.actionCommand;
             }
 
-            set
+            set 
             {
                 this.actionCommand = value;
                 this.OnPropertyChanged("ActionCommand");
@@ -157,7 +161,22 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
             }
         }
 
+        private ObservableCollection<ZOO_THUOC> thuocCombobox;
+        public ObservableCollection<ZOO_THUOC> ThuocCombobox
+        {
+            get
+            {
+                return this.thuocCombobox;
+            }
 
+            set
+            {
+                this.thuocCombobox = value;
+                this.OnPropertyChanged("ThuocCombobox");
+            }
+        }   
+
+        //set header title
         private string headerText;
         public string HeaderText
         {
@@ -173,52 +192,6 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
             }
         }
 
-        //so luong
-        private string soLuong;
-        public string SoLuong
-        {
-            get
-            {
-                return this.soLuong;
-            }
-
-            set
-            {
-                this.soLuong = value;
-                this.OnPropertyChanged("SoLuong");
-            }
-        }
-
-        //ghi chu
-        private string ghiChu;
-        public string GhiChu
-        {
-            get
-            {
-                return this.ghiChu;
-            }
-
-            set
-            {
-                this.ghiChu = value;
-                this.OnPropertyChanged("GhiChu");
-            }
-        }
-
-        private string danhSachThuocSelected = "";
-        public string DanhSachThuocSelected
-        {
-            get
-            {
-                return this.danhSachThuocSelected;
-            }
-
-            set
-            {
-                this.danhSachThuocSelected = value;
-                this.OnPropertyChanged("DanhSachThuocSelected");
-            }
-        }
         //ngay nhap
 
         private Nullable<DateTime> ngayNhap = null;
@@ -239,22 +212,6 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
             }
         }
 
-        //combobox danh sach thuoc
-        private ObservableCollection<ZOO_THUOC> danhSachThuoc;
-        public ObservableCollection<ZOO_THUOC> DanhSachThuoc
-        {
-            get
-            {
-                return this.danhSachThuoc;
-            }
-
-            set
-            {
-                this.danhSachThuoc = value;
-                this.OnPropertyChanged("DanhSachThuoc");
-            }
-        }
-
         #endregion
 
         #region[Action Functions]
@@ -265,24 +222,25 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
             if (!this.messagePop.HasError())
             {
 
-                if (this.isEdit)
+                if (/*this.isEdit*/false)
                 {
                     this.currentPhieuNhapThuoc.MAKER_ID = CurrentSystemLogin.CurrentUser.TLNANME;
                     this.preAuthStatus = this.currentPhieuNhapThuoc.AUTH_STATUS;
                     this.currentPhieuNhapThuoc.AUTH_STATUS = "U";
                     MyHelper.IsBusy();
-                    //this.phieuNhapThuocClient.UpdatePhieuNhapThuoc(this.currentPhieuNhapThuoc);
+                    //this.phieuNhapClient.UpdateTLMENUAsync(this.currentPhieuNhapThuoc);
                 }
                 else
                 {
                     MyHelper.IsBusy();
-                    this.phieuNhapThuocClient.LuuPhieuNhapAsync(this.currentPhieuNhapThuoc);
+                    this.currentPhieuNhapThuoc.NgayNhap = NgayNhap;
+                    this.phieuNhapClient.LuuPhieuNhapAsync(this.currentPhieuNhapThuoc);
                 }
             }
         }
 
         private void CancelAction()
-        {
+        {            
             Messenger.Default.Send(new ParentMessage() { currentObject = null });
         }
 
@@ -297,40 +255,34 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
             }
             this.currentPhieuNhapThuoc.CHECKER_ID = CurrentSystemLogin.CurrentUser.TLNANME;
             this.currentPhieuNhapThuoc.APPROVE_DT = DateTime.Now;
-            //this.menuClient.ApproveCMAGENTAsync(this.currentMenu);
-        }
+        }        
 
         private void RefreshValidator()
         {
             this.messagePop.Reset();
             string notEmpty = " " + ValidatorResource.NotEmpty;
             if (this.currentPhieuNhapThuoc.MaThuoc.Equals(""))
-                //this.messagePop.SetError(SystemRoleResource.MENU_NAME + notEmpty);
-                this.messagePop.SetError("Mã thuốc" + notEmpty);
-            if (this.currentPhieuNhapThuoc.SoLuong.Equals(""))
-                //this.messagePop.SetError(SystemRoleResource.MENU_NAME_EL + notEmpty);
-                this.messagePop.SetError("Số lượng" + notEmpty);
+                this.messagePop.SetError("Mã thuốc không được để trống");
+            if (this.currentPhieuNhapThuoc.SoLuong.ToString().Equals(""))
+                this.messagePop.SetError("Số lượng không được để trống");           
         }
         private void Load()
         {
             try
             {
-                this.phieuNhapThuocClient = new ZOO_PhieuNhapThuocClient();
+                this.phieuNhapClient = new ZOO_PhieuNhapThuocClient();
 
-                this.phieuNhapThuocClient.DanhSachThuocAsync();
-                this.phieuNhapThuocClient.DanhSachThuocCompleted += (s, e) =>
+                this.phieuNhapClient.DanhSachThuocAsync();
+                this.phieuNhapClient.DanhSachThuocCompleted += (s, e) =>
                 {
-                    if(danhSachThuoc == null)
-                        this.danhSachThuoc = new ObservableCollection<ZOO_THUOC>();
-                    danhSachThuoc.Clear();
-                    this.danhSachThuoc = e.Result;
-                    this.OnPropertyChanged("DanhSachThuoc");
+                    this.thuocCombobox = e.Result;
+                    this.OnPropertyChanged("ThuocCombobox");
                 };
 
-                this.phieuNhapThuocClient.LuuPhieuNhapCompleted += new EventHandler<LuuPhieuNhapCompletedEventArgs>(luuPhieuNhapComplete);
-                //this.phieuNhapThuocClient. += new EventHandler<UpdateTLMENUCompletedEventArgs>(updateCurrencyCompleted);
+                this.phieuNhapClient.LuuPhieuNhapCompleted += new EventHandler<LuuPhieuNhapCompletedEventArgs>(insertCurrencyCompleted);
+                //this.phieuNhapClient.UpdateTLMENUCompleted += new EventHandler<UpdateTLMENUCompletedEventArgs>(updateCurrencyCompleted);
                 //this.menuClient.ApproveCMAGENTCompleted += new EventHandler<ApproveCMAGENTCompletedEventArgs>(approveComplete);
-
+                                
             }
             catch (Exception)
             {
@@ -338,37 +290,51 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
             }
         }
 
-        //private void updateCurrencyCompleted(object sender, UpdateTLMENUCompletedEventArgs e)
+        //private void approveComplete(object sender, ApproveCMAGENTCompletedEventArgs e)
         //{
-        //    try
+        //    if (e.Result)
         //    {
-        //        if (e.Result)
-        //        {
-        //            this.IsApproved = Visibility.Collapsed.ToString();
-        //            this.OnPropertyChanged("IsApproved");
-        //            this.messagePop.Successful(ValidatorResource.UpdateSuccessful);
-        //        }
-        //        else
-        //        {
-        //            this.currentMenu.AUTH_STATUS = this.preAuthStatus;
-        //            this.messagePop.SetSingleError(ValidatorResource.ErrorUpdate);
-        //        }
+        //        this.currentAgent.AUTH_STATUS = "A";
+        //        this.currentAgent.ISAPPROVE = "1";
+        //        this.IsApproved = Visibility.Visible.ToString();
+        //        this.OnPropertyChanged("IsApproved");
+        //        this.messagePop.Successful(ValidatorResource.SuccessfulApprove);
         //    }
-        //    catch (Exception)
-        //    {
-        //        this.messagePop.SetSingleError(CommonResource.errorCannotConnectServer);
-        //    }
-        //    finally
-        //    {
-        //        MyHelper.IsFree();
-        //    }
+        //    else
+        //        this.messagePop.SetSingleError(ValidatorResource.ErrorApprove);
         //}
 
-        private void luuPhieuNhapComplete(object sender, LuuPhieuNhapCompletedEventArgs e)
+//         private void updateCurrencyCompleted(object sender, UpdateTLMENUCompletedEventArgs e)
+//         {
+//             try
+//             {
+//                 if (e.Result)
+//                 {
+//                     this.IsApproved = Visibility.Collapsed.ToString();
+//                     this.OnPropertyChanged("IsApproved");
+//                     this.messagePop.Successful(ValidatorResource.UpdateSuccessful);
+//                 }
+//                 else
+//                 {
+//                     this.currentPhieuNhapThuoc.AUTH_STATUS = this.preAuthStatus;
+//                     this.messagePop.SetSingleError(ValidatorResource.ErrorUpdate);
+//                 }
+//             }
+//             catch (Exception)
+//             {
+//                 this.messagePop.SetSingleError(CommonResource.errorCannotConnectServer);
+//             }
+//             finally
+//             {
+//                 MyHelper.IsFree();
+//             }
+//         }
+
+        private void insertCurrencyCompleted(object sender, LuuPhieuNhapCompletedEventArgs e)
         {
             try
             {
-                if (!e.Result.Equals(""))
+                if (!e.Result.MaPhieuNhap.Equals(""))
                 {
                     this.currentPhieuNhapThuoc.MaPhieuNhap = e.Result.MaPhieuNhap;
                     this.messagePop.Successful(ValidatorResource.InsertSuccessful);
@@ -389,7 +355,7 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
                 MyHelper.IsFree();
             }
         }
-
+        
         #endregion
 
         //Command button action
@@ -422,7 +388,7 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
                 {
                     case "Cancel": this.viewModel.CancelAction(); break;
                     case ActionMenuButton.Update: this.viewModel.OkAction(); break;
-                    case ActionMenuButton.Approve: this.viewModel.Approve(); break;
+                    case ActionMenuButton.Approve: this.viewModel.Approve(); break;                    
                     default: break;
                 }
 

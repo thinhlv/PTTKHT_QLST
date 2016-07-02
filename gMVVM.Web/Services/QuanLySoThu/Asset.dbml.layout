@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 21, 20.75" name="Asset">
+  <DataContextMoniker Name="/AssetDataContext" />
+  <nestedChildShapes>
+    <classShape Id="190b688b-0f50-4b0c-be26-556ad0daf65c" absoluteBounds="0.75, 5.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_BENH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="93974570-71b5-4fd6-b609-eb68f8053928" absoluteBounds="0.765, 6.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="94577d1c-e31b-48b8-a364-ef6e3bf61689" absoluteBounds="3.75, 5.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_TYPE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0cf0c2b9-1fc5-4d10-9f1a-c515a42b6cdd" absoluteBounds="3.765, 6.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ca506050-198a-4327-9aa0-707af823eb54" absoluteBounds="6.75, 0.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_CHOAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2cac3ef7-16ec-4eea-9c24-eac8cda87a3d" absoluteBounds="6.765, 1.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de123105-e0c3-48a3-8b14-b079f45293f2" absoluteBounds="6.75, 4.75, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_CHUONG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2fbad5d9-6be2-4231-bf5d-89bfd438e8f9" absoluteBounds="6.765, 5.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="69812044-932b-4b7f-af0f-5402b7cec3cd" absoluteBounds="9.75, 0.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_DIEUTRI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d72b25a-315f-4be1-957c-969496836c02" absoluteBounds="9.765, 1.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f0f90d34-6a05-44db-a07e-5dd80cdd386d" absoluteBounds="0.75, 9.75, 2, 6.0015283203124987">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_DONGVAT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5c4d46b-341a-496a-80bf-1b3cd71db68e" absoluteBounds="0.765, 10.21, 1.9700000000000002, 5.4415283203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="112337cd-d813-4c98-b18b-c31da7807b4a" absoluteBounds="3.75, 9.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_DONTHUOC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d4f2095-3e60-4ed1-a466-9eed8fba78be" absoluteBounds="3.765, 10.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="222230b4-ffd9-4536-84be-e8869adea923" absoluteBounds="9.75, 5.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_HOSO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ba242c08-41cd-40fa-9393-7797a882a879" absoluteBounds="9.765, 6.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c3583754-d780-42ea-ba75-e35e414398ab" absoluteBounds="0.75, 1.125, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_KHAUPHANAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="132fd7ba-05e5-41e4-86ba-4b9bffabaffd" absoluteBounds="0.765, 1.585, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b11f49b4-ece2-496a-a5ea-00a975929241" absoluteBounds="6.75, 10.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_LOAIDV" />
+      <nestedChildShapes>
+        <elementListCompartment Id="24ff5aca-0215-4034-bde7-74b9fa79af74" absoluteBounds="6.765, 11.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2ba8a522-bd5b-45ec-a0b1-9edbe55e170d" absoluteBounds="9.75, 10.75, 2, 4.0785139973958309">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_NHANVIEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="64e2ee9a-32cc-4d5a-ac74-a49cd21dc613" absoluteBounds="9.765, 11.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ac87d63e-9929-4351-8680-68c43e8233ea" absoluteBounds="12.75, 0.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHANCONGCHOAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59e27d85-3e63-4e4a-9508-9e267960eb25" absoluteBounds="12.765, 1.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7b60efcd-bc86-4578-b699-ddb44d875a73" absoluteBounds="12.75, 5.75, 2, 3.1170068359375014">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHANCONGDIEUTRI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="958bc001-7d89-4a1c-bb43-4afd3713f38e" absoluteBounds="12.765, 6.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f687f277-9270-4def-8f06-9d54abc60c4f" absoluteBounds="12.75, 9.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHANCONGVESINH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f712a470-9e1d-4cf0-97df-0b3fa12a1806" absoluteBounds="12.765, 10.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="359571b0-5568-4e67-9beb-383fae1c23ca" absoluteBounds="3.75, 14.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHIEUDATTHUCAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f01287c1-4cfe-4fa6-98b0-0e954aec2239" absoluteBounds="3.765, 15.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0876b589-2d23-4b54-ba6f-a572d27760e5" absoluteBounds="12.75, 14.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHIEUDATTHUOC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c4e7334c-04c0-4635-95e4-200c35cd45f5" absoluteBounds="12.765, 15.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ef7d238c-3d81-4fbe-b065-1dc54ca332fc" absoluteBounds="15.75, 0.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHIEUNHAPTHUCAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ee0d18cf-7820-4e30-8f65-b92df7ff55a8" absoluteBounds="15.765, 1.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c9fd6892-7c8a-4831-ae63-fb5e4b356bc7" absoluteBounds="15.75, 4.75, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHIEUNHAPTHUOC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4d3a4e69-e9b1-481a-9f0b-fd44ffb3dfa1" absoluteBounds="15.765, 5.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f743d5b2-0676-4f2c-8351-f9aa59dbba58" absoluteBounds="6.75, 15.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHIEUXUATTHUCAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e6b49a06-81fa-42d7-a0c2-d32d2ee13e9e" absoluteBounds="6.765, 16.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f33893a-1eb5-451b-99fd-0f3e0f6a152c" absoluteBounds="15.75, 8.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_PHIEUXUATTHUOC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c38fd580-8066-46da-b06a-0defc51e8d56" absoluteBounds="15.765, 9.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8a2b8db7-e07b-4906-a4e9-910ad32f66b4" absoluteBounds="15.75, 12.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_STATUS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e376aaf-ba91-4409-ac98-824d814c612c" absoluteBounds="15.765, 13.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1f24126-c6a2-4a24-b6c9-9bbe601dc715" absoluteBounds="15.75, 16.75, 2, 3.6939111328125023">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_THUCAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67fa25fc-6a5f-453e-ae99-0efd2b3174a5" absoluteBounds="15.765, 17.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d38023f3-e8d7-4ac5-a159-4ac3fa077198" absoluteBounds="3.5, 1, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_THUCDON" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d24507c-f56f-43f2-95de-e3a75e7870a8" absoluteBounds="3.515, 1.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7c768229-cfd3-41c6-990c-b15055eb491e" absoluteBounds="18.75, 0.75, 2, 4.0785139973958326">
+      <DataClassMoniker Name="/AssetDataContext/ZOO_THUOC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="590590e2-78f8-47d1-aa8d-413718bf1154" absoluteBounds="18.765, 1.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.58735270182292); (3.5 : 2.58735270182292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AssetDataContext/ZOO_KHAUPHANAN/ZOO_KHAUPHANAN_ZOO_THUCDON" />
+      <nodes>
+        <classShapeMoniker Id="c3583754-d780-42ea-ba75-e35e414398ab" />
+        <classShapeMoniker Id="d38023f3-e8d7-4ac5-a159-4ac3fa077198" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

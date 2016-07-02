@@ -73,7 +73,7 @@
                             <StackPanel Grid.Row="1">
                                 <sdk:DataGrid Name="dgdData" Margin="5,5,5,0" AutoGenerateColumns="False"
                                               local:EyeCandy.Image="/gMVVM;component/Data/Icons/55.png"  Tag="{Binding lblBaoCaoTonKho, Source={StaticResource currentMedicineManagerCulture}}"
-                    ItemsSource="{Binding Path=DanhSachPhieuNhap}" SelectedItem="{Binding Path=CurrentSelectItem, Mode=TwoWay}"  Style="{StaticResource DataGridStyle1}" RowStyle="{StaticResource DataGridRowStyle1}" >
+                    ItemsSource="{Binding Path=DanhSachPhieuNhap}" SelectedItem="{Binding Path=CurrentSelectItemGrid, Mode=TwoWay}"  Style="{StaticResource DataGridStyle1}" RowStyle="{StaticResource DataGridRowStyle1}" >
                                     <i:Interaction.Triggers>
                                         <i:EventTrigger EventName="MouseLeftButtonUp">
                                             <i:InvokeCommandAction Command="{Binding DoubleClickItemCommand}" />

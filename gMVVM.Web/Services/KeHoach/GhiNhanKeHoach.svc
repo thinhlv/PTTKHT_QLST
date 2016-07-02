@@ -1,1 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="gMVVM.Web.Services.KeHoach.GhiNhanKeHoach" CodeBehind="GhiNhanKeHoach.svc.cs" %>

@@ -703,65 +703,6 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="LayBaoCaoTonKho">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="maThuoc" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="tenThuoc" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="ngayHetHang" type="xs:dateTime" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="LayBaoCaoTonKhoResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="LayBaoCaoTonKhoResult" nillable="true" type="q58:ArrayOfZOO_BAOCAOTONKHO_SearchResult" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="LuuPhieuNhap">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q59:ZOO_PHIEUNHAPTHUOC" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="LuuPhieuNhapResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="LuuPhieuNhapResult" nillable="true" type="q60:ZOO_PHIEUNHAPTHUOC_InsResult" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="TimPhieuNhap">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="maphieu" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="tenthuoc" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="ngaynhap" type="xs:dateTime" />
-        <xs:element minOccurs="0" name="top" type="xs:int" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="TimPhieuNhapResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="TimPhieuNhapResult" nillable="true" type="q61:ArrayOfZOO_PHIEUNHAPTHUOC_SearchResult" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="DanhSachThuoc">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="DanhSachThuocResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="DanhSachThuocResult" nillable="true" type="q62:ArrayOfZOO_THUOC" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
   <xs:element name="CM_ALLCODE_ById">
     <xs:complexType>
       <xs:sequence>
@@ -773,35 +714,35 @@
   <xs:element name="CM_ALLCODE_ByIdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_ALLCODE_ByIdResult" nillable="true" type="q63:ArrayOfCM_ALLCODE_ByIdResult" />
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_ALLCODE_ByIdResult" nillable="true" type="q58:ArrayOfCM_ALLCODE_ByIdResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="CM_ALLCODE_Ins">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q64:CM_ALLCODE_SearchResult" />
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q59:CM_ALLCODE_SearchResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="CM_ALLCODE_InsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_ALLCODE_InsResult" nillable="true" type="q65:CM_ALLCODE_InsResult" />
+        <xs:element xmlns:q60="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_ALLCODE_InsResult" nillable="true" type="q60:CM_ALLCODE_InsResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="CM_ALLCODE_Upd">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q66:CM_ALLCODE_SearchResult" />
+        <xs:element xmlns:q61="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q61:CM_ALLCODE_SearchResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="CM_ALLCODE_UpdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_ALLCODE_UpdResult" nillable="true" type="q67:CM_ALLCODE_UpdResult" />
+        <xs:element xmlns:q62="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_ALLCODE_UpdResult" nillable="true" type="q62:CM_ALLCODE_UpdResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -815,7 +756,7 @@
   <xs:element name="CM_ALLCODE_DelResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_ALLCODE_DelResult" nillable="true" type="q68:CM_ALLCODE_DelResult" />
+        <xs:element xmlns:q63="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_ALLCODE_DelResult" nillable="true" type="q63:CM_ALLCODE_DelResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -829,14 +770,14 @@
   <xs:element name="CM_ALLCODE_By_Type_IdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_ALLCODE_By_Type_IdResult" nillable="true" type="q69:ArrayOfCM_ALLCODE_By_Type_IdResult" />
+        <xs:element xmlns:q64="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_ALLCODE_By_Type_IdResult" nillable="true" type="q64:ArrayOfCM_ALLCODE_By_Type_IdResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="CM_ALLCODE_Search">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q70:CM_ALLCODE_SearchResult" />
+        <xs:element xmlns:q65="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q65:CM_ALLCODE_SearchResult" />
         <xs:element minOccurs="0" name="top" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
@@ -844,35 +785,35 @@
   <xs:element name="CM_ALLCODE_SearchResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_ALLCODE_SearchResult" nillable="true" type="q71:ArrayOfCM_ALLCODE_SearchResult" />
+        <xs:element xmlns:q66="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_ALLCODE_SearchResult" nillable="true" type="q66:ArrayOfCM_ALLCODE_SearchResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="CM_DEPT_GROUP_Ins">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q72:CM_DEPT_GROUP_SearchResult" />
+        <xs:element xmlns:q67="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q67:CM_DEPT_GROUP_SearchResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="CM_DEPT_GROUP_InsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_DEPT_GROUP_InsResult" nillable="true" type="q73:CM_DEPT_GROUP_InsResult" />
+        <xs:element xmlns:q68="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_DEPT_GROUP_InsResult" nillable="true" type="q68:CM_DEPT_GROUP_InsResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="CM_DEPT_GROUP_Upd">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q74:CM_DEPT_GROUP_SearchResult" />
+        <xs:element xmlns:q69="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q69:CM_DEPT_GROUP_SearchResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="CM_DEPT_GROUP_UpdResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_DEPT_GROUP_UpdResult" nillable="true" type="q75:CM_DEPT_GROUP_UpdResult" />
+        <xs:element xmlns:q70="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_DEPT_GROUP_UpdResult" nillable="true" type="q70:CM_DEPT_GROUP_UpdResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -886,14 +827,14 @@
   <xs:element name="CM_DEPT_GROUP_DelResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q76="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_DEPT_GROUP_DelResult" nillable="true" type="q76:CM_DEPT_GROUP_DelResult" />
+        <xs:element xmlns:q71="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_DEPT_GROUP_DelResult" nillable="true" type="q71:CM_DEPT_GROUP_DelResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="SearchCM_DEPT_GROUP">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q77="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q77:CM_DEPT_GROUP_SearchResult" />
+        <xs:element xmlns:q72="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q72:CM_DEPT_GROUP_SearchResult" />
         <xs:element minOccurs="0" name="top" type="xs:int" />
       </xs:sequence>
     </xs:complexType>
@@ -901,21 +842,21 @@
   <xs:element name="SearchCM_DEPT_GROUPResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q78="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="SearchCM_DEPT_GROUPResult" nillable="true" type="q78:ArrayOfCM_DEPT_GROUP_SearchResult" />
+        <xs:element xmlns:q73="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="SearchCM_DEPT_GROUPResult" nillable="true" type="q73:ArrayOfCM_DEPT_GROUP_SearchResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="CM_DEPT_GROUP_Appr">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q79="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q79:CM_DEPT_GROUP_SearchResult" />
+        <xs:element xmlns:q74="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="data" nillable="true" type="q74:CM_DEPT_GROUP_SearchResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="CM_DEPT_GROUP_ApprResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q80="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_DEPT_GROUP_ApprResult" nillable="true" type="q80:CM_DEPT_GROUP_ApprResult" />
+        <xs:element xmlns:q75="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.Management" minOccurs="0" name="CM_DEPT_GROUP_ApprResult" nillable="true" type="q75:CM_DEPT_GROUP_ApprResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

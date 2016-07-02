@@ -702,8 +702,6 @@ D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\Common\MessageAlarm.
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\Common\MessageBoxCustomer.g.cs
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\Common\Profile.g.cs
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\Common\ToolHeader.g.cs
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\GhiNhanKeHoach\DomainList.g.cs
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\GhiNhanKeHoach\GhiNhanKeHoach.g.cs
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\Home.g.cs
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\LoginSystem.g.cs
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\Search\BranchSearching.g.cs
@@ -737,7 +735,6 @@ D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\gMVVM.Resources.QuanLySoTh
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\gMVVM.Resources.QuanLySoThuResource.vi-VN.resources
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\QuanLyKhamChuaBenh\BaoCaoTonKho.g.cs
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\QuanLyKhamChuaBenh\PhieuNhapThuocEdit.g.cs
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\QuanLyKhamChuaBenh\PhieuNhapThuocList.g.cs
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\QuanLyKhamChuaBenh\PhieuXuatThuocEdit.g.cs
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\QuanLyKhamChuaBenh\PhieuXuatThuocList.g.cs
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\gMVVM.csprojResolveAssemblyReference.cache
+D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\Views\QuanLyKhamChuaBenh\PhieuNhapThuocList.g.cs

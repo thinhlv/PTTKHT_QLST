@@ -20,7 +20,7 @@ namespace gMVVM.Views.QuanLyKhamChuaBenh
         {
             InitializeComponent();
             PageAnimation.SetObject(front, back);
-            this.Loaded += (s, e) => { this.DataContext = new QuanLyTonKho();};
+            this.Loaded += (s, e) => { this.DataContext = new QuanLyThuocTonKho();};
         }
     }
 }

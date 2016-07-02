@@ -174,12 +174,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ValidatorResource.resx</DependentUpon>
     </Compile>
-    <Compile Include="Service References\GhiNhanService\Reference.cs">
+    <Compile Include="Service References\gMVVMService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
-    <Compile Include="Service References\gMVVMService\Reference.cs">
+    <Compile Include="Service References\QLSoThu\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -205,13 +205,11 @@
     <Compile Include="ViewModels\Common\MessageAlarmViewModel.cs" />
     <Compile Include="ViewModels\Common\ProfileViewModel.cs" />
     <Compile Include="ViewModels\Common\ToolHeaderViewModel.cs" />
-    <Compile Include="ViewModels\GhiNhanKeHoach\DomainViewModel.cs" />
-    <Compile Include="ViewModels\GhiNhanKeHoach\GhiNhanKeHoachViewModel.cs" />
     <Compile Include="ViewModels\LoginSystemViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\QuanLyKhamChuaBenh\PhieuNhapThuocEditViewModel.cs" />
     <Compile Include="ViewModels\QuanLyKhamChuaBenh\PhieuNhapThuocViewModel.cs" />
-    <Compile Include="ViewModels\QuanLyKhamChuaBenh\QuanLyTonKho.cs" />
+    <Compile Include="ViewModels\QuanLyKhamChuaBenh\QuanLyThuocTonKho.cs" />
     <Compile Include="ViewModels\Search\BranchSearchingViewModel.cs" />
     <Compile Include="ViewModels\SystemRole\CaptchaViewModel.cs" />
     <Compile Include="ViewModels\SystemRole\MenuEditViewModel.cs" />
@@ -271,12 +269,6 @@
     <Compile Include="Views\Common\ToolHeader.xaml.cs">
       <DependentUpon>ToolHeader.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\GhiNhanKeHoach\DomainList.xaml.cs">
-      <DependentUpon>DomainList.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\GhiNhanKeHoach\GhiNhanKeHoach.xaml.cs">
-      <DependentUpon>GhiNhanKeHoach.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
@@ -286,11 +278,11 @@
     <Compile Include="Views\QuanLyKhamChuaBenh\BaoCaoTonKho.xaml.cs">
       <DependentUpon>BaoCaoTonKho.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\QuanLyKhamChuaBenh\PhieuNhapThuocEdit.xaml.cs">
-      <DependentUpon>PhieuNhapThuocEdit.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\QuanLyKhamChuaBenh\PhieuNhapThuocList.xaml.cs">
       <DependentUpon>PhieuNhapThuocList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QuanLyKhamChuaBenh\PhieuNhapThuocEdit.xaml.cs">
+      <DependentUpon>PhieuNhapThuocEdit.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\QuanLyKhamChuaBenh\PhieuXuatThuocEdit.xaml.cs">
       <DependentUpon>PhieuXuatThuocEdit.xaml</DependentUpon>
@@ -407,14 +399,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\GhiNhanKeHoach\DomainList.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\GhiNhanKeHoach\GhiNhanKeHoach.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\Home.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -427,11 +411,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\QuanLyKhamChuaBenh\PhieuNhapThuocEdit.xaml">
+    <Page Include="Views\QuanLyKhamChuaBenh\PhieuNhapThuocList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\QuanLyKhamChuaBenh\PhieuNhapThuocList.xaml">
+    <Page Include="Views\QuanLyKhamChuaBenh\PhieuNhapThuocEdit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -481,19 +465,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\GhiNhanService\GhiNhanKeHoach.wsdl" />
-    <None Include="Service References\GhiNhanService\GhiNhanKeHoach.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\GhiNhanService\GhiNhanKeHoach1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\GhiNhanService\GhiNhanKeHoach2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\GhiNhanService\gMVVM.GhiNhanService.CM_DOMAIN_InsResult.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
     <None Include="Service References\gMVVMService\gMVVM.gMVVMService.BranchLevel.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -593,18 +564,6 @@
     <None Include="Service References\gMVVMService\gMVVM.gMVVMService.TL_USER_UpdResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.ZOO_BAOCAOTONKHO_SearchResult.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.ZOO_PHIEUNHAPTHUOC_InsResult.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.ZOO_PHIEUNHAPTHUOC_SearchResult.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\gMVVMService\gMVVM.gMVVMService.ZOO_THUOC.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
     <None Include="Service References\gMVVMService\gMVVMService1.wsdl" />
     <None Include="Service References\gMVVMService\gMVVMService6.xsd">
       <SubType>Designer</SubType>
@@ -622,6 +581,28 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\gMVVMService\gMVVMService65.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QLSoThu\gMVVM.QLSoThu.ZOO_BAOCAOTONKHO_SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QLSoThu\gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC_InsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QLSoThu\gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC_SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QLSoThu\gMVVM.QLSoThu.ZOO_THUOC.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QLSoThu\QuanLySoThu.wsdl" />
+    <None Include="Service References\QLSoThu\QuanLySoThu.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QLSoThu\QuanLySoThu1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QLSoThu\QuanLySoThu2.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\SessionService\SessionService.wsdl" />
@@ -648,10 +629,10 @@
     <None Include="Service References\gMVVMService\gMVVMService1.disco" />
     <Resource Include="Data\Icons\avatar2.jpg" />
     <Resource Include="Data\Images\GSOFT.png" />
-    <None Include="Service References\GhiNhanService\GhiNhanKeHoach.disco" />
-    <None Include="Service References\GhiNhanService\configuration91.svcinfo" />
-    <None Include="Service References\GhiNhanService\configuration.svcinfo" />
-    <None Include="Service References\GhiNhanService\Reference.svcmap">
+    <None Include="Service References\QLSoThu\QuanLySoThu.disco" />
+    <None Include="Service References\QLSoThu\configuration91.svcinfo" />
+    <None Include="Service References\QLSoThu\configuration.svcinfo" />
+    <None Include="Service References\QLSoThu\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -790,8 +771,8 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Service References\GhiNhanService\" />
     <WCFMetadataStorage Include="Service References\gMVVMService\" />
+    <WCFMetadataStorage Include="Service References\QLSoThu\" />
     <WCFMetadataStorage Include="Service References\SessionService\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />

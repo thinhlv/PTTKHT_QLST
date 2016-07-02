@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:36229/Services/QuanLySoThu/QuanLySoThu.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" />
+  <xs:element name="LayBaoCaoTonKho">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="maThuoc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tenThuoc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ngayHetHang" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LayBaoCaoTonKhoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="LayBaoCaoTonKhoResult" nillable="true" type="q1:ArrayOfZOO_BAOCAOTONKHO_SearchResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LuuPhieuNhap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="data" nillable="true" type="q2:ZOO_PHIEUNHAPTHUOC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LuuPhieuNhapResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="LuuPhieuNhapResult" nillable="true" type="q3:ZOO_PHIEUNHAPTHUOC_InsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimPhieuNhap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="maphieu" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tenthuoc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ngaynhap" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="top" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimPhieuNhapResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="TimPhieuNhapResult" nillable="true" type="q4:ArrayOfZOO_PHIEUNHAPTHUOC_SearchResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DanhSachThuoc">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DanhSachThuocResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="DanhSachThuocResult" nillable="true" type="q5:ArrayOfZOO_THUOC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

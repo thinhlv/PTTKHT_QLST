@@ -1,4 +1,6 @@
 ﻿using gMVVM.ViewModels.QuanLyKhamChuaBenh;
+using gMVVM.ViewModels.SystemRole;
+using mvvmCommon;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,15 +13,18 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 
+
 namespace gMVVM.Views.QuanLyKhamChuaBenh
 {
     public partial class PhieuNhapThuocList : UserControl
     {
-        private PhieuNhapThuocViewModel viewModel = new PhieuNhapThuocViewModel();
+        private PhieuNhapThuocViewModel viewModel;
         public PhieuNhapThuocList()
         {
             InitializeComponent();
-            this.Loaded += (s, e) => { this.DataContext = this.viewModel;};
-        } 
+            PageAnimation.SetObject(front, back);
+            viewModel = new PhieuNhapThuocViewModel();
+            this.Loaded += (s, e) => { this.DataContext = this.viewModel; };
+        }
     }
 }

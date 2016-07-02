@@ -42,19 +42,11 @@
                     maxReceivedMessageSize="2147483647">
                     <security mode="None" />
                 </binding>
-                <binding name="BasicHttpBinding_IGhiNhan" maxBufferSize="2147483647"
+                <binding name="BasicHttpBinding_IZOO_BaoCaoTonKho1" maxBufferSize="2147483647"
                     maxReceivedMessageSize="2147483647">
                     <security mode="None" />
                 </binding>
-                <binding name="BasicHttpBinding_ICM_Domain" maxBufferSize="2147483647"
-                    maxReceivedMessageSize="2147483647">
-                    <security mode="None" />
-                </binding>
-                <binding name="BasicHttpBinding_IZOO_BaoCaoTonKho" maxBufferSize="2147483647"
-                    maxReceivedMessageSize="2147483647">
-                    <security mode="None" />
-                </binding>
-                <binding name="BasicHttpBinding_IZOO_PhieuNhapThuoc" maxBufferSize="2147483647"
+                <binding name="BasicHttpBinding_IZOO_PhieuNhapThuoc1" maxBufferSize="2147483647"
                     maxReceivedMessageSize="2147483647">
                     <security mode="None" />
                 </binding>
@@ -64,12 +56,12 @@
             <endpoint address="../Services/EduBanking/SessionService.svc"
                 binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ISessionService"
                 contract="SessionService.ISessionService" name="BasicHttpBinding_ISessionService" />
-            <endpoint address="../Services/KeHoach/GhiNhanKeHoach.svc" binding="basicHttpBinding"
-                bindingConfiguration="BasicHttpBinding_IGhiNhan" contract="GhiNhanService.IGhiNhan"
-                name="BasicHttpBinding_IGhiNhan" />
-            <endpoint address="../Services/KeHoach/GhiNhanKeHoach.svc" binding="basicHttpBinding"
-                bindingConfiguration="BasicHttpBinding_ICM_Domain" contract="GhiNhanService.ICM_Domain"
-                name="BasicHttpBinding_ICM_Domain" />
+            <endpoint address="../Services/QuanLySoThu/QuanLySoThu.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_IZOO_BaoCaoTonKho1"
+                contract="QLSoThu.IZOO_BaoCaoTonKho" name="BasicHttpBinding_IZOO_BaoCaoTonKho1" />
+            <endpoint address="../Services/QuanLySoThu/QuanLySoThu.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_IZOO_PhieuNhapThuoc1"
+                contract="QLSoThu.IZOO_PhieuNhapThuoc" name="BasicHttpBinding_IZOO_PhieuNhapThuoc1" />
             <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
                 bindingConfiguration="BasicHttpBinding_ITLUSER" contract="gMVVMService.ITLUSER"
                 name="BasicHttpBinding_ITLUSER" />
@@ -91,12 +83,6 @@
             <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
                 bindingConfiguration="BasicHttpBinding_ISYS_PARAMETERS" contract="gMVVMService.ISYS_PARAMETERS"
                 name="BasicHttpBinding_ISYS_PARAMETERS" />
-            <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
-                bindingConfiguration="BasicHttpBinding_IZOO_BaoCaoTonKho"
-                contract="gMVVMService.IZOO_BaoCaoTonKho" name="BasicHttpBinding_IZOO_BaoCaoTonKho" />
-            <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
-                bindingConfiguration="BasicHttpBinding_IZOO_PhieuNhapThuoc"
-                contract="gMVVMService.IZOO_PhieuNhapThuoc" name="BasicHttpBinding_IZOO_PhieuNhapThuoc" />
             <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
                 bindingConfiguration="BasicHttpBinding_ICM_ALLCODE" contract="gMVVMService.ICM_ALLCODE"
                 name="BasicHttpBinding_ICM_ALLCODE" />
