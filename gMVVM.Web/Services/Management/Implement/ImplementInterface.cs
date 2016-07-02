@@ -1301,17 +1301,8 @@ namespace gMVVM.Web.Services.Management.Implement
             {
                 using (var dataContext = new AssetDataContext())
                 {
-                    if (DateTime.Compare(DateTime.Now, ngaynhap) > 0)
-                    {
-                        IEnumerable<ZOO_PHIEUNHAPTHUOC_SearchResult> result = dataContext.ZOO_PHIEUNHAPTHUOC_Search(maphieu, tenthuoc, "", top).ToList();
-                        return result;
-                    }
-                    else
-                    {
-                        IEnumerable<ZOO_PHIEUNHAPTHUOC_SearchResult> result = dataContext.ZOO_PHIEUNHAPTHUOC_Search(maphieu, tenthuoc, ngaynhap.ToString(formatDate), top).ToList();
-                        return result;
-                    }
-                    
+                    IEnumerable<ZOO_PHIEUNHAPTHUOC_SearchResult> result = dataContext.ZOO_PHIEUNHAPTHUOC_Search(maphieu, tenthuoc, ngaynhap == null ? "": ngaynhap.ToString(formatDate), top).ToList();
+                    return result;
                 }
             }
             catch (Exception)
