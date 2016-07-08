@@ -126,6 +126,9 @@
   <data name="lblGhiChu" xml:space="preserve">
     <value>Notes</value>
   </data>
+  <data name="lblMaLo" xml:space="preserve">
+    <value>ID</value>
+  </data>
   <data name="lblMaPhieuNhap" xml:space="preserve">
     <value>Vouchers ID</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="lblSoLo" xml:space="preserve">
     <value>Batch number</value>
+  </data>
+  <data name="lblSoLoThuoc" xml:space="preserve">
+    <value>Medicine batch number</value>
   </data>
   <data name="lblSoLuong" xml:space="preserve">
     <value>Number</value>

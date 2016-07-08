@@ -9,7 +9,7 @@ using System.Text;
 
 namespace gMVVM.Web.Services.QuanLySoThu.Implement
 {
-    public class ImplementInterface : IZOO_BaoCaoTonKho, IZOO_PhieuNhapThuoc
+    public class ImplementInterface : IZOO_BaoCaoTonKho, IZOO_PhieuNhapThuoc, IZOO_LoThuoc
     {
         public const string formatDate = "dd/MM/yyyy HH:mm:ss";
 
@@ -59,9 +59,10 @@ namespace gMVVM.Web.Services.QuanLySoThu.Implement
                 using (var dataContext = new AssetDataContext())
                 {
                     ZOO_PHIEUNHAPTHUOC_InsResult result = dataContext.ZOO_PHIEUNHAPTHUOC_Ins(
-                        data.MaThuoc,
+                        data.MaLo,
                         data.SoLuong,
                         data.NgayNhap == null ? "" : data.NgayNhap.Value.ToString(formatDate),
+
                         data.NOTES,
                         data.RECORD_STATUS,
                         data.MAKER_ID,
@@ -113,6 +114,73 @@ namespace gMVVM.Web.Services.QuanLySoThu.Implement
         }
         #endregion
 
+        #region IZOO_LOTHUOC
+        public ZOO_LOTHUOC_InsResult ThemLoThuocMoi(ZOO_LOTHUOC data)
+        {
+            try
+            {
+
+                using (var dataContext = new AssetDataContext())
+                {
+                    ZOO_LOTHUOC_InsResult result = dataContext.ZOO_LOTHUOC_Ins(
+                        data.MaThuoc,
+                        data.SoLo,
+                        data.NgaySanXuat == null ? "" : data.NgaySanXuat.Value.ToString(formatDate) ,
+                        data.NgayHetHan == null ? "" : data.NgayHetHan.Value.ToString(formatDate),
+                        data.SoLuong,
+
+
+                        data.NOTES,
+                        data.RECORD_STATUS,
+                        data.MAKER_ID,
+                        data.CREATE_DT == null ? "" : data.CREATE_DT.Value.ToString(formatDate),
+                        data.AUTH_STATUS,
+                        data.CHECKER_ID,
+                        data.APPROVE_DT == null ? "" : data.APPROVE_DT.Value.ToString(formatDate)
+                        ).FirstOrDefault();
+
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+                return new ZOO_LOTHUOC_InsResult() { Result = "-1", ErrorDesc = ex.Message, MaLo = "" };
+            }
+        }
+
+        public IEnumerable<ZOO_LOTHUOC_SearchResult> TimLoThuoc(string solo, string tenthuoc)
+        {
+            try
+            {
+                using (var dataContext = new AssetDataContext())
+                {
+                    IEnumerable<ZOO_LOTHUOC_SearchResult> result = dataContext.ZOO_LOTHUOC_Search("", "", tenthuoc, solo,"", "", 0).ToList();
+                    return result;
+                }
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+        public IEnumerable<ZOO_LOTHUOC_SearchResult> TimLoThuocCombobox(string mathuoc)
+        {
+            try
+            {
+                using (var dataContext = new AssetDataContext())
+                {
+                    IEnumerable<ZOO_LOTHUOC_SearchResult> result = dataContext.ZOO_LOTHUOC_Search("", mathuoc, "", "", "", "", 0).ToList();
+                    return result;
+                }
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+        #endregion
+
         /// <summary>
         /// Goi Store thong bang parameter
         /// </summary>
@@ -146,7 +214,9 @@ namespace gMVVM.Web.Services.QuanLySoThu.Implement
             }
         }
 
+        
 
+        
     }
 
     public class gParam

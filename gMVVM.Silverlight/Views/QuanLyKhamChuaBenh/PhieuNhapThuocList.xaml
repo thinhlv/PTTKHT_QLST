@@ -95,6 +95,20 @@
                                             </sdk:DataGridColumn.HeaderStyle>
                                         </sdk:DataGridTextColumn>
 
+                                        <sdk:DataGridTextColumn Binding="{Binding Path=ItemContent.SoLo}" IsReadOnly="True"  MinWidth="150">
+                                            <sdk:DataGridColumn.HeaderStyle>
+                                                <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
+                                                    <Setter Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock Text="{Binding Path=lblSoLo, Source={StaticResource currentMedicineManagerCulture}}" Style="{StaticResource txtFontStyle}"></TextBlock>
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </sdk:DataGridColumn.HeaderStyle>
+                                        </sdk:DataGridTextColumn>
+
                                         <sdk:DataGridTextColumn Binding="{Binding Path=ItemContent.TenThuoc}" IsReadOnly="True" MinWidth="300">
                                             <sdk:DataGridColumn.HeaderStyle>
                                                 <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">

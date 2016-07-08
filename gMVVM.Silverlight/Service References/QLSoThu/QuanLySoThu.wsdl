@@ -31,6 +31,24 @@
   <wsdl:message name="IZOO_PhieuNhapThuoc_DanhSachThuoc_OutputMessage">
     <wsdl:part name="parameters" element="tns:DanhSachThuocResponse" />
   </wsdl:message>
+  <wsdl:message name="IZOO_LoThuoc_ThemLoThuocMoi_InputMessage">
+    <wsdl:part name="parameters" element="tns:ThemLoThuocMoi" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_LoThuoc_ThemLoThuocMoi_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemLoThuocMoiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_LoThuoc_TimLoThuoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimLoThuoc" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_LoThuoc_TimLoThuoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimLoThuocResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_LoThuoc_TimLoThuocCombobox_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimLoThuocCombobox" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_LoThuoc_TimLoThuocCombobox_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimLoThuocComboboxResponse" />
+  </wsdl:message>
   <wsdl:portType name="IZOO_BaoCaoTonKho">
     <wsdl:operation name="LayBaoCaoTonKho">
       <wsdl:input wsaw:Action="http://tempuri.org/IZOO_BaoCaoTonKho/LayBaoCaoTonKho" message="tns:IZOO_BaoCaoTonKho_LayBaoCaoTonKho_InputMessage" />
@@ -49,6 +67,20 @@
     <wsdl:operation name="DanhSachThuoc">
       <wsdl:input wsaw:Action="http://tempuri.org/IZOO_PhieuNhapThuoc/DanhSachThuoc" message="tns:IZOO_PhieuNhapThuoc_DanhSachThuoc_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IZOO_PhieuNhapThuoc/DanhSachThuocResponse" message="tns:IZOO_PhieuNhapThuoc_DanhSachThuoc_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IZOO_LoThuoc">
+    <wsdl:operation name="ThemLoThuocMoi">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZOO_LoThuoc/ThemLoThuocMoi" message="tns:IZOO_LoThuoc_ThemLoThuocMoi_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZOO_LoThuoc/ThemLoThuocMoiResponse" message="tns:IZOO_LoThuoc_ThemLoThuocMoi_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimLoThuoc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZOO_LoThuoc/TimLoThuoc" message="tns:IZOO_LoThuoc_TimLoThuoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZOO_LoThuoc/TimLoThuocResponse" message="tns:IZOO_LoThuoc_TimLoThuoc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimLoThuocCombobox">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZOO_LoThuoc/TimLoThuocCombobox" message="tns:IZOO_LoThuoc_TimLoThuocCombobox_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZOO_LoThuoc/TimLoThuocComboboxResponse" message="tns:IZOO_LoThuoc_TimLoThuocCombobox_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IZOO_BaoCaoTonKho" type="tns:IZOO_BaoCaoTonKho">
@@ -93,11 +125,44 @@
       </wsdl:output>
     </wsdl:operation>
   </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IZOO_LoThuoc" type="tns:IZOO_LoThuoc">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ThemLoThuocMoi">
+      <soap:operation soapAction="http://tempuri.org/IZOO_LoThuoc/ThemLoThuocMoi" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimLoThuoc">
+      <soap:operation soapAction="http://tempuri.org/IZOO_LoThuoc/TimLoThuoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimLoThuocCombobox">
+      <soap:operation soapAction="http://tempuri.org/IZOO_LoThuoc/TimLoThuocCombobox" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
   <wsdl:service name="QuanLySoThu">
     <wsdl:port name="BasicHttpBinding_IZOO_BaoCaoTonKho" binding="tns:BasicHttpBinding_IZOO_BaoCaoTonKho">
       <soap:address location="http://localhost:36229/Services/QuanLySoThu/QuanLySoThu.svc" />
     </wsdl:port>
     <wsdl:port name="BasicHttpBinding_IZOO_PhieuNhapThuoc" binding="tns:BasicHttpBinding_IZOO_PhieuNhapThuoc">
+      <soap:address location="http://localhost:36229/Services/QuanLySoThu/QuanLySoThu.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IZOO_LoThuoc" binding="tns:BasicHttpBinding_IZOO_LoThuoc">
       <soap:address location="http://localhost:36229/Services/QuanLySoThu/QuanLySoThu.svc" />
     </wsdl:port>
   </wsdl:service>

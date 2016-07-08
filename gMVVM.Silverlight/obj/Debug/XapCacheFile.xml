@@ -1,35 +1,35 @@
-﻿<xapCache source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\gMVVM.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="7/2/2016 10:04:03 PM">
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\gMVVM.dll" archivePath="gMVVM.dll" lastWriteTime="7/2/2016 10:03:59 PM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\FJ.Core.dll" archivePath="FJ.Core.dll" lastWriteTime="3/17/2015 2:10:48 PM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\FluentValidation.dll" archivePath="FluentValidation.dll" lastWriteTime="3/17/2015 2:10:50 PM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\GalaSoft.MvvmLight.SL5.dll" archivePath="GalaSoft.MvvmLight.SL5.dll" lastWriteTime="3/17/2015 2:10:36 PM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\Lite.ExcelLibrary.dll" archivePath="Lite.ExcelLibrary.dll" lastWriteTime="3/17/2015 2:10:47 PM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\Lite.Library.dll" archivePath="Lite.Library.dll" lastWriteTime="3/17/2015 2:10:40 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\Microsoft.Expression.Drawing.dll" archivePath="Microsoft.Expression.Drawing.dll" lastWriteTime="2/18/2013 2:32:08 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\Microsoft.Expression.Effects.dll" archivePath="Microsoft.Expression.Effects.dll" lastWriteTime="2/18/2013 2:32:08 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\Microsoft.Expression.Interactions.dll" archivePath="Microsoft.Expression.Interactions.dll" lastWriteTime="2/18/2013 2:32:08 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\Microsoft.Expression.Prototyping.Interactivity.dll" archivePath="Microsoft.Expression.Prototyping.Interactivity.dll" lastWriteTime="2/18/2013 2:32:10 PM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\mvvmCommon.dll" archivePath="mvvmCommon.dll" lastWriteTime="3/17/2015 2:10:48 PM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\Silverlight.Md5.dll" archivePath="Silverlight.Md5.dll" lastWriteTime="3/17/2015 2:10:36 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="11/18/2011 5:40:20 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.ServiceModel.DomainServices.Client.dll" archivePath="System.ServiceModel.DomainServices.Client.dll" lastWriteTime="4/12/2013 2:58:22 AM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.ServiceModel.DomainServices.Client.Web.dll" archivePath="System.ServiceModel.DomainServices.Client.Web.dll" lastWriteTime="4/12/2013 2:58:22 AM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.ServiceModel.Web.Extensions.dll" archivePath="System.ServiceModel.Web.Extensions.dll" lastWriteTime="11/18/2011 5:40:20 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Data.dll" archivePath="System.Windows.Controls.Data.dll" lastWriteTime="11/18/2011 5:40:20 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Data.Input.dll" archivePath="System.Windows.Controls.Data.Input.dll" lastWriteTime="11/18/2011 5:40:20 PM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\System.Windows.Controls.Data.Toolkit.dll" archivePath="System.Windows.Controls.Data.Toolkit.dll" lastWriteTime="12/9/2011 11:25:04 AM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\system.windows.controls.datavisualization.toolkit.dll" archivePath="system.windows.controls.datavisualization.toolkit.dll" lastWriteTime="12/9/2011 11:25:04 AM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.dll" archivePath="System.Windows.Controls.dll" lastWriteTime="11/18/2011 5:40:20 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Input.dll" archivePath="System.Windows.Controls.Input.dll" lastWriteTime="11/18/2011 5:40:20 PM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\System.Windows.Controls.Input.Toolkit.dll" archivePath="System.Windows.Controls.Input.Toolkit.dll" lastWriteTime="12/9/2011 11:25:04 AM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\system.windows.controls.layout.toolkit.dll" archivePath="system.windows.controls.layout.toolkit.dll" lastWriteTime="12/9/2011 11:25:04 AM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Navigation.dll" archivePath="System.Windows.Controls.Navigation.dll" lastWriteTime="11/18/2011 5:40:20 PM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\System.Windows.Controls.Toolkit.dll" archivePath="System.Windows.Controls.Toolkit.dll" lastWriteTime="12/9/2011 11:25:04 AM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Data.dll" archivePath="System.Windows.Data.dll" lastWriteTime="11/18/2011 5:40:20 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="2/18/2013 2:32:08 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Xml.Linq.dll" archivePath="System.Xml.Linq.dll" lastWriteTime="11/18/2011 5:40:20 PM" />
-  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Xml.Serialization.dll" archivePath="System.Xml.Serialization.dll" lastWriteTime="11/18/2011 5:40:20 PM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\vi-VN\gMVVM.resources.dll" archivePath="vi-VN\gMVVM.resources.dll" lastWriteTime="7/2/2016 10:03:59 PM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="7/2/2016 8:45:58 PM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="7/2/2016 10:04:02 PM" />
+﻿<xapCache source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\gMVVM.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="8/7/2016 8:22:16 PM">
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\gMVVM.dll" archivePath="gMVVM.dll" lastWriteTime="8/7/2016 8:22:13 PM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\FJ.Core.dll" archivePath="FJ.Core.dll" lastWriteTime="17/3/2015 2:10:48 PM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\FluentValidation.dll" archivePath="FluentValidation.dll" lastWriteTime="17/3/2015 2:10:50 PM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\GalaSoft.MvvmLight.SL5.dll" archivePath="GalaSoft.MvvmLight.SL5.dll" lastWriteTime="17/3/2015 2:10:36 PM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\Lite.ExcelLibrary.dll" archivePath="Lite.ExcelLibrary.dll" lastWriteTime="17/3/2015 2:10:47 PM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\Lite.Library.dll" archivePath="Lite.Library.dll" lastWriteTime="17/3/2015 2:10:40 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\Microsoft.Expression.Drawing.dll" archivePath="Microsoft.Expression.Drawing.dll" lastWriteTime="18/2/2013 2:32:08 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\Microsoft.Expression.Effects.dll" archivePath="Microsoft.Expression.Effects.dll" lastWriteTime="18/2/2013 2:32:08 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\Microsoft.Expression.Interactions.dll" archivePath="Microsoft.Expression.Interactions.dll" lastWriteTime="18/2/2013 2:32:08 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\Microsoft.Expression.Prototyping.Interactivity.dll" archivePath="Microsoft.Expression.Prototyping.Interactivity.dll" lastWriteTime="18/2/2013 2:32:10 PM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\mvvmCommon.dll" archivePath="mvvmCommon.dll" lastWriteTime="17/3/2015 2:10:48 PM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\Silverlight.Md5.dll" archivePath="Silverlight.Md5.dll" lastWriteTime="17/3/2015 2:10:36 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.ComponentModel.DataAnnotations.dll" archivePath="System.ComponentModel.DataAnnotations.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.ServiceModel.DomainServices.Client.dll" archivePath="System.ServiceModel.DomainServices.Client.dll" lastWriteTime="12/4/2013 2:58:22 AM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\RIA Services\v1.0\Libraries\Silverlight\System.ServiceModel.DomainServices.Client.Web.dll" archivePath="System.ServiceModel.DomainServices.Client.Web.dll" lastWriteTime="12/4/2013 2:58:22 AM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.ServiceModel.Web.Extensions.dll" archivePath="System.ServiceModel.Web.Extensions.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Data.dll" archivePath="System.Windows.Controls.Data.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Data.Input.dll" archivePath="System.Windows.Controls.Data.Input.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\System.Windows.Controls.Data.Toolkit.dll" archivePath="System.Windows.Controls.Data.Toolkit.dll" lastWriteTime="9/12/2011 11:25:04 AM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\system.windows.controls.datavisualization.toolkit.dll" archivePath="system.windows.controls.datavisualization.toolkit.dll" lastWriteTime="9/12/2011 11:25:04 AM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.dll" archivePath="System.Windows.Controls.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Input.dll" archivePath="System.Windows.Controls.Input.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\System.Windows.Controls.Input.Toolkit.dll" archivePath="System.Windows.Controls.Input.Toolkit.dll" lastWriteTime="9/12/2011 11:25:04 AM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\system.windows.controls.layout.toolkit.dll" archivePath="system.windows.controls.layout.toolkit.dll" lastWriteTime="9/12/2011 11:25:04 AM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Controls.Navigation.dll" archivePath="System.Windows.Controls.Navigation.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\System.Windows.Controls.Toolkit.dll" archivePath="System.Windows.Controls.Toolkit.dll" lastWriteTime="9/12/2011 11:25:04 AM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Windows.Data.dll" archivePath="System.Windows.Data.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="18/2/2013 2:32:08 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Xml.Linq.dll" archivePath="System.Xml.Linq.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Xml.Serialization.dll" archivePath="System.Xml.Serialization.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\vi-VN\gMVVM.resources.dll" archivePath="vi-VN\gMVVM.resources.dll" lastWriteTime="8/7/2016 8:22:14 PM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="8/7/2016 10:55:45 AM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="8/7/2016 6:44:57 PM" />
 </xapCache>

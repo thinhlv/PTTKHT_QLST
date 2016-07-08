@@ -88,6 +88,15 @@ namespace gMVVM.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ID.
+        /// </summary>
+        public static string lblMaLo {
+            get {
+                return ResourceManager.GetString("lblMaLo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Vouchers ID.
         /// </summary>
         public static string lblMaPhieuNhap {
@@ -156,6 +165,15 @@ namespace gMVVM.Resources {
         public static string lblSoLo {
             get {
                 return ResourceManager.GetString("lblSoLo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Medicine batch number.
+        /// </summary>
+        public static string lblSoLoThuoc {
+            get {
+                return ResourceManager.GetString("lblSoLoThuoc", resourceCulture);
             }
         }
         

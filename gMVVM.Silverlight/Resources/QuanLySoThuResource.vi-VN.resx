@@ -126,6 +126,9 @@
   <data name="lblGhiChu" xml:space="preserve">
     <value>Ghi chú</value>
   </data>
+  <data name="lblMaLo" xml:space="preserve">
+    <value>Mã lô</value>
+  </data>
   <data name="lblMaPhieuNhap" xml:space="preserve">
     <value>Mã phiếu nhập</value>
   </data>
@@ -149,6 +152,9 @@
   </data>
   <data name="lblSoLo" xml:space="preserve">
     <value>Số lô</value>
+  </data>
+  <data name="lblSoLoThuoc" xml:space="preserve">
+    <value>Số lô thuốc</value>
   </data>
   <data name="lblSoLuong" xml:space="preserve">
     <value>Số lượng</value>

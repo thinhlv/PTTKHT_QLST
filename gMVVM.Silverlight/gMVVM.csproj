@@ -207,6 +207,8 @@
     <Compile Include="ViewModels\Common\ToolHeaderViewModel.cs" />
     <Compile Include="ViewModels\LoginSystemViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
+    <Compile Include="ViewModels\QuanLyKhamChuaBenh\LoThuocEditViewModel.cs" />
+    <Compile Include="ViewModels\QuanLyKhamChuaBenh\LoThuocViewModel.cs" />
     <Compile Include="ViewModels\QuanLyKhamChuaBenh\PhieuNhapThuocEditViewModel.cs" />
     <Compile Include="ViewModels\QuanLyKhamChuaBenh\PhieuNhapThuocViewModel.cs" />
     <Compile Include="ViewModels\QuanLyKhamChuaBenh\QuanLyThuocTonKho.cs" />
@@ -277,6 +279,12 @@
     </Compile>
     <Compile Include="Views\QuanLyKhamChuaBenh\BaoCaoTonKho.xaml.cs">
       <DependentUpon>BaoCaoTonKho.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QuanLyKhamChuaBenh\LoThuocEdit.xaml.cs">
+      <DependentUpon>LoThuocEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\QuanLyKhamChuaBenh\LoThuocList.xaml.cs">
+      <DependentUpon>LoThuocList.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\QuanLyKhamChuaBenh\PhieuNhapThuocList.xaml.cs">
       <DependentUpon>PhieuNhapThuocList.xaml</DependentUpon>
@@ -408,6 +416,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\QuanLyKhamChuaBenh\BaoCaoTonKho.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QuanLyKhamChuaBenh\LoThuocEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\QuanLyKhamChuaBenh\LoThuocList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -584,6 +600,12 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\QLSoThu\gMVVM.QLSoThu.ZOO_BAOCAOTONKHO_SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QLSoThu\gMVVM.QLSoThu.ZOO_LOTHUOC_InsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QLSoThu\gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\QLSoThu\gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC_InsResult.datasource">

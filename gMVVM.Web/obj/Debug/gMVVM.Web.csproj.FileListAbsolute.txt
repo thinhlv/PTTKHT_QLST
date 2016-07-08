@@ -66,3 +66,4 @@ D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.xml
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\Mono.Math.xml
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\obj\Debug\gMVVM.Web.dll
 D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\obj\Debug\gMVVM.Web.pdb
+D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\obj\Debug\gMVVM.Web.csprojResolveAssemblyReference.cache

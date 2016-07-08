@@ -22,6 +22,7 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
     {
         //private TLMENUClient menuClient;
         private ZOO_PhieuNhapThuocClient phieuNhapClient;
+        private ZOO_LoThuocClient loThuocClient;
 
         public PhieuNhapThuocEditViewModel()
         {
@@ -61,7 +62,7 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
             this.currentPhieuNhapThuoc = obj.currentObject != null ? (obj.currentObject as ZOO_PHIEUNHAPTHUOC)
                 : new ZOO_PHIEUNHAPTHUOC()
                 {
-                    MaThuoc = "",
+                    MaLo = "",
                     SoLuong = 0,
                     NgayNhap = DateTime.Now,
                     MaPhieuNhap = "",
@@ -174,7 +175,40 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
                 this.thuocCombobox = value;
                 this.OnPropertyChanged("ThuocCombobox");
             }
-        }   
+        }
+
+        private string thuocComboboxSelected;
+
+        public string ThuocComboboxSelected
+        {
+            get 
+            {
+                return this.thuocComboboxSelected; 
+            }
+            set 
+            {
+                this.thuocComboboxSelected = value;
+                InitComboboxLoThuoc();
+                this.OnPropertyChanged("ThuocComboboxSelected");
+            }
+        }
+
+
+        private ObservableCollection<ZOO_LOTHUOC_SearchResult> loThuocCombobox;
+        public ObservableCollection<ZOO_LOTHUOC_SearchResult> LoThuocCombobox
+        {
+            get
+            {
+                return this.loThuocCombobox;
+            }
+
+            set
+            {
+                this.loThuocCombobox = value;
+                this.OnPropertyChanged("LoThuocCombobox");
+            }
+        }
+        
 
         //set header title
         private string headerText;
@@ -261,8 +295,8 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
         {
             this.messagePop.Reset();
             string notEmpty = " " + ValidatorResource.NotEmpty;
-            if (this.currentPhieuNhapThuoc.MaThuoc.Equals(""))
-                this.messagePop.SetError("Mã thuốc không được để trống");
+            if (this.currentPhieuNhapThuoc.MaLo.Equals(""))
+                this.messagePop.SetError("Số lô không được để trống");
             if (this.currentPhieuNhapThuoc.SoLuong.ToString().Equals(""))
                 this.messagePop.SetError("Số lượng không được để trống");           
         }
@@ -271,6 +305,7 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
             try
             {
                 this.phieuNhapClient = new ZOO_PhieuNhapThuocClient();
+                this.loThuocClient = new ZOO_LoThuocClient();
 
                 this.phieuNhapClient.DanhSachThuocAsync();
                 this.phieuNhapClient.DanhSachThuocCompleted += (s, e) =>
@@ -280,6 +315,7 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
                 };
 
                 this.phieuNhapClient.LuuPhieuNhapCompleted += new EventHandler<LuuPhieuNhapCompletedEventArgs>(insertCurrencyCompleted);
+                this.loThuocClient.TimLoThuocComboboxCompleted += new EventHandler<TimLoThuocComboboxCompletedEventArgs>(timLoThuocComplete);
                 //this.phieuNhapClient.UpdateTLMENUCompleted += new EventHandler<UpdateTLMENUCompletedEventArgs>(updateCurrencyCompleted);
                 //this.menuClient.ApproveCMAGENTCompleted += new EventHandler<ApproveCMAGENTCompletedEventArgs>(approveComplete);
                                 
@@ -355,6 +391,27 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
                 MyHelper.IsFree();
             }
         }
+
+        private void timLoThuocComplete(object sender, TimLoThuocComboboxCompletedEventArgs e)
+        {
+            try
+            {
+                if (e.Result != null && e.Result.Count > 0)
+                    this.LoThuocCombobox = e.Result;
+                else
+                    this.LoThuocCombobox = new ObservableCollection<ZOO_LOTHUOC_SearchResult>();
+            }
+            catch (Exception)
+            {
+                this.messagePop.SetSingleError(CommonResource.errorCannotConnectServer);
+            }
+            finally
+            {
+                MyHelper.IsFree();
+            }
+
+
+        }
         
         #endregion
 
@@ -392,6 +449,14 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
                     default: break;
                 }
 
+            }
+        }
+
+        private void InitComboboxLoThuoc()
+        {
+            if(!thuocComboboxSelected.Equals(""))
+            {
+                loThuocClient.TimLoThuocComboboxAsync(thuocComboboxSelected);
             }
         }
     }

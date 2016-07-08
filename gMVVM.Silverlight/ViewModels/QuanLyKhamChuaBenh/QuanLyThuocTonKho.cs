@@ -275,16 +275,17 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
                     this.danhSachTonKho = new ObservableCollection<ZOO_BAOCAOTONKHO_SearchResult>();
 
                 danhsach.Clear();
+                int itemIndex = 0;
                 foreach (var item in this.danhSachTonKho)
                 {
-                    string ghichu = "";
+                    itemIndex++;
                     if(item.NgayHetHan.Value < DateTime.Now)
                     {
-                        this.danhsach.Add(new DanhSachTonKhoGrid() { NgayHetHan = item.NgayHetHan.Value.ToShortDateString(), ItemContent = item, GhiChu = "Thuốc hết hạn", NhapThem = (int)item.ToiThieu });
+                        this.danhsach.Add(new DanhSachTonKhoGrid() { NgayHetHan = item.NgayHetHan.Value.ToShortDateString(), ItemContent = item, GhiChu = "Hết hạn"});
                     }
                     else
                     {
-                        this.danhsach.Add(new DanhSachTonKhoGrid() { NgayHetHan = item.NgayHetHan.Value.ToShortDateString(), ItemContent = item, GhiChu = "", NhapThem = (int)item.ToiThieu - (int) item.SoLuong });
+                        this.danhsach.Add(new DanhSachTonKhoGrid() { NgayHetHan = item.NgayHetHan.Value.ToShortDateString(), ItemContent = item, GhiChu = ""});
                     }
                     
                 }
@@ -373,8 +374,8 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
         public class DanhSachTonKhoGrid : ViewModelBase
         {
             public string NgayHetHan { get; set; }
+            public int ID { get; set; }
             public string GhiChu { get; set; }
-            public int NhapThem { get; set; }
             private ZOO_BAOCAOTONKHO_SearchResult itemContent;
             public ZOO_BAOCAOTONKHO_SearchResult ItemContent
             {

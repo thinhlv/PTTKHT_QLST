@@ -38,6 +38,7 @@
                                     <RowDefinition Height="auto"/>
                                     <RowDefinition Height="auto"/>
                                     <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="auto"/>
@@ -50,31 +51,41 @@
 
                                 <TextBlock Grid.Row="0" Grid.Column="0" Text="{Binding lblTenThuoc, Source={StaticResource currentMedicineManagerCulture}}" 
     				Style="{StaticResource tblStyle}"/>
-                                <TextBlock Grid.Row="1" Grid.Column="0" Text="{Binding lblSoLuong, Source={StaticResource currentMedicineManagerCulture}}" 
+                                <TextBlock Grid.Row="1" Grid.Column="0" Text="{Binding lblSoLo, Source={StaticResource currentMedicineManagerCulture}}" 
     				Style="{StaticResource tblStyle}"/>
-                                <TextBlock Grid.Row="2" Grid.Column="0" Text="{Binding lblNgayNhap, Source={StaticResource currentMedicineManagerCulture}}" 
-    				Style="{StaticResource tblStyle}"/>
-
-                                <TextBlock Grid.Row="3" Grid.Column="0" Text="{Binding lblGhiChu, Source={StaticResource currentMedicineManagerCulture}}"
+                                <TextBlock Grid.Row="2" Grid.Column="0" Text="{Binding lblSoLuong, Source={StaticResource currentMedicineManagerCulture}}" 
     				Style="{StaticResource tblStyle}"/>
 
+                                
 
+                                <TextBlock Grid.Row="3" Grid.Column="0" Text="{Binding lblNgayNhap, Source={StaticResource currentMedicineManagerCulture}}" 
+    				Style="{StaticResource tblStyle}"/>
+
+                                <TextBlock Grid.Row="4" Grid.Column="0" Text="{Binding lblGhiChu, Source={StaticResource currentMedicineManagerCulture}}"
+    				Style="{StaticResource tblStyle}"/>
+                                
                                 <ComboBox Grid.Row="0" Grid.Column="1" Style="{StaticResource cmbStyle}"
                                     ItemsSource="{Binding ThuocCombobox}" 
-                                    SelectedValue="{Binding CurrentPhieuNhapThuoc.MaThuoc, Mode=TwoWay}"
+                                    SelectedValue="{Binding ThuocComboboxSelected, Mode=TwoWay}"
     					            SelectedValuePath="MaThuoc"
                                     DisplayMemberPath="TenThuoc"
                                     >
                                 </ComboBox>
 
-                                <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource txbNormal}"
+                                <ComboBox Grid.Row="1" Grid.Column="1" Style="{StaticResource cmbStyle}"
+                                    ItemsSource="{Binding LoThuocCombobox}" 
+                                    SelectedValue="{Binding CurrentPhieuNhapThuoc.MaLo, Mode=TwoWay}"
+    					            SelectedValuePath="MaLo"
+                                    DisplayMemberPath="SoLo"
+                                    >
+                                </ComboBox>
+
+                                <TextBox Grid.Row="2" Grid.Column="1" Style="{StaticResource txbNormal}"
     				Text="{Binding CurrentPhieuNhapThuoc.SoLuong, Mode=TwoWay}" MaxLength="15" />
-                                <sdk:DatePicker Grid.Row="2" Grid.Column="1" Style="{StaticResource dpGridStyle}"
+                                <sdk:DatePicker Grid.Row="3" Grid.Column="1" Style="{StaticResource dpStyle}"
                                                 SelectedDate="{Binding NgayNhap, Mode=TwoWay}"/>
-                                <TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource txbNormal}"
-    				Text="{Binding CurrentPhieuNhapThuoc.NOTES, Mode=TwoWay}" MaxLength="15" />
-
-
+                                <TextBox Grid.Row="4" Grid.Column="1" Style="{StaticResource txbNormal}"
+    				Text="{Binding CurrentPhieuNhapThuoc.NOTES, Mode=TwoWay}" MaxLength="1000" />
                                 <TextBlock Grid.Row="1" Grid.Column="2" Style="{StaticResource Required}"/>
                                 <TextBlock Grid.Row="0" Grid.Column="2" Style="{StaticResource Required}"/>
 

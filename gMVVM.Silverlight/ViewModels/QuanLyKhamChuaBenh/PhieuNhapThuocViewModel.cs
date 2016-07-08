@@ -116,7 +116,7 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
                 this.currentSelectItem = new ZOO_PHIEUNHAPTHUOC()
                 {
                     MaPhieuNhap = value.ItemContent.MaPhieuNhap,
-                    MaThuoc = value.ItemContent.MaThuoc,
+                    MaLo = value.ItemContent.MaLo,
                     SoLuong = value.ItemContent.SoLuong,
                     NgayNhap = value.ItemContent.NgayNhap,
                     NOTES = value.ItemContent.NOTES,
@@ -358,7 +358,7 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
                 DANHSACHPHIEUNHAP.Add(new ZOO_PHIEUNHAPTHUOC()
                 {
                     MaPhieuNhap = item.MaPhieuNhap,
-                    MaThuoc = item.MaThuoc,
+                    MaLo = item.MaLo,
                     SoLuong = item.SoLuong,
                     NgayNhap = item.NgayNhap,
                     NOTES = item.NOTES,

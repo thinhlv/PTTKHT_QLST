@@ -22,15 +22,13 @@ namespace gMVVM.QLSoThu {
         
         private string DonViTinhField;
         
-        private string MaThuocField;
-        
         private System.Nullable<System.DateTime> NgayHetHanField;
         
-        private System.Nullable<double> SoLuongField;
+        private string SoLoField;
+        
+        private System.Nullable<int> SoLuongField;
         
         private string TenThuocField;
-        
-        private System.Nullable<double> ToiThieuField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string DonViTinh {
@@ -41,19 +39,6 @@ namespace gMVVM.QLSoThu {
                 if ((object.ReferenceEquals(this.DonViTinhField, value) != true)) {
                     this.DonViTinhField = value;
                     this.RaisePropertyChanged("DonViTinh");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string MaThuoc {
-            get {
-                return this.MaThuocField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaThuocField, value) != true)) {
-                    this.MaThuocField = value;
-                    this.RaisePropertyChanged("MaThuoc");
                 }
             }
         }
@@ -72,7 +57,20 @@ namespace gMVVM.QLSoThu {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<double> SoLuong {
+        public string SoLo {
+            get {
+                return this.SoLoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SoLoField, value) != true)) {
+                    this.SoLoField = value;
+                    this.RaisePropertyChanged("SoLo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> SoLuong {
             get {
                 return this.SoLuongField;
             }
@@ -93,19 +91,6 @@ namespace gMVVM.QLSoThu {
                 if ((object.ReferenceEquals(this.TenThuocField, value) != true)) {
                     this.TenThuocField = value;
                     this.RaisePropertyChanged("TenThuoc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<double> ToiThieu {
-            get {
-                return this.ToiThieuField;
-            }
-            set {
-                if ((this.ToiThieuField.Equals(value) != true)) {
-                    this.ToiThieuField = value;
-                    this.RaisePropertyChanged("ToiThieu");
                 }
             }
         }
@@ -135,9 +120,9 @@ namespace gMVVM.QLSoThu {
         
         private string MAKER_IDField;
         
-        private string MaPhieuNhapField;
+        private string MaLoField;
         
-        private string MaThuocField;
+        private string MaPhieuNhapField;
         
         private string NOTESField;
         
@@ -213,6 +198,19 @@ namespace gMVVM.QLSoThu {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MaLo {
+            get {
+                return this.MaLoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaLoField, value) != true)) {
+                    this.MaLoField = value;
+                    this.RaisePropertyChanged("MaLo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string MaPhieuNhap {
             get {
                 return this.MaPhieuNhapField;
@@ -221,19 +219,6 @@ namespace gMVVM.QLSoThu {
                 if ((object.ReferenceEquals(this.MaPhieuNhapField, value) != true)) {
                     this.MaPhieuNhapField = value;
                     this.RaisePropertyChanged("MaPhieuNhap");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string MaThuoc {
-            get {
-                return this.MaThuocField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaThuocField, value) != true)) {
-                    this.MaThuocField = value;
-                    this.RaisePropertyChanged("MaThuoc");
                 }
             }
         }
@@ -377,15 +362,17 @@ namespace gMVVM.QLSoThu {
         
         private string MAKER_IDField;
         
-        private string MaPhieuNhapField;
+        private string MaLoField;
         
-        private string MaThuocField;
+        private string MaPhieuNhapField;
         
         private string NOTESField;
         
         private System.Nullable<System.DateTime> NgayNhapField;
         
         private string RECORD_STATUSField;
+        
+        private string SoLoField;
         
         private System.Nullable<int> SoLuongField;
         
@@ -470,6 +457,19 @@ namespace gMVVM.QLSoThu {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MaLo {
+            get {
+                return this.MaLoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaLoField, value) != true)) {
+                    this.MaLoField = value;
+                    this.RaisePropertyChanged("MaLo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public string MaPhieuNhap {
             get {
                 return this.MaPhieuNhapField;
@@ -478,19 +478,6 @@ namespace gMVVM.QLSoThu {
                 if ((object.ReferenceEquals(this.MaPhieuNhapField, value) != true)) {
                     this.MaPhieuNhapField = value;
                     this.RaisePropertyChanged("MaPhieuNhap");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string MaThuoc {
-            get {
-                return this.MaThuocField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MaThuocField, value) != true)) {
-                    this.MaThuocField = value;
-                    this.RaisePropertyChanged("MaThuoc");
                 }
             }
         }
@@ -530,6 +517,19 @@ namespace gMVVM.QLSoThu {
                 if ((object.ReferenceEquals(this.RECORD_STATUSField, value) != true)) {
                     this.RECORD_STATUSField = value;
                     this.RaisePropertyChanged("RECORD_STATUS");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string SoLo {
+            get {
+                return this.SoLoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SoLoField, value) != true)) {
+                    this.SoLoField = value;
+                    this.RaisePropertyChanged("SoLo");
                 }
             }
         }
@@ -593,21 +593,11 @@ namespace gMVVM.QLSoThu {
         
         private string NOTESField;
         
-        private System.Nullable<System.DateTime> NgayHetHanField;
-        
-        private System.Nullable<System.DateTime> NgaySanXuatField;
-        
         private string RECORD_STATUSField;
-        
-        private System.Nullable<double> SoLoField;
-        
-        private System.Nullable<double> SoLuongField;
         
         private string TenThuocField;
         
         private string TinhTrangField;
-        
-        private System.Nullable<double> ToiThieuField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public System.Nullable<System.DateTime> APPROVE_DT {
@@ -727,6 +717,190 @@ namespace gMVVM.QLSoThu {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
+        public string RECORD_STATUS {
+            get {
+                return this.RECORD_STATUSField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RECORD_STATUSField, value) != true)) {
+                    this.RECORD_STATUSField = value;
+                    this.RaisePropertyChanged("RECORD_STATUS");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TenThuoc {
+            get {
+                return this.TenThuocField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TenThuocField, value) != true)) {
+                    this.TenThuocField = value;
+                    this.RaisePropertyChanged("TenThuoc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TinhTrang {
+            get {
+                return this.TinhTrangField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TinhTrangField, value) != true)) {
+                    this.TinhTrangField = value;
+                    this.RaisePropertyChanged("TinhTrang");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ZOO_LOTHUOC", Namespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu")]
+    public partial class ZOO_LOTHUOC : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private System.Nullable<System.DateTime> APPROVE_DTField;
+        
+        private string AUTH_STATUSField;
+        
+        private string CHECKER_IDField;
+        
+        private System.Nullable<System.DateTime> CREATE_DTField;
+        
+        private string MAKER_IDField;
+        
+        private string MaLoField;
+        
+        private string MaThuocField;
+        
+        private string NOTESField;
+        
+        private System.Nullable<System.DateTime> NgayHetHanField;
+        
+        private System.Nullable<System.DateTime> NgaySanXuatField;
+        
+        private string RECORD_STATUSField;
+        
+        private string SoLoField;
+        
+        private System.Nullable<int> SoLuongField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> APPROVE_DT {
+            get {
+                return this.APPROVE_DTField;
+            }
+            set {
+                if ((this.APPROVE_DTField.Equals(value) != true)) {
+                    this.APPROVE_DTField = value;
+                    this.RaisePropertyChanged("APPROVE_DT");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AUTH_STATUS {
+            get {
+                return this.AUTH_STATUSField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AUTH_STATUSField, value) != true)) {
+                    this.AUTH_STATUSField = value;
+                    this.RaisePropertyChanged("AUTH_STATUS");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CHECKER_ID {
+            get {
+                return this.CHECKER_IDField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CHECKER_IDField, value) != true)) {
+                    this.CHECKER_IDField = value;
+                    this.RaisePropertyChanged("CHECKER_ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> CREATE_DT {
+            get {
+                return this.CREATE_DTField;
+            }
+            set {
+                if ((this.CREATE_DTField.Equals(value) != true)) {
+                    this.CREATE_DTField = value;
+                    this.RaisePropertyChanged("CREATE_DT");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MAKER_ID {
+            get {
+                return this.MAKER_IDField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MAKER_IDField, value) != true)) {
+                    this.MAKER_IDField = value;
+                    this.RaisePropertyChanged("MAKER_ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MaLo {
+            get {
+                return this.MaLoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaLoField, value) != true)) {
+                    this.MaLoField = value;
+                    this.RaisePropertyChanged("MaLo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MaThuoc {
+            get {
+                return this.MaThuocField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaThuocField, value) != true)) {
+                    this.MaThuocField = value;
+                    this.RaisePropertyChanged("MaThuoc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string NOTES {
+            get {
+                return this.NOTESField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NOTESField, value) != true)) {
+                    this.NOTESField = value;
+                    this.RaisePropertyChanged("NOTES");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
         public System.Nullable<System.DateTime> NgayHetHan {
             get {
                 return this.NgayHetHanField;
@@ -766,12 +940,12 @@ namespace gMVVM.QLSoThu {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<double> SoLo {
+        public string SoLo {
             get {
                 return this.SoLoField;
             }
             set {
-                if ((this.SoLoField.Equals(value) != true)) {
+                if ((object.ReferenceEquals(this.SoLoField, value) != true)) {
                     this.SoLoField = value;
                     this.RaisePropertyChanged("SoLo");
                 }
@@ -779,7 +953,294 @@ namespace gMVVM.QLSoThu {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<double> SoLuong {
+        public System.Nullable<int> SoLuong {
+            get {
+                return this.SoLuongField;
+            }
+            set {
+                if ((this.SoLuongField.Equals(value) != true)) {
+                    this.SoLuongField = value;
+                    this.RaisePropertyChanged("SoLuong");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ZOO_LOTHUOC_InsResult", Namespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu")]
+    public partial class ZOO_LOTHUOC_InsResult : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string ErrorDescField;
+        
+        private string MaLoField;
+        
+        private string ResultField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ErrorDesc {
+            get {
+                return this.ErrorDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ErrorDescField, value) != true)) {
+                    this.ErrorDescField = value;
+                    this.RaisePropertyChanged("ErrorDesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MaLo {
+            get {
+                return this.MaLoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaLoField, value) != true)) {
+                    this.MaLoField = value;
+                    this.RaisePropertyChanged("MaLo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Result {
+            get {
+                return this.ResultField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ResultField, value) != true)) {
+                    this.ResultField = value;
+                    this.RaisePropertyChanged("Result");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ZOO_LOTHUOC_SearchResult", Namespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu")]
+    public partial class ZOO_LOTHUOC_SearchResult : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private System.Nullable<System.DateTime> APPROVE_DTField;
+        
+        private string AUTH_STATUSField;
+        
+        private string CHECKER_IDField;
+        
+        private System.Nullable<System.DateTime> CREATE_DTField;
+        
+        private string DonViTinhField;
+        
+        private string MAKER_IDField;
+        
+        private string MaLoField;
+        
+        private string MaThuocField;
+        
+        private string NOTESField;
+        
+        private System.Nullable<System.DateTime> NgayHetHanField;
+        
+        private System.Nullable<System.DateTime> NgaySanXuatField;
+        
+        private string RECORD_STATUSField;
+        
+        private string SoLoField;
+        
+        private System.Nullable<int> SoLuongField;
+        
+        private string TenThuocField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> APPROVE_DT {
+            get {
+                return this.APPROVE_DTField;
+            }
+            set {
+                if ((this.APPROVE_DTField.Equals(value) != true)) {
+                    this.APPROVE_DTField = value;
+                    this.RaisePropertyChanged("APPROVE_DT");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AUTH_STATUS {
+            get {
+                return this.AUTH_STATUSField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AUTH_STATUSField, value) != true)) {
+                    this.AUTH_STATUSField = value;
+                    this.RaisePropertyChanged("AUTH_STATUS");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string CHECKER_ID {
+            get {
+                return this.CHECKER_IDField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CHECKER_IDField, value) != true)) {
+                    this.CHECKER_IDField = value;
+                    this.RaisePropertyChanged("CHECKER_ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> CREATE_DT {
+            get {
+                return this.CREATE_DTField;
+            }
+            set {
+                if ((this.CREATE_DTField.Equals(value) != true)) {
+                    this.CREATE_DTField = value;
+                    this.RaisePropertyChanged("CREATE_DT");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string DonViTinh {
+            get {
+                return this.DonViTinhField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DonViTinhField, value) != true)) {
+                    this.DonViTinhField = value;
+                    this.RaisePropertyChanged("DonViTinh");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MAKER_ID {
+            get {
+                return this.MAKER_IDField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MAKER_IDField, value) != true)) {
+                    this.MAKER_IDField = value;
+                    this.RaisePropertyChanged("MAKER_ID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MaLo {
+            get {
+                return this.MaLoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaLoField, value) != true)) {
+                    this.MaLoField = value;
+                    this.RaisePropertyChanged("MaLo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MaThuoc {
+            get {
+                return this.MaThuocField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaThuocField, value) != true)) {
+                    this.MaThuocField = value;
+                    this.RaisePropertyChanged("MaThuoc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string NOTES {
+            get {
+                return this.NOTESField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NOTESField, value) != true)) {
+                    this.NOTESField = value;
+                    this.RaisePropertyChanged("NOTES");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> NgayHetHan {
+            get {
+                return this.NgayHetHanField;
+            }
+            set {
+                if ((this.NgayHetHanField.Equals(value) != true)) {
+                    this.NgayHetHanField = value;
+                    this.RaisePropertyChanged("NgayHetHan");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> NgaySanXuat {
+            get {
+                return this.NgaySanXuatField;
+            }
+            set {
+                if ((this.NgaySanXuatField.Equals(value) != true)) {
+                    this.NgaySanXuatField = value;
+                    this.RaisePropertyChanged("NgaySanXuat");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string RECORD_STATUS {
+            get {
+                return this.RECORD_STATUSField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RECORD_STATUSField, value) != true)) {
+                    this.RECORD_STATUSField = value;
+                    this.RaisePropertyChanged("RECORD_STATUS");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string SoLo {
+            get {
+                return this.SoLoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SoLoField, value) != true)) {
+                    this.SoLoField = value;
+                    this.RaisePropertyChanged("SoLo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> SoLuong {
             get {
                 return this.SoLuongField;
             }
@@ -800,32 +1261,6 @@ namespace gMVVM.QLSoThu {
                 if ((object.ReferenceEquals(this.TenThuocField, value) != true)) {
                     this.TenThuocField = value;
                     this.RaisePropertyChanged("TenThuoc");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string TinhTrang {
-            get {
-                return this.TinhTrangField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.TinhTrangField, value) != true)) {
-                    this.TinhTrangField = value;
-                    this.RaisePropertyChanged("TinhTrang");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<double> ToiThieu {
-            get {
-                return this.ToiThieuField;
-            }
-            set {
-                if ((this.ToiThieuField.Equals(value) != true)) {
-                    this.ToiThieuField = value;
-                    this.RaisePropertyChanged("ToiThieu");
                 }
             }
         }
@@ -1507,6 +1942,430 @@ namespace gMVVM.QLSoThu {
             public System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_THUOC> EndDanhSachThuoc(System.IAsyncResult result) {
                 object[] _args = new object[0];
                 System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_THUOC> _result = ((System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_THUOC>)(base.EndInvoke("DanhSachThuoc", _args, result)));
+                return _result;
+            }
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="QLSoThu.IZOO_LoThuoc")]
+    public interface IZOO_LoThuoc {
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IZOO_LoThuoc/ThemLoThuocMoi", ReplyAction="http://tempuri.org/IZOO_LoThuoc/ThemLoThuocMoiResponse")]
+        System.IAsyncResult BeginThemLoThuocMoi(gMVVM.QLSoThu.ZOO_LOTHUOC data, System.AsyncCallback callback, object asyncState);
+        
+        gMVVM.QLSoThu.ZOO_LOTHUOC_InsResult EndThemLoThuocMoi(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IZOO_LoThuoc/TimLoThuoc", ReplyAction="http://tempuri.org/IZOO_LoThuoc/TimLoThuocResponse")]
+        System.IAsyncResult BeginTimLoThuoc(string solo, string tenthuoc, System.AsyncCallback callback, object asyncState);
+        
+        System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> EndTimLoThuoc(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IZOO_LoThuoc/TimLoThuocCombobox", ReplyAction="http://tempuri.org/IZOO_LoThuoc/TimLoThuocComboboxResponse")]
+        System.IAsyncResult BeginTimLoThuocCombobox(string mathuoc, System.AsyncCallback callback, object asyncState);
+        
+        System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> EndTimLoThuocCombobox(System.IAsyncResult result);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IZOO_LoThuocChannel : gMVVM.QLSoThu.IZOO_LoThuoc, System.ServiceModel.IClientChannel {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class ThemLoThuocMoiCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public ThemLoThuocMoiCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public gMVVM.QLSoThu.ZOO_LOTHUOC_InsResult Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((gMVVM.QLSoThu.ZOO_LOTHUOC_InsResult)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class TimLoThuocCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public TimLoThuocCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult>)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class TimLoThuocComboboxCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public TimLoThuocComboboxCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult>)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class ZOO_LoThuocClient : System.ServiceModel.ClientBase<gMVVM.QLSoThu.IZOO_LoThuoc>, gMVVM.QLSoThu.IZOO_LoThuoc {
+        
+        private BeginOperationDelegate onBeginThemLoThuocMoiDelegate;
+        
+        private EndOperationDelegate onEndThemLoThuocMoiDelegate;
+        
+        private System.Threading.SendOrPostCallback onThemLoThuocMoiCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginTimLoThuocDelegate;
+        
+        private EndOperationDelegate onEndTimLoThuocDelegate;
+        
+        private System.Threading.SendOrPostCallback onTimLoThuocCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginTimLoThuocComboboxDelegate;
+        
+        private EndOperationDelegate onEndTimLoThuocComboboxDelegate;
+        
+        private System.Threading.SendOrPostCallback onTimLoThuocComboboxCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginOpenDelegate;
+        
+        private EndOperationDelegate onEndOpenDelegate;
+        
+        private System.Threading.SendOrPostCallback onOpenCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginCloseDelegate;
+        
+        private EndOperationDelegate onEndCloseDelegate;
+        
+        private System.Threading.SendOrPostCallback onCloseCompletedDelegate;
+        
+        public ZOO_LoThuocClient() {
+        }
+        
+        public ZOO_LoThuocClient(string endpointConfigurationName) : 
+                base(endpointConfigurationName) {
+        }
+        
+        public ZOO_LoThuocClient(string endpointConfigurationName, string remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public ZOO_LoThuocClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public ZOO_LoThuocClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(binding, remoteAddress) {
+        }
+        
+        public System.Net.CookieContainer CookieContainer {
+            get {
+                System.ServiceModel.Channels.IHttpCookieContainerManager httpCookieContainerManager = this.InnerChannel.GetProperty<System.ServiceModel.Channels.IHttpCookieContainerManager>();
+                if ((httpCookieContainerManager != null)) {
+                    return httpCookieContainerManager.CookieContainer;
+                }
+                else {
+                    return null;
+                }
+            }
+            set {
+                System.ServiceModel.Channels.IHttpCookieContainerManager httpCookieContainerManager = this.InnerChannel.GetProperty<System.ServiceModel.Channels.IHttpCookieContainerManager>();
+                if ((httpCookieContainerManager != null)) {
+                    httpCookieContainerManager.CookieContainer = value;
+                }
+                else {
+                    throw new System.InvalidOperationException("Unable to set the CookieContainer. Please make sure the binding contains an HttpC" +
+                            "ookieContainerBindingElement.");
+                }
+            }
+        }
+        
+        public event System.EventHandler<ThemLoThuocMoiCompletedEventArgs> ThemLoThuocMoiCompleted;
+        
+        public event System.EventHandler<TimLoThuocCompletedEventArgs> TimLoThuocCompleted;
+        
+        public event System.EventHandler<TimLoThuocComboboxCompletedEventArgs> TimLoThuocComboboxCompleted;
+        
+        public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> OpenCompleted;
+        
+        public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> CloseCompleted;
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult gMVVM.QLSoThu.IZOO_LoThuoc.BeginThemLoThuocMoi(gMVVM.QLSoThu.ZOO_LOTHUOC data, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginThemLoThuocMoi(data, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        gMVVM.QLSoThu.ZOO_LOTHUOC_InsResult gMVVM.QLSoThu.IZOO_LoThuoc.EndThemLoThuocMoi(System.IAsyncResult result) {
+            return base.Channel.EndThemLoThuocMoi(result);
+        }
+        
+        private System.IAsyncResult OnBeginThemLoThuocMoi(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            gMVVM.QLSoThu.ZOO_LOTHUOC data = ((gMVVM.QLSoThu.ZOO_LOTHUOC)(inValues[0]));
+            return ((gMVVM.QLSoThu.IZOO_LoThuoc)(this)).BeginThemLoThuocMoi(data, callback, asyncState);
+        }
+        
+        private object[] OnEndThemLoThuocMoi(System.IAsyncResult result) {
+            gMVVM.QLSoThu.ZOO_LOTHUOC_InsResult retVal = ((gMVVM.QLSoThu.IZOO_LoThuoc)(this)).EndThemLoThuocMoi(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnThemLoThuocMoiCompleted(object state) {
+            if ((this.ThemLoThuocMoiCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.ThemLoThuocMoiCompleted(this, new ThemLoThuocMoiCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void ThemLoThuocMoiAsync(gMVVM.QLSoThu.ZOO_LOTHUOC data) {
+            this.ThemLoThuocMoiAsync(data, null);
+        }
+        
+        public void ThemLoThuocMoiAsync(gMVVM.QLSoThu.ZOO_LOTHUOC data, object userState) {
+            if ((this.onBeginThemLoThuocMoiDelegate == null)) {
+                this.onBeginThemLoThuocMoiDelegate = new BeginOperationDelegate(this.OnBeginThemLoThuocMoi);
+            }
+            if ((this.onEndThemLoThuocMoiDelegate == null)) {
+                this.onEndThemLoThuocMoiDelegate = new EndOperationDelegate(this.OnEndThemLoThuocMoi);
+            }
+            if ((this.onThemLoThuocMoiCompletedDelegate == null)) {
+                this.onThemLoThuocMoiCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnThemLoThuocMoiCompleted);
+            }
+            base.InvokeAsync(this.onBeginThemLoThuocMoiDelegate, new object[] {
+                        data}, this.onEndThemLoThuocMoiDelegate, this.onThemLoThuocMoiCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult gMVVM.QLSoThu.IZOO_LoThuoc.BeginTimLoThuoc(string solo, string tenthuoc, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginTimLoThuoc(solo, tenthuoc, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> gMVVM.QLSoThu.IZOO_LoThuoc.EndTimLoThuoc(System.IAsyncResult result) {
+            return base.Channel.EndTimLoThuoc(result);
+        }
+        
+        private System.IAsyncResult OnBeginTimLoThuoc(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string solo = ((string)(inValues[0]));
+            string tenthuoc = ((string)(inValues[1]));
+            return ((gMVVM.QLSoThu.IZOO_LoThuoc)(this)).BeginTimLoThuoc(solo, tenthuoc, callback, asyncState);
+        }
+        
+        private object[] OnEndTimLoThuoc(System.IAsyncResult result) {
+            System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> retVal = ((gMVVM.QLSoThu.IZOO_LoThuoc)(this)).EndTimLoThuoc(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnTimLoThuocCompleted(object state) {
+            if ((this.TimLoThuocCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.TimLoThuocCompleted(this, new TimLoThuocCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void TimLoThuocAsync(string solo, string tenthuoc) {
+            this.TimLoThuocAsync(solo, tenthuoc, null);
+        }
+        
+        public void TimLoThuocAsync(string solo, string tenthuoc, object userState) {
+            if ((this.onBeginTimLoThuocDelegate == null)) {
+                this.onBeginTimLoThuocDelegate = new BeginOperationDelegate(this.OnBeginTimLoThuoc);
+            }
+            if ((this.onEndTimLoThuocDelegate == null)) {
+                this.onEndTimLoThuocDelegate = new EndOperationDelegate(this.OnEndTimLoThuoc);
+            }
+            if ((this.onTimLoThuocCompletedDelegate == null)) {
+                this.onTimLoThuocCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnTimLoThuocCompleted);
+            }
+            base.InvokeAsync(this.onBeginTimLoThuocDelegate, new object[] {
+                        solo,
+                        tenthuoc}, this.onEndTimLoThuocDelegate, this.onTimLoThuocCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult gMVVM.QLSoThu.IZOO_LoThuoc.BeginTimLoThuocCombobox(string mathuoc, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginTimLoThuocCombobox(mathuoc, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> gMVVM.QLSoThu.IZOO_LoThuoc.EndTimLoThuocCombobox(System.IAsyncResult result) {
+            return base.Channel.EndTimLoThuocCombobox(result);
+        }
+        
+        private System.IAsyncResult OnBeginTimLoThuocCombobox(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string mathuoc = ((string)(inValues[0]));
+            return ((gMVVM.QLSoThu.IZOO_LoThuoc)(this)).BeginTimLoThuocCombobox(mathuoc, callback, asyncState);
+        }
+        
+        private object[] OnEndTimLoThuocCombobox(System.IAsyncResult result) {
+            System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> retVal = ((gMVVM.QLSoThu.IZOO_LoThuoc)(this)).EndTimLoThuocCombobox(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnTimLoThuocComboboxCompleted(object state) {
+            if ((this.TimLoThuocComboboxCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.TimLoThuocComboboxCompleted(this, new TimLoThuocComboboxCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void TimLoThuocComboboxAsync(string mathuoc) {
+            this.TimLoThuocComboboxAsync(mathuoc, null);
+        }
+        
+        public void TimLoThuocComboboxAsync(string mathuoc, object userState) {
+            if ((this.onBeginTimLoThuocComboboxDelegate == null)) {
+                this.onBeginTimLoThuocComboboxDelegate = new BeginOperationDelegate(this.OnBeginTimLoThuocCombobox);
+            }
+            if ((this.onEndTimLoThuocComboboxDelegate == null)) {
+                this.onEndTimLoThuocComboboxDelegate = new EndOperationDelegate(this.OnEndTimLoThuocCombobox);
+            }
+            if ((this.onTimLoThuocComboboxCompletedDelegate == null)) {
+                this.onTimLoThuocComboboxCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnTimLoThuocComboboxCompleted);
+            }
+            base.InvokeAsync(this.onBeginTimLoThuocComboboxDelegate, new object[] {
+                        mathuoc}, this.onEndTimLoThuocComboboxDelegate, this.onTimLoThuocComboboxCompletedDelegate, userState);
+        }
+        
+        private System.IAsyncResult OnBeginOpen(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            return ((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(callback, asyncState);
+        }
+        
+        private object[] OnEndOpen(System.IAsyncResult result) {
+            ((System.ServiceModel.ICommunicationObject)(this)).EndOpen(result);
+            return null;
+        }
+        
+        private void OnOpenCompleted(object state) {
+            if ((this.OpenCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.OpenCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void OpenAsync() {
+            this.OpenAsync(null);
+        }
+        
+        public void OpenAsync(object userState) {
+            if ((this.onBeginOpenDelegate == null)) {
+                this.onBeginOpenDelegate = new BeginOperationDelegate(this.OnBeginOpen);
+            }
+            if ((this.onEndOpenDelegate == null)) {
+                this.onEndOpenDelegate = new EndOperationDelegate(this.OnEndOpen);
+            }
+            if ((this.onOpenCompletedDelegate == null)) {
+                this.onOpenCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnOpenCompleted);
+            }
+            base.InvokeAsync(this.onBeginOpenDelegate, null, this.onEndOpenDelegate, this.onOpenCompletedDelegate, userState);
+        }
+        
+        private System.IAsyncResult OnBeginClose(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            return ((System.ServiceModel.ICommunicationObject)(this)).BeginClose(callback, asyncState);
+        }
+        
+        private object[] OnEndClose(System.IAsyncResult result) {
+            ((System.ServiceModel.ICommunicationObject)(this)).EndClose(result);
+            return null;
+        }
+        
+        private void OnCloseCompleted(object state) {
+            if ((this.CloseCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.CloseCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void CloseAsync() {
+            this.CloseAsync(null);
+        }
+        
+        public void CloseAsync(object userState) {
+            if ((this.onBeginCloseDelegate == null)) {
+                this.onBeginCloseDelegate = new BeginOperationDelegate(this.OnBeginClose);
+            }
+            if ((this.onEndCloseDelegate == null)) {
+                this.onEndCloseDelegate = new EndOperationDelegate(this.OnEndClose);
+            }
+            if ((this.onCloseCompletedDelegate == null)) {
+                this.onCloseCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnCloseCompleted);
+            }
+            base.InvokeAsync(this.onBeginCloseDelegate, null, this.onEndCloseDelegate, this.onCloseCompletedDelegate, userState);
+        }
+        
+        protected override gMVVM.QLSoThu.IZOO_LoThuoc CreateChannel() {
+            return new ZOO_LoThuocClientChannel(this);
+        }
+        
+        private class ZOO_LoThuocClientChannel : ChannelBase<gMVVM.QLSoThu.IZOO_LoThuoc>, gMVVM.QLSoThu.IZOO_LoThuoc {
+            
+            public ZOO_LoThuocClientChannel(System.ServiceModel.ClientBase<gMVVM.QLSoThu.IZOO_LoThuoc> client) : 
+                    base(client) {
+            }
+            
+            public System.IAsyncResult BeginThemLoThuocMoi(gMVVM.QLSoThu.ZOO_LOTHUOC data, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = data;
+                System.IAsyncResult _result = base.BeginInvoke("ThemLoThuocMoi", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public gMVVM.QLSoThu.ZOO_LOTHUOC_InsResult EndThemLoThuocMoi(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                gMVVM.QLSoThu.ZOO_LOTHUOC_InsResult _result = ((gMVVM.QLSoThu.ZOO_LOTHUOC_InsResult)(base.EndInvoke("ThemLoThuocMoi", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginTimLoThuoc(string solo, string tenthuoc, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[2];
+                _args[0] = solo;
+                _args[1] = tenthuoc;
+                System.IAsyncResult _result = base.BeginInvoke("TimLoThuoc", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> EndTimLoThuoc(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> _result = ((System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult>)(base.EndInvoke("TimLoThuoc", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginTimLoThuocCombobox(string mathuoc, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = mathuoc;
+                System.IAsyncResult _result = base.BeginInvoke("TimLoThuocCombobox", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> EndTimLoThuocCombobox(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> _result = ((System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult>)(base.EndInvoke("TimLoThuocCombobox", _args, result)));
                 return _result;
             }
         }

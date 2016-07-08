@@ -174,6 +174,23 @@
       <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.ZOO_LOTHUOC" Member="ZOO_LOTHUOCs">
+    <Type Name="ZOO_LOTHUOC">
+      <Column Name="MaLo" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="SoLo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NgaySanXuat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgayHetHan" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.ZOO_NHANVIEN" Member="ZOO_NHANVIENs">
     <Type Name="ZOO_NHANVIEN">
       <Column Name="MaNhanVien" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -295,7 +312,7 @@
   <Table Name="dbo.ZOO_PHIEUNHAPTHUOC" Member="ZOO_PHIEUNHAPTHUOCs">
     <Type Name="ZOO_PHIEUNHAPTHUOC">
       <Column Name="MaPhieuNhap" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MaLo" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="NgayNhap" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
@@ -326,7 +343,7 @@
   <Table Name="dbo.ZOO_PHIEUXUATTHUOC" Member="ZOO_PHIEUXUATTHUOCs">
     <Type Name="ZOO_PHIEUXUATTHUOC">
       <Column Name="MaPhieuXuat" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
-      <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MaLo" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="NgayXuat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
@@ -393,14 +410,9 @@
     <Type Name="ZOO_THUOC">
       <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="TenThuoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="SoLo" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="NgaySanXuat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="NgayHetHan" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="SoLuong" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="TinhTrang" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="MoTa" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
-      <Column Name="ToiThieu" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
       <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
@@ -416,12 +428,11 @@
     <Parameter Name="p_NgayHetHan" Type="System.String" DbType="VarChar(20)" />
     <Parameter Name="p_TOP" Type="System.Int32" DbType="Int" />
     <ElementType Name="ZOO_BAOCAOTONKHO_SearchResult">
-      <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
       <Column Name="TenThuoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SoLo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="SoLuong" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="NgayHetHan" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ToiThieu" Type="System.Double" DbType="Float" CanBeNull="true" />
     </ElementType>
   </Function>
   <Function Name="dbo.ZOO_PHIEUNHAPTHUOC_Search" Method="ZOO_PHIEUNHAPTHUOC_Search">
@@ -431,9 +442,55 @@
     <Parameter Name="p_TOP" Type="System.Int32" DbType="Int" />
     <ElementType Name="ZOO_PHIEUNHAPTHUOC_SearchResult">
       <Column Name="MaPhieuNhap" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
-      <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MaLo" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="NgayNhap" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CREATE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AUTH_STATUS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CHECKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="APPROVE_DT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TenThuoc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonViTinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SoLo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ZOO_LOTHUOC_Ins" Method="ZOO_LOTHUOC_Ins">
+    <Parameter Name="p_MaThuoc" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_SoLo" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_NgaySanXuat" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_NgayHetHan" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_SoLuong" Type="System.Int32" DbType="Int" />
+    <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />
+    <Parameter Name="p_RECORD_STATUS" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="p_MAKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_CREATE_DT" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_AUTH_STATUS" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_CHECKER_ID" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_APPROVE_DT" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="ZOO_LOTHUOC_InsResult">
+      <Column Name="Result" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="MaLo" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="ErrorDesc" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.ZOO_LOTHUOC_Search" Method="ZOO_LOTHUOC_Search">
+    <Parameter Name="p_MaLo" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_MaThuoc" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_TenThuoc" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="p_SoLo" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_NgaySanXuat" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_NgayHetHan" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="p_TOP" Type="System.Int32" DbType="Int" />
+    <ElementType Name="ZOO_LOTHUOC_SearchResult">
+      <Column Name="MaLo" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="MaThuoc" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="SoLo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NgaySanXuat" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="NgayHetHan" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="NOTES" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
       <Column Name="RECORD_STATUS" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
       <Column Name="MAKER_ID" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
@@ -446,7 +503,7 @@
     </ElementType>
   </Function>
   <Function Name="dbo.ZOO_PHIEUNHAPTHUOC_Ins" Method="ZOO_PHIEUNHAPTHUOC_Ins">
-    <Parameter Name="p_MaThuoc" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="p_MaLo" Type="System.String" DbType="VarChar(15)" />
     <Parameter Name="p_SoLuong" Type="System.Int32" DbType="Int" />
     <Parameter Name="p_NgayNhap" Type="System.String" DbType="VarChar(20)" />
     <Parameter Name="p_NOTES" Type="System.String" DbType="NVarChar(1000)" />

@@ -42,11 +42,15 @@
                     maxReceivedMessageSize="2147483647">
                     <security mode="None" />
                 </binding>
-                <binding name="BasicHttpBinding_IZOO_BaoCaoTonKho1" maxBufferSize="2147483647"
+                <binding name="BasicHttpBinding_IZOO_BaoCaoTonKho" maxBufferSize="2147483647"
                     maxReceivedMessageSize="2147483647">
                     <security mode="None" />
                 </binding>
-                <binding name="BasicHttpBinding_IZOO_PhieuNhapThuoc1" maxBufferSize="2147483647"
+                <binding name="BasicHttpBinding_IZOO_PhieuNhapThuoc" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IZOO_LoThuoc" maxBufferSize="2147483647"
                     maxReceivedMessageSize="2147483647">
                     <security mode="None" />
                 </binding>
@@ -56,12 +60,6 @@
             <endpoint address="../Services/EduBanking/SessionService.svc"
                 binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ISessionService"
                 contract="SessionService.ISessionService" name="BasicHttpBinding_ISessionService" />
-            <endpoint address="../Services/QuanLySoThu/QuanLySoThu.svc" binding="basicHttpBinding"
-                bindingConfiguration="BasicHttpBinding_IZOO_BaoCaoTonKho1"
-                contract="QLSoThu.IZOO_BaoCaoTonKho" name="BasicHttpBinding_IZOO_BaoCaoTonKho1" />
-            <endpoint address="../Services/QuanLySoThu/QuanLySoThu.svc" binding="basicHttpBinding"
-                bindingConfiguration="BasicHttpBinding_IZOO_PhieuNhapThuoc1"
-                contract="QLSoThu.IZOO_PhieuNhapThuoc" name="BasicHttpBinding_IZOO_PhieuNhapThuoc1" />
             <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
                 bindingConfiguration="BasicHttpBinding_ITLUSER" contract="gMVVMService.ITLUSER"
                 name="BasicHttpBinding_ITLUSER" />
@@ -89,6 +87,15 @@
             <endpoint address="../Services/Management/gMVVMService.svc" binding="basicHttpBinding"
                 bindingConfiguration="BasicHttpBinding_ICM_DEPT_GROUP" contract="gMVVMService.ICM_DEPT_GROUP"
                 name="BasicHttpBinding_ICM_DEPT_GROUP" />
+            <endpoint address="../Services/QuanLySoThu/QuanLySoThu.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_IZOO_BaoCaoTonKho"
+                contract="QLSoThu.IZOO_BaoCaoTonKho" name="BasicHttpBinding_IZOO_BaoCaoTonKho" />
+            <endpoint address="../Services/QuanLySoThu/QuanLySoThu.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_IZOO_PhieuNhapThuoc"
+                contract="QLSoThu.IZOO_PhieuNhapThuoc" name="BasicHttpBinding_IZOO_PhieuNhapThuoc" />
+            <endpoint address="../Services/QuanLySoThu/QuanLySoThu.svc" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_IZOO_LoThuoc" contract="QLSoThu.IZOO_LoThuoc"
+                name="BasicHttpBinding_IZOO_LoThuoc" />
         </client>
     </system.serviceModel>
 </configuration>

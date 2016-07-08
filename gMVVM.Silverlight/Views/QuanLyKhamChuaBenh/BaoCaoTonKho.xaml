@@ -81,21 +81,10 @@
                                     </i:Interaction.Triggers>
 
                                     <sdk:DataGrid.Columns>
-                                        <sdk:DataGridTextColumn Binding="{Binding Path=ItemContent.MaThuoc}" IsReadOnly="True"  MinWidth="100">
-                                            <sdk:DataGridColumn.HeaderStyle>
-                                                <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
-                                                    <Setter Property="ContentTemplate">
-                                                        <Setter.Value>
-                                                            <DataTemplate>
-                                                                <TextBlock Text="{Binding Path=lblMaThuoc, Source={StaticResource currentMedicineManagerCulture}}" Style="{StaticResource txtFontStyle}"></TextBlock>
-                                                            </DataTemplate>
-                                                        </Setter.Value>
-                                                    </Setter>
-                                                </Style>
-                                            </sdk:DataGridColumn.HeaderStyle>
-                                        </sdk:DataGridTextColumn>
 
-                                        <sdk:DataGridTextColumn Binding="{Binding Path=ItemContent.TenThuoc}" IsReadOnly="True" MinWidth="235">
+                                       
+                                        
+                                        <sdk:DataGridTextColumn Binding="{Binding Path=ItemContent.TenThuoc}" IsReadOnly="True" MinWidth="220">
                                             <sdk:DataGridColumn.HeaderStyle>
                                                 <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
                                                     <Setter Property="ContentTemplate">
@@ -109,13 +98,27 @@
                                             </sdk:DataGridColumn.HeaderStyle>
                                         </sdk:DataGridTextColumn>
 
-                                        <sdk:DataGridTextColumn Binding="{Binding Path=ItemContent.DonViTinh}" IsReadOnly="True" MinWidth="100">
+                                        <sdk:DataGridTextColumn Binding="{Binding Path=ItemContent.SoLo}" IsReadOnly="True" MinWidth="150">
                                             <sdk:DataGridColumn.HeaderStyle>
                                                 <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}" >
                                                     <Setter Property="ContentTemplate">
                                                         <Setter.Value>
                                                             <DataTemplate>
-                                                                <TextBlock Text="{Binding Path=lblDonViTinh, Source={StaticResource currentMedicineManagerCulture}}" Style="{StaticResource txtFontStyle}"></TextBlock>
+                                                                <TextBlock Text="{Binding Path=lblSoLo, Source={StaticResource currentMedicineManagerCulture}}" Style="{StaticResource txtFontStyle}"></TextBlock>
+                                                            </DataTemplate>
+                                                        </Setter.Value>
+                                                    </Setter>
+                                                </Style>
+                                            </sdk:DataGridColumn.HeaderStyle>
+                                        </sdk:DataGridTextColumn>
+
+                                        <sdk:DataGridTextColumn Binding="{Binding Path=ItemContent.DonViTinh}" IsReadOnly="True" MinWidth="100">
+                                            <sdk:DataGridColumn.HeaderStyle>
+                                                <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
+                                                    <Setter Property="ContentTemplate">
+                                                        <Setter.Value>
+                                                            <DataTemplate>
+                                                                <TextBlock Text="{Binding Path=lblDonViTinh, Source={StaticResource currentMedicineManagerCulture}}" Style="{StaticResource txtFontStyle}" ></TextBlock>
                                                             </DataTemplate>
                                                         </Setter.Value>
                                                     </Setter>
@@ -129,21 +132,7 @@
                                                     <Setter Property="ContentTemplate">
                                                         <Setter.Value>
                                                             <DataTemplate>
-                                                                <TextBlock Text="{Binding Path=lblTonKho, Source={StaticResource currentMedicineManagerCulture}}" Style="{StaticResource txtFontStyle}" ></TextBlock>
-                                                            </DataTemplate>
-                                                        </Setter.Value>
-                                                    </Setter>
-                                                </Style>
-                                            </sdk:DataGridColumn.HeaderStyle>
-                                        </sdk:DataGridTextColumn>
-
-                                        <sdk:DataGridTextColumn Binding="{Binding Path=ItemContent.ToiThieu}" IsReadOnly="True" MinWidth="100">
-                                            <sdk:DataGridColumn.HeaderStyle>
-                                                <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
-                                                    <Setter Property="ContentTemplate">
-                                                        <Setter.Value>
-                                                            <DataTemplate>
-                                                                <TextBlock Text="{Binding Path=lblToiThieu, Source={StaticResource currentMedicineManagerCulture}}" Style="{StaticResource txtFontStyle}" ></TextBlock>
+                                                                <TextBlock Text="{Binding Path=lblSoLuong, Source={StaticResource currentMedicineManagerCulture}}" Style="{StaticResource txtFontStyle}" ></TextBlock>
                                                             </DataTemplate>
                                                         </Setter.Value>
                                                     </Setter>
@@ -153,21 +142,7 @@
 
                                         
 
-                                        <sdk:DataGridTextColumn Binding="{Binding Path=NhapThem}" IsReadOnly="True" MinWidth="120" CellStyle="{StaticResource MarginCenter}">
-                                            <sdk:DataGridColumn.HeaderStyle>
-                                                <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
-                                                    <Setter Property="ContentTemplate">
-                                                        <Setter.Value>
-                                                            <DataTemplate>
-                                                                <TextBlock Text="{Binding Path=lblNhapThem, Source={StaticResource currentMedicineManagerCulture}}" Style="{StaticResource txtFontStyle}"></TextBlock>
-                                                            </DataTemplate>
-                                                        </Setter.Value>
-                                                    </Setter>
-                                                </Style>
-                                            </sdk:DataGridColumn.HeaderStyle>
-                                        </sdk:DataGridTextColumn>
-
-                                        <sdk:DataGridTextColumn Binding="{Binding Path=NgayHetHan}" IsReadOnly="True" MinWidth="120" CellStyle="{StaticResource MarginCenter}">
+                                        <sdk:DataGridTextColumn Binding="{Binding Path=NgayHetHan}" IsReadOnly="True" MinWidth="150" CellStyle="{StaticResource MarginCenter}">
                                             <sdk:DataGridColumn.HeaderStyle>
                                                 <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
                                                     <Setter Property="ContentTemplate">
@@ -181,7 +156,7 @@
                                             </sdk:DataGridColumn.HeaderStyle>
                                         </sdk:DataGridTextColumn>
 
-                                        <sdk:DataGridTextColumn Binding="{Binding Path=GhiChu}" IsReadOnly="True" MinWidth="120" CellStyle="{StaticResource MarginCenter}">
+                                        <sdk:DataGridTextColumn Binding="{Binding Path=GhiChu}" IsReadOnly="True" MinWidth="150" >
                                             <sdk:DataGridColumn.HeaderStyle>
                                                 <Style TargetType="dataprimitives:DataGridColumnHeader" BasedOn="{StaticResource DataGridColumnHeaderStyle1}">
                                                     <Setter Property="ContentTemplate">
