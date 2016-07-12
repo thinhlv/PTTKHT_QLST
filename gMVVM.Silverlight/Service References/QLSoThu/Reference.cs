@@ -767,6 +767,66 @@ namespace gMVVM.QLSoThu {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ZOO_PHIEUNHAPTHUOC_UpdResult", Namespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu")]
+    public partial class ZOO_PHIEUNHAPTHUOC_UpdResult : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string ErrorDescField;
+        
+        private string MaPhieuNhapField;
+        
+        private string ResultField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ErrorDesc {
+            get {
+                return this.ErrorDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ErrorDescField, value) != true)) {
+                    this.ErrorDescField = value;
+                    this.RaisePropertyChanged("ErrorDesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MaPhieuNhap {
+            get {
+                return this.MaPhieuNhapField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaPhieuNhapField, value) != true)) {
+                    this.MaPhieuNhapField = value;
+                    this.RaisePropertyChanged("MaPhieuNhap");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Result {
+            get {
+                return this.ResultField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ResultField, value) != true)) {
+                    this.ResultField = value;
+                    this.RaisePropertyChanged("Result");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="ZOO_LOTHUOC", Namespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu")]
     public partial class ZOO_LOTHUOC : object, System.ComponentModel.INotifyPropertyChanged {
         
@@ -1275,6 +1335,66 @@ namespace gMVVM.QLSoThu {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ZOO_LOTHUOC_UpdResult", Namespace="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu")]
+    public partial class ZOO_LOTHUOC_UpdResult : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string ErrorDescField;
+        
+        private string MaLoField;
+        
+        private string ResultField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ErrorDesc {
+            get {
+                return this.ErrorDescField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ErrorDescField, value) != true)) {
+                    this.ErrorDescField = value;
+                    this.RaisePropertyChanged("ErrorDesc");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string MaLo {
+            get {
+                return this.MaLoField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MaLoField, value) != true)) {
+                    this.MaLoField = value;
+                    this.RaisePropertyChanged("MaLo");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Result {
+            get {
+                return this.ResultField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ResultField, value) != true)) {
+                    this.ResultField = value;
+                    this.RaisePropertyChanged("Result");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="QLSoThu.IZOO_BaoCaoTonKho")]
     public interface IZOO_BaoCaoTonKho {
@@ -1538,6 +1658,11 @@ namespace gMVVM.QLSoThu {
         System.IAsyncResult BeginDanhSachThuoc(System.AsyncCallback callback, object asyncState);
         
         System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_THUOC> EndDanhSachThuoc(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IZOO_PhieuNhapThuoc/ChinhSuaPhieuNhap", ReplyAction="http://tempuri.org/IZOO_PhieuNhapThuoc/ChinhSuaPhieuNhapResponse")]
+        System.IAsyncResult BeginChinhSuaPhieuNhap(gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC data, System.AsyncCallback callback, object asyncState);
+        
+        gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC_UpdResult EndChinhSuaPhieuNhap(System.IAsyncResult result);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1603,6 +1728,25 @@ namespace gMVVM.QLSoThu {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class ChinhSuaPhieuNhapCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public ChinhSuaPhieuNhapCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC_UpdResult Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC_UpdResult)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public partial class ZOO_PhieuNhapThuocClient : System.ServiceModel.ClientBase<gMVVM.QLSoThu.IZOO_PhieuNhapThuoc>, gMVVM.QLSoThu.IZOO_PhieuNhapThuoc {
         
         private BeginOperationDelegate onBeginLuuPhieuNhapDelegate;
@@ -1622,6 +1766,12 @@ namespace gMVVM.QLSoThu {
         private EndOperationDelegate onEndDanhSachThuocDelegate;
         
         private System.Threading.SendOrPostCallback onDanhSachThuocCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginChinhSuaPhieuNhapDelegate;
+        
+        private EndOperationDelegate onEndChinhSuaPhieuNhapDelegate;
+        
+        private System.Threading.SendOrPostCallback onChinhSuaPhieuNhapCompletedDelegate;
         
         private BeginOperationDelegate onBeginOpenDelegate;
         
@@ -1681,6 +1831,8 @@ namespace gMVVM.QLSoThu {
         public event System.EventHandler<TimPhieuNhapCompletedEventArgs> TimPhieuNhapCompleted;
         
         public event System.EventHandler<DanhSachThuocCompletedEventArgs> DanhSachThuocCompleted;
+        
+        public event System.EventHandler<ChinhSuaPhieuNhapCompletedEventArgs> ChinhSuaPhieuNhapCompleted;
         
         public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> OpenCompleted;
         
@@ -1828,6 +1980,52 @@ namespace gMVVM.QLSoThu {
             base.InvokeAsync(this.onBeginDanhSachThuocDelegate, null, this.onEndDanhSachThuocDelegate, this.onDanhSachThuocCompletedDelegate, userState);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult gMVVM.QLSoThu.IZOO_PhieuNhapThuoc.BeginChinhSuaPhieuNhap(gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC data, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginChinhSuaPhieuNhap(data, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC_UpdResult gMVVM.QLSoThu.IZOO_PhieuNhapThuoc.EndChinhSuaPhieuNhap(System.IAsyncResult result) {
+            return base.Channel.EndChinhSuaPhieuNhap(result);
+        }
+        
+        private System.IAsyncResult OnBeginChinhSuaPhieuNhap(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC data = ((gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC)(inValues[0]));
+            return ((gMVVM.QLSoThu.IZOO_PhieuNhapThuoc)(this)).BeginChinhSuaPhieuNhap(data, callback, asyncState);
+        }
+        
+        private object[] OnEndChinhSuaPhieuNhap(System.IAsyncResult result) {
+            gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC_UpdResult retVal = ((gMVVM.QLSoThu.IZOO_PhieuNhapThuoc)(this)).EndChinhSuaPhieuNhap(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnChinhSuaPhieuNhapCompleted(object state) {
+            if ((this.ChinhSuaPhieuNhapCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.ChinhSuaPhieuNhapCompleted(this, new ChinhSuaPhieuNhapCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void ChinhSuaPhieuNhapAsync(gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC data) {
+            this.ChinhSuaPhieuNhapAsync(data, null);
+        }
+        
+        public void ChinhSuaPhieuNhapAsync(gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC data, object userState) {
+            if ((this.onBeginChinhSuaPhieuNhapDelegate == null)) {
+                this.onBeginChinhSuaPhieuNhapDelegate = new BeginOperationDelegate(this.OnBeginChinhSuaPhieuNhap);
+            }
+            if ((this.onEndChinhSuaPhieuNhapDelegate == null)) {
+                this.onEndChinhSuaPhieuNhapDelegate = new EndOperationDelegate(this.OnEndChinhSuaPhieuNhap);
+            }
+            if ((this.onChinhSuaPhieuNhapCompletedDelegate == null)) {
+                this.onChinhSuaPhieuNhapCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnChinhSuaPhieuNhapCompleted);
+            }
+            base.InvokeAsync(this.onBeginChinhSuaPhieuNhapDelegate, new object[] {
+                        data}, this.onEndChinhSuaPhieuNhapDelegate, this.onChinhSuaPhieuNhapCompletedDelegate, userState);
+        }
+        
         private System.IAsyncResult OnBeginOpen(object[] inValues, System.AsyncCallback callback, object asyncState) {
             return ((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(callback, asyncState);
         }
@@ -1944,6 +2142,19 @@ namespace gMVVM.QLSoThu {
                 System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_THUOC> _result = ((System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_THUOC>)(base.EndInvoke("DanhSachThuoc", _args, result)));
                 return _result;
             }
+            
+            public System.IAsyncResult BeginChinhSuaPhieuNhap(gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC data, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = data;
+                System.IAsyncResult _result = base.BeginInvoke("ChinhSuaPhieuNhap", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC_UpdResult EndChinhSuaPhieuNhap(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC_UpdResult _result = ((gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC_UpdResult)(base.EndInvoke("ChinhSuaPhieuNhap", _args, result)));
+                return _result;
+            }
         }
     }
     
@@ -1965,6 +2176,11 @@ namespace gMVVM.QLSoThu {
         System.IAsyncResult BeginTimLoThuocCombobox(string mathuoc, System.AsyncCallback callback, object asyncState);
         
         System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> EndTimLoThuocCombobox(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/IZOO_LoThuoc/ChinhSuaLoThuoc", ReplyAction="http://tempuri.org/IZOO_LoThuoc/ChinhSuaLoThuocResponse")]
+        System.IAsyncResult BeginChinhSuaLoThuoc(gMVVM.QLSoThu.ZOO_LOTHUOC data, System.AsyncCallback callback, object asyncState);
+        
+        gMVVM.QLSoThu.ZOO_LOTHUOC_UpdResult EndChinhSuaLoThuoc(System.IAsyncResult result);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -2030,6 +2246,25 @@ namespace gMVVM.QLSoThu {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class ChinhSuaLoThuocCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public ChinhSuaLoThuocCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public gMVVM.QLSoThu.ZOO_LOTHUOC_UpdResult Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((gMVVM.QLSoThu.ZOO_LOTHUOC_UpdResult)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public partial class ZOO_LoThuocClient : System.ServiceModel.ClientBase<gMVVM.QLSoThu.IZOO_LoThuoc>, gMVVM.QLSoThu.IZOO_LoThuoc {
         
         private BeginOperationDelegate onBeginThemLoThuocMoiDelegate;
@@ -2049,6 +2284,12 @@ namespace gMVVM.QLSoThu {
         private EndOperationDelegate onEndTimLoThuocComboboxDelegate;
         
         private System.Threading.SendOrPostCallback onTimLoThuocComboboxCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginChinhSuaLoThuocDelegate;
+        
+        private EndOperationDelegate onEndChinhSuaLoThuocDelegate;
+        
+        private System.Threading.SendOrPostCallback onChinhSuaLoThuocCompletedDelegate;
         
         private BeginOperationDelegate onBeginOpenDelegate;
         
@@ -2108,6 +2349,8 @@ namespace gMVVM.QLSoThu {
         public event System.EventHandler<TimLoThuocCompletedEventArgs> TimLoThuocCompleted;
         
         public event System.EventHandler<TimLoThuocComboboxCompletedEventArgs> TimLoThuocComboboxCompleted;
+        
+        public event System.EventHandler<ChinhSuaLoThuocCompletedEventArgs> ChinhSuaLoThuocCompleted;
         
         public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> OpenCompleted;
         
@@ -2253,6 +2496,52 @@ namespace gMVVM.QLSoThu {
                         mathuoc}, this.onEndTimLoThuocComboboxDelegate, this.onTimLoThuocComboboxCompletedDelegate, userState);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult gMVVM.QLSoThu.IZOO_LoThuoc.BeginChinhSuaLoThuoc(gMVVM.QLSoThu.ZOO_LOTHUOC data, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginChinhSuaLoThuoc(data, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        gMVVM.QLSoThu.ZOO_LOTHUOC_UpdResult gMVVM.QLSoThu.IZOO_LoThuoc.EndChinhSuaLoThuoc(System.IAsyncResult result) {
+            return base.Channel.EndChinhSuaLoThuoc(result);
+        }
+        
+        private System.IAsyncResult OnBeginChinhSuaLoThuoc(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            gMVVM.QLSoThu.ZOO_LOTHUOC data = ((gMVVM.QLSoThu.ZOO_LOTHUOC)(inValues[0]));
+            return ((gMVVM.QLSoThu.IZOO_LoThuoc)(this)).BeginChinhSuaLoThuoc(data, callback, asyncState);
+        }
+        
+        private object[] OnEndChinhSuaLoThuoc(System.IAsyncResult result) {
+            gMVVM.QLSoThu.ZOO_LOTHUOC_UpdResult retVal = ((gMVVM.QLSoThu.IZOO_LoThuoc)(this)).EndChinhSuaLoThuoc(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnChinhSuaLoThuocCompleted(object state) {
+            if ((this.ChinhSuaLoThuocCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.ChinhSuaLoThuocCompleted(this, new ChinhSuaLoThuocCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void ChinhSuaLoThuocAsync(gMVVM.QLSoThu.ZOO_LOTHUOC data) {
+            this.ChinhSuaLoThuocAsync(data, null);
+        }
+        
+        public void ChinhSuaLoThuocAsync(gMVVM.QLSoThu.ZOO_LOTHUOC data, object userState) {
+            if ((this.onBeginChinhSuaLoThuocDelegate == null)) {
+                this.onBeginChinhSuaLoThuocDelegate = new BeginOperationDelegate(this.OnBeginChinhSuaLoThuoc);
+            }
+            if ((this.onEndChinhSuaLoThuocDelegate == null)) {
+                this.onEndChinhSuaLoThuocDelegate = new EndOperationDelegate(this.OnEndChinhSuaLoThuoc);
+            }
+            if ((this.onChinhSuaLoThuocCompletedDelegate == null)) {
+                this.onChinhSuaLoThuocCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnChinhSuaLoThuocCompleted);
+            }
+            base.InvokeAsync(this.onBeginChinhSuaLoThuocDelegate, new object[] {
+                        data}, this.onEndChinhSuaLoThuocDelegate, this.onChinhSuaLoThuocCompletedDelegate, userState);
+        }
+        
         private System.IAsyncResult OnBeginOpen(object[] inValues, System.AsyncCallback callback, object asyncState) {
             return ((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(callback, asyncState);
         }
@@ -2366,6 +2655,19 @@ namespace gMVVM.QLSoThu {
             public System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> EndTimLoThuocCombobox(System.IAsyncResult result) {
                 object[] _args = new object[0];
                 System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult> _result = ((System.Collections.ObjectModel.ObservableCollection<gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult>)(base.EndInvoke("TimLoThuocCombobox", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginChinhSuaLoThuoc(gMVVM.QLSoThu.ZOO_LOTHUOC data, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = data;
+                System.IAsyncResult _result = base.BeginInvoke("ChinhSuaLoThuoc", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public gMVVM.QLSoThu.ZOO_LOTHUOC_UpdResult EndChinhSuaLoThuoc(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                gMVVM.QLSoThu.ZOO_LOTHUOC_UpdResult _result = ((gMVVM.QLSoThu.ZOO_LOTHUOC_UpdResult)(base.EndInvoke("ChinhSuaLoThuoc", _args, result)));
                 return _result;
             }
         }

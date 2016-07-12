@@ -608,10 +608,16 @@
     <None Include="Service References\QLSoThu\gMVVM.QLSoThu.ZOO_LOTHUOC_SearchResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\QLSoThu\gMVVM.QLSoThu.ZOO_LOTHUOC_UpdResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\QLSoThu\gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC_InsResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\QLSoThu\gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC_SearchResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QLSoThu\gMVVM.QLSoThu.ZOO_PHIEUNHAPTHUOC_UpdResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\QLSoThu\gMVVM.QLSoThu.ZOO_THUOC.datasource">

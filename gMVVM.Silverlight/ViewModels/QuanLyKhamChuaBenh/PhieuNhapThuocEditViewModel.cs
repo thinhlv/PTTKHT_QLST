@@ -256,13 +256,13 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
             if (!this.messagePop.HasError())
             {
 
-                if (/*this.isEdit*/false)
+                if (this.isEdit)
                 {
                     this.currentPhieuNhapThuoc.MAKER_ID = CurrentSystemLogin.CurrentUser.TLNANME;
                     this.preAuthStatus = this.currentPhieuNhapThuoc.AUTH_STATUS;
                     this.currentPhieuNhapThuoc.AUTH_STATUS = "U";
                     MyHelper.IsBusy();
-                    //this.phieuNhapClient.UpdateTLMENUAsync(this.currentPhieuNhapThuoc);
+                    this.phieuNhapClient.ChinhSuaPhieuNhapAsync(this.currentPhieuNhapThuoc);
                 }
                 else
                 {
@@ -316,7 +316,7 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
 
                 this.phieuNhapClient.LuuPhieuNhapCompleted += new EventHandler<LuuPhieuNhapCompletedEventArgs>(insertCurrencyCompleted);
                 this.loThuocClient.TimLoThuocComboboxCompleted += new EventHandler<TimLoThuocComboboxCompletedEventArgs>(timLoThuocComplete);
-                //this.phieuNhapClient.UpdateTLMENUCompleted += new EventHandler<UpdateTLMENUCompletedEventArgs>(updateCurrencyCompleted);
+                this.phieuNhapClient.ChinhSuaPhieuNhapCompleted += new EventHandler<ChinhSuaPhieuNhapCompletedEventArgs>(updateCurrencyCompleted);
                 //this.menuClient.ApproveCMAGENTCompleted += new EventHandler<ApproveCMAGENTCompletedEventArgs>(approveComplete);
                                 
             }
@@ -340,31 +340,31 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
         //        this.messagePop.SetSingleError(ValidatorResource.ErrorApprove);
         //}
 
-//         private void updateCurrencyCompleted(object sender, UpdateTLMENUCompletedEventArgs e)
-//         {
-//             try
-//             {
-//                 if (e.Result)
-//                 {
-//                     this.IsApproved = Visibility.Collapsed.ToString();
-//                     this.OnPropertyChanged("IsApproved");
-//                     this.messagePop.Successful(ValidatorResource.UpdateSuccessful);
-//                 }
-//                 else
-//                 {
-//                     this.currentPhieuNhapThuoc.AUTH_STATUS = this.preAuthStatus;
-//                     this.messagePop.SetSingleError(ValidatorResource.ErrorUpdate);
-//                 }
-//             }
-//             catch (Exception)
-//             {
-//                 this.messagePop.SetSingleError(CommonResource.errorCannotConnectServer);
-//             }
-//             finally
-//             {
-//                 MyHelper.IsFree();
-//             }
-//         }
+        private void updateCurrencyCompleted(object sender, ChinhSuaPhieuNhapCompletedEventArgs e)
+        {
+            try
+            {
+                if (e.Result.Result == "0")
+                {
+                    this.IsApproved = Visibility.Collapsed.ToString();
+                    this.OnPropertyChanged("IsApproved");
+                    this.messagePop.Successful(ValidatorResource.UpdateSuccessful);
+                }
+                else
+                {
+                    this.currentPhieuNhapThuoc.AUTH_STATUS = this.preAuthStatus;
+                    this.messagePop.SetSingleError(ValidatorResource.ErrorUpdate);
+                }
+            }
+            catch (Exception)
+            {
+                this.messagePop.SetSingleError(CommonResource.errorCannotConnectServer);
+            }
+            finally
+            {
+                MyHelper.IsFree();
+            }
+        }
 
         private void insertCurrencyCompleted(object sender, LuuPhieuNhapCompletedEventArgs e)
         {

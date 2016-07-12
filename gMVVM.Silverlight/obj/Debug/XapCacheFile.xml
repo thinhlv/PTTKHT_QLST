@@ -1,5 +1,5 @@
-﻿<xapCache source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\gMVVM.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="8/7/2016 8:22:16 PM">
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\gMVVM.dll" archivePath="gMVVM.dll" lastWriteTime="8/7/2016 8:22:13 PM" />
+﻿<xapCache source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\gMVVM.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="9/7/2016 10:06:41 AM">
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\gMVVM.dll" archivePath="gMVVM.dll" lastWriteTime="9/7/2016 10:06:38 AM" />
   <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\FJ.Core.dll" archivePath="FJ.Core.dll" lastWriteTime="17/3/2015 2:10:48 PM" />
   <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\FluentValidation.dll" archivePath="FluentValidation.dll" lastWriteTime="17/3/2015 2:10:50 PM" />
   <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\GalaSoft.MvvmLight.SL5.dll" archivePath="GalaSoft.MvvmLight.SL5.dll" lastWriteTime="17/3/2015 2:10:36 PM" />
@@ -29,7 +29,7 @@
   <file source="C:\Program Files (x86)\Microsoft SDKs\Expression\Blend\Silverlight\v5.0\Libraries\System.Windows.Interactivity.dll" archivePath="System.Windows.Interactivity.dll" lastWriteTime="18/2/2013 2:32:08 PM" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Xml.Linq.dll" archivePath="System.Xml.Linq.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Silverlight\v5.0\Libraries\Client\System.Xml.Serialization.dll" archivePath="System.Xml.Serialization.dll" lastWriteTime="18/11/2011 5:40:20 PM" />
-  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\vi-VN\gMVVM.resources.dll" archivePath="vi-VN\gMVVM.resources.dll" lastWriteTime="8/7/2016 8:22:14 PM" />
+  <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\obj\Debug\vi-VN\gMVVM.resources.dll" archivePath="vi-VN\gMVVM.resources.dll" lastWriteTime="9/7/2016 10:06:38 AM" />
   <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="8/7/2016 10:55:45 AM" />
   <file source="D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Silverlight\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="8/7/2016 6:44:57 PM" />
 </xapCache>

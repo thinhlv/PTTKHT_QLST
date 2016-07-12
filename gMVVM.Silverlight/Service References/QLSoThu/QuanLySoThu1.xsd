@@ -60,17 +60,31 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="ChinhSuaPhieuNhap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="data" nillable="true" type="q6:ZOO_PHIEUNHAPTHUOC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChinhSuaPhieuNhapResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="ChinhSuaPhieuNhapResult" nillable="true" type="q7:ZOO_PHIEUNHAPTHUOC_UpdResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="ThemLoThuocMoi">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="data" nillable="true" type="q6:ZOO_LOTHUOC" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="data" nillable="true" type="q8:ZOO_LOTHUOC" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="ThemLoThuocMoiResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="ThemLoThuocMoiResult" nillable="true" type="q7:ZOO_LOTHUOC_InsResult" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="ThemLoThuocMoiResult" nillable="true" type="q9:ZOO_LOTHUOC_InsResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -85,7 +99,7 @@
   <xs:element name="TimLoThuocResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="TimLoThuocResult" nillable="true" type="q8:ArrayOfZOO_LOTHUOC_SearchResult" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="TimLoThuocResult" nillable="true" type="q10:ArrayOfZOO_LOTHUOC_SearchResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -99,7 +113,21 @@
   <xs:element name="TimLoThuocComboboxResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="TimLoThuocComboboxResult" nillable="true" type="q9:ArrayOfZOO_LOTHUOC_SearchResult" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="TimLoThuocComboboxResult" nillable="true" type="q11:ArrayOfZOO_LOTHUOC_SearchResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChinhSuaLoThuoc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="data" nillable="true" type="q12:ZOO_LOTHUOC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChinhSuaLoThuocResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/gMVVM.Web.Services.QuanLySoThu" minOccurs="0" name="ChinhSuaLoThuocResult" nillable="true" type="q13:ZOO_LOTHUOC_UpdResult" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
