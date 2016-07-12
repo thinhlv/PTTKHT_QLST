@@ -334,18 +334,11 @@ namespace gMVVM.Web.Services.QuanLySoThu
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ZOO_BAOCAOTONKHO_Search")]
-		public ISingleResult<ZOO_BAOCAOTONKHO_SearchResult> ZOO_BAOCAOTONKHO_Search([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MaThuoc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(50)")] string p_TenThuoc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_NgayHetHan, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p_TOP)
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ZOO_PHIEUNHAPTHUOC_Upd")]
+		public ISingleResult<ZOO_PHIEUNHAPTHUOC_UpdResult> ZOO_PHIEUNHAPTHUOC_Upd([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MaPhieuNhap, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MaLo, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p_SoLuong, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_NgayNhap, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(1000)")] string p_NOTES, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(1)")] string p_RECORD_STATUS, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MAKER_ID, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_CREATE_DT, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string p_AUTH_STATUS, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_CHECKER_ID, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_APPROVE_DT)
 		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), p_MaThuoc, p_TenThuoc, p_NgayHetHan, p_TOP);
-			return ((ISingleResult<ZOO_BAOCAOTONKHO_SearchResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ZOO_PHIEUNHAPTHUOC_Search")]
-		public ISingleResult<ZOO_PHIEUNHAPTHUOC_SearchResult> ZOO_PHIEUNHAPTHUOC_Search([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MaPhieuNhap, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_TenThuoc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_NgayNhap, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p_TOP)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), p_MaPhieuNhap, p_TenThuoc, p_NgayNhap, p_TOP);
-			return ((ISingleResult<ZOO_PHIEUNHAPTHUOC_SearchResult>)(result.ReturnValue));
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), p_MaPhieuNhap, p_MaLo, p_SoLuong, p_NgayNhap, p_NOTES, p_RECORD_STATUS, p_MAKER_ID, p_CREATE_DT, p_AUTH_STATUS, p_CHECKER_ID, p_APPROVE_DT);
+			return ((ISingleResult<ZOO_PHIEUNHAPTHUOC_UpdResult>)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ZOO_LOTHUOC_Ins")]
@@ -362,11 +355,53 @@ namespace gMVVM.Web.Services.QuanLySoThu
 			return ((ISingleResult<ZOO_LOTHUOC_SearchResult>)(result.ReturnValue));
 		}
 		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ZOO_LOTHUOC_Upd")]
+		public ISingleResult<ZOO_LOTHUOC_UpdResult> ZOO_LOTHUOC_Upd([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MaLo, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MaThuoc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_SoLo, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_NgaySanXuat, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_NgayHetHan, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p_SoLuong, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(1000)")] string p_NOTES, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(1)")] string p_RECORD_STATUS, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MAKER_ID, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_CREATE_DT, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string p_AUTH_STATUS, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_CHECKER_ID, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_APPROVE_DT)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), p_MaLo, p_MaThuoc, p_SoLo, p_NgaySanXuat, p_NgayHetHan, p_SoLuong, p_NOTES, p_RECORD_STATUS, p_MAKER_ID, p_CREATE_DT, p_AUTH_STATUS, p_CHECKER_ID, p_APPROVE_DT);
+			return ((ISingleResult<ZOO_LOTHUOC_UpdResult>)(result.ReturnValue));
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ZOO_PHIEUNHAPTHUOC_Ins")]
 		public ISingleResult<ZOO_PHIEUNHAPTHUOC_InsResult> ZOO_PHIEUNHAPTHUOC_Ins([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MaLo, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p_SoLuong, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_NgayNhap, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(1000)")] string p_NOTES, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(1)")] string p_RECORD_STATUS, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MAKER_ID, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_CREATE_DT, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string p_AUTH_STATUS, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_CHECKER_ID, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_APPROVE_DT)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), p_MaLo, p_SoLuong, p_NgayNhap, p_NOTES, p_RECORD_STATUS, p_MAKER_ID, p_CREATE_DT, p_AUTH_STATUS, p_CHECKER_ID, p_APPROVE_DT);
 			return ((ISingleResult<ZOO_PHIEUNHAPTHUOC_InsResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ZOO_PHIEUNHAPTHUOC_Search")]
+		public ISingleResult<ZOO_PHIEUNHAPTHUOC_SearchResult> ZOO_PHIEUNHAPTHUOC_Search([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MaPhieuNhap, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_TenThuoc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_NgayNhap, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p_TOP)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), p_MaPhieuNhap, p_TenThuoc, p_NgayNhap, p_TOP);
+			return ((ISingleResult<ZOO_PHIEUNHAPTHUOC_SearchResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ZOO_BAOCAOTONKHO_Search")]
+		public ISingleResult<ZOO_BAOCAOTONKHO_SearchResult> ZOO_BAOCAOTONKHO_Search([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MaThuoc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(50)")] string p_TenThuoc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_NgayHetHan, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p_TOP)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), p_MaThuoc, p_TenThuoc, p_NgayHetHan, p_TOP);
+			return ((ISingleResult<ZOO_BAOCAOTONKHO_SearchResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ZOO_THUOC_Upd")]
+		public ISingleResult<ZOO_THUOC_UpdResult> ZOO_THUOC_Upd([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MaThuoc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(50)")] string p_TenThuoc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(50)")] string p_DonViTinh, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_TinhTrang, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(1000)")] string p_MoTa, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(1000)")] string p_NOTES, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(1)")] string p_RECORD_STATUS, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MAKER_ID, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_CREATE_DT, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string p_AUTH_STATUS, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_CHECKER_ID, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_APPROVE_DT)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), p_MaThuoc, p_TenThuoc, p_DonViTinh, p_TinhTrang, p_MoTa, p_NOTES, p_RECORD_STATUS, p_MAKER_ID, p_CREATE_DT, p_AUTH_STATUS, p_CHECKER_ID, p_APPROVE_DT);
+			return ((ISingleResult<ZOO_THUOC_UpdResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ZOO_THUOC_Ins")]
+		public ISingleResult<ZOO_THUOC_InsResult> ZOO_THUOC_Ins([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(50)")] string p_TenThuoc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(50)")] string p_DonViTinh, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_TinhTrang, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(1000)")] string p_MoTa, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(1000)")] string p_NOTES, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(1)")] string p_RECORD_STATUS, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MAKER_ID, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_CREATE_DT, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string p_AUTH_STATUS, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_CHECKER_ID, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string p_APPROVE_DT)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), p_TenThuoc, p_DonViTinh, p_TinhTrang, p_MoTa, p_NOTES, p_RECORD_STATUS, p_MAKER_ID, p_CREATE_DT, p_AUTH_STATUS, p_CHECKER_ID, p_APPROVE_DT);
+			return ((ISingleResult<ZOO_THUOC_InsResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.ZOO_THUOC_Search")]
+		public ISingleResult<ZOO_THUOC_SearchResult> ZOO_THUOC_Search([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_MaThuoc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="NVarChar(50)")] string p_TenThuoc, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(15)")] string p_TinhTrang, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> p_TOP)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), p_MaThuoc, p_TenThuoc, p_TinhTrang, p_TOP);
+			return ((ISingleResult<ZOO_THUOC_SearchResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -8968,140 +9003,36 @@ namespace gMVVM.Web.Services.QuanLySoThu
 		}
 	}
 	
-	public partial class ZOO_BAOCAOTONKHO_SearchResult
+	public partial class ZOO_PHIEUNHAPTHUOC_UpdResult
 	{
 		
-		private string _TenThuoc;
-		
-		private string _SoLo;
-		
-		private string _DonViTinh;
-		
-		private System.Nullable<int> _SoLuong;
-		
-		private System.Nullable<System.DateTime> _NgayHetHan;
-		
-		public ZOO_BAOCAOTONKHO_SearchResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenThuoc", DbType="NVarChar(50)")]
-		public string TenThuoc
-		{
-			get
-			{
-				return this._TenThuoc;
-			}
-			set
-			{
-				if ((this._TenThuoc != value))
-				{
-					this._TenThuoc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLo", DbType="VarChar(20)")]
-		public string SoLo
-		{
-			get
-			{
-				return this._SoLo;
-			}
-			set
-			{
-				if ((this._SoLo != value))
-				{
-					this._SoLo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonViTinh", DbType="NVarChar(50)")]
-		public string DonViTinh
-		{
-			get
-			{
-				return this._DonViTinh;
-			}
-			set
-			{
-				if ((this._DonViTinh != value))
-				{
-					this._DonViTinh = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
-		public System.Nullable<int> SoLuong
-		{
-			get
-			{
-				return this._SoLuong;
-			}
-			set
-			{
-				if ((this._SoLuong != value))
-				{
-					this._SoLuong = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayHetHan", DbType="DateTime")]
-		public System.Nullable<System.DateTime> NgayHetHan
-		{
-			get
-			{
-				return this._NgayHetHan;
-			}
-			set
-			{
-				if ((this._NgayHetHan != value))
-				{
-					this._NgayHetHan = value;
-				}
-			}
-		}
-	}
-	
-	public partial class ZOO_PHIEUNHAPTHUOC_SearchResult
-	{
+		private string _Result;
 		
 		private string _MaPhieuNhap;
 		
-		private string _MaLo;
+		private string _ErrorDesc;
 		
-		private System.Nullable<int> _SoLuong;
-		
-		private System.Nullable<System.DateTime> _NgayNhap;
-		
-		private string _NOTES;
-		
-		private string _RECORD_STATUS;
-		
-		private string _MAKER_ID;
-		
-		private System.Nullable<System.DateTime> _CREATE_DT;
-		
-		private string _AUTH_STATUS;
-		
-		private string _CHECKER_ID;
-		
-		private System.Nullable<System.DateTime> _APPROVE_DT;
-		
-		private string _TenThuoc;
-		
-		private string _DonViTinh;
-		
-		private string _SoLo;
-		
-		public ZOO_PHIEUNHAPTHUOC_SearchResult()
+		public ZOO_PHIEUNHAPTHUOC_UpdResult()
 		{
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuNhap", DbType="VarChar(15) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Result", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		public string Result
+		{
+			get
+			{
+				return this._Result;
+			}
+			set
+			{
+				if ((this._Result != value))
+				{
+					this._Result = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuNhap", DbType="VarChar(1) NOT NULL", CanBeNull=false)]
 		public string MaPhieuNhap
 		{
 			get
@@ -9117,210 +9048,18 @@ namespace gMVVM.Web.Services.QuanLySoThu
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLo", DbType="VarChar(15)")]
-		public string MaLo
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ErrorDesc", DbType="NVarChar(1000)")]
+		public string ErrorDesc
 		{
 			get
 			{
-				return this._MaLo;
+				return this._ErrorDesc;
 			}
 			set
 			{
-				if ((this._MaLo != value))
+				if ((this._ErrorDesc != value))
 				{
-					this._MaLo = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
-		public System.Nullable<int> SoLuong
-		{
-			get
-			{
-				return this._SoLuong;
-			}
-			set
-			{
-				if ((this._SoLuong != value))
-				{
-					this._SoLuong = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayNhap", DbType="DateTime")]
-		public System.Nullable<System.DateTime> NgayNhap
-		{
-			get
-			{
-				return this._NgayNhap;
-			}
-			set
-			{
-				if ((this._NgayNhap != value))
-				{
-					this._NgayNhap = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOTES", DbType="NVarChar(1000)")]
-		public string NOTES
-		{
-			get
-			{
-				return this._NOTES;
-			}
-			set
-			{
-				if ((this._NOTES != value))
-				{
-					this._NOTES = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RECORD_STATUS", DbType="VarChar(1)")]
-		public string RECORD_STATUS
-		{
-			get
-			{
-				return this._RECORD_STATUS;
-			}
-			set
-			{
-				if ((this._RECORD_STATUS != value))
-				{
-					this._RECORD_STATUS = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MAKER_ID", DbType="VarChar(15)")]
-		public string MAKER_ID
-		{
-			get
-			{
-				return this._MAKER_ID;
-			}
-			set
-			{
-				if ((this._MAKER_ID != value))
-				{
-					this._MAKER_ID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_DT", DbType="DateTime")]
-		public System.Nullable<System.DateTime> CREATE_DT
-		{
-			get
-			{
-				return this._CREATE_DT;
-			}
-			set
-			{
-				if ((this._CREATE_DT != value))
-				{
-					this._CREATE_DT = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AUTH_STATUS", DbType="VarChar(50)")]
-		public string AUTH_STATUS
-		{
-			get
-			{
-				return this._AUTH_STATUS;
-			}
-			set
-			{
-				if ((this._AUTH_STATUS != value))
-				{
-					this._AUTH_STATUS = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CHECKER_ID", DbType="VarChar(15)")]
-		public string CHECKER_ID
-		{
-			get
-			{
-				return this._CHECKER_ID;
-			}
-			set
-			{
-				if ((this._CHECKER_ID != value))
-				{
-					this._CHECKER_ID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_APPROVE_DT", DbType="DateTime")]
-		public System.Nullable<System.DateTime> APPROVE_DT
-		{
-			get
-			{
-				return this._APPROVE_DT;
-			}
-			set
-			{
-				if ((this._APPROVE_DT != value))
-				{
-					this._APPROVE_DT = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenThuoc", DbType="NVarChar(50)")]
-		public string TenThuoc
-		{
-			get
-			{
-				return this._TenThuoc;
-			}
-			set
-			{
-				if ((this._TenThuoc != value))
-				{
-					this._TenThuoc = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonViTinh", DbType="NVarChar(50)")]
-		public string DonViTinh
-		{
-			get
-			{
-				return this._DonViTinh;
-			}
-			set
-			{
-				if ((this._DonViTinh != value))
-				{
-					this._DonViTinh = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLo", DbType="VarChar(20)")]
-		public string SoLo
-		{
-			get
-			{
-				return this._SoLo;
-			}
-			set
-			{
-				if ((this._SoLo != value))
-				{
-					this._SoLo = value;
+					this._ErrorDesc = value;
 				}
 			}
 		}
@@ -9666,6 +9405,68 @@ namespace gMVVM.Web.Services.QuanLySoThu
 		}
 	}
 	
+	public partial class ZOO_LOTHUOC_UpdResult
+	{
+		
+		private string _Result;
+		
+		private string _MaLo;
+		
+		private string _ErrorDesc;
+		
+		public ZOO_LOTHUOC_UpdResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Result", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		public string Result
+		{
+			get
+			{
+				return this._Result;
+			}
+			set
+			{
+				if ((this._Result != value))
+				{
+					this._Result = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLo", DbType="VarChar(1) NOT NULL", CanBeNull=false)]
+		public string MaLo
+		{
+			get
+			{
+				return this._MaLo;
+			}
+			set
+			{
+				if ((this._MaLo != value))
+				{
+					this._MaLo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ErrorDesc", DbType="NVarChar(1000)")]
+		public string ErrorDesc
+		{
+			get
+			{
+				return this._ErrorDesc;
+			}
+			set
+			{
+				if ((this._ErrorDesc != value))
+				{
+					this._ErrorDesc = value;
+				}
+			}
+		}
+	}
+	
 	public partial class ZOO_PHIEUNHAPTHUOC_InsResult
 	{
 		
@@ -9723,6 +9524,712 @@ namespace gMVVM.Web.Services.QuanLySoThu
 				if ((this._ErrorDesc != value))
 				{
 					this._ErrorDesc = value;
+				}
+			}
+		}
+	}
+	
+	public partial class ZOO_PHIEUNHAPTHUOC_SearchResult
+	{
+		
+		private string _MaPhieuNhap;
+		
+		private string _MaLo;
+		
+		private System.Nullable<int> _SoLuong;
+		
+		private System.Nullable<System.DateTime> _NgayNhap;
+		
+		private string _NOTES;
+		
+		private string _RECORD_STATUS;
+		
+		private string _MAKER_ID;
+		
+		private System.Nullable<System.DateTime> _CREATE_DT;
+		
+		private string _AUTH_STATUS;
+		
+		private string _CHECKER_ID;
+		
+		private System.Nullable<System.DateTime> _APPROVE_DT;
+		
+		private string _TenThuoc;
+		
+		private string _DonViTinh;
+		
+		private string _SoLo;
+		
+		public ZOO_PHIEUNHAPTHUOC_SearchResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPhieuNhap", DbType="VarChar(15) NOT NULL", CanBeNull=false)]
+		public string MaPhieuNhap
+		{
+			get
+			{
+				return this._MaPhieuNhap;
+			}
+			set
+			{
+				if ((this._MaPhieuNhap != value))
+				{
+					this._MaPhieuNhap = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaLo", DbType="VarChar(15)")]
+		public string MaLo
+		{
+			get
+			{
+				return this._MaLo;
+			}
+			set
+			{
+				if ((this._MaLo != value))
+				{
+					this._MaLo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
+		public System.Nullable<int> SoLuong
+		{
+			get
+			{
+				return this._SoLuong;
+			}
+			set
+			{
+				if ((this._SoLuong != value))
+				{
+					this._SoLuong = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayNhap", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayNhap
+		{
+			get
+			{
+				return this._NgayNhap;
+			}
+			set
+			{
+				if ((this._NgayNhap != value))
+				{
+					this._NgayNhap = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOTES", DbType="NVarChar(1000)")]
+		public string NOTES
+		{
+			get
+			{
+				return this._NOTES;
+			}
+			set
+			{
+				if ((this._NOTES != value))
+				{
+					this._NOTES = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RECORD_STATUS", DbType="VarChar(1)")]
+		public string RECORD_STATUS
+		{
+			get
+			{
+				return this._RECORD_STATUS;
+			}
+			set
+			{
+				if ((this._RECORD_STATUS != value))
+				{
+					this._RECORD_STATUS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MAKER_ID", DbType="VarChar(15)")]
+		public string MAKER_ID
+		{
+			get
+			{
+				return this._MAKER_ID;
+			}
+			set
+			{
+				if ((this._MAKER_ID != value))
+				{
+					this._MAKER_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_DT", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CREATE_DT
+		{
+			get
+			{
+				return this._CREATE_DT;
+			}
+			set
+			{
+				if ((this._CREATE_DT != value))
+				{
+					this._CREATE_DT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AUTH_STATUS", DbType="VarChar(50)")]
+		public string AUTH_STATUS
+		{
+			get
+			{
+				return this._AUTH_STATUS;
+			}
+			set
+			{
+				if ((this._AUTH_STATUS != value))
+				{
+					this._AUTH_STATUS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CHECKER_ID", DbType="VarChar(15)")]
+		public string CHECKER_ID
+		{
+			get
+			{
+				return this._CHECKER_ID;
+			}
+			set
+			{
+				if ((this._CHECKER_ID != value))
+				{
+					this._CHECKER_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_APPROVE_DT", DbType="DateTime")]
+		public System.Nullable<System.DateTime> APPROVE_DT
+		{
+			get
+			{
+				return this._APPROVE_DT;
+			}
+			set
+			{
+				if ((this._APPROVE_DT != value))
+				{
+					this._APPROVE_DT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenThuoc", DbType="NVarChar(50)")]
+		public string TenThuoc
+		{
+			get
+			{
+				return this._TenThuoc;
+			}
+			set
+			{
+				if ((this._TenThuoc != value))
+				{
+					this._TenThuoc = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonViTinh", DbType="NVarChar(50)")]
+		public string DonViTinh
+		{
+			get
+			{
+				return this._DonViTinh;
+			}
+			set
+			{
+				if ((this._DonViTinh != value))
+				{
+					this._DonViTinh = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLo", DbType="VarChar(20)")]
+		public string SoLo
+		{
+			get
+			{
+				return this._SoLo;
+			}
+			set
+			{
+				if ((this._SoLo != value))
+				{
+					this._SoLo = value;
+				}
+			}
+		}
+	}
+	
+	public partial class ZOO_BAOCAOTONKHO_SearchResult
+	{
+		
+		private string _TenThuoc;
+		
+		private string _SoLo;
+		
+		private string _DonViTinh;
+		
+		private System.Nullable<int> _SoLuong;
+		
+		private System.Nullable<System.DateTime> _NgayHetHan;
+		
+		public ZOO_BAOCAOTONKHO_SearchResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenThuoc", DbType="NVarChar(50)")]
+		public string TenThuoc
+		{
+			get
+			{
+				return this._TenThuoc;
+			}
+			set
+			{
+				if ((this._TenThuoc != value))
+				{
+					this._TenThuoc = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLo", DbType="VarChar(20)")]
+		public string SoLo
+		{
+			get
+			{
+				return this._SoLo;
+			}
+			set
+			{
+				if ((this._SoLo != value))
+				{
+					this._SoLo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonViTinh", DbType="NVarChar(50)")]
+		public string DonViTinh
+		{
+			get
+			{
+				return this._DonViTinh;
+			}
+			set
+			{
+				if ((this._DonViTinh != value))
+				{
+					this._DonViTinh = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
+		public System.Nullable<int> SoLuong
+		{
+			get
+			{
+				return this._SoLuong;
+			}
+			set
+			{
+				if ((this._SoLuong != value))
+				{
+					this._SoLuong = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayHetHan", DbType="DateTime")]
+		public System.Nullable<System.DateTime> NgayHetHan
+		{
+			get
+			{
+				return this._NgayHetHan;
+			}
+			set
+			{
+				if ((this._NgayHetHan != value))
+				{
+					this._NgayHetHan = value;
+				}
+			}
+		}
+	}
+	
+	public partial class ZOO_THUOC_UpdResult
+	{
+		
+		private string _Result;
+		
+		private string _MaThuoc;
+		
+		private string _ErrorDesc;
+		
+		public ZOO_THUOC_UpdResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Result", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+		public string Result
+		{
+			get
+			{
+				return this._Result;
+			}
+			set
+			{
+				if ((this._Result != value))
+				{
+					this._Result = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThuoc", DbType="VarChar(1) NOT NULL", CanBeNull=false)]
+		public string MaThuoc
+		{
+			get
+			{
+				return this._MaThuoc;
+			}
+			set
+			{
+				if ((this._MaThuoc != value))
+				{
+					this._MaThuoc = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ErrorDesc", DbType="NVarChar(1000)")]
+		public string ErrorDesc
+		{
+			get
+			{
+				return this._ErrorDesc;
+			}
+			set
+			{
+				if ((this._ErrorDesc != value))
+				{
+					this._ErrorDesc = value;
+				}
+			}
+		}
+	}
+	
+	public partial class ZOO_THUOC_InsResult
+	{
+		
+		private string _Result;
+		
+		private string _MaThuoc;
+		
+		private string _ErrorDesc;
+		
+		public ZOO_THUOC_InsResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Result", DbType="VarChar(1) NOT NULL", CanBeNull=false)]
+		public string Result
+		{
+			get
+			{
+				return this._Result;
+			}
+			set
+			{
+				if ((this._Result != value))
+				{
+					this._Result = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThuoc", DbType="VarChar(15)")]
+		public string MaThuoc
+		{
+			get
+			{
+				return this._MaThuoc;
+			}
+			set
+			{
+				if ((this._MaThuoc != value))
+				{
+					this._MaThuoc = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ErrorDesc", DbType="VarChar(1) NOT NULL", CanBeNull=false)]
+		public string ErrorDesc
+		{
+			get
+			{
+				return this._ErrorDesc;
+			}
+			set
+			{
+				if ((this._ErrorDesc != value))
+				{
+					this._ErrorDesc = value;
+				}
+			}
+		}
+	}
+	
+	public partial class ZOO_THUOC_SearchResult
+	{
+		
+		private string _MaThuoc;
+		
+		private string _TenThuoc;
+		
+		private string _DonViTinh;
+		
+		private string _TinhTrang;
+		
+		private string _MoTa;
+		
+		private string _NOTES;
+		
+		private string _RECORD_STATUS;
+		
+		private string _MAKER_ID;
+		
+		private System.Nullable<System.DateTime> _CREATE_DT;
+		
+		private string _AUTH_STATUS;
+		
+		private string _CHECKER_ID;
+		
+		private System.Nullable<System.DateTime> _APPROVE_DT;
+		
+		public ZOO_THUOC_SearchResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaThuoc", DbType="VarChar(15) NOT NULL", CanBeNull=false)]
+		public string MaThuoc
+		{
+			get
+			{
+				return this._MaThuoc;
+			}
+			set
+			{
+				if ((this._MaThuoc != value))
+				{
+					this._MaThuoc = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenThuoc", DbType="NVarChar(50)")]
+		public string TenThuoc
+		{
+			get
+			{
+				return this._TenThuoc;
+			}
+			set
+			{
+				if ((this._TenThuoc != value))
+				{
+					this._TenThuoc = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DonViTinh", DbType="NVarChar(50)")]
+		public string DonViTinh
+		{
+			get
+			{
+				return this._DonViTinh;
+			}
+			set
+			{
+				if ((this._DonViTinh != value))
+				{
+					this._DonViTinh = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TinhTrang", DbType="VarChar(15)")]
+		public string TinhTrang
+		{
+			get
+			{
+				return this._TinhTrang;
+			}
+			set
+			{
+				if ((this._TinhTrang != value))
+				{
+					this._TinhTrang = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MoTa", DbType="NVarChar(1000)")]
+		public string MoTa
+		{
+			get
+			{
+				return this._MoTa;
+			}
+			set
+			{
+				if ((this._MoTa != value))
+				{
+					this._MoTa = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOTES", DbType="NVarChar(1000)")]
+		public string NOTES
+		{
+			get
+			{
+				return this._NOTES;
+			}
+			set
+			{
+				if ((this._NOTES != value))
+				{
+					this._NOTES = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RECORD_STATUS", DbType="VarChar(1)")]
+		public string RECORD_STATUS
+		{
+			get
+			{
+				return this._RECORD_STATUS;
+			}
+			set
+			{
+				if ((this._RECORD_STATUS != value))
+				{
+					this._RECORD_STATUS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MAKER_ID", DbType="VarChar(15)")]
+		public string MAKER_ID
+		{
+			get
+			{
+				return this._MAKER_ID;
+			}
+			set
+			{
+				if ((this._MAKER_ID != value))
+				{
+					this._MAKER_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CREATE_DT", DbType="DateTime")]
+		public System.Nullable<System.DateTime> CREATE_DT
+		{
+			get
+			{
+				return this._CREATE_DT;
+			}
+			set
+			{
+				if ((this._CREATE_DT != value))
+				{
+					this._CREATE_DT = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_AUTH_STATUS", DbType="VarChar(50)")]
+		public string AUTH_STATUS
+		{
+			get
+			{
+				return this._AUTH_STATUS;
+			}
+			set
+			{
+				if ((this._AUTH_STATUS != value))
+				{
+					this._AUTH_STATUS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CHECKER_ID", DbType="VarChar(15)")]
+		public string CHECKER_ID
+		{
+			get
+			{
+				return this._CHECKER_ID;
+			}
+			set
+			{
+				if ((this._CHECKER_ID != value))
+				{
+					this._CHECKER_ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_APPROVE_DT", DbType="DateTime")]
+		public System.Nullable<System.DateTime> APPROVE_DT
+		{
+			get
+			{
+				return this._APPROVE_DT;
+			}
+			set
+			{
+				if ((this._APPROVE_DT != value))
+				{
+					this._APPROVE_DT = value;
 				}
 			}
 		}

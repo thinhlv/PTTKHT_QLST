@@ -88,6 +88,14 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ZOO_THUOC" nillable="true" type="tns:ZOO_THUOC" />
+  <xs:complexType name="ZOO_PHIEUNHAPTHUOC_UpdResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaPhieuNhap" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ZOO_PHIEUNHAPTHUOC_UpdResult" nillable="true" type="tns:ZOO_PHIEUNHAPTHUOC_UpdResult" />
   <xs:complexType name="ZOO_LOTHUOC">
     <xs:sequence>
       <xs:element minOccurs="0" name="APPROVE_DT" nillable="true" type="xs:dateTime" />
@@ -140,4 +148,12 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ZOO_LOTHUOC_SearchResult" nillable="true" type="tns:ZOO_LOTHUOC_SearchResult" />
+  <xs:complexType name="ZOO_LOTHUOC_UpdResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorDesc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaLo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ZOO_LOTHUOC_UpdResult" nillable="true" type="tns:ZOO_LOTHUOC_UpdResult" />
 </xs:schema>

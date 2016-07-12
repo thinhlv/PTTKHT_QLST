@@ -15,5 +15,7 @@ namespace gMVVM.Web.Services.QuanLySoThu.Interfaces.QuanLySoThu
         IEnumerable<ZOO_LOTHUOC_SearchResult> TimLoThuoc(string solo, string tenthuoc);
         [OperationContract]
         IEnumerable<ZOO_LOTHUOC_SearchResult> TimLoThuocCombobox(string mathuoc);
+        [OperationContract]
+        ZOO_LOTHUOC_UpdResult ChinhSuaLoThuoc(ZOO_LOTHUOC data);
     }
 }

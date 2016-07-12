@@ -112,6 +112,36 @@ namespace gMVVM.Web.Services.QuanLySoThu.Implement
                 return null;
             }
         }
+
+        public ZOO_PHIEUNHAPTHUOC_UpdResult ChinhSuaPhieuNhap(ZOO_PHIEUNHAPTHUOC data)
+        {
+            try
+            {
+
+                using (var dataContext = new AssetDataContext())
+                {
+                    ZOO_PHIEUNHAPTHUOC_UpdResult result = dataContext.ZOO_PHIEUNHAPTHUOC_Upd(
+                        data.MaPhieuNhap,
+                        data.MaLo,
+                        data.SoLuong,
+                        data.NgayNhap == null ? "" : data.NgayNhap.Value.ToString(formatDate),
+                        data.NOTES,
+                        data.RECORD_STATUS,
+                        data.MAKER_ID,
+                        data.CREATE_DT == null ? "" : data.CREATE_DT.Value.ToString(formatDate),
+                        data.AUTH_STATUS,
+                        data.CHECKER_ID,
+                        data.APPROVE_DT == null ? "" : data.APPROVE_DT.Value.ToString(formatDate)
+                        ).FirstOrDefault();
+
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+                return new ZOO_PHIEUNHAPTHUOC_UpdResult() { Result = "-1", ErrorDesc = ex.Message, MaPhieuNhap = "" };
+            }
+        }
         #endregion
 
         #region IZOO_LOTHUOC
@@ -179,6 +209,39 @@ namespace gMVVM.Web.Services.QuanLySoThu.Implement
                 return null;
             }
         }
+
+        public ZOO_LOTHUOC_UpdResult ChinhSuaLoThuoc(ZOO_LOTHUOC data)
+        {
+            try
+            {
+
+                using (var dataContext = new AssetDataContext())
+                {
+                    ZOO_LOTHUOC_UpdResult result = dataContext.ZOO_LOTHUOC_Upd(
+                        data.MaLo,
+                        data.MaThuoc,
+                        data.SoLo,
+                        data.NgaySanXuat == null ? "" : data.NgaySanXuat.Value.ToString(formatDate),
+                        data.NgayHetHan == null ? "" : data.NgayHetHan.Value.ToString(formatDate),
+                        data.SoLuong,
+
+                        data.NOTES,
+                        data.RECORD_STATUS,
+                        data.MAKER_ID,
+                        data.CREATE_DT == null ? "" : data.CREATE_DT.Value.ToString(formatDate),
+                        data.AUTH_STATUS,
+                        data.CHECKER_ID,
+                        data.APPROVE_DT == null ? "" : data.APPROVE_DT.Value.ToString(formatDate)
+                        ).FirstOrDefault();
+
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+                return new ZOO_LOTHUOC_UpdResult() { Result = "-1", ErrorDesc = ex.Message, MaLo = "" };
+            }
+        }
         #endregion
 
         /// <summary>
@@ -214,7 +277,13 @@ namespace gMVVM.Web.Services.QuanLySoThu.Implement
             }
         }
 
+
+
+
+
+
         
+
 
         
     }

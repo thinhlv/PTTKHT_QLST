@@ -17,5 +17,8 @@ namespace gMVVM.Web.Services.QuanLySoThu.Interfaces.QuanLySoThu
 
         [OperationContract]
         IEnumerable<ZOO_THUOC> DanhSachThuoc();
+
+        [OperationContract]
+        ZOO_PHIEUNHAPTHUOC_UpdResult ChinhSuaPhieuNhap(ZOO_PHIEUNHAPTHUOC data);
     }
 }

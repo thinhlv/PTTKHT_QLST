@@ -47,6 +47,7 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
         //
         private ObservableCollection<ZOO_LOTHUOC> DANHSACHLOTHUOC;
         private ObservableCollection<ZOO_LOTHUOC_SearchResult> ketQuaTimKiem;
+        private List<DanhSachLoThuocGridData> listtemp = new List<DanhSachLoThuocGridData>();
         private LoThuocEdit LoThuocEditChild;
 
         //save data from database
@@ -251,7 +252,7 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
             if (obj.currentObject != null)
             {
                 ZOO_LOTHUOC newitem = (obj.currentObject as ZOO_LOTHUOC);
-                this.DANHSACHLOTHUOC.Add(newitem);                
+                this.DANHSACHLOTHUOC.Add(newitem);
             }
             else
             {
@@ -313,8 +314,9 @@ namespace gMVVM.ViewModels.QuanLyKhamChuaBenh
         //refresh current data
         private void Refresh()
         {
-            List<DanhSachLoThuocGridData> listtemp = new List<DanhSachLoThuocGridData>();
+            
             DANHSACHLOTHUOC.Clear();
+            listtemp.Clear();
             int i = 0;
             foreach (var item in ketQuaTimKiem)
             {

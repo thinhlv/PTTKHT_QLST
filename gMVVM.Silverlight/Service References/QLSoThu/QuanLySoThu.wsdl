@@ -31,6 +31,12 @@
   <wsdl:message name="IZOO_PhieuNhapThuoc_DanhSachThuoc_OutputMessage">
     <wsdl:part name="parameters" element="tns:DanhSachThuocResponse" />
   </wsdl:message>
+  <wsdl:message name="IZOO_PhieuNhapThuoc_ChinhSuaPhieuNhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChinhSuaPhieuNhap" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_PhieuNhapThuoc_ChinhSuaPhieuNhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChinhSuaPhieuNhapResponse" />
+  </wsdl:message>
   <wsdl:message name="IZOO_LoThuoc_ThemLoThuocMoi_InputMessage">
     <wsdl:part name="parameters" element="tns:ThemLoThuocMoi" />
   </wsdl:message>
@@ -48,6 +54,12 @@
   </wsdl:message>
   <wsdl:message name="IZOO_LoThuoc_TimLoThuocCombobox_OutputMessage">
     <wsdl:part name="parameters" element="tns:TimLoThuocComboboxResponse" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_LoThuoc_ChinhSuaLoThuoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChinhSuaLoThuoc" />
+  </wsdl:message>
+  <wsdl:message name="IZOO_LoThuoc_ChinhSuaLoThuoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChinhSuaLoThuocResponse" />
   </wsdl:message>
   <wsdl:portType name="IZOO_BaoCaoTonKho">
     <wsdl:operation name="LayBaoCaoTonKho">
@@ -68,6 +80,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IZOO_PhieuNhapThuoc/DanhSachThuoc" message="tns:IZOO_PhieuNhapThuoc_DanhSachThuoc_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IZOO_PhieuNhapThuoc/DanhSachThuocResponse" message="tns:IZOO_PhieuNhapThuoc_DanhSachThuoc_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="ChinhSuaPhieuNhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZOO_PhieuNhapThuoc/ChinhSuaPhieuNhap" message="tns:IZOO_PhieuNhapThuoc_ChinhSuaPhieuNhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZOO_PhieuNhapThuoc/ChinhSuaPhieuNhapResponse" message="tns:IZOO_PhieuNhapThuoc_ChinhSuaPhieuNhap_OutputMessage" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:portType name="IZOO_LoThuoc">
     <wsdl:operation name="ThemLoThuocMoi">
@@ -81,6 +97,10 @@
     <wsdl:operation name="TimLoThuocCombobox">
       <wsdl:input wsaw:Action="http://tempuri.org/IZOO_LoThuoc/TimLoThuocCombobox" message="tns:IZOO_LoThuoc_TimLoThuocCombobox_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IZOO_LoThuoc/TimLoThuocComboboxResponse" message="tns:IZOO_LoThuoc_TimLoThuocCombobox_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChinhSuaLoThuoc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IZOO_LoThuoc/ChinhSuaLoThuoc" message="tns:IZOO_LoThuoc_ChinhSuaLoThuoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IZOO_LoThuoc/ChinhSuaLoThuocResponse" message="tns:IZOO_LoThuoc_ChinhSuaLoThuoc_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IZOO_BaoCaoTonKho" type="tns:IZOO_BaoCaoTonKho">
@@ -124,6 +144,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="ChinhSuaPhieuNhap">
+      <soap:operation soapAction="http://tempuri.org/IZOO_PhieuNhapThuoc/ChinhSuaPhieuNhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="BasicHttpBinding_IZOO_LoThuoc" type="tns:IZOO_LoThuoc">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
@@ -147,6 +176,15 @@
     </wsdl:operation>
     <wsdl:operation name="TimLoThuocCombobox">
       <soap:operation soapAction="http://tempuri.org/IZOO_LoThuoc/TimLoThuocCombobox" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChinhSuaLoThuoc">
+      <soap:operation soapAction="http://tempuri.org/IZOO_LoThuoc/ChinhSuaLoThuoc" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
