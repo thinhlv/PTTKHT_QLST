@@ -1,69 +1,338 @@
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\gMVVM.Web.dll.config
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\gMVVM.Web.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\gMVVM.Web.pdb
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.AspNet.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.Core.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OAuth.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OpenId.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\EntityFramework.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\Microsoft.AspNet.Membership.OpenAuth.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\Microsoft.Web.Infrastructure.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\System.Web.Providers.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\zxing.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\zxing.presentation.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\Mono.Math.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\EntityFramework.xml
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.Core.xml
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OAuth.xml
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.xml
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OpenId.xml
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.AspNet.xml
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\zxing.pdb
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\zxing.xml
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\zxing.presentation.pdb
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\zxing.presentation.xml
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.xml
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\bin\Mono.Math.xml
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\obj\Debug\gMVVM.Web.dll
-D:\STUDY\CNPMCS_PROJECT\ERP_CLONE\gMVVM.Web\obj\Debug\gMVVM.Web.pdb
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\gMVVM.Web.dll.config
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\gMVVM.Web.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\gMVVM.Web.pdb
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.AspNet.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.Core.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OAuth.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OpenId.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\EntityFramework.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\Microsoft.AspNet.Membership.OpenAuth.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\Microsoft.Web.Infrastructure.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\System.Web.Providers.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\zxing.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\zxing.presentation.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\Mono.Math.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\EntityFramework.xml
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.Core.xml
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OAuth.xml
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.xml
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OpenId.xml
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\DotNetOpenAuth.AspNet.xml
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\zxing.pdb
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\zxing.xml
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\zxing.presentation.pdb
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\zxing.presentation.xml
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.xml
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\bin\Mono.Math.xml
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\obj\Debug\gMVVM.Web.dll
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\obj\Debug\gMVVM.Web.pdb
-D:\STUDY\PTTKTT\ERP_CLONE\gMVVM.Web\obj\Debug\gMVVM.Web.csprojResolveAssemblyReference.cache
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\obj\Debug\gMVVM.Web.csprojResolveAssemblyReference.cache
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\gMVVM.Web.dll.config
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\gMVVM.Web.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\gMVVM.Web.pdb
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\AspNet.ScriptManager.jQuery.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.ReportSource.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.Shared.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.Web.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\DotNetOpenAuth.AspNet.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\DotNetOpenAuth.Core.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\DotNetOpenAuth.OAuth.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\DotNetOpenAuth.OpenId.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\EntityFramework.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\System.Web.Providers.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\zxing.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\zxing.presentation.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\MonAgentListener.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\Org.Mentalis.Security.Cryptography.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\stdole.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\Mono.Math.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\EntityFramework.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\DotNetOpenAuth.Core.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\DotNetOpenAuth.OAuth.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\DotNetOpenAuth.OpenId.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\DotNetOpenAuth.AspNet.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\zxing.pdb
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\zxing.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\zxing.presentation.pdb
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\zxing.presentation.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\Org.Mentalis.Security.Cryptography.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\bin\Mono.Math.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\obj\Debug\gMVVM.Web.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gAMS_Sacombank.Web\obj\Debug\gMVVM.Web.pdb
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\gMVVM.Web.dll.config
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\gMVVM.Web.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\gMVVM.Web.pdb
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.CrystalReports.Engine.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.ReportSource.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.Shared.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.Web.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\DotNetOpenAuth.AspNet.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\DotNetOpenAuth.Core.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\EntityFramework.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\System.Web.Providers.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\zxing.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\zxing.presentation.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\MonAgentListener.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\stdole.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\Mono.Math.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\EntityFramework.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\DotNetOpenAuth.Core.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\DotNetOpenAuth.AspNet.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\zxing.pdb
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\zxing.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\zxing.presentation.pdb
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\zxing.presentation.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\bin\Mono.Math.xml
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\obj\Debug\gMVVM.Web.dll
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\obj\Debug\gMVVM.Web.pdb
+D:\GSOFT\SVTT\Nam2016\QLTS\Program\gMVVM.Web\obj\Debug\gMVVM.Web.csprojResolveAssemblyReference.cache
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\gMVVM.Web.dll.config
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\gMVVM.Web.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\gMVVM.Web.pdb
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\DotNetOpenAuth.Core.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\EntityFramework.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\System.Web.Providers.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\zxing.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\zxing.presentation.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\Mono.Math.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\EntityFramework.xml
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\DotNetOpenAuth.Core.xml
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\zxing.pdb
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\zxing.xml
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\zxing.presentation.pdb
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\zxing.presentation.xml
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.xml
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\bin\Mono.Math.xml
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\obj\Debug\gMVVM.Web.dll
+C:\Users\Lucy\Desktop\ERP\Program\gMVVM.Web\obj\Debug\gMVVM.Web.pdb
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\gMVVM.Web.dll.config
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\gMVVM.Web.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\gMVVM.Web.pdb
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\DotNetOpenAuth.AspNet.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\DotNetOpenAuth.Core.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\EntityFramework.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\Microsoft.QualityTools.Testing.Fakes.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\Microsoft.Web.Infrastructure.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\System.Web.Providers.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\zxing.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\zxing.presentation.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\Mono.Math.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\EntityFramework.xml
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\DotNetOpenAuth.Core.xml
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.xml
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.xml
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\DotNetOpenAuth.AspNet.xml
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\zxing.pdb
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\zxing.xml
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\zxing.presentation.pdb
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\zxing.presentation.xml
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.xml
+D:\Study\CNPMCS\Program\gMVVM.Web\bin\Mono.Math.xml
+D:\Study\CNPMCS\Program\gMVVM.Web\obj\Debug\gMVVM.Web.csprojResolveAssemblyReference.cache
+D:\Study\CNPMCS\Program\gMVVM.Web\obj\Debug\gMVVM.Web.dll
+D:\Study\CNPMCS\Program\gMVVM.Web\obj\Debug\gMVVM.Web.pdb
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\gMVVM.Web.dll.config
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\gMVVM.Web.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\gMVVM.Web.pdb
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.Shared.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.Web.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\DotNetOpenAuth.Core.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\EntityFramework.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\System.Web.Providers.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\zxing.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\zxing.presentation.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\stdole.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\Mono.Math.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\EntityFramework.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\DotNetOpenAuth.Core.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\zxing.pdb
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\zxing.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\zxing.presentation.pdb
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\zxing.presentation.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\bin\Mono.Math.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\obj\Debug\gMVVM.Web.csprojResolveAssemblyReference.cache
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\obj\Debug\gMVVM.Web.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\Source\Project 8-5-2016\Program\gMVVM.Web\obj\Debug\gMVVM.Web.pdb
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\gMVVM.Web.dll.config
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\gMVVM.Web.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\gMVVM.Web.pdb
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.Shared.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.Web.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\DotNetOpenAuth.Core.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\EntityFramework.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\System.Web.Providers.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\zxing.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\zxing.presentation.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\stdole.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\Mono.Math.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\EntityFramework.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\DotNetOpenAuth.Core.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\zxing.pdb
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\zxing.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\zxing.presentation.pdb
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\zxing.presentation.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\bin\Mono.Math.xml
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\obj\Debug\gMVVM.Web.dll
+C:\Users\Minh\Downloads\Working\CNPMCS\sba-se214-g22\gMVVM.Web\obj\Debug\gMVVM.Web.pdb
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\gMVVM.Web.dll.config
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\gMVVM.Web.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\gMVVM.Web.pdb
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.ReportSource.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.Shared.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.Web.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\DotNetOpenAuth.Core.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\EntityFramework.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\System.Web.Providers.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\zxing.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\zxing.presentation.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\stdole.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\Mono.Math.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\EntityFramework.xml
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\DotNetOpenAuth.Core.xml
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\zxing.pdb
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\zxing.xml
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\zxing.presentation.pdb
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\zxing.presentation.xml
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.xml
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\Mono.Math.xml
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\obj\Debug\gMVVM.Web.csprojResolveAssemblyReference.cache
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\obj\Debug\gMVVM.Web.dll
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\obj\Debug\gMVVM.Web.pdb

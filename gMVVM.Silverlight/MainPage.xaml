@@ -113,7 +113,7 @@
 
                     <!--Header right-->
                     <Grid Grid.Column="1" Grid.Row="0" Background="#ff008fd5">
-                        <TextBlock Text="HỆ THỐNG QUẢN LÝ ERP" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="25,0,0,0" FontSize="15"
+                        <TextBlock Text="HỆ THỐNG QUẢN LÝ SỞ THÚ" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="25,0,0,0" FontSize="15"
                                        Foreground="White"/>
                         <!--<TextBlock Text="Hotline: A.Hiếu 0918337403" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="25,0,200,0" FontSize="14"
                                        Foreground="#FFFF8B8B"/>-->

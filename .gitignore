@@ -1,0 +1,6 @@
+/gMVVM.Silverlight/obj/*
+/gMVVM.Silverlight/bin/*
+/gMVVM.Web/bin/*
+/gMVVM.Web/obj/*
+/packages/*
+/.vs/*
