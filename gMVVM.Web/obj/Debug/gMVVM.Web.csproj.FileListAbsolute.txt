@@ -333,6 +333,6 @@ C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\zxing.presentat
 C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\zxing.presentation.xml
 C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\Org.Mentalis.Security.Cryptography.xml
 C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\bin\Mono.Math.xml
-C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\obj\Debug\gMVVM.Web.csprojResolveAssemblyReference.cache
 C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\obj\Debug\gMVVM.Web.dll
 C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\obj\Debug\gMVVM.Web.pdb
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Web\obj\Debug\gMVVM.Web.csprojResolveAssemblyReference.cache

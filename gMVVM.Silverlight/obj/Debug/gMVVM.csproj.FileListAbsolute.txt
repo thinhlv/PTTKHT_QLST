@@ -2177,7 +2177,6 @@ C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Silverlight\Bin\Debug\k
 C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Silverlight\Bin\Debug\ru\System.Xml.Serialization.resources.dll
 C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Silverlight\Bin\Debug\zh-Hans\System.Xml.Serialization.resources.dll
 C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Silverlight\Bin\Debug\zh-Hant\System.Xml.Serialization.resources.dll
-C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Silverlight\obj\Debug\gMVVM.csprojResolveAssemblyReference.cache
 C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Silverlight\obj\Debug\App.g.cs
 C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Silverlight\obj\Debug\MainPage.g.cs
 C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Silverlight\obj\Debug\Views\AssCommon\AllCodeEdit.g.cs
@@ -2235,3 +2234,4 @@ C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Silverlight\obj\Debug\v
 C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Silverlight\obj\Debug\gMVVM.dll
 C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Silverlight\obj\Debug\gMVVM.pdb
 C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Silverlight\obj\Debug\XapCacheFile.xml
+C:\Users\Minh\Downloads\Working\PTTKHT\PTTKHT_QLST\gMVVM.Silverlight\obj\Debug\gMVVM.csprojResolveAssemblyReference.cache
